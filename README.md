@@ -33,6 +33,6 @@ The features (columns in file `nanotox_db_1.csv`) extracted are:
 7. microbial log reduction (microbe_killing_log) / Physical Unit = dimensionless;
 8. microbial minimum inhibitory concentration (microbe_killing_mic) / Physical Unit = mg mL<sup>-1</sup>;
 9. microbial inhibition percentage (microbe_killing_perc) / Physical Unit = %;
-10. (toxic_ec50) / Physical Unit = mg mL<sup>-1</sup>;
-11. (toxic_ic50) / Physical Unit = mg mL<sup>-1</sup>;
-12. (toxic_lc50) / Physical Unit = mg mL<sup>-1</sup>; 
+10. organism effective concentration 50 % (toxic_ec50) / Physical Unit = mg mL<sup>-1</sup>;
+11. organism inhibitory concentration 50 % (toxic_ic50) / Physical Unit = mg mL<sup>-1</sup>;
+12. organism lethal concentration 50 % (toxic_lc50) / Physical Unit = mg mL<sup>-1</sup>; 
