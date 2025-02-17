@@ -22,19 +22,16 @@ engine is presented in:
 
 -------------------------------------------------------------------------------
 
-The features (columns in file `cfms_db.csv`) extracted are:
+The features (columns in file `nanotox_db_1.csv`) extracted are:
 
-1. carbonization (synthesis) method / Physical Unit = None (categorical terms has no PU);
-2. biomass precursor / Physical Unit = None (categorical terms has no PU);
-3. carbonization temperature / Physical Unit = temperature;
-4. carbonization time / Physical Unit = time;
-5. surface area / PU = area weight<sup>-1</sup>;
-6. particle size / Physical Unit = Euclidean distance;
-7. adsorption capacity / Physical Unit = weight weight<sup>-1</sup>;
-8. H/C weight ratios / Physical Unit = dimensionless;
-9. C/N weight ratios / Physical Unit = dimensionless;
-10. O/C weight ratios / Physical Unit = dimensionless;
-11. C/O weight ratios / Physical Unit = dimensionless;
-12. N/C weight ratios / Physical Unit = dimensionless;
-13. C/H weight ratios / Physical Unit = dimensionless;
+1. nanomaterial composition / Physical Unit = None (categorical terms has no PU);
+2. nanomaterial morphology / Physical Unit = None (categorical terms has no PU);
+3. organism species / Physical Unit = None (categorical terms has no PU);
+4. nanomaterial size / Physical Unit = nm;
+5. nanomaterial surface area / PU = m<sup>2<\sup>;
+6.  / Physical Unit = ;
+7.  / Physical Unit = ;
+8.  / Physical Unit = ;
+9.  / Physical Unit = ;
+10.  / Physical Unit = ;
 14. high heating value (HHV) / Physical Unit = energy weight<sup>-1</sup>.
