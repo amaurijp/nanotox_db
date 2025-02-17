@@ -24,14 +24,15 @@ engine is presented in:
 
 The features (columns in file `nanotox_db_1.csv`) extracted are:
 
-1. nanomaterial composition / Physical Unit = None (categorical terms has no PU);
-2. nanomaterial morphology / Physical Unit = None (categorical terms has no PU);
-3. organism species / Physical Unit = None (categorical terms has no PU);
-4. nanomaterial size / Physical Unit = nm;
-5. nanomaterial surface area / PU = m<sup>2<\sup>;
-6.  / Physical Unit = ;
-7.  / Physical Unit = ;
-8.  / Physical Unit = ;
-9.  / Physical Unit = ;
-10.  / Physical Unit = ;
-14. high heating value (HHV) / Physical Unit = energy weight<sup>-1</sup>.
+1. nanomaterial composition (composition) / Physical Unit = None (categorical terms has no PU);
+2. nanomaterial morphology (morphology) / Physical Unit = None (categorical terms has no PU);
+3. organism species (species) / Physical Unit = None (categorical terms has no PU);
+4. nanomaterial size (size) / Physical Unit = nm;
+5. nanomaterial surface area (surface_area) / PU = m<sup>2</sup> g<sup>-1</sup>;
+6. nanomaterial zeta pontential (zeta_potential) / Physical Unit = mV;
+7. microbial log reduction (microbe_killing_log) / Physical Unit = dimensionless;
+8. microbial minimum inhibitory concentration (microbe_killing_mic) / Physical Unit = mg mL<sup>-1</sup>;
+9. microbial inhibition percentage (microbe_killing_perc) / Physical Unit = %;
+10. (toxic_ec50) / Physical Unit = mg mL<sup>-1</sup>;
+11. (toxic_ic50) / Physical Unit = mg mL<sup>-1</sup>;
+12. (toxic_lc50) / Physical Unit = mg mL<sup>-1</sup>; 
