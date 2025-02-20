@@ -2,7 +2,7 @@ DATABASE - NANOMATERIALS INTERACTIONS WITH BIOLOGICAL SYSTEMS (nanotox_db) - Ver
 ===============================================================================
 
 The `nanotox_db_1.csv` file is in version 1.0 and it was obtained from the
-processsing of 53,335 articles abstracts. The title of each
+processsing of 53,335 articles abstracts. The DOI of each
 article indexed in the `nanotox_db_1.csv` is detailed in the file
 `filename_id_1.csv`.
 
