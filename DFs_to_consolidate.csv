@@ -1,0 +1,12 @@
+parameter,filenames_to_concatenate,ngrams_to_replace,hold_filenames,hold_instances_number,type,match_instances_with_other_parameter,check_parameter_relations
+composition,"( 2dmaterials_02, carbonmaterials_01, carbonmaterials_04, carbonmaterials_06, metallic_nano_01, metallic_nano_02, oxidesmaterials_01, qdots_01)","( elements name symbol, inorganic compounds name symbol, nanomaterial composition )",FALSE,FALSE,textual,None,FALSE
+morphology,"( 2dmaterials_04, carbonmaterials_02, carbonmaterials_03, carbonmaterials_05, metallic_nano_03, metallic_nano_04, oxidesmaterials_02, qdots_02)",( nanomaterial morphology ),TRUE,FALSE,textual,None,TRUE
+species,"( species_03, species_04 )",( extract species ),TRUE,FALSE,textual,None,TRUE
+size,( nps_size_01 ),None,TRUE,FALSE,numerical,None,TRUE
+surface_area,( surface_area_01 ),None,TRUE,FALSE,numerical,None,TRUE
+zeta_potential,( zetapot_01 ),None,TRUE,FALSE,numerical,None,TRUE
+microbe_killing_log,"( microbe_killing_log_01, microbe_killing_log_02 )",None,TRUE,FALSE,numerical,None,TRUE
+microbe_killing_mbc,"( microbe_killing_mbc_01, microbe_killing_mbc_02 )",None,TRUE,FALSE,numerical,None,TRUE
+microbe_killing_mic,"( microbe_killing_mic_01, microbe_killing_mic_02 )",None,TRUE,FALSE,numerical,None,TRUE
+biofilms_killing_perc,"( biofilms_killing_perc_01, biofilms_killing_perc_02 )",None,TRUE,FALSE,numerical,None,TRUE
+toxic_lc50,"( toxic_lc50_01, toxic_lc50_02 )",None,TRUE,FALSE,numerical,None,TRUE
