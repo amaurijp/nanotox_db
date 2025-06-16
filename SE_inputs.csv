@@ -24,9 +24,9 @@ microbe_killing_mbc_02,species_04,txt,microbe_mbc_inhibition,True,True,"(Bacteri
 microbe_killing_mic_01,species_03,txt,microbe_mic_inhibition,True,True,"(Inhibitory, inhibitory, MIC, mic)",None,False,False,None,None,None,None,None,None,microbe_mic_inhibition,None,2017,1742,finished,1452,1288,finished
 microbe_killing_mic_02,species_04,txt,microbe_mic_inhibition,True,True,"(Inhibitory, inhibitory, MIC, mic)",None,False,False,None,None,None,None,None,None,microbe_mic_inhibition,None,2706,2367,finished,1831,1648,finished
 nps_size_01,None,txt,nanomaterial_size,True,True,None,None,False,False,None,None,None,None,None,None,nanomaterial_size,None,19934,14318,finished,12908,10958,finished
-oxidesmaterials_01,None,txt,oxide_materials ,True,True,None,( oxides symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,25248,9572,finished,27736,9555,finished
+oxidesmaterials_01,None,txt,oxide_materials ,True,True,None,( oxides_symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,25248,9572,finished,27736,9555,finished
 oxidesmaterials_02,oxidesmaterials_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,22938,9358,finished,26073,9358,finished
-qdots_01,None,txt,qdots_materials,True,True,None,( quantum dots symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,1820,851,finished,764,356,finished
+qdots_01,None,txt,qdots_materials,True,True,None,( quantum_dots_symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,1820,851,finished,764,356,finished
 qdots_02,qdots_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,2088,837,finished,2425,837,finished
 species_01,None,txt,species_genus_all_abbr,False,True,None,( species_genus_all_abbr ),False,False,None,None,None,None,None,None,None,None,22178,22178,finished,36226,13372,finished
 species_02,None,txt,species_genus_all_full,False,True,None,( species_genus_all_full ),False,False,None,None,None,None,None,None,None,None,35672,35672,finished,74890,35672,finished
