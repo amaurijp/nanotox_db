@@ -3,8 +3,8 @@ filename,index_list_name,file_type,parameter_to_extract,scan_sent_by_sent,filter
 2dmaterials_02,None,txt,2d_materials,True,True,None,( 2D materials symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,601,354,finished,519,282,finished
 2dmaterials_03,2dmaterials_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,13,5,finished,15,5,finished
 2dmaterials_04,2dmaterials_02,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,805,354,finished,954,354,finished
-biofilms_01,species_03,txt,species genus all abbr,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,5099,1796,finished,2730,1196,finished
-biofilms_02,species_04,txt,species genus all full,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,7398,2673,finished,2804,1414,finished
+biofilms_01,species_03,txt,species_genus_all_abbr,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,5099,1796,finished,2730,1196,finished
+biofilms_02,species_04,txt,species_genus_all_full,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,7398,2673,finished,2804,1414,finished
 biofilms_killing_perc_01,biofilms_01,txt,biofilm_percentage_killing,True,True,None,None,False,False,None,None,None,None,None,None,biofilm_percentage_killing,None,1199,779,finished,440,390,finished
 biofilms_killing_perc_02,biofilms_02,txt,biofilm_percentage_killing,True,True,None,None,False,False,None,None,None,None,None,None,biofilm_percentage_killing,None,1463,968,finished,523,466,finished
 carbonmaterials_01,None,txt,carbon material name 1gram,True,True,None,( carbon material name 1gram ),True,True,None,None,None,None,None,None,None,None,5726,3112,finished,6482,3112,finished
@@ -28,10 +28,10 @@ oxidesmaterials_01,None,txt,oxide_materials ,True,True,None,( oxides symbol ) + 
 oxidesmaterials_02,oxidesmaterials_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,22938,9358,finished,26073,9358,finished
 qdots_01,None,txt,qdots_materials,True,True,None,( quantum dots symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,1820,851,finished,764,356,finished
 qdots_02,qdots_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,2088,837,finished,2425,837,finished
-species_01,None,txt,species genus all abbr,False,True,None,( species genus all abbr ),False,False,None,None,None,None,None,None,None,None,22178,22178,finished,36226,13372,finished
-species_02,None,txt,species genus all full,False,True,None,( species genus all full ),False,False,None,None,None,None,None,None,None,None,35672,35672,finished,74890,35672,finished
-species_03,None,txt,species genus all abbr,True,True,None,( species genus all abbr ),False,False,None,None,None,None,None,None,None,None,38473,22178,finished,57013,22178,finished
-species_04,None,txt,species genus all full,True,True,None,( species genus all full ),False,False,None,None,None,None,None,None,None,None,43090,35672,finished,74890,35672,finished
+species_01,None,txt,species_genus_all_abbr,False,True,None,( species_genus_all_abbr ),False,False,None,None,None,None,None,None,None,None,22178,22178,finished,36226,13372,finished
+species_02,None,txt,species_genus_all_full,False,True,None,( species_genus_all_full ),False,False,None,None,None,None,None,None,None,None,35672,35672,finished,74890,35672,finished
+species_03,None,txt,species_genus_all_abbr,True,True,None,( species_genus_all_abbr ),False,False,None,None,None,None,None,None,None,None,38473,22178,finished,57013,22178,finished
+species_04,None,txt,species_genus_all_full,True,True,None,( species_genus_all_full ),False,False,None,None,None,None,None,None,None,None,43090,35672,finished,74890,35672,finished
 surface_area_01,None,txt,nanomaterial_surface_area,True,True,None,None,False,False,None,None,None,None,None,None,nanomaterial_surface_area,None,395,390,finished,395,390,finished
 toxic_lc50_01,species_03,txt,toxicity_lc50,True,True,s([Ll][Cc]\s*[\(\[]?50[\]\)]?)e,None,False,False,None,None,None,None,None,None,toxicity_lc50,None,163,144,finished,154,137,finished
 toxic_lc50_02,species_04,txt,toxicity_lc50,True,True,s([Ll][Cc]\s*[\(\[]?50[\]\)]?)e,None,False,False,None,None,None,None,None,None,toxicity_lc50,None,294,260,finished,278,246,finished
