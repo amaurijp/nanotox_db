@@ -13,8 +13,8 @@ carbonmaterials_03,None,txt,"(Nanotube, nanotube)",True,True,s([Cc]arbon\s[Nn]an
 carbonmaterials_04,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Nn]anotube)e,None,False,False,None,None,None,None,None,None,None,None,1479,1120,finished,1710,1120,finished
 carbonmaterials_05,None,txt,"(Dot, dot)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,862,519,finished
 carbonmaterials_06,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,872,519,finished
-metallic_nano_01,None,txt,metallic materials,True,True,None,( metallic_nano element name ) + ( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
-metallic_nano_02,None,txt,metallic materials,True,True,None,( metallic_nano element symbol ) + ( nanomaterial morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
+metallic_nano_01,None,txt,metallic_materials,True,True,None,( metallic_nano element name ) + ( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
+metallic_nano_02,None,txt,metallic_materials,True,True,None,( metallic_nano element symbol ) + ( nanomaterial morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
 metallic_nano_03,metallic_nano_01,txt,nanomaterial morphology,True,True,None,( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,33103,13282,finished,37495,13282,finished
 metallic_nano_04,metallic_nano_02,txt,nanomaterial morphology,True,True,None,( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,38287,14868,finished,44749,14868,finished
 microbe_killing_log_01,species_03,txt,microbe_log_reduction,True,True,None,None,False,False,None,None,None,None,None,None,microbe_log_reduction,None,678,530,finished,593,476,finished
@@ -24,7 +24,7 @@ microbe_killing_mbc_02,species_04,txt,microbe_mbc_inhibition,True,True,"(Bacteri
 microbe_killing_mic_01,species_03,txt,microbe_mic_inhibition,True,True,"(Inhibitory, inhibitory, MIC, mic)",None,False,False,None,None,None,None,None,None,microbe_mic_inhibition,None,2017,1742,finished,1452,1288,finished
 microbe_killing_mic_02,species_04,txt,microbe_mic_inhibition,True,True,"(Inhibitory, inhibitory, MIC, mic)",None,False,False,None,None,None,None,None,None,microbe_mic_inhibition,None,2706,2367,finished,1831,1648,finished
 nps_size_01,None,txt,nanomaterial_size,True,True,None,None,False,False,None,None,None,None,None,None,nanomaterial_size,None,19934,14318,finished,12908,10958,finished
-oxidesmaterials_01,None,txt,oxide materials ,True,True,None,( oxides symbol ) + ( nanomaterial morphology ),True,False,None,None,None,None,None,None,None,None,25248,9572,finished,27736,9555,finished
+oxidesmaterials_01,None,txt,oxide_materials ,True,True,None,( oxides symbol ) + ( nanomaterial morphology ),True,False,None,None,None,None,None,None,None,None,25248,9572,finished,27736,9555,finished
 oxidesmaterials_02,oxidesmaterials_01,txt,nanomaterial morphology,True,True,None,( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,22938,9358,finished,26073,9358,finished
 qdots_01,None,txt,qdots materials,True,True,None,( quantum dots symbol ) + ( nanomaterial morphology ),True,False,None,None,None,None,None,None,None,None,1820,851,finished,764,356,finished
 qdots_02,qdots_01,txt,nanomaterial morphology,True,True,None,( nanomaterial morphology ),True,True,None,None,None,None,None,None,None,None,2088,837,finished,2425,837,finished
