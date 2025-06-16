@@ -1,20 +1,20 @@
 filename,index_list_name,file_type,parameter_to_extract,scan_sent_by_sent,filter_unique_results,literal_entry,semantic_entry,search_token_by_token,lower_sentence_for_semantic,lda_sents_topic,lda_articles_topic,lsa_sents_topic,lsa_articles_topic,topic_search_mode,cos_thr,num_param,filter_section,total_finds,article_finds,search_status,total_extracted,articles_extracted,export_status
-2dmaterials_01,None,txt,2d_materials,True,True,None,( 2D materials name 1gram ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,11,5,finished,12,5,finished
-2dmaterials_02,None,txt,2d_materials,True,True,None,( 2D materials symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,601,354,finished,519,282,finished
+2dmaterials_01,None,txt,2d_materials,True,True,None,( 2d_materials_name_1gram ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,11,5,finished,12,5,finished
+2dmaterials_02,None,txt,2d_materials,True,True,None,( 2d_materials_symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,601,354,finished,519,282,finished
 2dmaterials_03,2dmaterials_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,13,5,finished,15,5,finished
 2dmaterials_04,2dmaterials_02,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,805,354,finished,954,354,finished
 biofilms_01,species_03,txt,species_genus_all_abbr,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,5099,1796,finished,2730,1196,finished
 biofilms_02,species_04,txt,species_genus_all_full,True,True,s([Bb]iofilms?)e,None,False,False,None,None,None,None,None,None,None,None,7398,2673,finished,2804,1414,finished
 biofilms_killing_perc_01,biofilms_01,txt,biofilm_percentage_killing,True,True,None,None,False,False,None,None,None,None,None,None,biofilm_percentage_killing,None,1199,779,finished,440,390,finished
 biofilms_killing_perc_02,biofilms_02,txt,biofilm_percentage_killing,True,True,None,None,False,False,None,None,None,None,None,None,biofilm_percentage_killing,None,1463,968,finished,523,466,finished
-carbonmaterials_01,None,txt,carbon material name 1gram,True,True,None,( carbon material name 1gram ),True,True,None,None,None,None,None,None,None,None,5726,3112,finished,6482,3112,finished
-carbonmaterials_02,carbonmaterials_01,txt,nanomaterial_morphology,True,True,None,( carbon material name 1gram ),True,True,None,None,None,None,None,None,None,None,5726,3112,finished,1571,1060,finished
+carbonmaterials_01,None,txt,carbon_material_name_1gram,True,True,None,( carbon_material_name_1gram ),True,True,None,None,None,None,None,None,None,None,5726,3112,finished,6482,3112,finished
+carbonmaterials_02,carbonmaterials_01,txt,nanomaterial_morphology,True,True,None,( carbon_material_name_1gram ),True,True,None,None,None,None,None,None,None,None,5726,3112,finished,1571,1060,finished
 carbonmaterials_03,None,txt,"(Nanotube, nanotube)",True,True,s([Cc]arbon\s[Nn]anotube)e,None,False,False,None,None,None,None,None,None,None,None,1479,1120,finished,1588,1120,finished
 carbonmaterials_04,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Nn]anotube)e,None,False,False,None,None,None,None,None,None,None,None,1479,1120,finished,1710,1120,finished
 carbonmaterials_05,None,txt,"(Dot, dot)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,862,519,finished
 carbonmaterials_06,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,872,519,finished
-metallic_nano_01,None,txt,metallic_materials,True,True,None,( metallic_nano element name ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
-metallic_nano_02,None,txt,metallic_materials,True,True,None,( metallic_nano element symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
+metallic_nano_01,None,txt,metallic_materials,True,True,None,( metallic_nano_element_name ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
+metallic_nano_02,None,txt,metallic_materials,True,True,None,( metallic_nano_element_symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
 metallic_nano_03,metallic_nano_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,33103,13282,finished,37495,13282,finished
 metallic_nano_04,metallic_nano_02,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,38287,14868,finished,44749,14868,finished
 microbe_killing_log_01,species_03,txt,microbe_log_reduction,True,True,None,None,False,False,None,None,None,None,None,None,microbe_log_reduction,None,678,530,finished,593,476,finished
