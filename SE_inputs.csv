@@ -13,8 +13,8 @@ carbonmaterials_03,None,txt,"(Nanotube, nanotube)",True,True,s([Cc]arbon\s[Nn]an
 carbonmaterials_04,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Nn]anotube)e,None,False,False,None,None,None,None,None,None,None,None,1479,1120,finished,1710,1120,finished
 carbonmaterials_05,None,txt,"(Dot, dot)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,862,519,finished
 carbonmaterials_06,None,txt,"(Carbon, carbon)",True,True,s([Cc]arbon\s[Dd]ot)e,None,False,False,None,None,None,None,None,None,None,None,748,519,finished,872,519,finished
-metallic_nano_01,None,txt,metallic_materials,True,True,None,( metallic_nano element name ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
-metallic_nano_02,None,txt,metallic_materials,True,True,None,( metallic_nano element symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
+metallic_nano_01,None,txt,metallic_materials,True,True,None,( metallic_nano_element_name ) + ( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,20993,13282,finished,22710,12839,finished
+metallic_nano_02,None,txt,metallic_materials,True,True,None,( metallic_nano element_symbol ) + ( nanomaterial_morphology ),True,False,None,None,None,None,None,None,None,None,27064,15170,finished,27883,11640,finished
 metallic_nano_03,metallic_nano_01,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,33103,13282,finished,37495,13282,finished
 metallic_nano_04,metallic_nano_02,txt,nanomaterial_morphology,True,True,None,( nanomaterial_morphology ),True,True,None,None,None,None,None,None,None,None,38287,14868,finished,44749,14868,finished
 microbe_killing_log_01,species_03,txt,microbe_killing_log,True,True,None,None,False,False,None,None,None,None,None,None,microbe_killing_log,None,678,530,finished,593,476,finished
