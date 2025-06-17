@@ -27,7 +27,7 @@ The features (columns in file `nanotox_db_superior_organisms_1.csv`) extracted a
 2. nanomaterial morphology (nanomaterial_morphology) / Physical Unit = None (categorical terms has no PU);
 3. organism species (biological_species) / Physical Unit = None (categorical terms has no PU);
 4. tocicity endpoint (toxicity_endpoints) / Physical Unit = None (categorical terms has no PU);
-5. toxicity confirmation (toxicity_yes_no) / Physical Unit = None (categorical terms has no PU);
+5. toxicity confirmation (toxicity_yes_no) / Physical Unit = None (categorical terms has no PU).
 
 -------------------------------------------------------------------------------
 
