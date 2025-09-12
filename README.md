@@ -1,13 +1,13 @@
 DATABASE - NANOMATERIALS INTERACTIONS WITH BIOLOGICAL SYSTEMS (nanotox_db) - Version 1.0
 ===============================================================================
 
-Both databases `nanotox_db_all_1.csv` and `nanotox_db_superior_organisms_1.csv` 
+Both databases `abstracts_nanotox_db_all_1.csv` and `abstracts_nanotox_db_superior_organisms_1.csv` 
 are in version 1.0 and they were obtained from the
 processsing of 53,335 articles abstracts. The DOI of each
 article indexed in the databses is detailed in the file
-`filename_id_1.csv`.
+`abstracts_filename_id_1.csv`.
 
-The features (columns in file `nanotox_db_all_1.csv`) extracted are:
+The features (columns in file `abstracts_nanotox_db_all_1.csv`) extracted are:
 
 1. nanomaterial composition (nanomaterial_composition) / Physical Unit = None (categorical terms has no PU);
 2. nanomaterial morphology (nanomaterial_morphology) / Physical Unit = None (categorical terms has no PU);
@@ -21,7 +21,7 @@ The features (columns in file `nanotox_db_all_1.csv`) extracted are:
 10. biofilm inhibition percentage (microbe_killing_perc) / Physical Unit = %;
 11. organism lethal concentration 50 % (toxic_lc50) / Physical Unit = mg mL<sup>-1</sup>.
 
-The features (columns in file `nanotox_db_superior_organisms_1.csv`) extracted are:
+The features (columns in file `abstracts_nanotox_db_superior_organisms_1.csv`) extracted are:
 
 1. nanomaterial composition (nanomaterial_composition) / Physical Unit = None (categorical terms has no PU);
 2. nanomaterial morphology (nanomaterial_morphology) / Physical Unit = None (categorical terms has no PU);
