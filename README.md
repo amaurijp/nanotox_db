@@ -29,6 +29,7 @@ The features (columns in file `abstracts_nanotox_db_superior_organisms_1.csv`) e
 4. tocicity endpoint (toxicity_endpoints) / Physical Unit = None (categorical terms has no PU);
 5. toxicity confirmation (toxicity_yes_no) / Physical Unit = None (categorical terms has no PU).
 
+File `fulltext_filename_id_1.csv` has a list of DOIs of fulltext articles that are being currently processed by our group. 
 -------------------------------------------------------------------------------
 
 The databases were generated from the
