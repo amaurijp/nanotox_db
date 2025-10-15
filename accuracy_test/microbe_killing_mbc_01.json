@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with minimum bactericidal concentration (MBC) values indicating the antimicrobial effect. Output the concentration unit (ex: mg L-1) with a blank space after each number found (Ex: '10.1 mg L-1' or '10.1 mg mL-1' or '10.1 g mL-1' or '10.1 ug mL-1'). If no value is found, output 'None'. Do not output concentration values not related with minimum bactericidal concentration (MBC)."
+   },
+   "instances": {
+      "('ATC00887', 0)": {
+         "doi": "10.14715/cmb/2016.62.9.8",
+         "text": "Also the MBC of AgNPs was 200 ug mL-1 for E. coli and there was no result observed for S. aureus bacteria.",
+         "extracted val": "200 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC02319', 0)": {
+         "doi": "10.1177/08839115241230970",
+         "text": "Minimum bactericidal concentration (MBC) of chitosan gel was 0.5 mg ml-1 for the bulk chitosan dissolved in 0.05 % volperc aq. acetic acid and 0.1 mg ml-1 for chitosan dissolved in 0.01 % volperc aqueous (aq.) hydrochloric acid.",
+         "extracted val": "0.5 mg ml-1, 0.1 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC03071', 0)": {
+         "doi": "10.1016/j.procbio.2022.08.032",
+         "text": "The AgNPs were lethal to Staphylococcus aureus (S. aureus) with a MIC of 200 ug mL-1 and MBC of 300 ug mL-1, and to Bacillus subtilis (B. subtilis), Escherichia coli (E. coli) and Bacillus cereus (B. cereus) with MIC of 300 ug mL-1 and MBC of 400 ug mL-1.",
+         "extracted val": "300 ug mL-1, 400 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC05659', 0)": {
+         "doi": "10.1590/0104-6632.20190362s20180027",
+         "text": "The Minimum Inhibitory Concentration (MIC) and Minimum Bactericidal Concentration (MBC) were equal to 0.05 mg mL-1 and 0.5 mg mL-1 for S. aureus and S.",
+         "extracted val": "0.5 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC08087', 0)": {
+         "doi": "10.3389/fbioe.2022.856651",
+         "text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of Lceo-AgNPs against E. coli were 25 and 50 ug ml-1.",
+         "extracted val": "50 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC08140', 0)": {
+         "doi": "10.1016/j.jcis.2016.03.021",
+         "text": "Significant antibacterial activity of ALE-ZnONPs was observed against extended spectrum beta lactamases (ESBL) positive E. coli, Pseudomonas aeruginosa, and methicillin resistant S. aureus (MRSA) clinical isolates exhibiting the MIC and MBC values of 2200, 2400 and 2300, 2700 ug ml-1, respectively.",
+         "extracted val": "2300 ug mL-1, 2700 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC10256', 0)": {
+         "doi": "10.1016/j.carbpol.2020.117302",
+         "text": "Antibacterial activity of the resultant NHFs showed the MIC and MBC values of 350 and 1400 ug mL-1 for S. aureus, and 500 and 2000 ug mL-1 for E. coli, respectively.",
+         "extracted val": "1400 ug mL-1, 2000 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC10672', 1)": {
+         "doi": "10.1016/j.heliyon.2022.e09357",
+         "text": "However, the inhibitory activity of CS against S. aureus was higher than against E. coli with MIC and MBC values of 5 and 10 mg mL-1, respectively, for 15 min.",
+         "extracted val": "10 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC12448', 0)": {
+         "doi": "10.1007/s11356-022-23401-1",
+         "text": "The synthesised nanoparticle showed excellent bactericidal activity against both Gram positive and Gram negative bacteria with MIC and MBC of 40 and 50 ug mL-1 for Bacillus subtilis (MTCC-441) and 60 and 60 ug mL-1 for Eschecheria coli (MTCC-1687) respectively.",
+         "extracted val": "50 ug mL-1, 60 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC15087', 0)": {
+         "doi": "10.1016/j.msec.2014.12.085",
+         "text": "This nanoemulsion exhibits effective antibacterial activity with MBCs of 2 ug mL-1 against Staphylococcus aureus and 16 ug mL-1 against Escherichia coli.",
+         "extracted val": "2 ug mL-1, 16 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC16391', 0)": {
+         "doi": "10.3389/fmicb.2022.842600",
+         "text": "For antimicrobials alone, minimal bactericidal concentration ranges were 0.3 - 2.38 mg ml-1 (OEO), 0.31 - 1.22 mg ml-1 (Car), 0.25 - 1 mg ml-1 (Thy), and 15.75-31.5 ug ml-1 (bioAgNP).",
+         "extracted val": "0.3 mg ml-1, 2.38 mg ml-1, 0.31 mg ml-1, 1.22 mg ml-1, 0.25 mg ml-1, 1 mg ml-1, 15.75 ug ml-1, 31.5 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC16787', 0)": {
+         "doi": "10.1007/s10876-020-01759-x",
+         "text": "The MIC and MBC concentrations evaluated against the bacteria showed were 4.0 +/- 1.00 ug mL-1 and 6.3 +/- 0.47 ug mL-1 for S. aureus, respectively.",
+         "extracted val": "6.3 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC17061', 0)": {
+         "doi": "10.19852/j.cnki.jtem.2022.02.002",
+         "text": "The MBCs for all of these were obtained 1000 ug mL-1.",
+         "extracted val": "1000 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC21811', 0)": {
+         "doi": "10.1088/2043-6262/abe8da",
+         "text": "The minimum inhibitory and the minimum bactericidal concentrations of ZnO-400 C were 0.625 and 1.25 mg ml-1, whereas those of ZnO-500 C were 1.25 and 20 mg ml-1 against Staphylococcus aureus (S. aureus).",
+         "extracted val": "1.25 mg ml-1, 20 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC28236', 0)": {
+         "doi": "10.3390/microorganisms10040789",
+         "text": "Moreover, the minimum bactericidal concentration (MBC) was the lowest against E. coli (75 +/- 00 ug mL-1 and Enterococcus faecalis (E. faecalis (83 +/- 16 ug mL-1.",
+         "extracted val": "75 ug mL-1, 83 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC29418', 0)": {
+         "doi": "10.1039/c9ra03962g",
+         "text": "MIC and MBC values for E. coli, P. aeruginosa and S. aureus, were determined to be, respectively, 2000, 2000, and 64 ug ml-1, and 2500, 2500 and 128 ug ml-1.",
+         "extracted val": "2500 ug ml-1, 128 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC36550', 0)": {
+         "doi": "10.1007/s00289-019-03056-8",
+         "text": "Notably, TVS-m-CS showed a significantly enhanced antibacterial activity againstE. coli, S. aureus, E. faecalis, Kleb spp.and methicillin-resistantStaphylococcus aureus(minimum inhibitory concentration [MIC] = 0.078 - 0.156 mg mL-1 and minimum bactericidal concentration [MBC] = 12.5 - 3.12 mg mL-1 than the original CS film.",
+         "extracted val": "12.5 mg mL-1, 3.12 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC37546', 0)": {
+         "doi": "10.3390/pharmaceutics14091924",
+         "text": "AgC exhibited a minimum inhibitory concentration (MIC) of 0.008 - 0.016 mg mL-1 and a minimum bactericidal concentration (MBC) of 0.008 - 0.032 mg mL-1 against MDR- EAEC strains.",
+         "extracted val": "0.008 mg mL-1, 0.032 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC41257', 1)": {
+         "doi": "10.1016/j.arabjc.2023.105084",
+         "text": "After exposure to sunlight MIC and MBC observed were higher i.e. 156.25 mg ml-1 and 312.5 mg ml-1 respectively showing lesser activity in sunlight as compared to ionizing UV radiations.",
+         "extracted val": "312.5 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC43315', 0)": {
+         "doi": "10.1016/j.bcab.2020.101620",
+         "text": "Furthermore, these nanoparticles were able to kill the bacteria at very low concentrations (MBC = 40 - 65 ug ml-1, while no MBC for the extract was determined, confirming it is a bacteriostatic agent.",
+         "extracted val": "40 ug ml-1, 65 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC45183', 0)": {
+         "doi": "10.1007/s00203-021-02609-8",
+         "text": "The antimicrobial efficacy of various concentrations of ZnONPs was determined against both bacterial and fungal pathogens and it revealed the highest growth inhibition against E. coli (22 mm) at 20 mu l concentration with the respective MIC and MBC values of 0.625 ug ml-1 and <= 2.5 ug ml-1.",
+         "extracted val": "2.5 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC45296', 0)": {
+         "doi": "10.1016/j.ultsonch.2022.106037",
+         "text": "Moreover, antibacterial assays results showed that Ag2Se-QDs catalysts at low concentrations (mg l-1 have high activity against all tested bacteria, especially E. coli (MIC:31.25 mg l-1, MBC:125 mg l-1 which were significantly different from those of Fig extract (MIC = MBC:500 mg l-1.",
+         "extracted val": "125 mg l-1",
+         "correct": "y"
+      },
+      "('ATC48004', 0)": {
+         "doi": "10.3390/ma14164543",
+         "text": "MIC and MBC values were as low as 0.078 and 0.156 ug mL-1 using AgNPs biosynthesized by S. queretaroensis fruit peel and the time kill assay started a log reduction in CFU/mL at 1 x MIC and 2 x MIC. S. queretaroensis-mediated AgNPs could be the basis for the formulation of biofilms for packaging products or as disinfectants for use on different surfaces.",
+         "extracted val": "0.156 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC50249', 0)": {
+         "doi": "10.1371/journal.pone.0168098",
+         "text": "The MIC and MBC for nine B. pseudomallei strains ranged from 32 - 48 ug mL-1 and 96 - 128 ug mL-1, respectively.",
+         "extracted val": "96 ug mL-1, 128 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC50423', 0)": {
+         "doi": "10.2174/157341312802884373",
+         "text": "The experimental results indicated that 0.312 ug ml-1 of NSC could completely inhibit the growth of 10(7) cfu/ml ESBL-producing P. aeruginosa cells in brain heart infusion broth (BHI Broth) and the MBC was determined to be 0.0625 ug ml-1.",
+         "extracted val": "0.0625 ug mL-1",
+         "correct": "y"
+      }
+   }
+}

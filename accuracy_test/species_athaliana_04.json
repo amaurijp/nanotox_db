@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of bioaccumulation of a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence of bioaccumulation includes elevated nanomaterial concentrations in root, shoot, or leaf tissues relative to the exposure medium, or translocation from roots to shoots. Consider keywords such as 'bioaccumulation', 'bioconcentration', 'uptake', 'root-to-shoot transfer', or quantitative accumulation values as indications of bioaccumulation. Consider keywords such as 'no accumulation', 'no uptake', 'clearance', or 'not detected' as indications of non-bioaccumulation. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of bioaccumulation of a nanomaterial in 'Arabidopsis thaliana'? If there is no clear evidence of bioaccumulation, output 'no'. If the sentence does not deal with bioaccumulation in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC02451', 0)": {
+         "doi": "10.1016/j.scitotenv.2013.05.018",
+         "text": "In this study, exposure to 24 nm size gold nanoparticles (GNPs) at 10 ug ml-1 concentration was found to enhance the total seed yield of Arabidopsis thaliana by 3 times over the control.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05282', 2)": {
+         "doi": "10.1021/es5050562",
+         "text": "Overall, this paper demonstrates that QD coat properties influence plant nanoparticle uptake and translocation and can impact transfer to herbivores.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05805', 1)": {
+         "doi": "10.1371/journal.pone.0093793",
+         "text": "(alfalfa) to study nanoparticle uptake from hydroponic culture using ionic gold as a non-nanoparticle control and concluded that nanoparticles between 5 and 100 nm in diameter are not directly accumulated by plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05957', 1)": {
+         "doi": "10.1186/s11671-018-2510-9",
+         "text": "Within this context, size-, shape-, and concentration-dependent uptake of particles by plants belongs to unexplored area.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06008', 1)": {
+         "doi": "10.3390/ijms20071650",
+         "text": "The first physical barrier for NPs penetration to the plant body is a cell wall which protects cytoplasm from external factors and environmental stresses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08472', 3)": {
+         "doi": "10.1016/j.envpol.2016.03.026",
+         "text": "In opposite, higher nano-TiO2 concentration enhanced root growth.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC10358', 0)": {
+         "doi": "10.1021/bi7001168",
+         "text": "Here we analyze the thermodynamics of formation of a complex of Arabidopsis thaliana OASS (AtOASS) and the C-terminal ligand of AtSAT (C10 peptide) as a function of temperature and salt concentration using fluorescence spectroscopy and isothermal titration calorimetry (ITC).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12048', 0)": {
+         "doi": "10.1021/acs.est.7b01133",
+         "text": "Terrestrial plants can internalize and translocate nanoparticles (NPs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12830', 0)": {
+         "doi": "10.1111/tpj.13105",
+         "text": "This also resulted in decreased photosynthetic efficiency and the extreme accumulation of Ag in tissues.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12904', 0)": {
+         "doi": "10.1021/acsami.8b07179",
+         "text": "The optical probe is formed by a pair of QDs: thioglycolic acid-capped QDs which remain invariable to glucose (acting as an internal fluorescent reference control) and boronic acid (BA)-conjugated QDs (BA-QD) that quench their fluorescence in response to glucose.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14175', 1)": {
+         "doi": "10.1016/j.ecoenv.2018.12.002",
+         "text": "The NP are mainly aggregated onto the surface of plant roots and leaves exposed and only slightly transported into other tissues with a low rate of internalization.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15613', 0)": {
+         "doi": "10.1016/S1671-2927(08)60284-9",
+         "text": "Under the stress of 30 mmol L-1, OA, SOD activity was first enhanced to reduce the accumulation of O-2(center dot-).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15677', 2)": {
+         "doi": "10.3390/nano9111543",
+         "text": "The magnetic property measurements and transmission electron microscopy showed that the transformed particles were accumulated in parts of the plant tissues.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15695', 0)": {
+         "doi": "10.17221/130/2015-CJGPB",
+         "text": "Seedlings were treated with different concentrations of AgNPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15695', 1)": {
+         "doi": "10.17221/130/2015-CJGPB",
+         "text": "The exposure of plants to 1 mg l-1 AgNPs resulted in a significant increase in seedling fresh and dry weights compared with control plants, although the exposure to lower and higher concentrations resulted in a decrease in fresh and dry weights.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15915', 0)": {
+         "doi": "10.1111/nph.19458",
+         "text": "center dot During abscisic acid (ABA) signaling, reversible phosphorylation controls the activity and accumulation of class III SNF1-RELATED PROTEIN KINASE 2s (SnRK2s).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16293', 1)": {
+         "doi": "10.1021/es4004334",
+         "text": "Whereas all forms of silver were phytotoxic above a specific concentration, a stimulatory effect was observed on root elongation, fresh weight, and evapotranspiration of both plants at a narrow range of sublethal concentrations (e.g., 1 mg L-1 of 25 nm AgNPs for poplar).",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC17109', 2)": {
+         "doi": "10.3389/fpls.2016.00032",
+         "text": "Furthermore, the fact that the measured size distribution of Ag NPs in plant tissue is centered at around 20.70 nm, which is larger than the initial 12.84 nm NP diameter, strongly implies that many internalized Ag NPs do not exist as intact individual particles any more but are aggregated and/or biotrans formed in the plant instead.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18538', 2)": {
+         "doi": "10.1016/j.jhazmat.2019.121983",
+         "text": "Indium jeopardizes phosphate uptake and translocation by inhibiting the accumulation of phosphate transporters PHOSPHATE TRANSPORTER1 (PHT1;1/4), responsible for phosphate uptake, and PHOSPHATE1 (PHO1), responsible for phosphate xylem loading.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19516', 1)": {
+         "doi": "10.1016/j.envpol.2018.07.084",
+         "text": "Because scientific reports raise a concern regarding nanoparticle toxicity to plants, understanding of their bioaccumulation has become critical and demands more research.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23228', 1)": {
+         "doi": "10.1111/nph.19390",
+         "text": "Knockout of the major GABA synthesis enzyme Glutamate Decarboxylase 2 (GAD2) increases the aperture of gad2 mutants, which results in greater stomatal conductance and reduces water-use efficiency compared with wild-type plants.center dot Here, we found that the additional loss of GAD1, GAD4, and GAD5 in gad2 leaves increased GABA deficiency but abolished the more open stomatal pore phenotype of gad2, which we link to increased cytosolic calcium (Ca2+) and ROS accumulation in gad1/2/4/5 guard cells.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23302', 0)": {
+         "doi": "10.1111/nph.19378",
+         "text": "However, impaired fucosylation of xyloglucan, N-linked glycans, and arabinogalactan proteins did not explain the aberrant water loss of mur1 mutants.center dot Partial reversion of mur1 water loss phenotype by borate supplementation and high water loss observed in boron uptake mutants link mur1 gas exchange phenotypes to pleiotropic consequences of L-fucose and boron deficiency, which in turn affect mechanical and morphological properties of stomatal complexes and whole-plant physiology.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25451', 0)": {
+         "doi": "10.3791/58373",
+         "text": "Reactive oxygen species (ROS) accumulation is a hallmark of plant abiotic stress response.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29813', 0)": {
+         "doi": "10.1021/acssensors.1c01022",
+         "text": "After 5 h of 2,4-D supplementation to the hydroponic medium, 2,4-D is seen to accumulate in susceptible dicotyledon pak choi leaves, while no uptake is observed in tolerant monocotyledon rice leaves.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31410', 0)": {
+         "doi": "10.1021/am303208t",
+         "text": "For this, we have compared the application of commercial surfactants, di (2-ethylhexyl) sulfosuccinate and alkyl dimethyl betaine, with NLCP made from phytantriol, at concentrations of 0.1 %, 1 % and 5 % on the adaxial surface of leaves of four plant species Ttriticum aestivum (wheat), Zea mays (maize), Lupinus angustifolius (lupin), and Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of reproductive impairment caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence of reproductive toxicity includes reduced brood size, decreased egg production, impaired fertility, or embryonic lethality. Consider keywords such as 'reduced reproduction', 'decreased brood size', 'fertility decline', 'embryo lethality', or 'reproductive toxicity' as indications of reproductive impairment. Consider keywords such as 'no effect on reproduction', 'brood size unaffected', or 'fertility unchanged' as indications of non-reproductive toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of reproductive impairment of 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of reproductive toxicity, output 'no'. If the sentence does not deal with reproduction in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00711', 0)": {
+         "doi": "10.1016/j.chemosphere.2019.125625",
+         "text": "After exposure from L1-larvae to adult day-1, nanopolystyrene (100 ug L-1 reduced brood size and induced severe germline apoptosis, and nanopolystyrene (10 - 100 ug L-1 decreased locomotion behavior, induced obvious reactive oxygen species (ROS) production, and activated noticeable mitochondrial unfolded protein response (mt UPR).",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01348', 0)": {
+         "doi": "10.1897/08-262.1",
+         "text": "Toxicity of both types of Zn was investigated using the ecologically relevant endpoints of lethality, behavior, reproduction, and transgene expression in a mtl-2:: GFP (gene encoding green fluorescence protein fused onto the metallothionein-2 gene promoter) transgenic strain of C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01464', 3)": {
+         "doi": "10.1016/j.chemosphere.2016.01.068",
+         "text": "This study demonstrated that environmentally relevant concentrations of CMC-nZVI induced multigenerational reproductive toxicity which can be ascribed to its high production of ROS in F0 generation, toxicity of Fe(II)aq, and iron accumulation in C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02003', 0)": {
+         "doi": "10.1016/j.ecoenv.2020.111001",
+         "text": "This study investigated the in vivo transgenerational toxicity on development and reproduction with parental CuO NPs exposure in the nematode Caenorhabditis elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02032', 0)": {
+         "doi": "10.1016/j.impact.2021.100327",
+         "text": "Biogenic phosphorus (P) based - nanomaterials (NMs) are currently being explored as nanofertilizers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02032', 3)": {
+         "doi": "10.1016/j.impact.2021.100327",
+         "text": "Interestingly, there was only a small reduction in the hydrodynamic diameter of the nHAP after their uptake into C. elegans and the transformed NMs did not induce any additional toxicity as evident by healthy brood sizes after 72 h.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC02498', 1)": {
+         "doi": "10.1166/jnn.2017.13747",
+         "text": "We found that exposure of C. elegans to MWCNTs or hydroxyl multi-wall carbon nanotubes (MWCNTs-OH) caused a dose-dependent decrease both in brood size and life span.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03775', 1)": {
+         "doi": "10.1016/j.ecoenv.2020.110570",
+         "text": "L1 larval worms exposed to nanosilver-coated dressing showed a high ROS concentration and reductions in growth, fertility and reproduction.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06167', 0)": {
+         "doi": "10.1080/17435390.2018.1557272",
+         "text": "The current study assessed changes in toxic response (reproduction, fertility, and development) towards Ag NPs (NM300 K; uncoated, 16.7 +/- 6.5 nm) compared to AgNO3 over six generations, following chronic exposure of the model organism Caenorhabditis elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06167', 1)": {
+         "doi": "10.1080/17435390.2018.1557272",
+         "text": "In contrast, multigenerational exposure to sub-lethal concentrations of Ag NPs resulted in persistent delayed development, but rendered increased tolerance to Ag NP with respect to fertility and fecundity.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC06306', 0)": {
+         "doi": "10.7717/peerj.8684",
+         "text": "The nematode Caenorhabditis elegans is a suitable model to study the toxic effects of nanoparticles as it is amenable to comprehensive phenotyping, such as locomotion, growth, neurotoxicity and reproduction.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06593', 1)": {
+         "doi": "10.1016/j.cbpc.2017.08.009",
+         "text": "Mortality and reproductive toxicity of DEAF-CeO2 was approximately two orders of magnitude higher than for CM-CeO2 or DEX-CeO2.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC09198', 3)": {
+         "doi": "10.1155/2019/8767943",
+         "text": "The reproductive toxicity of PPE-AuNPs was found to be minimal in parental generation (F0) and maximal in F3 generation.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10600', 1)": {
+         "doi": "10.1080/17435390.2018.1529835",
+         "text": "With this information, here we conducted a case study of building an AOP to link oxidative stress with reproductive toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12234', 1)": {
+         "doi": "10.1016/j.scitotenv.2020.138523",
+         "text": "However, mechanisms of this reproductive sensitivity are unknown.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13373', 2)": {
+         "doi": "10.3390/ijms221910277",
+         "text": "In this study, we used a life stage dependent approach in order to better understand the molecular determinants of reproduction decrease in the roundworm C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC13556', 0)": {
+         "doi": "10.1039/c5ra16805h",
+         "text": "In nematodes with the transgenerational toxicity of CdTe QDs, we observed that, besides the pharynx and intestine, CdTe QDs could also be accumulated in reproductive organs such as the gonad and embryos of the exposed animals.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15534', 3)": {
+         "doi": "10.1016/j.scitotenv.2019.133835",
+         "text": "Furthermore, the expression of a subset of 28 set-17 regulated Major Sperm Proteins (MSP) required for spermatid production was correlated (R-2 0.80) to the reduction in reproduction and the number of spermatids.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15592', 0)": {
+         "doi": "10.1093/toxsci/kfw258",
+         "text": "This study provides evidence that ZnO nanoparticles affect germ cell apoptotic machinery as a potential mechanism of reproductive toxicity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC17136', 4)": {
+         "doi": "10.1016/j.scitotenv.2023.167471",
+         "text": "Therefore, exposure to PE-NPs rather than in their leachates potentially caused reproductive toxicity by activating both estrogenic hormone receptor NHR-14 and DNA damage checkpoints (CLK-2, HUS-1, and MRT-2) in nematodes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC17716', 0)": {
+         "doi": "10.1016/j.cbi.2019.108774",
+         "text": "However, reproductive ability was significantly reduced at the same concentrations.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC19920', 0)": {
+         "doi": "10.1002/etc.2674",
+         "text": "Although both materials agglomerated to a comparable secondary particle size of 300 nm to 1500 nm and were ingested into the intestine, only nanoscale-TiO2 significantly inhibited reproduction (lowest-observed-effect-concentration [LOEC]: 10 mg L-1.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC22357', 2)": {
+         "doi": "10.1016/j.jhazmat.2023.131495",
+         "text": "Therefore, our data suggested the toxicity on reproductive capacity by 6-PPDQ at environmentally relevant concentrations by enhancing DNA damage-and cell corpse engulfment-induced germline apoptosis in organisms.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC23916', 0)": {
+         "doi": "10.1016/j.scitotenv.2019.133947",
+         "text": "Fertility, reproduction, and growth parameters were also assessed and compared.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC45173', 0)": {
+         "doi": "10.1007/s12668-023-01186-y",
+         "text": "At a concentration of 10 ug mL-1, there were no observable effects on lifespan, reproduction, and body bending frequency; at a 50 ug mL-1, the nanoparticles accumulated in the nematode body affected the body bending frequency.",
+         "extracted val": "no",
+         "correct": "y"
+      }
+   }
+}

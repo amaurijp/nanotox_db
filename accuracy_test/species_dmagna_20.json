@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of reproductive impairment caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence of reproductive toxicity includes reduced number of offspring, smaller broods, delayed first brood, or decreased fecundity. Consider keywords such as 'reduced reproduction', 'fewer neonates', 'brood size decline', or 'reproductive toxicity' as indications of toxicity. Consider keywords such as 'no effect on reproduction', 'brood size unaffected', or 'fecundity unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of reproductive impairment of 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of reproductive toxicity, output 'no'. If the sentence does not deal with reproduction in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00078', 0)": {
+         "doi": "10.1016/j.jhazmat.2022.128319",
+         "text": "We also observed D. magna mortality following a 48 h exposure of neonate to TPs or leachate, ranging from 0 to 3.3 x 10(9) particles/ml and 0 - 100 % respectively (n = 3).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00097', 0)": {
+         "doi": "10.1002/etc.3208",
+         "text": "The endpoints assessed for D. magna were immobilization, feeding inhibition, and reproduction output.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01029', 1)": {
+         "doi": "10.1039/c6en00361c",
+         "text": "At high concentrations, the four CNMs inhibited the growth and reproduction of the daphnids to different extents.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01036', 1)": {
+         "doi": "10.1016/j.chemosphere.2009.10.027",
+         "text": "Subsequent experiments focused on the accumulation and effects (at temperatures of 18-28 degrees C) of nC(60), during the D. magna reproductive cycle.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02961', 0)": {
+         "doi": "10.1021/acsnano.3c01847",
+         "text": "In vivo and in vitro experimentsshowed that PS nanoplastics could enter the brood chamber throughits opening and then be internalized to eggs and embryos using LSCMimaging (pathway I).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02961', 1)": {
+         "doi": "10.1021/acsnano.3c01847",
+         "text": "Unlike 25 nm nanoplastics, 50 nm PS nanoplastics could enterthe brood chamber and the eggs/embryos (pathway I), but were not detectedin the ovary (pathway II); 100 nm PS nanoplastics were difficult tobe internalized by eggs/embryos and could not enter the ovary either.These findings provide insight into the maternal transfer mechanismsof nanoplastics in Daphnia, and are critical forbetter understanding the transgenerational toxicity of aquatic organisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03492', 2)": {
+         "doi": "10.1016/j.chemosphere.2009.06.025",
+         "text": "After 21 d, the NOEC for adult mortality was 30 mg L-1 and the NOEC for offspring production was 3 mg L-1.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03494', 1)": {
+         "doi": "10.1016/j.jhazmat.2014.09.037",
+         "text": "The effects of the nanoparticles (reproduction EC10: 0.546 mg Cu/l, EC20: 0.693 mg Cu/l, EC50: 1.041 mg Cull) on reproduction and length were much lower than the effects of the copper salts (reproduction EC10: 0.017 mg Cu/l, EC20: 0.019 mg Cu/l, EC50: 0.022 mg Cu/I).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03647', 0)": {
+         "doi": "10.1080/19443994.2014.996014",
+         "text": "Acute tests were performed: immobilization assay with the crustaceans and enzymatic assay with D. magna, as well as chronic tests; Growth assay with the protozoans and reproduction assay with D. magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04110', 2)": {
+         "doi": "10.1016/j.scitotenv.2016.11.095",
+         "text": "The ZnO/Ag nanostructure toxicity prediction, based on the percentage of individual components, showed an increase in toxicity when compared to the expected (immobilization) and dependent on the concentration used (reproduction).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04718', 0)": {
+         "doi": "10.1016/j.toxlet.2013.08.026",
+         "text": "In media10 the EC50 of the 7 nm particles for D. magna neonates was calculated to be 7.46 ug L-1 with upper and lower 95 % confidence intervals of 6.84 ug L-1 and 8.13 ug L-1 respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05351', 1)": {
+         "doi": "10.1016/j.envpol.2013.12.008",
+         "text": "Daphnids demonstrated decreasing reproduction over generations in all treatment groups (1.19 - 6 mg L-1 but not in the control.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC05420', 1)": {
+         "doi": "10.1016/j.ecoenv.2019.01.072",
+         "text": "Our results indicated that the exposure to nano-TiO2 and As during the parental generation can affect the health of offspring.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08389', 1)": {
+         "doi": "10.1016/j.chemosphere.2009.11.013",
+         "text": "This high level of bioaccumulation may interfere with food intake and ultimately affect growth and reproduction.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08541', 1)": {
+         "doi": "10.1016/j.ecoenv.2024.116031",
+         "text": "The results indicate that the reproduction of D. magna was the most sensitive parameter in this study, being reduced by 30 % (at both parental (F0) and filial (F1) generations) and 50 % (at F0 but not F1) due to the dietary Cu exposure in combination with nTiO2 for 0 and 3 days aging, respectively.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08732', 0)": {
+         "doi": "10.1016/j.scitotenv.2018.03.054",
+         "text": "Effect criteria were parental mortality, growth, several reproductive parameters, and population growth rate.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08732', 1)": {
+         "doi": "10.1016/j.scitotenv.2018.03.054",
+         "text": "Microplastics exposure (0.1 mg l-1 of pristine polymer microspheres 1 - 5 um diameter) caused parental mortality (10 - 100 %), and significantly (p <= 0.05) decreased growth, reproduction, and population growth rate leading to the extinction of the microplastics-exposed model population in the F-1 generation.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC08732', 2)": {
+         "doi": "10.1016/j.scitotenv.2018.03.054",
+         "text": "Females descending from those exposed to microplastics in F-0 and exposed to clean medium presented some recovery but up to the F-3 generation they still had significantly (p <= 0.05) reduced growth, reproduction, and population growth rate.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC09095', 0)": {
+         "doi": "10.1007/s11270-017-3617-9",
+         "text": "Our observations were based on mortality and reproduction (hatchability) for the terrestrial and aquatic assays.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10773', 2)": {
+         "doi": "10.1039/c8en01457d",
+         "text": "Through fluorescence and dynamic light scattering measurements, we found that HA was adsorbed on NPPs and formed a corona, without causing agglomeration or precipitation, but changed NPP distribution in the D. magna neonates in a way similar to that of MPPs, leading to alleviated toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12187', 2)": {
+         "doi": "10.1080/17435390.2017.1391344",
+         "text": "An ex vivo exposure of embryos to PSNP demonstrated a similar accumulation of PSNP in or on lipophilic cells, illustrating the likelihood of brood pouch-mediated PSNP uptake by embryos.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13370', 1)": {
+         "doi": "10.1016/j.ecoenv.2022.113792",
+         "text": "Additionally, it was determined whether offspring derived from exposed parents exhibited sustained adverse effects when rearing them in clean (non-exposed) media after each generation of exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24095', 1)": {
+         "doi": "10.1242/jeb.009175",
+         "text": "Adults have a lower maximum capacity of Na+ transport on a mass-specific basis but a higher affinity for Na+ when compared to neonates.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24095', 3)": {
+         "doi": "10.1242/jeb.009175",
+         "text": "At the basolateral membrane of the salt-transporting epithelia of neonates, Na+ is pumped from the cells to the extracellular fluid by a Na+, K+-ATPase and a Na+/Cl- exchanger whereas K+ and Cl- move through specific channels.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC26492', 3)": {
+         "doi": "10.1016/j.jenvrad.2019.01.008",
+         "text": "Low level of food supply compromised the viability of non-exposed and irradiated Daphnia, whereas their fertility was substantially affected by all diets.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

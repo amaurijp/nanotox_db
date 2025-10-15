@@ -1,0 +1,57 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of two-dimensional (2D) nanomaterials described in the input sentences. Examples of common 2D nanomaterials include graphene (C), molybdenum disulfide (MoS2), tungsten disulfide (WS2), boron nitride (BN), and other layered compounds. The core composition may also appear as abbreviations or chemical formulas, such as MoS2, WS2, or BN. Output only the core chemical composition(s) identified, using their chemical symbol(s) or formula(s). If more than one 2D nanomaterial is mentioned in a sentence, list each distinct core composition in a Python list format, for example: ['C', 'MoS2', 'WS2', 'BN']. Focus exclusively on 2D nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'C' or 'MoS2' or 'WS2')."
+   },
+   "instances": {
+      "('ATC01574', 0)": {
+         "doi": "10.1039/d3sc05517e",
+         "text": "Here, we demonstrate that VP and its exfoliated product, violet phosphorene nanosheets (VPNSs), have superior antibacterial capability against pathogens via cell membrane penetration induced by peripheral sub-nanoneedles combined with oxidative stress.",
+         "extracted val": "VP",
+         "correct": "y"
+      },
+      "('ATC15533', 0)": {
+         "doi": "10.1016/j.cej.2022.141109",
+         "text": "Herein, a sonodynamic antibacterial strategy based on stanene nanosheets (SnNSs) is developed.",
+         "extracted val": "Sn",
+         "correct": "y"
+      },
+      "('ATC15533', 1)": {
+         "doi": "10.1016/j.cej.2022.141109",
+         "text": "This stanene nanosheets-based hydrogel has good sonodynamic antibacterial effect, which provides a new way to effectively reduce bacterial infection and promote wound healing.",
+         "extracted val": "Stanene",
+         "correct": "y"
+      },
+      "('ATC17233', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.127585",
+         "text": "Recently, two-dimensional (2D) silicene nanosheets (SNs) have gained increasing attention in biomedical fields owing to their considerable biocompatibility, biodegradability and strong photothermal-conversion performance.",
+         "extracted val": "Si",
+         "correct": "y"
+      },
+      "('ATC25833', 0)": {
+         "doi": "10.3390/polym12071555",
+         "text": "Since loss of material additives during filtration processes is a challenge, the stability of phosphorene nanoparticles in different environments was also examined.",
+         "extracted val": "Phosphorene",
+         "correct": "y"
+      },
+      "('ATC51840', 0)": {
+         "doi": "10.1002/smll.202307096",
+         "text": "Recently, 2D silicene nanosheets with considerable biocompatibility, biodegradability, and photothermal-conversion performance have received increasing attention in biomedical fields.",
+         "extracted val": "Si",
+         "correct": "y"
+      },
+      "('ATC51840', 1)": {
+         "doi": "10.1002/smll.202307096",
+         "text": "Herein, copper-containing nanoparticles-loaded silicene (Cu2.8O@silicene-BSA) nanosheets with triple enzyme mimicry catalytic (peroxidase, catalase, and oxidase-like) activities and photothermal function are rationally designed and fabricated for efficient bacterial elimination, angiogenesis promotion, and accelerated wound healing.",
+         "extracted val": "silicene",
+         "correct": "y"
+      },
+      "('ATC51840', 2)": {
+         "doi": "10.1002/smll.202307096",
+         "text": "In vivo experiments reveal that Cu2.8O@silicene-BSA nanosheets with synergistic photothermal/chemodynamic therapeutics effectively accelerate MRSA-infected wound healing by eliminating bacteria, alleviating inflammation, boosting collagen deposition, and promoting angiogenesis.",
+         "extracted val": "Cu2.8O",
+         "correct": "y"
+      }
+   }
+}

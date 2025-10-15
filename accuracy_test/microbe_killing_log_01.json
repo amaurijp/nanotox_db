@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with log values indicating the reduction of the microbial population. Output the log unit (ex: log10 or log or logs) with a blank space after each number found (Ex: '2.2 logs'). If no value is found, output 'None'. Do not output any other values not related the reduction of the microbial population."
+   },
+   "instances": {
+      "('ATC01664', 0)": {
+         "doi": "10.1016/j.ijbiomac.2022.06.188",
+         "text": "By mixing with the N-halamine precursor 3-(2,3-dihydroxypropyl)-5,5-dimethylhydantoin (DPDMH), the composite film after chlorination showed superb antibacterial efficacy and could inactivate 6.85 log Escherichia coli (E. coli) and 6.57 log Staphylococcus aureus (S. aureus) respectively within 5 min of contact.",
+         "extracted val": "6.85 logs, 6.57 logs",
+         "correct": "y"
+      },
+      "('ATC02329', 0)": {
+         "doi": "10.1039/d1tb00469g",
+         "text": "The reduction of colony forming units (CFUs) reached > 6 log for PEDOT concentrations as low as 33 ng mL-1.",
+         "extracted val": "6 logs",
+         "correct": "y"
+      },
+      "('ATC03023', 1)": {
+         "doi": "10.1038/s41598-022-23615-w",
+         "text": "Furthermore, at a 1 % concentration, the antibacterial activities against E. coli and S. aureus were 2.1 and 2.01 log, respectively, while at a low concentration (0.5 %), the antibacterial activities against E. coli and S. aureus were 1.8 and 1.72 log, respectively.",
+         "extracted val": "2.1 logs, 2.01 logs, 1.8 logs, 1.72 logs",
+         "correct": "y"
+      },
+      "('ATC07059', 0)": {
+         "doi": "10.1016/j.pdpdt.2018.10.013",
+         "text": "The photodynamic inactivation of planktonic cells of E. colt was found to 5.46 and 3.56 log CFU/ml reduction on treatment with RBCNT and RB respectively.",
+         "extracted val": "5.46 logs, 3.56 logs",
+         "correct": "y"
+      },
+      "('ATC07898', 0)": {
+         "doi": "10.1371/journal.pone.0231276",
+         "text": "The ACB-OBAb nanoparticles showed a 1.32 log reduction of intracellular S. aureus at a concentration of 1 mg L-1.",
+         "extracted val": "1.32 logs",
+         "correct": "y"
+      },
+      "('ATC09056', 1)": {
+         "doi": "10.1016/j.dwt.2024.100285",
+         "text": "The catalyst was found to be reusable, with only 1.72 log of E. coli inactivation occurring after four consecutive runs.",
+         "extracted val": "1.72 logs",
+         "correct": "y"
+      },
+      "('ATC10875', 0)": {
+         "doi": "10.1016/j.apsusc.2023.157221",
+         "text": "Tetracycline and green-synthesized silver nanoparticles were successfully assembled onto the coating surface, endowing the coating an anti-biofilm effect and exhibit strong inhibitory effect on S. aureus and E. coli biofilms by a factor of more than 1000 (3 log units).",
+         "extracted val": "3 logs",
+         "correct": "y"
+      },
+      "('ATC10960', 0)": {
+         "doi": "10.1016/j.pdpdt.2013.01.007",
+         "text": "In C. albicans suspensions, 10 mu M DTC602+ was an effective photosensitizer, producing a similar to 5 log decrease of cell survival when the cultures were irradiated for 30 min with visible light.",
+         "extracted val": "5 logs",
+         "correct": "y"
+      },
+      "('ATC11662', 0)": {
+         "doi": "10.1038/srep29244",
+         "text": "This work demonstrated that 317L-Cu stainless steel (SS), created by adding copper through a solution and aging heat treatment process, exhibited good antibacterial properties against staphylococcus aureus, achieving 2 log reduction of planktonic cells after 5 days of incubation.",
+         "extracted val": "2 logs",
+         "correct": "y"
+      },
+      "('ATC11989', 1)": {
+         "doi": "10.1016/j.jphotobiol.2022.112474",
+         "text": "Most importantly, the activity of GaPP against biofilms was enhanced by 2-fold compared to unformulated GaPP, reducing the viability of S. aureus and MRSA biofilms by 8 log and 5 log, respectively.",
+         "extracted val": "8 logs, 5 logs",
+         "correct": "y"
+      },
+      "('ATC12532', 0)": {
+         "doi": "10.1021/acsanm.1c02936",
+         "text": "The viability of Staphylococcus aureus (S. aureus) treated with HNT-PDA nanohybrids was reduced by 6.3 log when irradiated with infrared laser light for 5 min, whereas bacteria not treated with the nanohybrids stayed alive under the same irradiation conditions.",
+         "extracted val": "6.3 logs",
+         "correct": "y"
+      },
+      "('ATC12582', 1)": {
+         "doi": "10.1016/j.ijbiomac.2023.124904",
+         "text": "For the biofilm grown for 72 h, the population of S. aureus in the EO@PASP/HACCNPs-treated biofilm was additionally reduced by 0.63 log CFU/mL compared with the LC-EO-treated group.",
+         "extracted val": "0.63 logs",
+         "correct": "y"
+      },
+      "('ATC16430', 2)": {
+         "doi": "10.1111/j.1750-3841.2008.01013.x",
+         "text": "After 8 d incubation, the cell populations of Salmonella in LEW in the presence of 1.12 and 0.28 mg ZnO/mL were reduced by 6.1 and 4.1 log CFU/mL over that of controls, respectively.",
+         "extracted val": "6.1 logs, 4.1 logs",
+         "correct": "y"
+      },
+      "('ATC22221', 0)": {
+         "doi": "10.2166/bgs.2022.027",
+         "text": "With an effective contact time of 3.7 min, CuH-G provided 3.0 and 1.6 log E. coli removal in test water of salinity 237 and 680 mu s/cm, respectively.",
+         "extracted val": "3.0 logs, 1.6 logs",
+         "correct": "y"
+      },
+      "('ATC23245', 0)": {
+         "doi": "10.1016/j.tet.2018.11.035",
+         "text": "The best bactericidal activity was obtained for Fabric TAM (coated with Ag NPs with triarylmethane derivates in surface, Ag@TAMSH), with a bacterial decrease of 3 log units for the S. aureus strain.",
+         "extracted val": "3 logs",
+         "correct": "y"
+      },
+      "('ATC24144', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.128981",
+         "text": "During 60 h, the selected film resulted in log reductions of approximately 4.5 logs, 2.85 logs, and 1.57 logs at 10 degrees C, 25 degrees C, and 37 degrees C, respectively.",
+         "extracted val": "4.5 logs, 2.85 logs, 1.57 logs",
+         "correct": "y"
+      },
+      "('ATC27117', 0)": {
+         "doi": "10.1021/acsestwater.2c00230",
+         "text": "At circumneutral pH, ROS were found to be highly detrimental to E. coli, yet only mildly damaging for phage & Oslash;X174 (asymptotic to 3.9 log and asymptotic to 0.8 log inactivation, respectively).",
+         "extracted val": "3.9 logs, 0.8 logs",
+         "correct": "y"
+      },
+      "('ATC29459', 0)": {
+         "doi": "10.2147/IJN.S219487",
+         "text": "Results: Polydopamine (PDA)-assisted treatment showed approximately a 2 log reduction in recoverable CFU and a 15 % increase in biofilm removal efficacy compared to treatments that had only Am or Ag.",
+         "extracted val": "2 logs",
+         "correct": "y"
+      },
+      "('ATC29883', 0)": {
+         "doi": "10.1016/j.jmst.2021.05.056",
+         "text": "The catalyst showed promising performance for inactivation of E. coli K-12, with a 7.2 log inactivated achieved under the optimum conditions.",
+         "extracted val": "7.2 logs",
+         "correct": "y"
+      },
+      "('ATC33782', 0)": {
+         "doi": "10.1016/j.carbpol.2017.03.009",
+         "text": "The 30 min deposition time was able to reduce in vitro the viable cell counts of E. coli and P. aeruginosa of 2 and 3 log cfu/sheet, respectively.",
+         "extracted val": "2 logs, 3 logs",
+         "correct": "y"
+      },
+      "('ATC34453', 0)": {
+         "doi": "10.1021/acsami.9b09625",
+         "text": "Our best results yielded the photodynamic inactivation of Gram-positive S. aureus (99.98 %) and B. subtilis (99.993 %) by similar to 4 log units upon illumination with visible light (60 min; 65 +/- 5 mW/cm(2); lambda >= 420 nm), although more modest activity was observed against Gram-negative P. aeruginosa and E. coli (1 - 2 log units pathogen reduction).",
+         "extracted val": "4 logs",
+         "correct": "y"
+      },
+      "('ATC34832', 0)": {
+         "doi": "10.1016/j.cej.2022.138562",
+         "text": "Specifically, the Staphylococcus aureus (S. aureus) inactivation efficiency of the composite (6.6 log) is 2, 1.8 and 5.1 times higher than that of PB (3.3 log), ZIF-8 (3.7 log) and TiO2 (1.3 log) over 45 min of simulated sunlight illumination.",
+         "extracted val": "6.6 logs, 3.3 logs, 3.7 logs, 1.3 logs",
+         "correct": "y"
+      },
+      "('ATC34832', 1)": {
+         "doi": "10.1016/j.cej.2022.138562",
+         "text": "Significantly, the infectivity of Bacillus anthracis and murine coronavirus in droplets on composite-coated filter surface could be greatly reduced (approximately 3 log reduction in colony number/coronavirus titer) within few minutes of solar exposure, indicative of the great potential of MOF composites toward life-threatening microbial infection prevention.",
+         "extracted val": "3 logs",
+         "correct": "y"
+      },
+      "('ATC41936', 0)": {
+         "doi": "10.1016/j.apcatb.2020.119612",
+         "text": "The composite samples illustrated more than 95 % degradation results within 180 min and showed 5 log reductions of bacterial strains within 30 min of light irradiation.",
+         "extracted val": "5 logs",
+         "correct": "y"
+      },
+      "('ATC42426', 0)": {
+         "doi": "10.1016/j.watres.2022.119399",
+         "text": "The EP/Cl-2 enabled above 6 log B. cereus inactivation (undetectable live bacteria) at 1.5 V-EP and 0.9 mg/L-Cl-2, which was much higher than the individual EP (1.11 log) and Cl-2 (1.13 log) disinfection.",
+         "extracted val": "6 logs, 1.11 logs, 1.13 logs",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of behavioral impairment caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence includes reduced feeding rate, altered swimming speed, impaired phototaxis, or abnormal escape responses. Consider keywords such as 'reduced feeding', 'diminished swimming', 'behavioral change', or 'impaired mobility' as indications of toxicity. Consider keywords such as 'normal behavior', 'swimming unaffected', or 'no behavioral effect' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of behavioral impairment in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of behavioral toxicity, output 'no'. If the sentence does not deal with behavior in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00070', 0)": {
+         "doi": "10.1016/j.aquatox.2023.106548",
+         "text": "Overall, H. viridissima was the most sensitive species to NPs, which affected its survival and feeding rate.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00097', 0)": {
+         "doi": "10.1002/etc.3208",
+         "text": "The endpoints assessed for D. magna were immobilization, feeding inhibition, and reproduction output.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00170', 1)": {
+         "doi": "10.1016/j.aquatox.2014.10.005",
+         "text": "The higher body burdens found for functionalized ZnO-octyl NP than for non-functionalized ZnO NP showed that that the functionalization of the NP has a high influence on the uptake and depuration behavior.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00506', 0)": {
+         "doi": "10.1016/j.envpol.2017.05.048",
+         "text": "Furthermore, feeding rates of daphnids in response to particle exposure were measured as well as effects on reproduction during a 21 days exposure (at 1 mg/1, 0.5 mg/I and 0.1 mg/I) to investigate potential impairments of physiology.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00611', 0)": {
+         "doi": "10.1021/nn4034103",
+         "text": "The silver levels within the hemolymph of Daphnia exposed to both Ag+ and AgNW met or exceeded the initial concentration in the growth medium, indicating effective accumulation during filter feeding.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00996', 1)": {
+         "doi": "10.1016/j.envpol.2019.113181",
+         "text": "The present study investigated behavioural and chronic toxicity of nC(60) to Daphnia magna.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01438', 0)": {
+         "doi": "10.1016/j.carbon.2016.08.037",
+         "text": "Uptake behaviors of Eisenia foetida exposed to FLG and protein-coated FLG at concentrations of approximately 1 mg/kg or to Daphnia magna at 100 AWL were also quantified.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01802', 0)": {
+         "doi": "10.1016/j.watres.2017.07.023",
+         "text": "The feeding rate, gut ultra-structural alterations, and digestive enzyme activities of daphnia in response to C-60 treatment were evaluated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03258', 1)": {
+         "doi": "10.1038/s41598-018-31483-6",
+         "text": "SAMN distribution into the crustacean, intake/depletion rates and swimming performances were evaluated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03988', 1)": {
+         "doi": "10.1002/etc.1916",
+         "text": "A linear correlation between ROS production and D. magna immobilization suggests that photocatalytic ROS production may be a predictor of phototoxicity for nano-TiO2.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04149', 0)": {
+         "doi": "10.1080/17435390.2016.1189615",
+         "text": "Our results show that the feeding behavior of animals may enhance the ability of NWs to penetrate biological barriers and that penetrance is governed by the NW diameter.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04980', 1)": {
+         "doi": "10.1016/j.ecoenv.2018.11.106",
+         "text": "In short-term exposure tests, feeding rates of D. magna decreased after exposure to BPA, BPF, BPS and their mixture, while the inhibition reversed into stimulation in the recovery period.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC08285', 1)": {
+         "doi": "10.3390/environments8100101",
+         "text": "The results of the present study confirmed the toxicity of NPLs of different sizes to crustaceans in natural freshwater and synthetic media and demonstrated the importance of the primary size of NPLs in the behavior and effects of NPLs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08451', 0)": {
+         "doi": "10.1007/s10646-014-1259-x",
+         "text": "Gold nanoparticles (Au NP) were used to study the influence of size, stabilizing agent and feeding on uptake and depuration kinetics and animal body burdens.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08551', 0)": {
+         "doi": "10.1021/acs.estlett.8b00614",
+         "text": "The dialyzed PS-NPs did not cause mortality but significantly disrupted the swimming behavior of D. magna.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC09706', 0)": {
+         "doi": "10.1007/s11051-017-3916-5",
+         "text": "Additionally, surface-attached TiO2 NPs combined with adsorbed heavy metals caused adverse effects on daphnia swimming and molting behavior, which is supposed to lead to chronic toxicity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10359', 0)": {
+         "doi": "10.1016/j.envpol.2023.123107",
+         "text": "NP effects were assessed at the biochemical level by investigating the amount of reactive oxygen species (ROS) and the activity of the antioxidant enzyme catalase (CAT) and at the behavioral level by evaluating the swimming behavior (distance moved).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10489', 1)": {
+         "doi": "10.1016/j.scitotenv.2022.158763",
+         "text": "Principal component analysis evidenced that the surface charge and aggregation behavior are the most influential toxicity of PS-NPLs factor for D. magna and Gammarus fossarum, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12763', 0)": {
+         "doi": "10.1016/j.impact.2023.100490",
+         "text": "Information about their behavior and transformation upon environmental interactions in aquatic settings is limited.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14136', 3)": {
+         "doi": "10.1002/etc.3184",
+         "text": "When swimming response was nonmonotonic below 2 mg L-1, consistent reductions in velocity were observed at 6.9 mg L-1 and above.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC14244', 1)": {
+         "doi": "10.1016/j.aquatox.2020.105404",
+         "text": "However, both wastewater-borne and ASTM-dispersed TiO(2)NPs, at 12.5 ug L-1, caused immediate (0 h) alterations on the swimming height.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC15321', 0)": {
+         "doi": "10.1016/j.chemosphere.2022.137263",
+         "text": "Due to special properties, nano-TiO2 will interact with heavy metals and other pollutants in water, thus affecting the environmental behavior and ecotoxicity of these pollutants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21293', 2)": {
+         "doi": "10.1016/j.scitotenv.2019.05.257",
+         "text": "The results showed that swimming speed, heart rate and thoracic limb activity were inhibited by both 0.1 % and 1 % DMSO alone however alleviating effects were observed in the combination DMSO + ECT.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC51918', 1)": {
+         "doi": "10.1021/acs.est.3c10549",
+         "text": "This study contributes to a mechanistic understanding of nP translocation by using the pioneering model nPS and an analytical toolkit, which undergird further investigations into nP behavior and health effects in aquatic species.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52434', 0)": {
+         "doi": "10.1007/s13399-023-04026-x",
+         "text": "The underlying mechanisms of three significant dengue, malaria, and filariasis vector proteins and against larvicidal behaviour on the fourth instar larvae of Aedes aegypti, Anopheles stephensi, and Culex quinquefasciatus of Gc-AgNPs were examined and evaluated through the molecular docking which investigates with established targets.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

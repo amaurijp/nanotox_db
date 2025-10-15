@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of quantum dot nanomaterials described in the input sentences. Examples of quantum dot compositions include CdS, CdSe, CdTe, ZnS, ZnSe, PbS, PbSe, InP, and other semiconductor materials commonly used to form quantum dots. The composition may appear as abbreviations or chemical formulas. Output only the core chemical composition(s) using their chemical symbol(s) or formula(s). If more than one quantum dot nanomaterial is mentioned, list each distinct composition in a Python list format, for example: ['CdSe', 'ZnS', 'PbS']. Focus exclusively on quantum dot nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'CdSe' or 'ZnS' or 'PbS')."
+   },
+   "instances": {
+      "('ATC00501', 0)": {
+         "doi": "10.1016/j.chemosphere.2020.128822",
+         "text": "The acute toxicity of the bulk (MoS2) MoS2 and 2D nanosheet MoS2 was investigated using organisms of four different taxonomic groups.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC01071', 1)": {
+         "doi": "10.1016/j.jinorgbio.2016.11.023",
+         "text": "In this study, we described a simple method for synthesis of Qe/CdSe/ZnS nanoparticles (QCZ NPs).",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC02036', 0)": {
+         "doi": "10.1016/j.ces.2022.118153",
+         "text": "We report on the temperature dependence of the photoluminescence spectrum of CdSe/CdSxSe1-x magic -sized quantum dots (MSQDs), as well as the CdSe/CdSxSe1-x MSQDs biocompatibility in Drosophila mel-anogaster.",
+         "extracted val": "CdSe",
+         "correct": "y"
+      },
+      "('ATC02395', 0)": {
+         "doi": "10.1155/2020/9718706",
+         "text": "In this study, Mn-doped ZnSe/ZnS core/shell quantum dots (CSQDs) were synthesized in aqueous solution using polyethylene glycol as a surface stabilizer and successfully applied in the detection of Escherichia coli O157:H7 and methicillin-resistant Staphylococcus aureus (MRSA) for the first time.",
+         "extracted val": "ZnSe",
+         "correct": "y"
+      },
+      "('ATC02783', 0)": {
+         "doi": "10.1021/acsanm.0c02875",
+         "text": "Scanning and transmission electron microscopic measurements show that CoZnO nanoparticles (ca. 10 nm in diameter) are clustered on the MoS2 nanosheet surface, which facilitates the charge separation of the photo-generated electron-hole pairs, leading to enhanced photodynamic antimicrobial activity.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC05066', 0)": {
+         "doi": "10.1088/1361-6528/ab8d6c",
+         "text": "A novel visible light-driven photocatalyst (represented as Mn-CdS/ZCISe/CIS/TiO2) for the passivation ofE. coliwas prepared with TiO(2)nanowires as support and using CuInS2(CIS) and ZnCuInSe (ZCISe) quantum dots (QDs), as well as Mn-doped CdS (Mn-CdS) nanoparticles (NPs) as sensitizers.",
+         "extracted val": "CdS",
+         "correct": "y"
+      },
+      "('ATC05131', 0)": {
+         "doi": "10.1016/j.cej.2023.147217",
+         "text": "Pectinase (Pec) was modified onto the surface of MoS2 nanosheets (MoS2 NSs) by epsilon-poly-L-lysine (PLL) linkage via electrostatic adsorption.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC06401', 0)": {
+         "doi": "10.1016/j.cplett.2019.01.010",
+         "text": "Pseudo-successive ionic layer adsorption and reaction (p-SILAR) process was opted for deposition of PbS/CdS and CdS/PbS quantum-dots (QDs) on TiO2 to combine light absorbing tendency of PbS and CdS QDs which evolved significant photocatalytic behavior in TiO2 under visible light irradiation.",
+         "extracted val": "PbS",
+         "correct": "y"
+      },
+      "('ATC08126', 0)": {
+         "doi": "10.1039/d4ra02022g",
+         "text": "In the present study, an Escherichia coli-expressed yeast ribosomal protein was used as a template for synthesizing RPL14B-based CdSe quantum dots in vitro via the quasi-biosynthesis strategy at low temperature.",
+         "extracted val": "CdSe",
+         "correct": "y"
+      },
+      "('ATC08567', 1)": {
+         "doi": "10.1016/j.materresbull.2015.01.036",
+         "text": "Wide emission-tunable and different morphological alloyed CdTeSe quantum dots (QDs), CdTeSe/ZnS and CdTeSe/ZnSe/ZnS core-shell QDs were successfully synthesized via an injection controlled process.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC08588', 0)": {
+         "doi": "10.1557/mrc.2018.238",
+         "text": "CdS/ZnS core shell quantum dots (QDs) were synthesized and functionalized by methionine and characterized by standard techniques.",
+         "extracted val": "CdS",
+         "correct": "y"
+      },
+      "('ATC09050', 1)": {
+         "doi": "10.1016/j.jhazmat.2011.07.112",
+         "text": "This study aimed to evaluate the toxicity and genotoxicity of soils, and corresponding elutriates, contaminated with aqueous suspensions of two organic (vesicles of sodium dodecyl sulphate/didodecyl dimethylammonium bromide and of monoolein and sodium oleate) and five inorganic nanoparticles (NPs) (TiO(2), TiSiO(4), CdSe/ZnS quantum dots, Fe/Co magnetic fluid and gold nanorods) to Vibrio fischeri and Salmonella typhimurium (TA98 and TA100 strains).",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC09707', 2)": {
+         "doi": "10.1039/b902275a",
+         "text": "Semiconductor, quantum dot (QD) nanoparticles (including CdSe/ZnS, CdTe/ZnS, and CdSe) were encapsulated within crosslinked shells of amphiphilic polystyrene-block-poly(acrylic acid) block copolymer.",
+         "extracted val": "CdTe",
+         "correct": "y"
+      },
+      "('ATC11958', 0)": {
+         "doi": "10.1016/j.ijbiomac.2022.04.016",
+         "text": "MoS2 quantum dots (MoS(2)QDs) were uniformly bonded on partially deacetylated chitin nanofibers (DEChNs) by hydrothermal reactions.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC14604', 1)": {
+         "doi": "10.1039/b815061c",
+         "text": "We used CdSe/ZnS quantum dots-ssDNA-fluorescent dye conjugates as bioprobes to detect micrococcal nuclease with high specificity and sensitivity, and further utilized the bioprobe to monitor the micrococcal nuclease activity in the culture medium of Staphylococcus aureus by fluorescence microscopy.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC14728', 0)": {
+         "doi": "10.1016/j.cbpc.2017.04.009",
+         "text": "Chinese rare minnow (Gobiocypris rarus) embryos were used as an experimental model to investigate the effects of CuInS2/ZnS quantum dots (QDs) on the early life stages of G. rarus.",
+         "extracted val": "CuInS2",
+         "correct": "y"
+      },
+      "('ATC16943', 2)": {
+         "doi": "10.1016/j.jlumin.2018.05.016",
+         "text": "In this succession, various 0D structures including CdSe, CdTe, ZnS, graphene quantum dots (GQDs), carbon nanodots (CNDs) etc. have been explored for their possible applications in the field of biology.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC17583', 0)": {
+         "doi": "10.1021/acsabm.2c00439",
+         "text": "In this study, NH2-MIL-101(Fe)@MoS2/ZnO ternary nanocomposites are successfully prepared by a facile wet-chemistry procedure, where MoS2 nanosheets are grown onto the MIL-101 scaffold forming a flower-like morphology with ZnO nanoparticles deposited onto the surface.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC19199', 0)": {
+         "doi": "10.1016/j.envpol.2017.02.044",
+         "text": "In this study, the phototoxicity of cadmium sulfide (CdS), MoS2 (MoS2), and WS2 (WS2) nanoparticles (NPs) toward Escherichia coil (E. coli) under UV irradiation (365 nm) was investigated.",
+         "extracted val": "CdS",
+         "correct": "y"
+      },
+      "('ATC19912', 0)": {
+         "doi": "10.1016/j.envpol.2021.116909",
+         "text": "Seeds were either uninoculated or inoculated with Rhizobium leguminosarum bv. trifolii and Zn was supplied in the form of sulfide (ZnS nanoparticles) and sulfate (ZnSO4).",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC19957', 0)": {
+         "doi": "10.1016/j.micromeso.2021.110971",
+         "text": "Acid-decomposable 3-mercaptopropionic acid cappedZnS QDs (MPA-ZnS QDs), biocompatible and water-soluble nanoparticles, have been employed to sealed the nanopores to obstruct premature drug (GEN) release.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC22371', 0)": {
+         "doi": "10.3390/nano12234236",
+         "text": "In this study, the change in some proteins in A. halleri and N. caerulescens was assessed after the growth in soil with cadmium and zinc, provided as sulphate salts (CdSO4 and ZnSO4) or sulfide quantum dots (CdS QDs and ZnS QDs).",
+         "extracted val": "CdS",
+         "correct": "y"
+      },
+      "('ATC22415', 1)": {
+         "doi": "10.3390/ijms242216332",
+         "text": "Using Saccharomyces cerevisiae as a model organism, we studied the effect of CdSe ZnS quantum dots (CdSe/ZnS QDs) on the proteomic profile of budding yeast cells.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      },
+      "('ATC29353', 1)": {
+         "doi": "10.1021/es501425r",
+         "text": "In this study, poplar trees (Populus deltoides x nigra) were exposed hydroponically to 50-nM CdSe/CdZnS QDs coated with cationic polyethylenimine (PEI) (35.3 +/- 6.6 nm) or poly(ethylene glycol) of anionic poly(acrylic acid) (PAA-EG) (19.5 +/- 7.2 nm) to discern how coating charge affects nanoparticle uptake, translocation, and transformation within woody plants.",
+         "extracted val": "CdZnS",
+         "correct": "n"
+      },
+      "('ATC34921', 0)": {
+         "doi": "10.1007/s10854-016-6159-9",
+         "text": "ZnS nanoparticles were prepared by microwave assisted chemical method using Polyvinylpyrrolidone (PVP) with different Cobalt (Co) concentration.",
+         "extracted val": "ZnS",
+         "correct": "y"
+      }
+   }
+}

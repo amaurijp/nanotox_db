@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of growth suppression caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence of growth suppression includes reduced body length, decreased weight, stunted larvae, or overall inhibited growth. Consider keywords such as 'reduced growth', 'shorter body length', 'stunted larvae', or 'growth inhibition' as indications of toxicity. Consider keywords such as 'growth unaffected', 'normal size', or 'no growth inhibition' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of growth suppression in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of growth toxicity, output 'no'. If the sentence does not deal with growth in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00135', 0)": {
+         "doi": "10.1016/j.jhazmat.2020.124966",
+         "text": "All SL suspensions were characterized for particle size, zeta potential and rheological properties.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00333', 0)": {
+         "doi": "10.1016/j.chemosphere.2020.127657",
+         "text": "The cytotoxic effect was inferred based on the smaller size of the erythrocyte nuclei and on the lower nuclear/cytoplasmic area ratio in tilapia exposed to CNFs via food chain.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01223', 1)": {
+         "doi": "10.3390/pharmaceutics15020632",
+         "text": "Additional in vivo toxicity assessment in the developing zebrafish (Danio rerio) embryo model found no observed abnormalities even at a high concentration of 400 ug mL-1 after 96 h post fertilization.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC02115', 0)": {
+         "doi": "10.1016/j.jhazmat.2014.10.039",
+         "text": "Zebrafish (Danio rerio) embryos or larvae (2-h post-fertilization) were exposed to PCP (0, 3, 10, and 30 ug L-1 alone or in combination with n-TiO2 (0.1 mg L-1 until 6 days post-fertilization.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02128', 2)": {
+         "doi": "10.1016/j.jhazmat.2023.132880",
+         "text": "PS-NPs at 34 ng L-1 and 34 ug L-1 induced neurotoxicity (decreased frequency of spontaneous contractions), cardiotoxicity (bradycardia), and morphological changes in the eyes and head, indicating that PS-NPs induce developmental impairments in zebrafish.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02128', 3)": {
+         "doi": "10.1016/j.jhazmat.2023.132880",
+         "text": "Overall, the present study demonstrates the harmful effects of PS-NPs on the early developmental stages of freshwater fish, indicating their environmental risk.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02296', 1)": {
+         "doi": "10.1002/jat.3164",
+         "text": "Embryos were exposed to two sizes of AgNPs at three dose levels, as well to free Ag+ ions, for a range of 4-96h post-fertilization (hpf).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02561', 0)": {
+         "doi": "10.3390/fermentation8110637",
+         "text": "At 100 ug mL-1, EPS, EPS-ZnO NPs, and EPS-Se NWs all exhibited potent in vitro antibacterial properties, drastically inhibiting the development of aquatic Gram((-)) pathogens.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02591', 1)": {
+         "doi": "10.1016/j.reprotox.2012.07.009",
+         "text": "In this study, influence of temperature (24.5-28.5 degrees C) and silver nanoparticles on developmental staging, ear-eye distance, and ratio of ear-eye distance to inner ear diameter was investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02599', 0)": {
+         "doi": "10.1016/j.jphotobiol.2020.112028",
+         "text": "The bimetallic AuPd nanoparticles decorated PDA functionalized rGO (AuPd-rGO/PDA) nanocomposite is synthesized by simple chemical reduction technique resulting in an average size of AuPd bimetallic nanostructure of 4.18 nm.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02603', 0)": {
+         "doi": "10.1016/j.chemosphere.2020.126792",
+         "text": "FexOy nanoparticles (IONPs) are used in several medical and environmental applications, but their mechanism of action and hazardous effects to early developmental stages of fish remain unknown.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02644', 1)": {
+         "doi": "10.1016/j.cbpc.2024.109926",
+         "text": "In adults, superoxide dismutase and catalase activities were also impaired in the intestine, and the coexposure groups showed more histopathological alterations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03220', 2)": {
+         "doi": "10.1007/s11356-018-2942-x",
+         "text": "The reflux process was used to synthesize catalysts in the study.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03249', 0)": {
+         "doi": "10.1590/1678-4324-2024230143",
+         "text": "In addition, the 25 ug mL-1 and 50 ug mL- 1 MWCNT groups had black aggregates attached onto the body surface, appendages of the second pair, and mandibles.The results revealed the toxic effects of MWCNTs on the two aquatic organisms, and both species showed great potential for toxicological evaluation of MWCNTs in aquatic environments.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03885', 2)": {
+         "doi": "10.1016/j.scitotenv.2020.136521",
+         "text": "Comparative cellular toxicity analysis showed higher biocompatibility of G-MgO NP compared to MgO NP with reference to the morphological changes. notochord development, and heartbeat rate in embryonic zebrafish LC50 of G-MgO NP was 520 ug mL-1 compared to 410 ug mL-1 of MgO NP.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04177', 2)": {
+         "doi": "10.1016/j.chemosphere.2020.128182",
+         "text": "It can be concluded that Ag doping of TiO2 NPs significantly increased their toxicity and resulted in more histological lesions, apoptosis and oxidative stress than pure TiO2 particles in adult zebrafish.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04225', 4)": {
+         "doi": "10.1016/j.impact.2022.100408",
+         "text": "Major toxic effects on embryo larval development were observed in commercial dimethoate exposure followed by the technical pesticide, predominantly in the highest tested concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04531', 1)": {
+         "doi": "10.1016/j.scitotenv.2020.144268",
+         "text": "Nano-Pd was synthesized and characterized by Field Emission Scanning Electron Microscopy (FE-SEM), Dynamic Light Scattering (DLS) and Zeta potential.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04907', 0)": {
+         "doi": "10.1152/ajpregu.1999.276.2.R505",
+         "text": "Body mass, length, oxygen consumption ((M) over dot o(2)), and heart rate (f(H)) were measured in embryos (prior to hatching), larvae (days 10-20), juveniles (days 30-70 in 10-day intervals), and adults (day 100) of the zebrafish Danio rerio.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05502', 1)": {
+         "doi": "10.1016/j.mex.2023.102215",
+         "text": "Overall, our findings provide a critical contribution to the formulation of high-priority actions, sustainable strategies and strict regulations that minimize the negative effects of NSAIDs on the aquatic ecosystem. center dot To determine the LC 50, lethal conditions such as coagulation, absence of heartbeat and blood flow, absence of tail separation and development of somites were taken into account. center dot The EC 50 was calculated using sublethal parameters such as blood coagulation, pericardial edema, yolk sac edema or hypertrophy. center dot The 4 compounds present a high risk individually and in mixture with a RQ >> 1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06967', 0)": {
+         "doi": "10.1016/j.pestbp.2017.08.011",
+         "text": "The results showed that the growth of M. aeruginosa was significantly inhibited by all tested compounds with a half maximal effect concentration (EC50) of 5.2, 22.8, 54.7, 1.5, 0.3 ug mL-1, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07507', 1)": {
+         "doi": "10.3390/nano9091210",
+         "text": "In addition, in the N-Ag-PVP+HP group formed aggregated nanomaterials (>= 200 nm size) through electrostatic bonding.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07978', 2)": {
+         "doi": "10.2147/IJN.S449227",
+         "text": "Results: EVs and NPs-PLA-PEG were designed to be similar in size and charge, efficiently encapsulated DNZ and allowed sustained drug release.",
+         "extracted val": "None",
+         "correct": ""
+      },
+      "('ATC10328', 2)": {
+         "doi": "10.1016/j.cbpc.2019.108684",
+         "text": "In addition, these results suggest that by examining gene expression on the Gh/Igf-1 axis, it may be possible to predict growth suppression by chemical exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC40425', 3)": {
+         "doi": "10.1016/j.scitotenv.2023.162402",
+         "text": "However, the PF extract and the biosynthesized AgNPs showed high ecotoxicity in Danio rerio larvae exposed to different concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

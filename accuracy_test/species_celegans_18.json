@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of oxidative stress caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence of oxidative stress includes reactive oxygen species (ROS) generation, lipid peroxidation, protein carbonylation, glutathione depletion, or altered antioxidant enzyme activities such as catalase or superoxide dismutase. Consider keywords such as 'elevated ROS', 'increased lipid peroxidation', 'oxidative damage', 'redox imbalance', or 'antioxidant enzyme depletion' as indications of oxidative stress. Consider keywords such as 'no oxidative stress', 'unchanged ROS', 'no lipid peroxidation', or 'antioxidant status unchanged' as indications of non-oxidative stress. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question. Is there any evidence in the input sentence of oxidative stress induced by a nanomaterial in 'Caenorhabditis elegans'? If there is no clear evidence of oxidative stress, output 'no'. If the sentence does not deal with oxidative stress in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no', or 'None' between single quote characters (e.g., 'yes', 'no', or 'None'). "
+   },
+   "instances": {
+      "('ATC01062', 0)": {
+         "doi": "10.1016/j.biomaterials.2014.11.048",
+         "text": "Further studies demonstrate that fullerenol attenuates endogenous levels of reactive oxygen species and provides protection to C elegans under stress conditions by up-regulating stress-related genes in a DAF-16 depend manner and improving lifespan.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC01738', 1)": {
+         "doi": "10.1016/j.ecoenv.2018.10.113",
+         "text": "Reactive oxygen species production was significantly enhanced following a step and repeated TBBPA exposure at the concentrations of 1 and 10 ug L-1, respectively. qRT-PCR showed that ctl-1, ctl-2, ctl-3 and sod-3 expression significantly increased, which was obviously correlated with physiological and biochemical behaviors under both treatment conditions according to Pearson correlation test analysis. sod-3 and ctl-2 mutations were more sensitive than the wild-type N2 under a step chronic TBBPA exposure at a level of 10 ug L-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04344', 0)": {
+         "doi": "10.1016/j.jhazmat.2017.07.071",
+         "text": "CMs, with strong antimicrobial activity, and inorganic nanoparticles (SiO2, TiO2, and ZnO) did not cause toxicity in human cells measured by cell membrane integrity, mitochondria activity, and reactive oxygen species concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05524', 1)": {
+         "doi": "10.62347/DIEO8870",
+         "text": "Analysis of the transcriptome data derived from mRNA isolated from C. elegans indicated that CRKP infection activated the FoxO signaling pathway, potentially leading to ROS accumulation and C. elegans demise.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06252', 1)": {
+         "doi": "10.1016/j.ecoenv.2021.112523",
+         "text": "Moreover, pink-1 mutant was demonstrated to alleviate the locomotion disorders and oxidative damage induced by polystyrene NPs, indicating involvement of pink-1 in the polystyrene NPs-induced neurotoxicity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06447', 4)": {
+         "doi": "10.1128/mbio.03394-21",
+         "text": "IMPORTANCE The current theory of cellular defense against oxidative damage identifies antioxidant enzymes as primary defenders against ROS, with MnSOD being the preeminent superoxide (O-2(center dot-)) scavenger.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06508', 0)": {
+         "doi": "10.7554/eLife.00518",
+         "text": "Moreover, UNC-43 regulates DAF-16 in response to various stress conditions, including starvation, heat or oxidative stress, and cooperatively contributes to lifespan regulation by insulin signaling.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06953', 0)": {
+         "doi": "10.1016/j.envpol.2011.03.013",
+         "text": "This phototoxicity was closely related to photocatalytic reactive oxygen species (ROS) generation by the ZnO particles as indicated by concomitant methylene blue photodegradation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07727', 5)": {
+         "doi": "10.1093/toxres/tfad074",
+         "text": "These results suggested that 20 nm PVP-AgNPs with a smaller particle size and better dispersion have stronger toxic effects and the oxidative damage to nematodes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07918', 2)": {
+         "doi": "10.1166/jbn.2014.1897",
+         "text": "The enhancement of in vitro antioxidation properties in aqueous solution and protection against oxidative stress in C. elegans induced by both gamma-ray radiation and amyloid-beta peptide confirmed the successful development of antioxidant nanoparticles.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08237', 1)": {
+         "doi": "10.1002/tox.23616",
+         "text": "The results demonstrated that sublethal exposure to fluopimomide adversely affected the nematodes growth, locomotive behaviors, reproduction, and lifespan, accompanying with enhanced of reactive oxygen species (ROS) generation, lipid and lipofuscin accumulation, and malondialdehyde content.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10600', 2)": {
+         "doi": "10.1080/17435390.2018.1529835",
+         "text": "To validate this AOP, we filled the gaps by conducting further experiments on its elements, such as NADPH oxidase, ROS formation, PMK-1 P38 MAPK activation, HIF-1 activation, mitochondrial damage, DNA damage, and apoptosis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10861', 1)": {
+         "doi": "10.1016/j.chemosphere.2022.137672",
+         "text": "According to the findings, acute exposure to these three components caused adverse physiological effects on growth and locomotion behavior, and significantly induced germline apoptosis or ROS production.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10879', 0)": {
+         "doi": "10.1016/j.nano.2015.10.008",
+         "text": "Glycyrrhizic acid pretreatment recovered expression patterns of dysregulated microRNAs (miRNAs) induced by GO, and genes required for oxidative stress control acted as targeted genes for some of these miRNAs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12414', 0)": {
+         "doi": "10.1016/j.envpol.2016.10.086",
+         "text": "The ATP levels were consistently and significantly decreased, and ROS was induced after ZnO-NPs exposure (50 and 500 ug l-1 in EPA water.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC13394', 0)": {
+         "doi": "10.1016/j.envpol.2020.114848",
+         "text": "Biochemical indices including oxidative stress, antioxidant responses and oxidative damage were further measured to explore the toxicity mechanisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16412', 0)": {
+         "doi": "10.1016/j.envint.2024.108640",
+         "text": "The photoaging process primarily resulted in the formation of EPFRs and reactive oxygen species (O-2(center dot-) , center dot OH, and O-1(2)), altering the physicochemical properties of TWP.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18294', 0)": {
+         "doi": "10.1016/j.phymed.2013.10.027",
+         "text": "EPs7630((R)) a water alcohol extract of the roots from Pelargonium sidoides contains several secondary metabolites including highly oxygenated coumarins, various phenolics and polyphenols.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19771', 0)": {
+         "doi": "10.1016/j.jep.2015.10.008",
+         "text": "Lethality, growth, lifespan, reproduction, locomotion, metabolism, intestinal autofluorescence, and reactive oxygen species (ROS) production assays were performed to investigate the possible safety profile and beneficial effects of GR in these nematodes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19927', 0)": {
+         "doi": "10.1016/j.scitotenv.2015.01.058",
+         "text": "Exposure to PM2.5 resulted in deficits in development, reproduction, locomotion behavior, and lifespan, and induction of intestinal autofluorescence or reactive oxygen species (ROS) production.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC20959', 0)": {
+         "doi": "10.1038/srep24024",
+         "text": "DAF-16 could also regulate GO toxicity on longevity by functioning upstream of SOD-3, which encodes an antioxidation system that prevents the accumulation of oxidative stress.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34183', 0)": {
+         "doi": "10.1016/j.arabjc.2017.08.007",
+         "text": "We describe here the synthesis of enantiomerically pure chalcogenoethers obtained through the reaction of nucleophilic species of chalcogen (S, Se and Te), generated in situ from the respective diorganyl dichalcogenides, with (R)- and (S)-tosyl solketal.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34790', 3)": {
+         "doi": "10.1371/journal.pbio.1000556",
+         "text": "Here we have adapted a technique of flow cytometry to directly measure ROS levels in isolated mitochondria to show that the generation of superoxide is elevated in the nuo-6 and isp-1 mitochondrial mutants, although overall ROS levels are not, and oxidative stress is low.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC35035', 2)": {
+         "doi": "10.1254/jphs.12048FP",
+         "text": "SU11274 also induced ROS generation in Caenorhabditis elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC51354', 3)": {
+         "doi": "10.1016/j.actbio.2022.03.019",
+         "text": "In addition to the inhibition effect, under near-infrared (NIR) laser irradiation, AuNCs@HSA-B generated singlet oxygen to oxygenate A beta monomers, distinctly alleviating A beta-mediated neurotoxicity at a low concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of toxicity of a nanomaterial tested on the biological species 'Arabidopsis thaliana' in the input sentences. Evidence of toxicity includes: (i) Germination inhibition: reduced or delayed seed germination rates. (ii) Growth suppression: reduced shoot or root elongation, decreased biomass, or overall inhibited growth. (iii) Physiological and biochemical changes: diminished chlorophyll content, impaired photosynthetic efficiency, oxidative stress indicators (e.g., ROS, lipid peroxidation), and altered enzymatic activities (e.g., catalase, peroxidase, superoxide dismutase). (iv) Developmental and morphological changes: leaf deformities, necrosis, chlorosis, abnormal root architecture, or other visible signs of stress. Consider keywords such as 'toxicity', 'adverse effect', 'growth inhibition', 'reduced germination', 'necrosis', 'chlorosis', 'DNA damage', 'oxidative stress', or 'significant negative impact' as indications of toxicity. Consider keywords such as 'no observed effect' (NOEL), 'no observed adverse effect' (NOAEL), 'not toxic', and similar terms as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question: Is there any evidence in the input sentence of a toxic effect of a nanomaterial against the species 'Arabidopsis thaliana'? If there is no clear evidence of nanomaterial toxicity considering the aspects mentioned above, output 'no'. If the sentence does not deal with toxicity information against 'Arabidopsis thaliana' or if you cannot assess the sentence in regard to toxicity against 'Arabidopsis thaliana', output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00972', 6)": {
+         "doi": "10.1371/journal.pone.0019976",
+         "text": "These findings may open new research fields in the potential applications of PHF, e. g., in biofuel production and aquaculture.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02489', 8)": {
+         "doi": "10.1155/2016/8060847",
+         "text": "However, seedlings treated with these materials modified their growth and their total chlorophyll content.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03145', 13)": {
+         "doi": "10.1186/s12864-024-09970-0",
+         "text": "Those plant-specific genes regulate during growth and abiotic stress control in plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04765', 0)": {
+         "doi": "10.1002/jrs.5758",
+         "text": "The emergence of the surface-enhanced Raman scattering (SERS) technique as a prospective approach for the label-free detection and fingerprinting of deoxyribonucleic acid (DNA) of microorganisms motivated us to detect traces of genomic DNA (gDNA) of Brassicaceae plant species, namely, Brassica juncea and Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04765', 7)": {
+         "doi": "10.1002/jrs.5758",
+         "text": "The SERS spectra revealed that adenine and deoxyribose were the active sites of gDNA that interacted with the metal NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05415', 3)": {
+         "doi": "10.1016/j.jhazmat.2018.11.065",
+         "text": "Thanks to unique properties, they could also open the possibilities of application in the agriculture.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05415', 9)": {
+         "doi": "10.1016/j.jhazmat.2018.11.065",
+         "text": "This is the first mention about effect ZnSe QDs on the plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06651', 3)": {
+         "doi": "10.1093/pcp/pcp063",
+         "text": "To clarify the dynamic aspects of FtsZ, we developed a living cell system for simultaneous visualisation of various FtsZ configurations, utilising the Arabidopsis thaliana overexpressor and mutant of the MinE (AtMinE1) gene, which were modified to weakly express green fluorescent protein (GFP) fused to AtFtsZ1-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07497', 4)": {
+         "doi": "10.1039/c3tb20529k",
+         "text": "Gene expression was detected in the epidermal layer and in the more inner cortical and endodermal root tissues by both fluorescence and antibody labeling.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12210', 1)": {
+         "doi": "10.1021/es300949f",
+         "text": "Reduced development and chlorosis were observed for plants exposed to highly negative SiNPs (-20.3 and -31.9 mV for the 50 and 200 nm SiNPs, respectively) regardless of particle concentration when not controlling pH of the hydroponic medium, which resulted in increased alkalinity (similar to pH 8).",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12248', 4)": {
+         "doi": "10.1007/s11103-005-3454-x",
+         "text": "Dynamic analyses of GFP-fused AtAUR proteins revealed that AtAUR1 and AtAUR2 localized at the nuclear membrane in interphase and located in mitotic spindles during cell division.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13095', 1)": {
+         "doi": "10.1016/j.jphotobiol.2017.06.024",
+         "text": "We introduce a facile method to reuse Nannochloropsis biocrude oil (NBO) for the synthesis of nitrogen and sulfur co-doped carbon dots (N-S-C-dots).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13294', 5)": {
+         "doi": "10.1016/j.scitotenv.2018.07.061",
+         "text": "The energy production related metabolic pathways in the tricarboxylic acid cycle and in sugar metabolism were stimulated stronger by AgNPs than by Ag+ ion treatment, thus releasing more energy and accelerating the physiological metabolic responses against stress in the AgNPs treatment while subsequently reducing the plant growth and yield at the maturation stage.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC14573', 2)": {
+         "doi": "10.1111/pce.12020",
+         "text": "Here, a range of advanced electrophysiological and imaging techniques were applied to Arabidopsis thaliana plants differing in their copper-transport activity: Col-0, high-affinity copper transporter COPT1-overexpressing (C1OE) seedlings, and T-DNA COPT1 insertion mutant (copt1).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15677', 4)": {
+         "doi": "10.3390/nano9111543",
+         "text": "After treatment with 500 mg nZVI/kg soil, the plant biomass increased by 38 % through enhanced photosynthesis, which was confirmed by the gas-exchange system, carbon isotope ratio and chlorophyll content analysis.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC15826', 5)": {
+         "doi": "10.3791/53437",
+         "text": "This is a protein essential for stomatal movement, thought to be involved in proton pump delivery to plasma membranes in the stomatal complex of Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16505', 7)": {
+         "doi": "10.1016/j.envpol.2016.03.019",
+         "text": "47 genes among all the up-regulated genes were response to oxidative stress, in which 19 genes were also related to response to abiotic stimulus and 12 genes were involved in the phenylpropanoid biosynthesis of the KEGG metabolic pathway.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC19939', 6)": {
+         "doi": "10.1093/aob/mcq179",
+         "text": "The effects of the SSR1 QTL on toxic salt sensitivity, and the osmotic contribution of OSR1, were confirmed by heterogeneous inbred families (HIFs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20376', 5)": {
+         "doi": "10.1021/acssuschemeng.1c02818",
+         "text": "Chitosan nanocarriers encapsulated with D-limonene as cargo were fabricated through a rational formulation via ionic gelation and the spontaneous emulsification method, respectively, to produce chitosan D-limonene nanoparticles (CdlNPs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23447', 5)": {
+         "doi": "10.1242/dev.113365",
+         "text": "We demonstrated their potential for providing new biological insights by using them to study homogalacturonan processing during Arabidopsis thaliana root cap development and by analyzing sites of chitosan deposition in fungal cell walls and arthropod exoskeletons.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24633', 1)": {
+         "doi": "10.1039/c5nr05213k",
+         "text": "We introduced in this study the first example of a photo-responsive protein for hydrogel formation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC30200', 5)": {
+         "doi": "10.1039/c8qm00509e",
+         "text": "Interestingly, the GA3-HMSN/Fe3O4 nanoparticles can also respond to other stimuli including 1,4-butanediamine (BDA) and ultrasound.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC33365', 4)": {
+         "doi": "10.1371/journal.pbio.0030151",
+         "text": "Biophysical and biochemical analyses revealed the specific site of interaction between GUN4 and Mg-Proto and the energetic determinants for the GUN4 center dot Mg-Proto interaction.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC36315', 4)": {
+         "doi": "10.21769/BioProtoc.3783",
+         "text": "The label-free techniques, such as AFM, EM, FTIR, and Raman microscopy, are used; however, they either do not have the chemical or spatial resolution.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51669', 2)": {
+         "doi": "10.1007/s00709-024-01954-x",
+         "text": "However, the combination of differential ultracentrifugation and density gradient centrifugation for the isolation of plant EVs is time-consuming and labor-intensive.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

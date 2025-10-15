@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of oxidative stress caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence of oxidative stress includes elevated reactive oxygen species (ROS), increased lipid peroxidation, protein carbonylation, glutathione depletion, or altered antioxidant enzyme activities. Consider keywords such as 'elevated ROS', 'increased MDA', 'oxidative damage', 'redox imbalance', or 'lipid peroxidation' as indications of oxidative stress. Consider keywords such as 'no oxidative stress', 'ROS unchanged', or 'antioxidant status unchanged' as indications of non-oxidative stress. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of oxidative stress in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of oxidative stress, output 'no'. If the sentence does not deal with oxidative stress in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC01402', 0)": {
+         "doi": "10.1016/j.jhazmat.2013.06.063",
+         "text": "The toxicity of graphene on suspensions of Arabidopsis thaliana (Columbia ecotype) T87 cells was investigated by examining the morphology, mitochondrial dysfunction, reactive oxygen species generation (ROS), and translocation of graphene as the toxicological endpoints.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03815', 1)": {
+         "doi": "10.1021/acs.est.9b01648",
+         "text": "We show that TiO2 nanoparticles induce autophagy in the plant model system Arabidopsis thaliana and that autophagy is an important mechanism for managing TiO2 nanoparticle-induced oxidative stress.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07154', 1)": {
+         "doi": "10.1007/s00299-009-0808-x",
+         "text": "These results suggested that OTA damage might result from reactive oxygen species pathways.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09643', 1)": {
+         "doi": "10.1007/s12038-018-9826-6",
+         "text": "Additionally, a comparative analysis of AgNPs synthesis using the aqueous extracts of some of the plant species found in a brackish water ecosystem (Gracilaria, Potamogeton, Enteromorpha and Scendesmus) were explored.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11577', 1)": {
+         "doi": "10.1016/j.plantsci.2019.110372",
+         "text": "Our data indicate an important role for polyamine oxidases in plant defense and ROS homeostasis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12951', 0)": {
+         "doi": "10.32604/phyton.2020.010973",
+         "text": "In the various species of higher plants, growth, including seed germination, root elongation, and biomass accumulation, is affected by nano-TiO2.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14503', 0)": {
+         "doi": "10.3390/ijms23073864",
+         "text": "Here, we reveal that the levels of two forms of reactive oxygen species (ROS), superoxide anion free radical (O-2(center dot-)) and hydrogen peroxide (H2O2), show dynamic changes in the shoot apex during the plant life cycle of Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14639', 1)": {
+         "doi": "10.1039/c6en00189k",
+         "text": "Analysis of ROS scavenger activity indicated that activities of superoxide dismutase (SOD), catalase (CAT), ascorbate peroxidase (APX), and peroxidase (POD) were significantly elevated upon exposure to CeO2 NPs, while these elevations were only evident for SOD and POD activities in the In2O3 NP treatments.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15170', 0)": {
+         "doi": "10.1007/s10725-007-9236-5",
+         "text": "Studies of oxidative stress in plants began several years ago, although many aspects of the antioxidant response are still unknown.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15170', 1)": {
+         "doi": "10.1007/s10725-007-9236-5",
+         "text": "In this work, we analyze the transcription profile of Arabidopsis thaliana leaves under oxidative and control conditions.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15170', 4)": {
+         "doi": "10.1007/s10725-007-9236-5",
+         "text": "It was observed that the anabolic pathways were repressed while catabolic pathways were induced after the oxidative treatment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16698', 0)": {
+         "doi": "10.1016/j.plantsci.2019.02.005",
+         "text": "The tau (U) and phi (F) classes of glutathione transferase (GST) enzymes reduce the glutathione (GSH) pool using GSH as a co-substrate, thus influence numerous redox-dependent processes including hormonal and stress responses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16698', 1)": {
+         "doi": "10.1016/j.plantsci.2019.02.005",
+         "text": "We performed detailed analysis of the redox potential and reactive oxygen species levels in longitudinal zones of 7-day-old roots of Arabidopsis thaliana L.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18615', 1)": {
+         "doi": "10.1111/tpj.13537",
+         "text": "The SERS-based approach for quantification of RNAs has the capability to be a highly sensitive, accurate and discerning method for single-cell studies including AS variants quantification and rare miRNA detection in specific plant species.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19332', 3)": {
+         "doi": "10.1016/j.plaphy.2012.06.009",
+         "text": "Antioxidant status plays an important role in plant protection against SO2-caused oxidative stress, though the defense capacity cannot sufficiently alleviate oxidative damage occurring under prolonged exposure to higher concentrations of SO2.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20201', 0)": {
+         "doi": "10.1042/BJ20060083",
+         "text": "It has recently been reported that the addition of Tre6P to isolated chloroplasts leads to redox activation of AGPase (ADPglucose pyrophosphorylase) [Kolbe, Tiessen, Schluepmann, Paul, Ulrich and Geigenberger (2005) Proc.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21741', 0)": {
+         "doi": "10.1007/s00709-014-0653-9",
+         "text": "Superoxide dismutase (SOD) catalyzes the dismutation of superoxide radicals (O-2 (center dot) (-)) to molecular oxygen (O-2) and hydrogen peroxide (H2O2).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21989', 0)": {
+         "doi": "10.1111/nph.18694",
+         "text": "We altered EF-Tu in A. tumefaciens to reduce PTI and improved transformation efficiency.center dot A robust computational pipeline was established to detect EF-Tu protein variation in a large set of plant bacterial species and identified EF-Tu variants from bacterial pathogen Pseudomonas syringae pv. tomato DC3000 that allow the pathogen to escape EFR perception.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23228', 0)": {
+         "doi": "10.1111/nph.19390",
+         "text": "center dot gamma-Aminobutyric acid (GABA) accumulates rapidly under stress via the GABA shunt pathway, which has been implicated in reducing the accumulation of stress-induced reactive oxygen species (ROS) in plants.center dot gamma-Aminobutyric acid has been demonstrated to act as a guard-cell signal in Arabidopsis thaliana, modulating stomatal opening.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24167', 0)": {
+         "doi": "10.1021/acs.jcim.3c00325",
+         "text": "Cryptochromes are proteins that are highly conserved across species and in many instances bind the flavin adenine dinucleotide (FAD) cofactor within their photolyasehomology region (PHR) domain.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24167', 5)": {
+         "doi": "10.1021/acs.jcim.3c00325",
+         "text": "Using MD simulation trajectories, oxygen binding locations are characterized through both the O-2-FAD intermolecular distance and the local protein environment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24167', 8)": {
+         "doi": "10.1021/acs.jcim.3c00325",
+         "text": "Molecular oxygen binding results are compared with recent results demonstrating long-time oxygen binding within the electron-transfer flavoprotein (ETF), another FAD binding protein.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25394', 0)": {
+         "doi": "10.1016/j.crvi.2004.06.003",
+         "text": "Variations in the distribution pattern of these epitopes between the three plants examined suggest that the synthesis of syringyl lignins in angiosperms depends on the species.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28624', 0)": {
+         "doi": "10.1016/j.jhazmat.2024.134084",
+         "text": "In this study, we established a system designed to mimic airborne exposure to ultrafine brake dust particles and performed experiments with the model species Arabidopsis thaliana .",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29314', 0)": {
+         "doi": "10.1016/j.plantsci.2003.12.007",
+         "text": "The transgenic lines showed enhanced tolerance to the active oxygen-generating paraquat and sodium sulfite.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

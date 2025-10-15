@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with percentage values related to an biofilm eradication or disruption. Output the percentage symbol with a blank space after each number found (Ex: '10.1 %'). If no percentage is found, output 'None'. Do not output percentage values not related with antibiofilm effect."
+   },
+   "instances": {
+      "('ATC05680', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.128573",
+         "text": "Furthermore, our study showed that green-synthesized AgNPs at MIC significantly reduced the biofilm production of E. coli (70.37 %) and S. aureus (67.40 %).",
+         "extracted val": "70.37 %, 67.40 %",
+         "correct": "y"
+      },
+      "('ATC06979', 0)": {
+         "doi": "10.1016/j.mtcomm.2020.102000",
+         "text": "Additionally, for Gram-positive bacteria (Staphylococcus aureus and Bacillus subtilis), the bactericidal efficiency reaches 80 %.",
+         "extracted val": "80 %",
+         "correct": "y"
+      },
+      "('ATC09521', 0)": {
+         "doi": "10.1016/j.actbio.2020.12.045",
+         "text": "After exposure to 808 nm laser, the antibacterial efficacy against Escherichia coli (E. coli) and vancomycin-intermediate Staphylococcus aureus (Mu50) is 97.5 % and 98.7 %, and the eradication rate of Mu50 established biofilms and the inhibiton of biofilms formation is 75.7 % and 85.6 %, respectively.",
+         "extracted val": "75.7 %, 85.6 %",
+         "correct": "y"
+      },
+      "('ATC10490', 0)": {
+         "doi": "10.1021/acsabm.3c00679",
+         "text": "The Zr-beta CD-H2O2 also eradicated more than 99 % of the biofilm of these four pathogens.",
+         "extracted val": "99 %",
+         "correct": "y"
+      },
+      "('ATC15282', 0)": {
+         "doi": "10.22038/IJBMS.2017.8589",
+         "text": "Results: MIC and sub-MIC ZnO-np concentrations reduced biofilm formation by 50 % and 33.4 %, respectively.",
+         "extracted val": "50 %, 33.4 %",
+         "correct": "y"
+      },
+      "('ATC15465', 0)": {
+         "doi": "10.1371/journal.pone.0115727",
+         "text": "Simultaneous use of these two agents in significantly reduced quantities produces the same effect, i.e. by killing 99.9 % of bacteria in inoculum or eradicating the staphylococcal biofilm, as higher amounts of the agents used individually.",
+         "extracted val": "99.9 %",
+         "correct": "y"
+      },
+      "('ATC15919', 0)": {
+         "doi": "10.1002/mabi.202200430",
+         "text": "Under the combined effect of photothermal response and berberine inhibition, 88.7 % of the biofilm is removed at 1000 ug mL-1.",
+         "extracted val": "88.7 %",
+         "correct": "y"
+      },
+      "('ATC16536', 1)": {
+         "doi": "10.1007/s13399-021-02187-1",
+         "text": "Also, SSE-ZnONPs, at a concentration of 200 ug ml-1, could inhibit the formation of Escherichia coli and Bacillus cereus biofilms by up to 30 % and 31 %, respectively.",
+         "extracted val": "30 %, 31 %",
+         "correct": "y"
+      },
+      "('ATC17897', 0)": {
+         "doi": "10.1016/j.jiec.2019.01.002",
+         "text": "High reduction in biofilm formation was 63.43 % (0.562 +/- 0.015) and 62.88 % (0.582 +/- 0.025) at 100 ug mL-1 concentration against control for S. epidermidis and P. aeruginosa respectively.",
+         "extracted val": "63.43 %, 62.88 %",
+         "correct": "y"
+      },
+      "('ATC18411', 0)": {
+         "doi": "10.1186/s12906-022-03775-y",
+         "text": "On the other hand, CO-SLN with 1/2 MIC concentration had the greatest inhibition of biofilm formation in 24 h of incubation (55.25 %).",
+         "extracted val": "55.25 %",
+         "correct": "y"
+      },
+      "('ATC18937', 0)": {
+         "doi": "10.1021/acsabm.2c00712",
+         "text": "The Ni NC coating significantly reduced E. coli attachment compared to a soluble nickel coating and reduced E. coli biomass area by 61 % compared to uncoated glass.",
+         "extracted val": "61 %",
+         "correct": "y"
+      },
+      "('ATC28341', 1)": {
+         "doi": "10.1016/j.mimet.2023.106773",
+         "text": "Post-treatment biofilm recurring ability of MRSA was much less in the treated group than that of the control group (50 % inhibition), as confirmed by both optical density at 570 nm (OD570) measurement, and Scanning Electron Microscope (SEM) imaging.",
+         "extracted val": "50 %",
+         "correct": "y"
+      },
+      "('ATC31122', 0)": {
+         "doi": "10.1016/j.ijbiomac.2024.129928",
+         "text": "The combination of TreZM with a low concentration of antibiotics could inhibit 70 % biofilm formation of Staphylococcus epidermidis and 28 % of Pseudomonas aeruginosa.",
+         "extracted val": "70 %, 28 %",
+         "correct": "y"
+      },
+      "('ATC31209', 0)": {
+         "doi": "10.1007/s13204-020-01630-5",
+         "text": "Bio-fabricated TiO2-NPs reduced biofilm formation in the selected strains by 22 - 70 % at tested sub-MICs.",
+         "extracted val": "22 %, 70 %",
+         "correct": "y"
+      },
+      "('ATC32009', 0)": {
+         "doi": "10.1016/j.bioflm.2023.100128",
+         "text": "Furanone loaded aerogels inhibited biofilm formation in P. aeruginosa by up to 98.80 %.",
+         "extracted val": "98.80 %",
+         "correct": "y"
+      },
+      "('ATC32613', 2)": {
+         "doi": "10.3390/pharmaceutics14122773",
+         "text": "Both combinations significantly inhibited the formation of MRSA biofilm by more than 90 % when applied.",
+         "extracted val": "90 %",
+         "correct": "y"
+      },
+      "('ATC33465', 0)": {
+         "doi": "10.1016/j.cej.2020.126730",
+         "text": "The combination of the enhanced photocatalytic performance and the intrinsic photothermal effect of PB endowed the MOFs heterojunction with highly effective sterilizing rates of 99.84 % and 99.3 % against Staphylococcus aureus and its biofilm after 660 nm light irradiation for 15 min, respectively.",
+         "extracted val": "99.3 %",
+         "correct": "y"
+      },
+      "('ATC37374', 0)": {
+         "doi": "10.1016/j.bcab.2024.103086",
+         "text": "However, they showed moderate inhibitory activity against biofilm production of E. coli and C. tropicalis, with 65 and 63 % inhibition, respectively. F. angustifolia AgNPs exhibited interesting antidiabetic activity, exceeding that of the acarbose.",
+         "extracted val": "65 %, 63 %",
+         "correct": "y"
+      },
+      "('ATC37635', 0)": {
+         "doi": "10.1016/j.ultras.2023.107180",
+         "text": "The implementation of SDI protocols using CPNs was further tested in mature biofilms of a MRSA resulting in-40 % reduction of biomass and similar to 70 % reduction of cellular viability.",
+         "extracted val": "40 %",
+         "correct": "y"
+      },
+      "('ATC37681', 0)": {
+         "doi": "10.1016/j.jddst.2022.103147",
+         "text": "The scaffold had strong antibacterial effects on S. aureus, with an inhibition zone of 1.40 +/- 0.21 cm and antibiofilm activity of 43.76 +/-& nbsp;1.65 %.",
+         "extracted val": "43.76 %",
+         "correct": "y"
+      },
+      "('ATC38284', 0)": {
+         "doi": "10.1016/j.watres.2017.11.004",
+         "text": "AC voltage at 1.5 V, 1 kHz frequency and wave pulse above offset (+0.45) with 100 Omega external resistance on the ground side prevented almost completely attachment of bacteria (> 98.5 %) with concomitant high inactivation (95.3 +/- 2.5 %) in flow-through regime.",
+         "extracted val": "98.5 %",
+         "correct": "y"
+      },
+      "('ATC40955', 0)": {
+         "doi": "10.1021/acsomega.1c00151",
+         "text": "Microbiological studies revealed a 54 - 58 % reduction in biofilm formation ability of bacterial pathogens in developed nanohybrids compared to pure curcuminoids.",
+         "extracted val": "54 %, 58 %",
+         "correct": "y"
+      },
+      "('ATC50094', 0)": {
+         "doi": "10.22207/JPAM.13.3.59",
+         "text": "Bioflocculant were exhibited excellent biofilm inhibition against P. aeruginosa where maximum reduction (73 %) were achieved at the minimum amount of 80 ug ml-1 dose.",
+         "extracted val": "73 %",
+         "correct": "y"
+      },
+      "('ATC51672', 0)": {
+         "doi": "10.1007/s00590-024-03982-y",
+         "text": "Irrigation with povidone-iodine also resulted in a significant 77.5 % reduction in CFUs compared to controls (p < 0.0001).",
+         "extracted val": "77.5 %",
+         "correct": "y"
+      },
+      "('ATC52878', 0)": {
+         "doi": "10.1002/alr.22185",
+         "text": "Compared with controls and blank nanoparticles, SNO-MP (10 mg mL-1 induced a 99.99 % - 100 % reduction in CFU across all isolates, equivalent to a 5 - 9 log kill (p < 0.005).",
+         "extracted val": "99.99 %",
+         "correct": "n"
+      }
+   }
+}

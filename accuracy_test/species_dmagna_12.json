@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of genotoxicity caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence includes DNA strand breaks, comet assay results, micronuclei formation, or chromosomal aberrations. Consider keywords such as 'DNA damage', 'genotoxic effect', 'comet assay', 'micronuclei', or 'chromosomal aberration' as indications of genotoxicity. Consider keywords such as 'no DNA damage', 'no genotoxic effect', or 'genome integrity unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of genotoxicity in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of genotoxicity, output 'no'. If the sentence does not deal with DNA damage in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00061', 0)": {
+         "doi": "10.1007/s00244-014-0070-2",
+         "text": "In general, the toxicity of ZnO-NPs in sludge-treated soils was similar to that of sludge-untreated soil, and the filterable leachate fraction [Zn salt (Zn2+)] did not produce greater effects than the unfilterable fraction (ZnO-NPs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00079', 1)": {
+         "doi": "10.2147/IJN.S127226",
+         "text": "Moreover, studies on X. laevis embryos allowed to better understand their cell/tissue localization and delivery efficacy. X. laevis embryos raised in Frog Embryo Teratogenesis Assay-Xenopus containing QDs or gH625-QDs showed that both nanoparticles localized in the gills, lung and intestine, but they showed different distributions, indicating that the uptake of gH625-QDs was enhanced; the functionalized QDs had a significantly lower toxic effect on embryos' survival and phenotypes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00548', 2)": {
+         "doi": "10.3390/w15183172",
+         "text": "Our research also showed that the genotoxicity of AgNCs to Daphnia magna was mediated by a synergic interaction between the particulate form of AgNCs and their degraded Ag ions.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00590', 2)": {
+         "doi": "10.1016/j.envpol.2017.02.043",
+         "text": "Random Amplification of Polymorphic DNA (RAPD) method has proven to be useful to qualitative assess of DNA damage during generation and to underline modification in somatic or germinal cells.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00933', 0)": {
+         "doi": "10.1016/j.aquatox.2018.02.002",
+         "text": "The generation of reactive oxygen species (ROS) was observed in both NM.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01224', 0)": {
+         "doi": "10.1016/j.chemosphere.2014.03.058",
+         "text": "Similar phototoxicity of nano-TiO2 and GNP for both species existed, though compared with nano-TiO2, GNP had a 2.3-fold increase in visible light photocatalytic ROS generation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03817', 0)": {
+         "doi": "10.1016/j.jhazmat.2012.02.025",
+         "text": "Exposure to pre-aggregated AuNP for 48h in hard water did not show any significant difference in uptake, suggesting D. magna can also ingest settled AuNP aggregates. D. magna exposed to AuNPs shed their exoskeleton whereas the control did not generate any molts over 48 h.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05967', 0)": {
+         "doi": "10.1039/c7en01127j",
+         "text": "Moreover, the inconsistencies have not yet been explained as a diverse range of factors may cause heterogeneity in the assay results.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07921', 0)": {
+         "doi": "10.1039/c5en00037h",
+         "text": "Herein, we investigated key biological apical endpoints, such as viability, growth, and reproduction and the expression of genes associated with related molecular pathways in response to exposure to gold nanoparticles (AuNPs) functionalized with either positively charged ligands, polyallyamine hydrochloride, or negatively charged ligands, mercaptopropionic acid, in two model organisms, the bacterium Shewanella oneidensis MR-1 and the water flea Daphnia magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09095', 0)": {
+         "doi": "10.1007/s11270-017-3617-9",
+         "text": "Polytetrafluoroethylene (PTFE, or DuPont Teflon (R) MP1150) was examined concurrently to assess whether observations were general to halogen, or element specific.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12131', 0)": {
+         "doi": "10.1016/j.envint.2022.107264",
+         "text": "At molecular level, the modulation of the expression of genes involved in antioxidant defence, response to stressful conditions and specific physio-logical pathways was investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13159', 0)": {
+         "doi": "10.1016/j.chemosphere.2022.134421",
+         "text": "Herein, the dramatic increase in sunlight-induced ZnO NPs dissolution by polystyrene (PS) MPs was proven, which was attributed to the increase in h+-dependent and proton-dependent ZnO NPs dissolution by PS MPs, yielding O-1(2) generation inhibition and acid release, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13370', 0)": {
+         "doi": "10.1016/j.ecoenv.2022.113792",
+         "text": "Multigenerational toxicity tests provide more sensitive measures of population-level effects than conventional single-generation tests.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24679', 0)": {
+         "doi": "10.1039/d0en00049c",
+         "text": "Exposure medium and NM ageing moderation of NM toxicity were explored using Daphnia magna multigenerational studies aiming to determine whether the daphnids adapted to continuous exposure and/or if parent-only exposure resulted in epigenetic effects in subsequent generations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24679', 2)": {
+         "doi": "10.1039/d0en00049c",
+         "text": "NMs aged in the class V water had fewer overall toxic consequences on growth and longevity across all generations in both continuous and parent-only exposure scenarios.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25349', 3)": {
+         "doi": "10.1038/s41598-024-59774-1",
+         "text": "Here we identified 25,654 transcripts derived from the 9710 genes expressed during environmental sex determination of Daphnia magna using the long-read RNA-Seq with PacBio Iso-Seq.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25349', 5)": {
+         "doi": "10.1038/s41598-024-59774-1",
+         "text": "By a combination of Illumina short-read RNA-Seq, we detected 824 genes that implemented switching of the highest expressed isoform between females and males.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25631', 0)": {
+         "doi": "10.1021/acs.est.2c07537",
+         "text": "Our results revealed that photoaged NPs exhibited strong fluorescence owing to the generation of conjugated pi bonds, which can achieve pi-pi* electron transition with low energy consumption.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25826', 1)": {
+         "doi": "10.1016/j.aquatox.2015.02.015",
+         "text": "We found ROS formation and gene expression were impacted by both charge and the specific surface ligand used.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25897', 0)": {
+         "doi": "10.1016/j.envres.2022.114026",
+         "text": "The Response Surface Meth-odology (RSM) based on the Box-Wilson design as well as the Artificial Neural Network (ANN) modeling combined with a genetic algorithm (GA) approaches were used to determine the optimal levels of the selected variables and the optimal rate of degradation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC26492', 1)": {
+         "doi": "10.1016/j.jenvrad.2019.01.008",
+         "text": "Similarly acute exposure to 100 and 1000 mGy also significantly compromised the fertility of F-0 and F-1 Daphnia and did not affect the F-2 generation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28055', 0)": {
+         "doi": "10.1021/acssuschemeng.9b04230",
+         "text": "However, the eco-friendly character of heterogeneous catalysts containing transition-metal components has not yet been evaluated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31038', 0)": {
+         "doi": "10.1080/19443994.2016.1155175",
+         "text": "Therefore, this study was designed to investigate the effect of varying pH and incident photon fluxes on heterogeneous photocatalytic AMP removal at two AMP initial concentrations (50 and 100 mg L-1 using 0.5 g L-1 TiO2 dose under UV-A (315 - 400 nm wavelengths) irradiation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31254', 0)": {
+         "doi": "10.1016/j.jphotobiol.2008.09.004",
+         "text": "The aliphatic carboxylic acid intermediates and inorganic anions generated during the dye degradation process were analyzed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32007', 0)": {
+         "doi": "10.1016/j.chemosphere.2021.131452",
+         "text": "The dataset used to develop the models consisted of dose-response data from 11 NMs (5 TiO2 NMs of identical cores with different coatings, and 6 Ag NMs with different capping agents/coatings) each dispersed in three different media (a high hardness medium (HH Combo) and two representative river waters containing different amounts of natural organic matter (NOM) and having different ionic strengths), generated in accordance with the OECD 202 immobilization test.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

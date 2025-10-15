@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of enzymatic activity alteration caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence includes changes in catalase, peroxidase, superoxide dismutase, glutathione reductase, or other key physiological enzymes. Consider keywords such as 'altered catalase', 'peroxidase induction', 'SOD increase', or 'enzyme inhibition' as indications of toxicity. Consider keywords such as 'enzyme activity unchanged', 'no enzymatic effect', or 'normal catalase levels' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of enzymatic activity alteration in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of enzymatic alteration, output 'no'. If the sentence does not deal with enzymatic activity in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC02457', 0)": {
+         "doi": "10.1016/j.jhazmat.2011.12.012",
+         "text": "Despite no evidence of nanoparticle internalization, the ratio of reduced glutathione levels (GSH) relative to the oxidized glutathione (GSSG) in plants decreased when plants were exposed to QD dispersions containing humic acids, suggesting that QDs caused oxidative stress on the plant at this condition.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07653', 0)": {
+         "doi": "10.1371/journal.pone.0281756",
+         "text": "When applied together, the concurrent effects of ZnO NPs and MWCNTs on Arabidopsis seedlings appeared to be more negative, as evidenced not only by the further deterioration of several growth indices but also by their synergistic or additive regulation of the activities of several antioxidant enzymes such as superoxide dismutase (SOD), catalase (CAT) and glutathione reductase (GR).",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08681', 1)": {
+         "doi": "10.1016/j.dnarep.2010.01.014",
+         "text": "Despite the amino-acid sequence dissimilarity as compared to class I enzymes, the results indicate similar binding motifs for FAD in the class II photolyases.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08681', 2)": {
+         "doi": "10.1016/j.dnarep.2010.01.014",
+         "text": "Nevertheless, class II photolyases show photoreduction kinetics similar to those of the class I enzymes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08918', 0)": {
+         "doi": "10.1007/s12274-019-2397-5",
+         "text": "These include: (i) accelerating seed germination; (ii) enlarging root elongation; (iii) increasing metal ions absorption and delivery; (iv) improving enzymes activity; (v) enhancing the carbohydrate content; (vi) degradation into plant hormone analogues and CO2; and finally (vii) enhancing the grain production by about 20 %.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10140', 0)": {
+         "doi": "10.1021/sc400098h",
+         "text": "Molecular response to NP exposure as measured by qPCR showed that both types of elements altered the expression of genes central to the stress response such as the sulfur assimilation and glutathione (GSH) biosynthesis pathway, a series of genes known to be significant in the detoxification of metal toxicity in plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11718', 0)": {
+         "doi": "10.1016/j.jplph.2009.11.002",
+         "text": "The action of eATP and NO on superoxide (O(2)(center dot-)) accumulation and peroxidase activity was investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13209', 4)": {
+         "doi": "10.1021/acssuschemeng.6b02976",
+         "text": "The expression of gamma-glutamylecysteine synthetase (ECS) and glutathione synthetase (GS) was increased in A. thaliana treated with either TiO2 NPs or TC alone.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC14118', 0)": {
+         "doi": "10.1007/s11356-014-3210-3",
+         "text": "Real-time PCR analysis showed significant induction of genes related to oxidative stress responses, sulfur assimilation, glutathione, and proline biosynthesis under CuONPs stress.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14848', 0)": {
+         "doi": "10.3389/fpls.2019.01322",
+         "text": "Catalase, superoxide dismutase, and peroxidase activities as well as proline level in short-time treated seedlings were apparently higher than in control.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15613', 1)": {
+         "doi": "10.1016/S1671-2927(08)60284-9",
+         "text": "Under the stress of 30 mmol L-1, OA, SOD activity was first enhanced to reduce the accumulation of O-2(center dot-).",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC17109', 0)": {
+         "doi": "10.3389/fpls.2016.00032",
+         "text": "After using an enzymatic digestion to release the NPs from plant matrices, single particle-inductively coupled plasma mass spectrometry (SP-ICP-MS) is employed to determine the size distribution of silver nanoparticles (Ag NPs) in tissues of the model plant Arabidopsis thaliana after exposure to 10 nm Ag NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19332', 0)": {
+         "doi": "10.1016/j.plaphy.2012.06.009",
+         "text": "To analyze antioxidant response of plants to SO2 stress, we investigated the reactive oxygen species (ROS) levels, transcript alterations and antioxidant enzyme activities in Arabidopsis thaliana (Col-0) exposed to 0, 2.5, 10 and 30 mg m-3 of SO2.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20229', 0)": {
+         "doi": "10.1016/j.isci.2021.103228",
+         "text": "In support of these data, MYB70 positively regulates the expression of auxin conjugation-related GH3 , while negatively peroxidase-encoding and suberin biosynthesis-related genes.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC21452', 2)": {
+         "doi": "10.1016/j.saa.2019.117597",
+         "text": "Therefore, this work illustrates the detailed binding mode between lead (II) ions and glutathione peroxidase 6 from Arabidopsis thaliana and the toxic effects on antioxidative defense system induced by lead ions at molecular level.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21460', 1)": {
+         "doi": "10.1021/acs.analchem.5b01683",
+         "text": "The influence of this modification on enzymatic polymerization, however, remains unknown.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21741', 5)": {
+         "doi": "10.1007/s00709-014-0653-9",
+         "text": "Thus, it appears that the activation of PaSOD at regeneration stage accompanied by increased H2O2 production can be one of the mechanisms controlling in vitro morphogenesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23077', 0)": {
+         "doi": "10.3390/ijms221910237",
+         "text": "This study aimed for characterizing the four annotated A. thaliana 13-LOX enzymes (LOX2, LOX3, LOX4, and LOX6) focusing on synthesis of 12-OPDA and 4Z,7Z,10Z)-12-[[-(1S,5S)-4-oxo-5-(2Z)-pent-2-en-1yl] cyclopent-2-en-1yl] dodeca-4,7,10-trienoic acid (OCPD).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23228', 0)": {
+         "doi": "10.1111/nph.19390",
+         "text": "Knockout of the major GABA synthesis enzyme Glutamate Decarboxylase 2 (GAD2) increases the aperture of gad2 mutants, which results in greater stomatal conductance and reduces water-use efficiency compared with wild-type plants.center dot Here, we found that the additional loss of GAD1, GAD4, and GAD5 in gad2 leaves increased GABA deficiency but abolished the more open stomatal pore phenotype of gad2, which we link to increased cytosolic calcium (Ca2+) and ROS accumulation in gad1/2/4/5 guard cells.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24071', 1)": {
+         "doi": "10.1021/acs.est.7b01538",
+         "text": "The differentiated induction of detoxification enzymes by 2,5-DCB May explain its lower phytotoxicity compared to 4'-OH-2,5-DCB.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24108', 0)": {
+         "doi": "10.3389/fpls.2012.00284",
+         "text": "In transiently transformed mesophyll protoplasts from Arabidopsis thaliana colocalization and interaction of the glycolytic enzymes with the mitochondria and with the actin cytoskeleton was visualized by confocal laser scanning microscopy (oLSM) using fluorescent protein fusions and by bimolecular fluorescence complementation, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24256', 0)": {
+         "doi": "10.1166/jnn.2018.14262",
+         "text": "An intracellular glutathione (GSH) responsive phytochemical delivery system based on thiol gated mesoporous SiO2 nanoparticles (MSNs) was developed and tested on the model plant Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25688', 0)": {
+         "doi": "10.1016/j.procbio.2022.05.004",
+         "text": "In this study, RD was produced by coupling glucosyltransferase (EUGT11) and sucrose synthase (SUS) with a novel strategy of immobilization to enhance the recyclability of enzymes and decrease the production costs of RD.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28427', 0)": {
+         "doi": "10.1016/j.niox.2016.12.010",
+         "text": "Additionally, biochemical and gene expression analyses of peroxisomal enzymes, including the antioxidant catalase (CAT) and two photorespiration enzymes, such as glycolate oxidase (GOX) and hydroxypyruvate reductase (HPR), show that, under Pb-stress, only the catalase was negatively affected, while the two photorespiration enzymes remained unaffected.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32408', 0)": {
+         "doi": "10.1021/acsnano.7b05723",
+         "text": "For the latter ROS, there is no known plant enzyme scavenger.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

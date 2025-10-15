@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on nanotechnology and you extract numerical values related with the zeta potential of nanomaterials and nanoparticles. For the text I will input next, output only the numbers associated with the zeta potential of nanomaterials and nanoparticles described in the text. Output the zeta potential unit (ex: mV) with a blank space after each number found (Ex: '-10.1 mV' or '10.1 V' or '10.1 kV' or '-10.1 \u00b5V'). If no value is found, output 'None'. Do not output zeta potential values not related with the nanomaterial or nanoparticle described in the text."
+   },
+   "instances": {
+      "('ATC02826', 0)": {
+         "doi": "10.1049/iet-nbt.2015.0059",
+         "text": "It was found by dynamic light scattering analysis, that the average size and charges of the AgNPs were 133.0 +/- 0.361 nm and -6.01 +/- 5.30 mV, respectively.",
+         "extracted val": "-6.01 mV",
+         "correct": "y"
+      },
+      "('ATC08325', 0)": {
+         "doi": "10.1088/1361-6528/aa5f63",
+         "text": "PLA-and PLGA-NPs were spherical with sizes between 300 and 400 nm for PLA and 200 and 300 nm for PLGA and <0.3 polydispersity index as determined by dynamic light scattering and scanning electron microscopy), having the zeta potential of > 20 mV.",
+         "extracted val": "-20 mV",
+         "correct": "y"
+      },
+      "('ATC08696', 0)": {
+         "doi": "10.1007/s00253-019-09782-3",
+         "text": "Moreover, the CDs with high quantum yield (21 %) possess highly negative zeta potential (-41.7 mV) and low cytotoxicity, the CDs could serve as an efficient dye for bacterial viability evaluation, they could selectively stain dead E. coli rather than live ones, which make dead E. coli be viewed with multicolor fluorescence under different excitation wavelengths.",
+         "extracted val": "-41.7 mV",
+         "correct": "y"
+      },
+      "('ATC12557', 0)": {
+         "doi": "10.1016/j.ceramint.2022.03.095",
+         "text": "Characterization of the zeta-potential of Ag/Sr-co-substituted HAp showed negatively charged populations, at potentials not lower than-15 mV.",
+         "extracted val": "-15 mV",
+         "correct": "y"
+      },
+      "('ATC16544', 0)": {
+         "doi": "10.2147/IJN.S211756",
+         "text": "AgNPbio with a size of 77.68 +/- 33.95 nm and zeta potential -34.6 +/- 12.7 mV showed an MIC of 0.212 mg mL-1 against S. aureus including MRSA strains.",
+         "extracted val": "-34.6 mV",
+         "correct": "y"
+      },
+      "('ATC17135', 0)": {
+         "doi": "10.1016/j.matlet.2023.134653",
+         "text": "Characterization of the PSCE-Ag NPs showed that they had a spherical form, with an average size of 105.6 & PLUSMN; 3.49 nm and a zeta potential of -41.8 & PLUSMN; 12.6 mV.",
+         "extracted val": "-41.8 mV",
+         "correct": "y"
+      },
+      "('ATC22099', 0)": {
+         "doi": "10.1016/j.ijbiomac.2020.04.048",
+         "text": "Size and zeta potential of PLGA-NPs, Chit-NPs and PLGA-Chit-NPs-pDNA complex were recorded to be 120 nm and +0.5 mV, 117 nm and +32 mV, 189 nm and +11 mV, respectively.",
+         "extracted val": "0.5 mV, 32 mV, 11 mV",
+         "correct": "y"
+      },
+      "('ATC23227', 0)": {
+         "doi": "10.1016/j.ejps.2020.105539",
+         "text": "The mean globule size, polydispersity index, zeta potential and drug content was observed as 29.13 +/- 0.12 nm, 0.23 +/- 0.01,-12.33 +/- 1.37 mV and 99.10 +/- 3.91 %, respectively.",
+         "extracted val": "-12.33 mV",
+         "correct": "y"
+      },
+      "('ATC23438', 0)": {
+         "doi": "10.3390/molecules28062428",
+         "text": "The EDX spectrum confirmed the formation of AuNPs and a negative zeta potential value (-27.7 mV) suggested their physicochemical stability.",
+         "extracted val": "-27.7 mV",
+         "correct": "y"
+      },
+      "('ATC25314', 0)": {
+         "doi": "10.1016/j.msec.2019.110006",
+         "text": "The zeta potential of NC was negative and varied from - 28 to -51 mV.",
+         "extracted val": "-28 mV, -51 mV",
+         "correct": "y"
+      },
+      "('ATC26139', 0)": {
+         "doi": "10.1021/acsanm.2c03739",
+         "text": "The size and zeta potential of GNR-DPArPEGMA was 78 nm and -37.96 mV, respectively.",
+         "extracted val": "-37.96 mV",
+         "correct": "y"
+      },
+      "('ATC27166', 0)": {
+         "doi": "10.3390/pharmaceutics14081719",
+         "text": "The zeta potential (ZP) of the NDDS was determined as 85.26 +/- 0.12 mV.",
+         "extracted val": " 85.26 mV",
+         "correct": "y"
+      },
+      "('ATC31058', 0)": {
+         "doi": "10.1002/aoc.6120",
+         "text": "Zeta potential measurement showed excellent stability of AgNPs with negative values of -9.2 +/- 0.66 mV.",
+         "extracted val": "-9.2 mV",
+         "correct": "y"
+      },
+      "('ATC32018', 0)": {
+         "doi": "10.1016/j.ijbiomac.2021.11.037",
+         "text": "The chit-Ag/NiS NCs showed the surface charge of -26 +/- 39.9 mV.",
+         "extracted val": " 39.9 mV",
+         "correct": "n"
+      },
+      "('ATC32471', 0)": {
+         "doi": "10.1016/j.mtla.2023.101826",
+         "text": "HD-pH-coated niosomes had an average diameter, polydispersity index, zeta potential, and drug encapsulation efficiency of 153.7 & PLUSMN; 2.1 nm, 0.29 & PLUSMN; 0.04, -9.46 & PLUSMN; 1.46 mV and 84.15 & PLUSMN; 1.11 %, respectively.",
+         "extracted val": "-9.46 mV",
+         "correct": "y"
+      },
+      "('ATC32557', 0)": {
+         "doi": "10.1007/s10930-021-09975-8",
+         "text": "It was found that the obtained nanoparticles showed spherical shape with the mean particle size of around 200 - 300 nm with zeta potential of about - 23 mV.",
+         "extracted val": "-23 mV",
+         "correct": "y"
+      },
+      "('ATC32828', 0)": {
+         "doi": "10.1016/j.ijbiomac.2022.06.025",
+         "text": "The EPP-Ag25 NPs had a hydrodynamic size of 40.9 nm and a highly negative surface charge of -27.4 mV.",
+         "extracted val": "-27.4 mV",
+         "correct": "y"
+      },
+      "('ATC37331', 0)": {
+         "doi": "10.1016/j.colsurfb.2012.05.006",
+         "text": "The results showed that the mean diameter (MD), polydispersity index (PDI), zeta potential (ZP) and loading capacity (LC) of nanoparticles were 250 +/- 5 nm, 0.256 +/- 0.065, -31.1 +/- 1.85 mV and 9.63 +/- 0.16 %, respectively.",
+         "extracted val": "-31.1 mV",
+         "correct": "y"
+      },
+      "('ATC41998', 0)": {
+         "doi": "10.1002/app.48393",
+         "text": "The electrophoretic light scattering (ELS) measurements demonstrated that the micelles have zeta potential values ranging from +38 to +63 mV.",
+         "extracted val": "38 mV, 63 mV",
+         "correct": "y"
+      },
+      "('ATC42447', 0)": {
+         "doi": "10.9734/JPRI/2020/v32i3731002",
+         "text": "The synthesised optimised polymeric nanoparticles were further characterised by dynamic light scattering (DLS) for its particle size (137.11 nm), PDI (0.180) and zeta potential (33.4 mV) while X-ray diffraction ( XRD) was used to justify the amorphous and crystalline nature of drug and excipients.",
+         "extracted val": " 33.4 mV",
+         "correct": "y"
+      },
+      "('ATC43023', 1)": {
+         "doi": "10.3390/molecules28083569",
+         "text": "However, C-ALP-SLNs-F1 and C-ALP-SLNs-F2 had particle sizes of 185.3 +/- 5.5 and 173.6 +/- 11.3 nm with zeta potential values of 11.3 +/- 1.4 and 13.6 +/- 1.1 mV, respectively.",
+         "extracted val": " 11.3 mV, \n13.6 mV",
+         "correct": "y"
+      },
+      "('ATC43274', 0)": {
+         "doi": "10.1039/c5tb00376h",
+         "text": "NPCs featured negative zeta potentials (-15.5 to -19.5 mV), mean diameters around 180 nm, and a low dissolution constant in Milli-Q water (<0.0197 mS cm(-1)), and were prepared using 0.0 (NPC0) to 36.2 ug mL-1 Sb (NPC5).",
+         "extracted val": "-15.5 mV, -19.5 mV",
+         "correct": "y"
+      },
+      "('ATC47791', 0)": {
+         "doi": "10.3389/fmicb.2022.833154",
+         "text": "Bio-SNPs were spherical in shape and small in size (average 33 nm by TEM, 58.8 nm by DLS), with good stability (30 mV) and the presence of capping agents.",
+         "extracted val": "-30 mV",
+         "correct": "n"
+      },
+      "('ATC49867', 1)": {
+         "doi": "10.1021/acsomega.3c07191",
+         "text": "In contrast, the ZnO NCs calcined at lower temperatures exhibited a larger surface area mean of 34.56 um and a positive zeta potential of +10 mV.",
+         "extracted val": " 10 mV",
+         "correct": "y"
+      },
+      "('ATC50885', 0)": {
+         "doi": "10.1016/j.fbio.2023.102547",
+         "text": "QNLs were observed with an average size of 191 +/- 7 nm by dynamic light scattering with a negative zeta-potential value of-37 +/- 5.7 mV.",
+         "extracted val": " 5.7 mV",
+         "correct": "n"
+      }
+   }
+}

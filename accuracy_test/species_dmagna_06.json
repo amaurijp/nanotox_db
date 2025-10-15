@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of bioaccumulation of a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence of bioaccumulation includes increased internal nanomaterial concentration relative to the exposure medium, or trophic transfer potential. Consider keywords such as 'bioaccumulation', 'bioconcentration', 'body burden', 'internalization', or quantitative uptake values as indications of bioaccumulation. Consider keywords such as 'no accumulation', 'no uptake', 'depuration', or 'not detected' as indications of non-bioaccumulation. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of bioaccumulation of a nanomaterial in 'Daphnia magna'? If there is no clear evidence of bioaccumulation, output 'no'. If the sentence does not deal with bioaccumulation in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00079', 2)": {
+         "doi": "10.2147/IJN.S127226",
+         "text": "Moreover, studies on X. laevis embryos allowed to better understand their cell/tissue localization and delivery efficacy. X. laevis embryos raised in Frog Embryo Teratogenesis Assay-Xenopus containing QDs or gH625-QDs showed that both nanoparticles localized in the gills, lung and intestine, but they showed different distributions, indicating that the uptake of gH625-QDs was enhanced; the functionalized QDs had a significantly lower toxic effect on embryos' survival and phenotypes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00268', 5)": {
+         "doi": "10.1039/c9en01277j",
+         "text": "Although fullerenols eventually enter fish tissues via the food chain, a lack of biomagnification greatly reduce the potential risk to high-trophic-level aquatic organisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00284', 0)": {
+         "doi": "10.1016/j.impact.2019.01.001",
+         "text": "We show that seven different types of commercial, biocide-free, colloidal SiO2 products with mean particle sizes between 17 and 88 nm with 3 different surface chemistries (Na-stabilized, aluminized and silane-modified) are not toxic to the bacterium Pseudomonas putida, and the algae Raphidocelis subcapitata in the concentration range 5 - 500 mg L-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00311', 0)": {
+         "doi": "10.1016/j.etap.2014.05.016",
+         "text": "The acute toxicity of lead was examined for Daphnia magna in waters with different pH values (5.0, 6.0, 7.0, 8.0 and 9.0) and different concentrations (0.01, 0.10, 0.50 and 1.00 mg L-1 of hydroxyl-functionalized multi-walled carbon nanotubes (OH-MWCNTs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00651', 4)": {
+         "doi": "10.1016/j.scitotenv.2016.08.204",
+         "text": "Simultaneous water and dietary exposures to Ag-NP induced higher Ag concentrations in D. magna compared to AgNO3.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01600', 0)": {
+         "doi": "10.1021/es062146p",
+         "text": "In this experiment, we quantified these behavioral and physiological responses of Daphnia magna at sublethal nanoparticle concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01631', 1)": {
+         "doi": "10.3390/toxics12040252",
+         "text": "The 2D-like materials were used to determine their ecotoxicological properties, such as the medium lethal concentration, a crucial parameter for understanding ecotoxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01981', 1)": {
+         "doi": "10.1007/s00244-014-0091-x",
+         "text": "The chronic end-point values (EC10 values for net reproductive rate and the probability of survival to maturation) did not differ largely from acute ones (48-h EC50 obtained from acute toxicity tests and 48-h LC50 estimated by the biotic ligand model) when the values were calculated based on Ag+ concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03404', 2)": {
+         "doi": "10.1016/j.jhazmat.2012.05.066",
+         "text": "When expressing toxicity on the basis of dissolved concentrations, 24 h-EC50 values of the Ag and CuO nanoparticles were also found to be similar to those of the counterpart ionic species. i.e., Ag (as AgNO3) and Cu (as CuCl2 center dot 2H(2)O).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03494', 1)": {
+         "doi": "10.1016/j.jhazmat.2014.09.037",
+         "text": "Based upon total body analysis, the Daphnia copper concentration appeared much higher when exposed to the nanoparticles than when exposed to the salt.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03541', 0)": {
+         "doi": "10.1016/j.talanta.2015.09.063",
+         "text": "The identification and quantification of the bioaccumulation of noble metal engineered nanoparticles (ENPs) by aquatic organisms is of great relevance to understand the exposure and potential toxicity mechanisms of nanoscale materials.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03804', 1)": {
+         "doi": "10.1016/j.scitotenv.2023.161682",
+         "text": "ZnO concentration and elevated temperature induced oxidative stress in ma-ture D. magna by reducing superoxide dismutase (SOD) activity and increasing malondialdehyde (MDA) levels.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05438', 1)": {
+         "doi": "10.1016/j.watres.2010.08.026",
+         "text": "By the 48th hour of exposure to CuO NPs (but not to equitoxic concentrations of bulk CuO) the following ultrastructural changes in midgut epithelium of daphnids were observed: protrusion of epithelial cells into the midgut lumen, presence of CuO NPs in circular structures analogous to membrane vesicles from holocrine secretion in the midgut lumen.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05689', 1)": {
+         "doi": "10.3390/molecules25245893",
+         "text": "At the lowest applied anodic current density, 12.5 A m(-2), an increase in iron concentration led to lower methiocarb removal rates, but the opposite is found at the highest applied current densities.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06173', 7)": {
+         "doi": "10.1021/acs.est.6b03951",
+         "text": "The aggregation-dependent effects of PAA-TiO2-NPs on Cd bioaccumulation were further evidenced by the distinct patterns of metal efflux from D. magna at different Ca concentrations.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC06563', 2)": {
+         "doi": "10.1039/c9en00434c",
+         "text": "Florescence imaging showed that the NPS were isolated to the D. magna intestines, even with exposure to a low concentration, producing a distinct emission, with no distinguishable NPS present in the other organs.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC09666', 0)": {
+         "doi": "10.1021/es403558c",
+         "text": "Size distributions and particle number concentrations were determined for ENPs extracted from D. magna exposed to 98 ug L-1 100 tun Au and 4.8 ug L-1 100 nm Ag ENPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10555', 4)": {
+         "doi": "10.1039/c9en01453e",
+         "text": "Also, despite the increase in As(iii) accumulation, nano-TiO2 decreased D. magna toxicity.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC14015', 1)": {
+         "doi": "10.1016/j.jhazmat.2023.131864",
+         "text": "MPs effectively reduced the uptake of NP and increased its gut passage time.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC16560', 0)": {
+         "doi": "10.1021/acs.est.7b04635",
+         "text": "The aggregation of BPEI-AgNPs decreased with the time, and their stabilizing effect increased at high PLFA concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23218', 3)": {
+         "doi": "10.1016/j.ecoenv.2022.113920",
+         "text": "This indicates biomagnification of particulate Cu from P. subcapitata to L. benedeni.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32354', 1)": {
+         "doi": "10.1016/j.jenvman.2022.116395",
+         "text": "By increaing, Cr(VI) concentration (5 - 50 mg L-1, k(obs) decreased to values between 0.1498 and 0.0063 min(-1) and the calculated electrical energy per order (E-Eo) increased from 148.68 to 3535.24 kWh.m(-3), respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC45070', 0)": {
+         "doi": "10.1039/c3em00422h",
+         "text": "Using information on screening efficiencies at sewage treatment plants, the questionnaire data was combined with a GIS-based water quality model (LF2000-WQX) to predicted environmental concentrations (PEC) in a UK river basin catchment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC45510', 0)": {
+         "doi": "10.1016/j.watres.2014.04.032",
+         "text": "The optimization of the oxidation process, using reagents at low concentrations ([Fe2+] = 0.08 g L-1; [H2O2] = 1 g L-1, led to a high COD removal (87 %), while the polyphenolic fraction, which is responsible for the biorecalcitrant and/or toxic properties of OMW, was eliminated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52553', 1)": {
+         "doi": "10.1007/s10750-015-2540-6",
+         "text": "Moreover, short-term (48 h) exposure of neonate daphnids to these concentrations may significantly affect the long-term survival and reproductive potential of daphnids.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

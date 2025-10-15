@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of genotoxicity caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence includes DNA strand breaks, comet assay results, micronuclei formation, \u03b3-H2AX foci, or chromosomal aberrations. Consider keywords such as 'DNA damage', 'genotoxic effect', 'comet assay', 'micronuclei', or 'chromosomal aberration' as indications of genotoxicity. Consider keywords such as 'no DNA damage', 'no genotoxic effect', or 'genome integrity unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of genotoxicity in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of genotoxicity, output 'no'. If the sentence does not deal with DNA damage in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00094', 2)": {
+         "doi": "10.1007/s10646-017-1873-5",
+         "text": "Genes of the circadian clock were identified as the key genes involved in time-dependent differences between the two copper forms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00390', 0)": {
+         "doi": "10.1039/c1em10197h",
+         "text": "In the presence of light, nZnO suspensions could generate (OH)-O-center dot, the concentration of which increased with time.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00449', 2)": {
+         "doi": "10.1016/j.aquatox.2020.105546",
+         "text": "These results demonstrate that MWCNTs can weaken the developmental inhibition, oxidative stress, apoptosis and DNA damage induced by BDE-47 in the early stages of zebrafish development.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00954', 6)": {
+         "doi": "10.2147/IJN.S60220",
+         "text": "Dendrimer class and generation are other potential contributors to the toxicity of dendrimers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01094', 0)": {
+         "doi": "10.1016/j.aquatox.2017.02.017",
+         "text": "Experimental fish were exposed to 2, 10 or 20 mg L-1 GO, and the cytotoxicity, genotoxicity and oxidative stress were assessed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01129', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.166458",
+         "text": "Transcriptome sequencing analysis showed that the number of unique genes (UGs) and differentially expressed genes (DEGs) between the mixed-type CNTs and control groups was significantly enhanced compared to the single-type CNTs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01129', 1)": {
+         "doi": "10.1016/j.scitotenv.2023.166458",
+         "text": "DOM generally enhanced the GO enrichment of DEGs in D. rerio embryos exposed to the mixed-type CNTs during the biological process.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02124', 0)": {
+         "doi": "10.1002/bkcs.11336",
+         "text": "Purine metabolism-including the anabolism/catabolism of ATP, ADP, AMP, xanthine, and inosinewas significantly influenced, which may indicate some genotoxicity resulting from TiO2-NP exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02237', 1)": {
+         "doi": "10.1080/21691401.2017.1369427",
+         "text": "For the first time, bamboo derived SiO2 sol induced genotoxicity is assessed at molecular level to understand the interaction mechanism with the fish genome.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02633', 0)": {
+         "doi": "10.1007/s13273-010-0013-6",
+         "text": "In this study, we investigated the effects of TiO2 nanoparticles, potential biological toxins, on zebrafish (Danio rerio) embryogenesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02808', 0)": {
+         "doi": "10.3390/nano12091427",
+         "text": "When zebrafish embryos were exposed to PS-NP at a concentration of 5.0 mg L-1, the hatching rate differed significantly from that of the control group, and the expression of CAT and p53 genes increased significantly, but the expression of Bcl-2 decreased significantly.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03038', 0)": {
+         "doi": "10.3390/molecules29112414",
+         "text": "Furthermore, CuNPs exposure induced alterations in the transcriptional expression of GABA signaling pathway-related genes (gabra1, gad, abat, and gat1), indicating potential impacts on GABA synthesis, release, catabolism, recovery, and receptor binding.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03226', 3)": {
+         "doi": "10.1016/j.ecoenv.2014.12.012",
+         "text": "The highest genotoxic effect was observed at the maximum concentrations of nanoparticles (10 ug L-1 with all three tests at 14 and 21 days of exposure.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03434', 0)": {
+         "doi": "10.13075/ijomeh.1896.00669",
+         "text": "At the same time, the genes expression related to reactive oxygen species (ROS) generation, oxidative damage and apoptosis were also measured.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03739', 3)": {
+         "doi": "10.1177/07482337221086128",
+         "text": "However, after the acute stress, LC treatment exhibited an up-regulation, but MC and HC treatments exhibited down-regulation in the Cytochrome P450-11B gene expression.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05114', 0)": {
+         "doi": "10.3390/ijms232213878",
+         "text": "According to our results, the inclusion of PP-MPs in the feed of D. rerio and P. fluviatilis hampered the cellular function of the gills and hepatic cells by lipid peroxidation, DNA damage, protein ubiquitination, apoptosis, autophagy, and changes in metabolite concentration, providing evidence that the toxicity of PP-MPs is dose dependent.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05544', 0)": {
+         "doi": "10.1016/j.jhazmat.2020.124677",
+         "text": "Further research clarified that combined exposure of PSNPs and MCLR could reduce the levels of thyroxine (T4) and 3, 5, 3' -triiodothyronine (T3) by altering the expression of hypothalamus-pituitary-thyroid (HPT) axis-related genes, eventually leading to growth inhibition of F1 larvae.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05544', 1)": {
+         "doi": "10.1016/j.jhazmat.2020.124677",
+         "text": "Our results also exhibited combined exposure of PSNPs and MCLR could change the transcription of key genes of the GH/IGF axis compared with MCLR single exposure, suggesting the GH/IGF axis was a potential target for the growth inhibition of F1 larvae in PSNPs and MCLR co-exposure groups.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06791', 0)": {
+         "doi": "10.1016/j.aquaculture.2015.08.023",
+         "text": "Also, CAgNCs induced the level of reactive oxygen species (ROS) in concentration and time dependent manner (up to 3 h) suggesting that it may generate oxidative stress leading to bacterial cell death.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06880', 0)": {
+         "doi": "10.1016/j.vibspec.2011.01.005",
+         "text": "Nano TiO2 (nTiO(2)), generally considered to be toxicologically inert, is manufactured in large quantities and extensively applied in consumer products.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07330', 3)": {
+         "doi": "10.1016/j.aquatox.2013.01.010",
+         "text": "Pathway analysis of affected genes identified a number of GO terms that were significantly over-represented in the high AgNP dataset.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09049', 0)": {
+         "doi": "10.3389/fmicb.2022.968650",
+         "text": "The bacteria with significantly decreased abundances were pathogenic or potential pathogenic, such as Aeromonas veronii, Flavobacterium columnare, and genera Flectobacillus and Bosea.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13124', 3)": {
+         "doi": "10.1016/j.aquatox.2021.105871",
+         "text": "Overall, our results indicate that the presence of PS-NPs modifies the bioavailability of TDCIPP and aggravates transgenerational thyroid disruption in zebrafish.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13950', 0)": {
+         "doi": "10.1016/j.watres.2022.118497",
+         "text": "Still, full-scale studies in aquaculture farms are needed, and generation of HO center dot may be favoured to readily oxidize the FF antibiotic.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51907', 3)": {
+         "doi": "10.1128/mbio.03526-23",
+         "text": "Notably, genes involved with the activation of the mitochondrion-like energy generation program, specifically with metabolite import and glycolysis, are also members of predicted excludons.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

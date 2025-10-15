@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of oxidative stress caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence of oxidative stress includes elevated reactive oxygen species (ROS), increased lipid peroxidation, protein carbonylation, or glutathione depletion. Consider keywords such as 'elevated ROS', 'increased MDA', 'oxidative damage', or 'lipid peroxidation' as indications of oxidative stress. Consider keywords such as 'no oxidative stress', 'ROS unchanged', or 'antioxidant status normal' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of oxidative stress in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of oxidative stress, output 'no'. If the sentence does not deal with oxidative stress in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00277', 0)": {
+         "doi": "10.1016/j.scitotenv.2013.06.101",
+         "text": "Organisms were exposed following specific and standardized protocols for each species/endpoints, with modifications when necessary.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00771', 1)": {
+         "doi": "10.3390/biology10121308",
+         "text": "Moreover, we investigated the production of ROS, antioxidant enzymes, and the expression of the ATP-binding cassette in both models.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00985', 0)": {
+         "doi": "10.1016/j.jhazmat.2013.12.021",
+         "text": "The toxicity of the dendrimer for the green alga was linked to a strong increase of intracellular reactive oxygen species with intense lipid peroxidation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01167', 0)": {
+         "doi": "10.1016/j.envpol.2018.02.021",
+         "text": "To investigate the chronic toxicity of graphene oxide (GO) and its functionalized products (GO-carboxyl, GO-imidazole and GO-polyethylene glycol), a two-generation study was conducted using the aquatic model species Daphnia magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01802', 0)": {
+         "doi": "10.1016/j.watres.2017.07.023",
+         "text": "In addition, the changes in superoxide dismutase (SOD) and malondialdehyde (MDA) levels in daphnia under C-60 exposures were also discovered.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02367', 1)": {
+         "doi": "10.1002/etc.3000",
+         "text": "Therefore, it is difficult to estimate the potential risks of nanoparticles to untested species in the environment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02367', 5)": {
+         "doi": "10.1002/etc.3000",
+         "text": "Especially the correlations between body volume of the 5 cladoceran species tested and the corresponding toxicity caused by 5 different CuNPs were statistically significant, and in all cases r(adj)(2) was higher than 0.51 (p < 0.001).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04036', 0)": {
+         "doi": "10.1016/j.jhazmat.2022.129303",
+         "text": "Both nATO and APT induced the formation of oxidative stress, enhanced the activities of anti-oxidative enzymes, altered the metabolism of xenobiotics, increased the concentration of hydrogen sulfide (H2S) and nitric oxide (NO), and triggered the self-protection mechanisms such as ubiquitin-mediated proteolysis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05998', 2)": {
+         "doi": "10.1016/j.watres.2013.09.019",
+         "text": "According to the moderate reliability method of Australia and New Zealand, 0.006 and 0.075 mg L-1 of guideline values for Au3+ were obtained by dividing 0.33 and 4.46 mg L-1 of HC5 and HC50 species sensitivity distributions (SSD) with an FACR (Final Acute to Chronic Ratio) of 59.09.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05998', 3)": {
+         "doi": "10.1016/j.watres.2013.09.019",
+         "text": "More chronic/long-term exposure studies on sensitive endpoints using additional fish species and invertebrates not included in the current dataset will be needed to use other derivation methods (e.g., US EPA and Canadian Type A) or the High Reliability Method from Australia/New Zealand.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07002', 1)": {
+         "doi": "10.1080/15287394.2022.2054888",
+         "text": "Acute exposure of Daphnia magna to binary mixture of AgNP and Gly resulted in significant biochemical responses indicative of oxidative damage.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08195', 1)": {
+         "doi": "10.1016/j.envpol.2014.06.027",
+         "text": "Photocatalytic ROS generation and particle dissolution were measured on a time-course basis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08605', 0)": {
+         "doi": "10.5004/dwt.2020.25882",
+         "text": "Furthermore, exposure to nanoparticles contributed to the increase of the activity of antioxidative enzymes of benthos.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08618', 0)": {
+         "doi": "10.1016/j.ecoenv.2019.109565",
+         "text": "The bioassays were carried out through standardized toxicity bioassays on two environmentally relevant aquatic species i.e. Daphnia magna and Phaeodactylum tricornutum.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11000', 1)": {
+         "doi": "10.1039/c9en01295h",
+         "text": "Herein, unfunctionalized graphene (uG), carboxylated graphene (G-COOH) and aminated graphene (G-NH2) were selected to determine their ability to photogenerate ROS in the aqueous phase.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12502', 1)": {
+         "doi": "10.3390/environments9020026",
+         "text": "The adverse effects of the substances on the neonates including heart rate, swimming speed, and oxidative stress were measured.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13970', 0)": {
+         "doi": "10.1371/journal.pone.0126021",
+         "text": "In this context, the present study investigated acute (96 h) and chronic (21 d) implications of systematically aged TiO2 nanoparticles (nTiO(2); similar to 90 nm) on the standard test species Daphnia magna by following the respective test guidelines.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14080', 0)": {
+         "doi": "10.1002/anbr.202000083",
+         "text": "To explore the chronic effects of TiO2 NMs in the environment, a multigenerational study using the model test species Daphnia magna is conducted.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14200', 1)": {
+         "doi": "10.1016/j.ecoenv.2014.09.031",
+         "text": "This hypothesis is supported by normalizing the 48-h EC50-values to Ag species <2 nm, which displays comparable toxicity estimates for the majority of the nAg materials assessed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14421', 0)": {
+         "doi": "10.1002/etc.3702",
+         "text": "Rutile TiO2 is used in ultraviolet (UV) screening applications, whereas anatase TiO2 crystals have a surface defect that makes them photoreactive.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15564', 1)": {
+         "doi": "10.1016/j.scitotenv.2019.01.282",
+         "text": "However, contradicting to former studies, nTiO(2)-mediated ROS formation was not proportional to increasing NOM levels: lower concentrations (0.04 - 0.40 mg TOC/L) slightly diminished, whereas a higher concentration (4.00 mg TOC/L) promoted the ROS quantity, irrespective of UV intensity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC22065', 0)": {
+         "doi": "10.1016/j.seppur.2010.12.021",
+         "text": "The effects of increasing sonication time (60-150 min), NaCl (1.5 - 18 g L-1, CCl4 (200 - 1000 mg L-1, pH (2-10) and air as dissolved oxygen (DO = 2 - 12 mg L-1 concentrations on the destruction of four polycyclic aromatic hydrocarbons (PAHs) in a real petrochemical industry wastewater in Izmir (Turkey) were investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23218', 0)": {
+         "doi": "10.1016/j.ecoenv.2022.113920",
+         "text": "The bioconcentration factor (BCF) of the test species for CuNPs varied between 10(2) - 10(3) L/kg dry weight when expressing the internal concentration on a mass basis, which was lower than BCF values reported for Cu2+ (10(3) - 10(4) L/kg dry weight).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC27085', 1)": {
+         "doi": "10.1002/etc.4982",
+         "text": "We have identified and measured the 2 most relevant ROS species, hydroxyl and superoxide radicals, and described that ROS can be modeled using the highly reactive hydroxyl radical to provide an upper bound for toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC37248', 0)": {
+         "doi": "10.1016/j.envres.2023.115532",
+         "text": "The as-synthesized Cu-BDC MOF chips efficiently inhibited the cyanobacteria species Microcystis aeru-ginosa, which was comparable to the conventional dose of CuSO4 algaecide (1.00 mg L-1.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

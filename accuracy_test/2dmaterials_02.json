@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of two-dimensional (2D) nanomaterials described in the input sentences. Examples of common 2D nanomaterials include graphene (C), molybdenum disulfide (MoS2), tungsten disulfide (WS2), boron nitride (BN), and other layered compounds. The core composition may also appear as abbreviations or chemical formulas, such as MoS2, WS2, or BN. Output only the core chemical composition(s) identified, using their chemical symbol(s) or formula(s). If more than one 2D nanomaterial is mentioned in a sentence, list each distinct core composition in a Python list format, for example: ['C', 'MoS2', 'WS2', 'BN']. Focus exclusively on 2D nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'C' or 'MoS2' or 'WS2')."
+   },
+   "instances": {
+      "('ATC01839', 0)": {
+         "doi": "10.1016/j.colsurfa.2024.133459",
+         "text": "In addition, compared to boron nitride (BN) nanosheets and nanospheres, abundant pore structure and high specific surface area of the BNNFs enable superior AgNPs loading without agglomeration.",
+         "extracted val": "BN",
+         "correct": "y"
+      },
+      "('ATC02013', 0)": {
+         "doi": "10.1038/s41598-023-37395-4",
+         "text": "In this paper, we have developed a simple, rapid, sensitive, and selective E. coli DNA sensor based on the novel hybrid-type MoS2 and (NH4)(6)Mo7O24 nanosheets.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC04585', 0)": {
+         "doi": "10.3390/pharmaceutics13010052",
+         "text": "Herein, we report a new BP (BP)-based non-damaging near-infrared light-responsive platform conjugated with ZnO and Au nanoparticles as a synergistic antibacterial agent against Staphylococcus aureus species.",
+         "extracted val": "BP",
+         "correct": "y"
+      },
+      "('ATC06223', 1)": {
+         "doi": "10.1016/j.compositesb.2021.109498",
+         "text": "On one hand, three-dimensional (3D) MoS2 nanoflowers load can quickly capture the photogenerated electrons of two-dimensional (2D) TiO2 nanofibers, inhibit the recombination of electron-hole pairs and greatly increase the yield of reactive oxygen species (ROS), thereby overcoming the UV sterilization defects of pure TiO2, endowing TiO2 excellent photodynamic antibacterial ability in the long-wavelength region.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC06602', 0)": {
+         "doi": "10.1021/acsbiomaterials.2c00856",
+         "text": "On the basis of the photothermal effect, MoS2 (MoS2) nanoparticles were used to link quaternized polyethylenimine (QPEI), dihydroporphyrin e6 (Ce6), and Panax notoginseng saponins (PNS) in a zeolitic imidazolate framework-8 (ZIF-8).",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC08479', 0)": {
+         "doi": "10.1016/j.cej.2021.132170",
+         "text": "Dendritic fibrous nanoSiO2 (DFNS) loaded with carbon quantum dots (CQDs) and MoS2 QDs (DFNS@CQDs-MoS2) nanoparticles were successfully prepared, which exhibited excellent photocatalytic antibacterial activity.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC11074', 1)": {
+         "doi": "10.1021/acs.langmuir.8b00262",
+         "text": "Measurements to determine the viability of bacteria in the presence of the 2D nanomaterials performed by using two complementary techniques, flow cytometry, and fluorescence imaging showed that, while MnO2 and MoS2 nanosheets show different antibacterial activities, in both cases, Gram-positive bacteria show a higher loss in membrane integrity.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC14969', 0)": {
+         "doi": "10.1016/j.cej.2021.132918",
+         "text": "Benefiting from the vertical growth of ReS2 nanosheets and the hybrid effect from Ag and ReS2, the visible-light response of Ag/ReS2 can be greatly enhanced, exhibiting an excellent photocatalytic antibacterial efficiency towards Escherichia coli (E. coli) after 30 min of visible-light exposure, providing a promising environmentally friendly alternative method for water disinfection.",
+         "extracted val": "ReS2",
+         "correct": "y"
+      },
+      "('ATC17016', 0)": {
+         "doi": "10.1016/j.cej.2023.143727",
+         "text": "Herein, ultrathin WSe2 and MoSe2 nanosheets are exfoliated and functionalized with poly(acrylic acid) (PAA) (PAA-WSe2 and PAA-MoSe2) in an aqueous solution as narrow-spectrum or species-specific antibiotics for the treatment of bacterial infections.",
+         "extracted val": "WSe2",
+         "correct": "y"
+      },
+      "('ATC18432', 0)": {
+         "doi": "10.1021/acsanm.2c05452",
+         "text": "In MoS2 nanosheets, the presence of atomic defects plays a crucial role in determining their physical and electronic properties.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC19007', 0)": {
+         "doi": "10.1007/s00339-024-07440-8",
+         "text": "Fe3O4@MoS2 core-shell nanoparticles have a wide range of potential uses in the field of biomedicine, including drug delivery, target therapies, and NIR-stimulated tumor therapy.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC21776', 1)": {
+         "doi": "10.1016/j.jmbbm.2023.105884",
+         "text": "Furthermore, the composite membranes exhibited remarkable photothermal therapy (PTT) capabilities when aided by the synergistic effect of BP nanosheets and ZnO.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC24018', 0)": {
+         "doi": "10.1016/j.ijbiomac.2021.02.127",
+         "text": "Herein, we focused on the current demands of two dimensional (2D) TMDCs and produced high-quality, few-layered MoS2 nanosheets.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC24855', 0)": {
+         "doi": "10.1016/j.colsurfb.2022.112433",
+         "text": "Herein, BP nanosheets (BPNSs) were successfully prepared by liquid phase exfoliation technology, and composite nanosheets (BPNSs@phy) were formed by loading antimicrobial physcion(Phy)via hydrophobic interaction.",
+         "extracted val": "BP",
+         "correct": "y"
+      },
+      "('ATC26942', 0)": {
+         "doi": "10.1039/c8tb01669k",
+         "text": "Acting as a substrate, reductant and stabilizer, BP nanosheets were decorated with Ag nanoparticles (NP) through an in situ growth strategy.",
+         "extracted val": "BP",
+         "correct": "y"
+      },
+      "('ATC27241', 0)": {
+         "doi": "10.1007/s11356-023-30116-4",
+         "text": "The current work reports the gum arabic-mediated greener synthesis of MoS2 nanoparticles (NPs) and its utilization for the solar light-assisted degradation of methylene blue.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC28692', 0)": {
+         "doi": "10.1021/acsomega.2c02337",
+         "text": "Herein, we report cellulose-based threads from Indian sacred Lotus (Nelumbo nucifera) of the Nymphaceae family embellished with MoS2 nanosheets for its enhanced hydrophobic and antimicrobial properties.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC31774', 0)": {
+         "doi": "10.1021/acsnano.7b08977",
+         "text": "We show that, at non-growth inhibitory, equal mass concentrations (10 mg L-1, multiwall carbon nanotubes (MWCNTs) induced differential regulation of 111 genes in P. aeruginosa, while graphene, BN, and carbon black caused differential regulation of 44, 26, and 25 genes, respectively.",
+         "extracted val": "C",
+         "correct": "y"
+      },
+      "('ATC31800', 0)": {
+         "doi": "10.1039/d3nr03120a",
+         "text": "In this study, we first investigated the ability of two-dimensional (2D) MoS2 (MoS2) nanosheets to trigger neutrophil extracellular traps (NETs) using neutrophil-differentiated HL-60 cells as well as primary human peripheral blood neutrophils.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC33252', 0)": {
+         "doi": "10.1007/s11051-022-05573-6",
+         "text": "Herein, we report a facile, template-free hydrothermal approach to fabricate green and homogeneous mixed-phase (1 T/2H) MoS2 (MoS2) nanosheets for highly efficient removal of Cr6+ ions and pharmaceuticals from wastewater.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC34729', 0)": {
+         "doi": "10.1016/j.jhazmat.2023.133204",
+         "text": "Experimental and simulation results verified that h-BN can penetrate into and then extract phospholipids from the cell membrane of algae due to the strong hydrophobic interactions between h-BN nanosheets and lipids, resulting in membrane permeabilization and integrity reduction.",
+         "extracted val": "BN",
+         "correct": "y"
+      },
+      "('ATC39261', 0)": {
+         "doi": "10.1016/j.ultsonch.2023.106749",
+         "text": "Furthermore, it is proved that the MoS2-Zn coatings generated superoxide (center dot O-2(-)) and hydroxyl radicals (center dot OH) under visible light, which played the dominant and subordinate roles in the antibacterial process, respectively.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC44261', 0)": {
+         "doi": "10.1002/smll.202105775",
+         "text": "Herein, a bifunctional sonosensitizer that consists of porphyrin-like Zn single-atom catalysts (g-ZnN4) and MoS2 quantum dots is developed, which exhibits excellent sonodynamic antibacterial efficiency and osteogenic ability.",
+         "extracted val": "MoS2",
+         "correct": "y"
+      },
+      "('ATC48594', 0)": {
+         "doi": "10.1016/j.ceramint.2021.09.282",
+         "text": "Current report is based on the synthesis of Gd+3 doped V2O5 nanostructures (GVO) along with fabrication of GVO/MXene binary nanocomposite.",
+         "extracted val": "V2O5",
+         "correct": "y"
+      },
+      "('ATC49874', 0)": {
+         "doi": "10.1016/j.inoche.2023.111336",
+         "text": "In this regard, VS2, MoS2 and VS2@MoS2 nanoparticles (NPs) were synthesized using one-pot hydrothermal method, which is simple, low-cost, and environmentally friendly.",
+         "extracted val": "VS2",
+         "correct": "y"
+      }
+   }
+}

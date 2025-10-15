@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of reproductive impairment caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence of reproductive toxicity includes reduced number of eggs laid, lower fertilization rate, decreased hatchling count, or impaired gonadal development. Consider keywords such as 'reduced reproduction', 'fewer eggs', 'fertility decline', or 'reproductive toxicity' as indications of toxicity. Consider keywords such as 'no effect on reproduction', 'egg production normal', or 'fertility unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of reproductive impairment in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of reproductive toxicity, output 'no'. If the sentence does not deal with reproduction in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00028', 2)": {
+         "doi": "10.3109/17435390.2013.778345",
+         "text": "Both the morphology and the movement of the embryos were not affected, and it was determined that the main mechanism of hatch inhibition by NPs is likely through the interaction of NPs with the zebrafish hatching enzyme.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00057', 0)": {
+         "doi": "10.1080/17435390.2016.1229517",
+         "text": "Firm proposals for modification of protocols with scientific justification(s) are presented for the following tests: growth inhibition using the green algae Raphidocelis subcapitata (formerly: Pseudokirchneriella subcapitata; TG 201), acute toxicity with the crustacean Daphnia magna (TG 202), development toxicity with the fish Danio rerio (TG 210), reproduction of the sediment-living worm Lumbriculus variegatus (TG 225), activity of soil microflora (TGs 216, 217), and reproduction of the invertebrates (Enchytraeus crypticus, Eisenia fetida, TGs 220, 222).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00097', 2)": {
+         "doi": "10.1002/etc.3208",
+         "text": "Combined exposures with D. magna induced synergism on reproduction, decreasing the number of neonates produced more than expected based on both stressors' individual toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00337', 1)": {
+         "doi": "10.1016/j.cbpc.2017.03.004",
+         "text": "In this work, the effects of waterborne exposure of adult zebrafish (Danio rerio) to PVP/PEI coated Ag NPs (similar to 5 nm) on reproduction (fecundity) were investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00414', 0)": {
+         "doi": "10.1016/j.aquatox.2013.12.024",
+         "text": "The acute toxicity and sublethal parameters evaluated included survival rates, malformation, hatching, equilibrium, and overall length of the larvae, together with biochemical biomarkers (specific activities of catalase (CAT), glutathione S-transferase (GST), and acid phosphatase (AP)).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00720', 0)": {
+         "doi": "10.1016/j.ecoenv.2015.08.009",
+         "text": "The hatching rate and survival of embryos decreased in a dose dependent manner.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00917', 0)": {
+         "doi": "10.1016/j.msec.2017.07.009",
+         "text": "The in vivo results described the toxicology profile toward the zebrafish embryo/larvae, including new data concerning the survival, hatching ratio, and developmental malformations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00953', 1)": {
+         "doi": "10.1897/06-583.1",
+         "text": "In contrast, nC(60) at 1.5 mg L-1 delayed zebrafish embryo and larval development, decreased survival and hatching rates, and caused pericardial edema.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01223', 0)": {
+         "doi": "10.3390/pharmaceutics15020632",
+         "text": "Additional in vivo toxicity assessment in the developing zebrafish (Danio rerio) embryo model found no observed abnormalities even at a high concentration of 400 ug mL-1 after 96 h post fertilization.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02101', 0)": {
+         "doi": "10.15017/4486553",
+         "text": "Exposure to ZIF-8 NPs at 90 and 900 mg L-1 significantly delayed the hatching time of zebrafish embryos.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02125', 0)": {
+         "doi": "10.1166/jnn.2008.432",
+         "text": "Teratogenic effects were evaluated through changes in embryonic development after 24 hours post-fertilization (hpf), 48 hpf and 72 hpf.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02125', 1)": {
+         "doi": "10.1166/jnn.2008.432",
+         "text": "At high concentrations, MWCNTs was found to be involved in the apoptosis, delayed hatching and formation of abnormal spinal chords.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02800', 2)": {
+         "doi": "10.1897/06-272R.1",
+         "text": "The hatching delay observed in this study likely was induced by the Co and Ni catalysts used in the production of SWCNTs that remained at trace concentrations after purification.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02886', 1)": {
+         "doi": "10.1002/etc.4275",
+         "text": "A morphological assessment revealed no significant hatching impairment, morphological abnormalities, or mortality at any concentration or time point examined.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC02902', 0)": {
+         "doi": "10.1080/17435390.2022.2088312",
+         "text": "Zebrafish were exposed to NMs at 3 days post-fertilization (dpf) and neutrophil accumulation at the injury or injection site was quantified at 0, 4, 6, 8, 24, and 48 h post-exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02995', 0)": {
+         "doi": "10.1039/c2ib00130f",
+         "text": "The commonly used method on zebrafish was to calculate mortality and 5 or 6 days postfertilization (dpf) toxicity scores.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03609', 2)": {
+         "doi": "10.1080/17435390.2016.1214763",
+         "text": "We propose that PVP-AgNPs temporarily delay embryonic vascular development by interfering with oxygen diffusion into the egg, leading to hypoxic conditions and ER stress.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03652', 0)": {
+         "doi": "10.1039/c5en00118h",
+         "text": "However, for earlier developmental stages (2 hours post fertilisation) the ZFE chorion was found to effectively adsorb silver, leading to an up to 20-fold increase in total silver concentrations compared to the later chorion-free stages of the ZFE.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03675', 0)": {
+         "doi": "10.1016/j.scitotenv.2015.05.087",
+         "text": "Fungal growth did not affect survival, hatching success and growth.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05747', 0)": {
+         "doi": "10.1039/d1en00299f",
+         "text": "Automated microscopy coupled with image acquisition has facilitated hazard assessment of chemicals by quantification of various endpoints (e.g., mortality, malformations, hatching), an approach which we employed here to address adverse effects of a selected library of MNMs of different compositions and surface functionalities.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08072', 0)": {
+         "doi": "10.1016/j.ecoenv.2020.110642",
+         "text": "For the study, zebrafish embryos were treated with H2O2 (15 mu M, 30 mu M and 45 mu M) to simulate an oxidative damage, and with EA (2.5 mmol L-1, 5 mmol L-1 and 10 mmol L-1 for 8, 20, 24, 48, 96 hpf (hours post fertilization).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13124', 1)": {
+         "doi": "10.1016/j.aquatox.2021.105871",
+         "text": "At 90 days postfertilization, zebrafish (Danio rerio) strain AB was exposed to either TDCIPP (0, 0.47, 2.64, or 12.78 ug L-1 or PS-NPs (10 mg L-1 or their combination for 120 days.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13124', 3)": {
+         "doi": "10.1016/j.aquatox.2021.105871",
+         "text": "We demonstrate that parental exposure to TDCIPP alone or in combination with PS-NPs induces thyroid disruption in adults, and then leads to thyroid endocrine disruption in their larval offspring.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC41802', 0)": {
+         "doi": "10.1007/s00239-009-9295-5",
+         "text": "(RCC) generated sterile triploid (3nRB) and fertile tetraploid (4nRB) hybrid offspring.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52557', 0)": {
+         "doi": "10.1080/15287394.2017.1331597",
+         "text": "Zebrafish embryos were exposed to CTAB-AuNR (0 - 150 ug L-1 to determine for developmental assessment until 96 hr post fertilization (hpf) and lethality.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

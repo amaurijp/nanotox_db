@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of metallic nanomaterials described in the input sentences. Examples of metallic nanomaterials include gold (Au), silver (Ag), copper (Cu), nickel (Ni), iron (Fe), aluminum (Al), and other metals. The composition may appear as abbreviations or chemical formulas. Output only the core chemical composition(s) using their chemical symbol(s) or formula(s). If more than one metallic nanomaterial is mentioned, list each distinct composition in a Python list format, for example: ['Au', 'Ag', 'Cu']. Focus exclusively on metallic nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'Au' or 'Ag' or 'Cu')."
+   },
+   "instances": {
+      "('ATC04604', 0)": {
+         "doi": "10.1002/ddr.22148",
+         "text": "In vitro antibacterial activity test showed that vancomycin and vancomycin functionalized ZnFe2O4 have no antibacterial effect against E. coli. S. aureus was sensitive to vancomycin and ZnFe2O4@Cell@APTES@Van NPs and ZnFe2O4 NPs did not improve vancomycin antibacterial activity against these bacteria.",
+         "extracted val": "ZnFe2O4",
+         "correct": "y"
+      },
+      "('ATC06281', 0)": {
+         "doi": "10.1007/s13762-022-04005-1",
+         "text": "In the present study, for the synthesis of palladium nanoparticles, green synthesis nanoparticle protocol, which consists of plant extracts with reducing and capping agents, was used.",
+         "extracted val": "Pd",
+         "correct": "y"
+      },
+      "('ATC06337', 0)": {
+         "doi": "10.3390/gels10040240",
+         "text": "The hydrogel was developed through the combination of the eco-friendly and enduring antibacterial agent, lignin silver nanoparticles (Lig-Ag NPs), with polyvinyl alcohol (PVA) and sodium alginate (SA), in varying proportions.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC06763', 0)": {
+         "doi": "10.3390/polym12061286",
+         "text": "Polyaniline (PANI) and polypyrrole (PPY) were synthesized by carbon dots (CDs) under UV irradiation and then sonicated together with zinc acetate and copper acetate to form the PANI-Zn@CuO and PPY-Zn@Cu composites.",
+         "extracted val": "Zn",
+         "correct": "n"
+      },
+      "('ATC07155', 0)": {
+         "doi": "10.1002/smll.202000303",
+         "text": "In vitro, reductive dissolution can be slow enough in cell culture media for MnO2 internalization by cells in the form of intact nanosheets, which localize in vacuoles, react to deplete intracellular glutathione, and induce cytotoxicity that is likely mediated by intracellular Mn2+ release.",
+         "extracted val": "MnO2",
+         "correct": "n"
+      },
+      "('ATC08964', 2)": {
+         "doi": "10.3390/coatings11060632",
+         "text": "In addition, the antimicrobial testing reveals efficient activity of cotton fabrics with the sericin/PNIPAM/PEO nanofiber treatments against Gram-positive bacteria and Gram-negative bacteria such as Staphylococcus aureus and Escherichia coli.",
+         "extracted val": "Cu",
+         "correct": "y"
+      },
+      "('ATC09075', 0)": {
+         "doi": "10.1007/s00604-017-2524-5",
+         "text": "In our perception, Au nanoparticles coverage on sub-micron sized polystyrene particles was the critical factor that allowed reaching the reported low concentration of E. coli O157:H7 in real food samples.",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC09946', 0)": {
+         "doi": "10.1007/s12221-010-0650-3",
+         "text": "The aim of this study was to examine the influence of dyeing on antibacterial efficiency of corona activated polyamide and polyester fabrics loaded with colloidal Ag nanoparticles as well as the influence of the presence of Ag nanoparticles on the color change of dyed fabrics. C.I.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC12044', 0)": {
+         "doi": "10.1016/j.actbio.2011.07.007",
+         "text": "In the present article we report for the first time on the efficient generation of extracellular silver sulfide (Ag2S) nanoparticles by the metal-reducing bacterium Shewanella oneidensis.",
+         "extracted val": "Ag2S",
+         "correct": "y"
+      },
+      "('ATC12425', 0)": {
+         "doi": "10.1021/acsami.4c01238",
+         "text": "Moreover, the photoreduction process affected the size of Au nanoparticles (NPs), weakened the antibacterial activity of fabrics against both types of tested bacteria, and modestly increased the UV protection.",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC16664', 0)": {
+         "doi": "10.1016/j.jare.2022.03.015",
+         "text": "The enhanced antibacterial activity was attributed to the anchoring of Ag nanospheres on the surface of CeO2 nanosheets, which induced the reduction of CeO2 bandgap and boosted the visible light harvesting.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC16814', 1)": {
+         "doi": "10.1039/c4ra12319k",
+         "text": "Various characterization results showed that Ag nanoparticles with an average diameter of about 15 nm were successfully deposited upon ZnO microspheres with sizes ranging from 300 - 700 nm which are composed of ZnO nanoparticles with diameters of less than 10 nm.",
+         "extracted val": "Zn",
+         "correct": "n"
+      },
+      "('ATC18021', 0)": {
+         "doi": "10.4067/S0717-97072014000400002",
+         "text": "The mononuclear cobalt(III) complex derived from 1,10-phenanthroline and maltose ([Co(phen)(2)maltose]Cl-2 center dot 3H(2)O) (1) has been synthesized and characterized in aqueous solution.",
+         "extracted val": "Co",
+         "correct": "y"
+      },
+      "('ATC18045', 0)": {
+         "doi": "10.1039/d3na00746d",
+         "text": "SiO2-coated Au nanoparticles (Au@SiO2 NPs) with a pinhole-free 4 - 5 nm shell were synthesized and functionalized with a monolayer of turn-on fluorescent probes.",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC18063', 1)": {
+         "doi": "10.1016/j.jcis.2021.03.009",
+         "text": "Experiments: Au nanoparticle coating techniques together with rapid electrochemical screens of a phospholipid layer on fabricated mercury (Hg) on platinum (Pt) electrode have been used to moderate the phospholipid layer activity of Au nanoparticle dispersions.",
+         "extracted val": "Hg",
+         "correct": "n"
+      },
+      "('ATC22191', 1)": {
+         "doi": "10.1016/j.inoche.2023.111250",
+         "text": "The presented study reports the green synthesis of pure and Ni-doped CuO nanoparticles by Allium staivum (Garlic) extract.",
+         "extracted val": "Ni",
+         "correct": "n"
+      },
+      "('ATC23380', 0)": {
+         "doi": "10.1016/j.heliyon.2020.e03624",
+         "text": "Formation of Ag NPs was confirmed through different characterization techniques such as UV-Vis Spectroscopy, X-ray Diffraction (XRD), Scanning Electron Microscope (SEM) and Transmission Electron Microscopy (TEM).",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC33566', 1)": {
+         "doi": "10.1016/j.saa.2007.08.011",
+         "text": "Schiff base complexes supposed in tetragonal geometry have the general formula [M(bappnaf or damnaf)]Cl center dot nH(2)O, where M = Cr(III), Co(III) and n = 2, 3.",
+         "extracted val": "Co",
+         "correct": "n"
+      },
+      "('ATC36639', 0)": {
+         "doi": "10.1038/srep24467",
+         "text": "In order to overcome this problem and find an effective way to evaluate the gPRDX5, nanoparticle formation, which has been widely used in drug delivery because of its steadiness in application, less side-effects and enhancement of drug accumulation in target issues, was used here to address the issues.",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC36796', 2)": {
+         "doi": "10.1021/acsnano.7b08264",
+         "text": "The release of Ag NPs and ZnO NPs within the macrophage endosomal system increased the potency of the model antibiotic rifampicin by as much as 76 %, realized through an increase in membrane disorder of intracellular M.tb.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC38092', 0)": {
+         "doi": "10.1016/j.ijbiomac.2017.07.056",
+         "text": "In this study, antifungal effects of chitosan nanoparticles (CNPs) and chitosan silver nanocomposites (CAgNCs) were compared against Fusarium oxysporum species complex.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC42290', 0)": {
+         "doi": "10.1134/S1995078020020135",
+         "text": "The successful formation of alpha-Fe2O3 and alpha-Fe2O3@Ag nanoparticles was confirmed by UV-Vis spectrometry, X-ray diffraction, Fourier transform infrared spectroscopy, Raman and scanning electron microscopy analysis. alpha-Fe2O3@Ag nanoparticles clearly showed excellent antibacterial activity against pathogenic microorganisms including gram-positive (Staphylococcusaureus, Bacillus) and gram-negative (Klebsiella pneumonia, E. coli) bacteria at low concentrations of 35 ug mL-1 compared with pristine alpha-Fe2O3.",
+         "extracted val": "Fe2O3",
+         "correct": "y"
+      },
+      "('ATC47808', 0)": {
+         "doi": "10.1088/0957-4484/27/39/395603",
+         "text": "The structural, morphological, compositional, and spectroscopic characterizations revealed that the Ag/C3N4.5 CNBs are composed of N-deficient melem ultrathin nanobelts and crystalline Ag nanoparticles attached to the surface of the nanobelts with good contact.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC47889', 0)": {
+         "doi": "10.1016/j.micromeso.2010.06.020",
+         "text": "Silver nanoparticles were grown on the surface of the zeolite film by reduction of the Ag+ - exchanged zeolite with aqueous hydrazine.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC51739', 0)": {
+         "doi": "10.1134/S1062359023603634",
+         "text": "In this research, we employed a microwave-assisted green synthesis method utilizing extracts from Cistus salviifolius L. and Ferula communis L. to synthesize silver nanoparticles (AgNPs).",
+         "extracted val": "Ag",
+         "correct": "y"
+      }
+   }
+}

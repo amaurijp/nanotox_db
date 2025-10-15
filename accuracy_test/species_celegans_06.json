@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of bioaccumulation of a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence of bioaccumulation includes terms such as 'bioaccumulation', 'bioconcentration', 'body burden', 'uptake', 'internalization', or a reported increase in internal nanomaterial concentration relative to the exposure medium. Consider keywords such as 'significant accumulation', 'increased body burden', 'biomagnification', or quantitative uptake values as indications of bioaccumulation. Consider keywords such as 'no accumulation', 'no uptake', 'clearance', 'depuration', or 'not detected' as indications of non-bioaccumulation. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question. Is there any evidence in the input sentence of bioaccumulation of a nanomaterial in 'Caenorhabditis elegans'? If there is no clear evidence of bioaccumulation, output 'no'. If the sentence does not deal with bioaccumulation in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no', or 'None' between single quote characters (e.g., 'yes', 'no', or 'None')."
+   },
+   "instances": {
+      "('ATC00425', 1)": {
+         "doi": "10.1016/j.aquatox.2010.07.016",
+         "text": "Using traditional and novel analytical methods, we observed significant aggregation and extra-organismal dissolution of silver, organismal uptake and, in one case, transgenerational transfer of AgNPs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01063', 1)": {
+         "doi": "10.1080/15376516.2018.1449277",
+         "text": "Population-based observations and gene expression analysis were employed in this study, SNP and PAMAM caused decrease in the number of live nematodes and their body length, but MWCNT did not affect the population of nematodes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01740', 0)": {
+         "doi": "10.3390/molecules28176334",
+         "text": "The conjugates of G4P and G4PFL at nanomolar concentrations were the most active, and the least active conjugate was G4F.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03971', 0)": {
+         "doi": "10.1016/j.foodchem.2016.02.022",
+         "text": "The amount of lipid ingested depended on the size and concentration of the nanoparticles.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04194', 0)": {
+         "doi": "10.3390/toxics11120989",
+         "text": "Exposure to TiO2 NPs (0.0, 0.01, 0.1, 1.0, and 10 mg L-1 did not result in any change to the survival rate or body length of the nematodes, regardless of the concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04322', 5)": {
+         "doi": "10.1016/j.ecoenv.2016.06.028",
+         "text": "These results suggest that Agl from cloud seeding may moderately affect biota living in both terrestrial and aquatic ecosystems if cloud seeding is repeatedly applied in a specific area and large amounts of seeding materials accumulate in the environment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05856', 1)": {
+         "doi": "10.2147/IJN.S251269",
+         "text": "Conclusion: Our study showed that SiNPs induced the change of the whole transcriptome in C. elegans, and triggered negative effects on longevity, development, reproduction, and body morphogenesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08229', 0)": {
+         "doi": "10.1016/j.chemosphere.2020.126786",
+         "text": "Thus, in the present work, the antimicrobial effect of BaFeNPs was evaluated for the first time in gram-negative and gram-positive bacteria and yeast showing neither antibacterial nor antifungal activity at moderate concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09836', 2)": {
+         "doi": "10.1016/j.scitotenv.2022.159058",
+         "text": "From the endpoints of body length, brood size, survival rate and lifespan, an adverse effect was found on the growth and development of C. elegans caused by PSs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10533', 0)": {
+         "doi": "10.1002/etc.3349",
+         "text": "To acquire a better knowledge of environmental effects of bisphenol A (BPA), ecotoxicological evaluations were conducted using C. elegans on the physiological (growth, locomotion behaviors, and reproduction), biochemical (lipofuscin accumulation, reactive oxygen species production, and cell apoptosis), and molecular (stress-related gene expression) responses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10544', 3)": {
+         "doi": "10.4209/aaqr.2020.04.0157",
+         "text": "Significant shortening of body size was also observed in nematodes exposed to 0.5 - 5 mg mL-1 for both SiO2 NPs (93 - 81 %) and NH2-SiO2 NPs (94 - 88 %).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10906', 0)": {
+         "doi": "10.1016/j.impact.2022.100413",
+         "text": "In contrast, the negative effects of GO were not completely mitigated; GO inhibited 16.2 % of nematode growth, 86.5 % of reproduction, and 32.0 % of fertility at the highest concentration evaluated (10 mg L-1, while corona coated GO mitigated 50 % and 100 % of fertility and growth, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14495', 1)": {
+         "doi": "10.1139/cjz-2016-0243",
+         "text": "In response to stress induced by starvation or exposure to 1 mmol center dot L-1 NH4Cl, pH 5.5, or pH 8.0, body pH stayed fairly constant, with changes in mRNA expression levels detected in intestinal NHX-2 and hypodermal NHX-3.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16275', 1)": {
+         "doi": "10.1016/j.envpol.2015.10.057",
+         "text": "The results showed that changes of physiological-level effects across four generations varied in magnitude and direction, depending on the exposure concentrations. C. elegans individuals in the first generation grew smaller, moved slower, and produced less offsprings than the controls by BPA exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18351', 0)": {
+         "doi": "10.1039/c4ra14377a",
+         "text": "Pretreatment with paeonol also suppressed the translocation of MWCNTs into the body through the intestinal barrier.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC18861', 1)": {
+         "doi": "10.1007/s11356-018-3810-4",
+         "text": "Ingestion and accumulation of TiO2 particles in the worm intestine was observed for all three materials by light microscopy.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC20204', 0)": {
+         "doi": "10.1039/c4tx00120f",
+         "text": "Furthermore, sublethal Fe concentrations significantly decreased the worms' lifespan and brood size compared to non-exposed worms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20287', 0)": {
+         "doi": "10.1007/s11356-023-28050-6",
+         "text": "These findings demonstrate that DMA, despite being considered less hazardous than its inorganic equivalents, can still have toxic effects on species at low concentrations and the presence of MPs, can worsen these effects.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC22577', 0)": {
+         "doi": "10.1016/j.scitotenv.2024.170760",
+         "text": "In addition, exposure to PE-NP (1 and 10 ug L-1 increased 6-PPDQ accumulation in body of nematodes and increased defecation cycle length in 6-PPDQ exposed nematodes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC24441', 3)": {
+         "doi": "10.1021/acs.nanolett.7b05040",
+         "text": "We also observed increased viscosity in diverse LSD models in Caenorhabditis elegans, revealing that lysosomal viscosity is a powerful reporter with which to monitor substrate accumulation in LSDs for new diagnostics or to assay therapeutic efficacy.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24729', 0)": {
+         "doi": "10.1016/j.chemosphere.2022.135498",
+         "text": "Here we employed Caenorhabditis elegans as an animal model to systematically compare the toxicity between nanopolystyrene and its 4 chemically modified derivatives (PS-PEG, PS-COOH, PS-SOOOH and PS-NH2) at predicted environmental concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC27668', 0)": {
+         "doi": "10.1142/S1793292022500035",
+         "text": "Multi-colored images revealed that in Caenorhabditis elegans, N-CQDs entered the digestive tract through ingestion, spared rapidly throughout the body, and were excreted though the anus within 40 min.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC43109', 0)": {
+         "doi": "10.3390/cancers13246367",
+         "text": "Boron neutron capture therapy (BNCT) is a cancer therapy based on the potential of B-10 atoms to produce alpha particles that cross tissues in which the B-10 accumulates without damaging the surrounding healthy tissues after irradiation with low energy thermal neutrons.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC43469', 0)": {
+         "doi": "10.1021/cg3018776",
+         "text": "Compound 2 was found to be highly active, effecting a high mortality even at very low concentrations such as 25 or 10 mg l-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC46151', 0)": {
+         "doi": "10.1039/d3nr00009e",
+         "text": "The OUCNPs subsequently activate BiPOLES-expressing excitatory cholinergic motor neurons in C. elegans, leading to significant inhibition and excitation of motor neurons and body bends, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

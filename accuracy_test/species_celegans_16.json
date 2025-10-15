@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of acute mortality or decreased viability caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence of acute toxicity includes increased mortality, reduced survival rate, or decreased viability within typical short-term exposure periods of 24\u201348 hours. Consider keywords such as 'mortality', 'lethality', 'reduced survival', 'decreased viability', or 'LC50' as indications of acute toxicity. Consider keywords such as 'no mortality', 'survival unchanged', or 'viability unaffected' as indications of non-acute toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of acute mortality or decreased viability of 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of acute toxicity, output 'no'. If the sentence does not deal with acute mortality or viability in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC02198', 0)": {
+         "doi": "10.1166/jnn.2016.11668",
+         "text": "Regarding toxicity evaluation, worms exposed to clozapine-loaded nanocapsules did not show the same mortality rate compared to others formulations, as the survival was significantly higher than the free drug treated-group.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03878', 0)": {
+         "doi": "10.1021/acsami.7b03672",
+         "text": "Quasi-spherical AgNPs showed substantial antibiofilm activity in vitro with 96 % (+/- 2 %), 97 % (+/- 1 %), and 98 % (+/- 1 %) biofilm killing of SA, MRSA, and PA, respectively, while significantly reducing mortality of infected nematodes.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC04322', 1)": {
+         "doi": "10.1016/j.ecoenv.2016.06.028",
+         "text": "Freshwater green algae Dictyosphaerium chlorelloides and cyanobacteria Microcystis aeruginosa were exposed to silver iodide in culture medium, and their cell viability and photosynthetic activity were evaluated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06953', 0)": {
+         "doi": "10.1016/j.envpol.2011.03.013",
+         "text": "Phototoxicity of nano-ZnO and bulk-ZnO was largely dependent on illumination method as 2-h exposure under NSL caused significantly greater mortality in C elegans than under AALL.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07009', 0)": {
+         "doi": "10.1016/j.scitotenv.2022.156226",
+         "text": "EPFRs could increase gene expressions related not only to oxidative stress and biotransformation in C. elegans, but also to indications of disturbances in energy homeostasis, survival, proliferation, cell and embryonic development.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07381', 0)": {
+         "doi": "10.1002/em.21844",
+         "text": "Our comparative approach examined viability, gene expression, and enzyme activities in wild type (WT) and p38 MAPK knock-down (KD) Jurkat T cells (in vitro) and in WT and pmk-1 loss-of-function mutant strains of C. elegans (in vivo).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07946', 0)": {
+         "doi": "10.1166/jbn.2011.1229",
+         "text": "In this context, we examined the adverse effects of TiO2 and ZnO NPs of <25 nm and <100 nm sizes to nematode Caenorhabditis elegans. <25 nm TiO2 and ZnO NPs showed LC50 of 77 mg L-1 and 0.32 mg L-1 respectively, while <100 nm TiO2 NPs were non-toxic and LC50 of 2 mg L-1 was obtained for <100 nm ZnO NPs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08237', 2)": {
+         "doi": "10.1002/tox.23616",
+         "text": "Overall, our findings indicated that exposure to fluopimomide at sublethal doses caused oxidative damage, mainly associated with insulin/IGF-1-like signaling pathway in C. elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09734', 0)": {
+         "doi": "10.3390/molecules28020563",
+         "text": "The effects of liposomes containing nisin, control liposomes, and free nisin were evaluated through the survival rate, lethal dose (LD50), nematode development rate, and oxidative stress status by performing mutant strain, TBARS, and ROS analyses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10860', 2)": {
+         "doi": "10.3390/nano12091405",
+         "text": "Instead, a reduction in cell viability and changes in the membrane microvilli structure were found in cells incubated with smart fabric treated with P1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11557', 1)": {
+         "doi": "10.1016/j.cbpc.2021.109026",
+         "text": "However, AEFchica (1000 ?g/mL) abrogated Tergitol-induced mortality, recovering up to 53.3 % of the nematodes from lethality induced by 10 mmol L-1 Tergitol.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12790', 0)": {
+         "doi": "10.1021/es500608e",
+         "text": "In this study, we investigated the toxic effects of benzene to the nematode Caenorhabditis elegans in an integrative manner, using computational behavior and toxicogenomics analyses, along with survival and reproduction.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC13145', 0)": {
+         "doi": "10.1016/j.scitotenv.2015.03.067",
+         "text": "The results reported indicated that the pollutant and its nZVI interaction should be considered to design soil nanoremediation strategies to immobilise heavy metals.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13635', 0)": {
+         "doi": "10.15666/aeer/1603_26512662",
+         "text": "The bioassays indicated that SiC nanoparticles did not affect hatching of larvae of both nematodes, whereas they affected dramatically the survival of the first stage larvae (L1) of C. elegans, but not the second stage juveniles J(2)s of M. incognita.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC17807', 2)": {
+         "doi": "10.1371/journal.pone.0295093",
+         "text": "As crucial stress regulators, HIF-1 and DAF-16 converge on key stress-responsive genes and function synergistically to enable hypoxia survival.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC17833', 0)": {
+         "doi": "10.1016/j.tox.2024.153793",
+         "text": "Our findings demonstrate that tetra-methylated porphyrins (3TMeP and 4TMeP) at a concentration of 3.3 ug mL-1 (1.36 and 0.93 mu M) exhibit high toxicity (as evidenced by reduced survival, development, and locomotion) under dark conditions.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC20568', 0)": {
+         "doi": "10.1016/j.mtbio.2022.100328",
+         "text": "Caenorhabditis elegans and Anisakis simplex coated with a hydrogel sheath showed a negligible decrease in viability, chemotaxis and locomotion.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC21012', 0)": {
+         "doi": "10.1021/acsanm.0c03079",
+         "text": "In vitro cytotoxicity studies of GO-I-COSAN with HeLa cells at different concentrations up to 48 h proved that the cell mortality was lower than 10 %, indicating minimal cytotoxicity of the nanomaterial.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21961', 3)": {
+         "doi": "10.1186/s11671-015-1010-4",
+         "text": "LC50 was recorded 1.0 +/- 0.06 (g l-1 for 100 nm, 0.90 +/- 0.60 for 50 nm and 0.620 +/- 0.08 for 10 nm.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC23164', 2)": {
+         "doi": "10.1016/j.envpol.2020.114376",
+         "text": "Interestingly, the toxic effect gradually attenuated and the lifespan of survived nematodes increased from the P0 to F3 generation, which was ascribed to the survivor selection and stimulatory effect.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25624', 0)": {
+         "doi": "10.1016/j.jhazmat.2024.134730",
+         "text": "Lethality assays demonstrated the LC50 values ranged from 92.42 ug L-1 to 1553.65 mg L-1, indicating marked differences in acute toxicity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC26855', 0)": {
+         "doi": "10.1038/cdd.2013.126",
+         "text": "Contrariwise, NER deficiency leads to a striking transgenerational decline in replicative capacity and viability of proliferating cells.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31972', 0)": {
+         "doi": "10.1371/journal.pone.0043729",
+         "text": "In the present study, we investigated the possible environmental safety concentrations of Fe2O3-NPs using different assay systems in nematode Caenorhabditis elegans with lethality, development, reproduction, locomotion behavior, pharyngeal pumping, defecation, intestinal autofluorescence and reactive oxygen species (ROS) production as the endpoints.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC32545', 0)": {
+         "doi": "10.1016/j.foodres.2020.109740",
+         "text": "In vivo assays evaluating the survival of worms and reactive oxygen species (ROS) generation were performed using the nematode Caenorhabditis elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC37772', 0)": {
+         "doi": "10.1111/lam.13808",
+         "text": "Additionally, scanning electron microscopy was performed on P. insidiosum hyphae treated with the sublethal concentration of each fungicide.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

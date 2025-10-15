@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on nanotechnology and you extract numerical values related with the surface area of nanomaterials and nanoparticles. For the text I will input next, output only the numbers associated with the surface area of nanomaterials and nanoparticles described in the text. Output the surface area unit (ex: m2 g-1) with a blank space after each number found (Ex: '10.1 m2 g-1' or '10.1 m2 mg-1' or '10.1 mm2 kg-1' or '10.1 \u00b5m2 g-1'). If no value is found, output 'None'. Do not output surface area values not related with the nanomaterial or nanoparticle described in the text."
+   },
+   "instances": {
+      "('ATC04109', 0)": {
+         "doi": "10.1016/j.colsurfb.2013.02.004",
+         "text": "Transmission electron microscopic studies show the formation of gold and silver nanocrystals of average size of 5 nm and 30 nm with the specific surface areas of 18.9 m2 g-1 and 184.4 m2 g-1 respectively.",
+         "extracted val": "18.9 m2 g-1, 184.4 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC04450', 0)": {
+         "doi": "10.3390/ma14010103",
+         "text": "The pristine ZnO NPs were highly crystalline and monodispersed with a size of approximately 7 nm and had a high surface area (83 m2 g-1.",
+         "extracted val": "83 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC05654', 0)": {
+         "doi": "10.1002/slct.201701956",
+         "text": "The MNMSs antibacterial agent surface areas were 21.83 and 20.09 m2 g-1 for before and after usage, respectively, while the pore volume has no significant differences for MNMSs before and after usage represented by 0.043 and 0.044 cm(3) g(-1), respectively.",
+         "extracted val": "21.83 m2 g-1, 20.09 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC06148', 0)": {
+         "doi": "10.1088/2043-6262/ad4851",
+         "text": "The resulted NR exhibited an average diameter of 13 nm, a large specific surface area of 53.3 m2 g-1, and a bimodal pore size distribution with an average pore size of 5.5 nm.",
+         "extracted val": "53.3 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC06403', 0)": {
+         "doi": "10.1088/0957-4484/22/28/285701",
+         "text": "The surface area and average pore size of the nHAp were found to be 32 m2 g-1 and 4 nm, respectively.",
+         "extracted val": "32 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC09367', 0)": {
+         "doi": "10.1016/j.matchemphys.2018.01.023",
+         "text": "It was observed from physico-chemical and biological characterisation studies that ZnO synthesised using hydrothermal method exhibits high surface area (217 m2 g-1 and small particle size (21 rim) with low toxicity in Danio rerio and good antibacterial activity against Escherichia coil (22.5 mm) and Staphylococcus aureus (25.4 mm).",
+         "extracted val": "217 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC09770', 0)": {
+         "doi": "10.1016/j.jphotobiol.2018.07.011",
+         "text": "The BET surface area measured from N-2 adsorption method was found to be 16.89 m2 g-1.",
+         "extracted val": "16.89 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC09885', 0)": {
+         "doi": "10.1016/j.jnoncrysol.2019.119557",
+         "text": "TEM observation showed that SiO2 spheres had a hollow cavity and a porous shell, while BET measurement showed that they had the pore size of 22 nm and specific surface area of 45 m2 g-1.",
+         "extracted val": "45 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC13729', 0)": {
+         "doi": "10.1166/jnn.2020.16951",
+         "text": "UV-vis diffuse reflectance spectroscopy and low temperature N-2 adsorption (BET) indicate Nd-0.02@TiO2 has the narrow band gap (3.0 eV) and a high specific surface area (121.1 m2 g-1.",
+         "extracted val": "121.1 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC16823', 0)": {
+         "doi": "10.1021/acsami.7b07657",
+         "text": "Porous g-C3N4 nanosheet (PCNS) photocatalyst with a thickness of 2.0 nm, pore volume of 0.61 cm(3) g(-1), and surface area of 190.1 m2 g-1 was prepared by a simple two-step template-free approach without the addition of extra reagents.",
+         "extracted val": "190.1 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC24743', 0)": {
+         "doi": "10.5004/dwt.2021.26860",
+         "text": "LMAC exhibited a large surface area of 1,164.5 m2 g-1, the total pore volume of 0.417 cm(3)/g, yield of 0.482, and pH pzc of LMAC were 6.6.",
+         "extracted val": "1164.5 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC25822', 0)": {
+         "doi": "10.5004/dwt.2021.27053",
+         "text": "BET analysis indicated that surface area and pore volume of BS-FeONPs were 85.705 m2 g-1 and 0.287 cm(3)/g, respectively, with an average diameter of 44.770 angstrom.",
+         "extracted val": "85.705 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC26892', 0)": {
+         "doi": "10.1016/j.mtcomm.2023.105947",
+         "text": "The N2 adsorption/desorption studies reveal that Mn(II)TCNSL-F-PU25 has a Brunauer-Emmett-Teller surface area of 340.783 m2 g-1 with a 3 - 3.2 nm pore diameter.",
+         "extracted val": "340.783 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC27940', 0)": {
+         "doi": "10.1016/j.carbon.2018.05.010",
+         "text": "Physicochemical characterization showed the ultrathin g-C3N4 nanosheets had high crystallinity, narrowed band gap (2.62 eV), enlarged specific surface area (88.59 m2 g-1 and enhanced electron transport ability.",
+         "extracted val": "88.59 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC28162', 0)": {
+         "doi": "10.1016/j.rechem.2022.100671",
+         "text": "Zeta potential and BET analysis showed that the synthesized materials bear a positive charge typical of LDH composition; the surface area and pore volume were found to be 88 m2 g-1)and 1.37 cm(3).g(-1)(cobalt LDH), and the intercalated nanohybrid as 169 m2 g-1 and 1.26 cm(3)/g, respectively.",
+         "extracted val": "88 m2 g-1, 169 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC28518', 0)": {
+         "doi": "10.1016/j.biombioe.2022.106528",
+         "text": "At an activation temperature of 800 degrees C, the material exhibited a large specific surface area (2170 m2 g-1 and a high N content (2.83 wt%).",
+         "extracted val": "2170 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC31429', 0)": {
+         "doi": "10.1016/j.ceramint.2023.07.051",
+         "text": "MMT-NPs showed type V isotherms with H3 hysteresis (mesoporous characteristics) and S-BET = 18 +/- 0.2 m2 g-1, Dp = 33.5 +/- 0.5 nm with zeta potential (ZP) of the -18.2 +/- 0.4 mV and a contact angle around 26.1 degrees.",
+         "extracted val": "18 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC34766', 0)": {
+         "doi": "10.1007/s11664-021-08816-9",
+         "text": "From the Brunauer-Emmett-Teller (BET) surface area analysis, total pore volume (V-P) and mean pore diameter (r(p)) were found to be 12.647 m2 g-1, 0.024125 cm(3)g(-1) and 7.6302 nm.",
+         "extracted val": "12.647 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC41869', 0)": {
+         "doi": "10.1007/s11696-021-01852-z",
+         "text": "As per BET results, the surface areas of the ZnO samples fabricated in water (W/ZnO), fruit extract (EXT/ZnO), and nanocomposite of Ag (EXT/ZnO/Ag10) were 29.3, 27.5, and 25.5 m2 g-1, respectively.",
+         "extracted val": "29.3 m2 g-1, 27.5 m2 g-1, 25.5 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC44624', 0)": {
+         "doi": "10.1166/jbn.2013.1567",
+         "text": "The BET surface area of the sample was 266 m2 g-1 and the crystallite size as calculated using Scherrer formula was 3.76 nm.",
+         "extracted val": "266 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC46271', 0)": {
+         "doi": "10.1016/j.msec.2020.110829",
+         "text": "Maximum surface area similar to 5.69 m2 g-1 was reported for the as synthesized NPs with total pore volume similar to 0.0191 mL/g and average pore size similar to 1.13 nm.",
+         "extracted val": "5.69 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC46364', 0)": {
+         "doi": "10.1016/j.heliyon.2024.e24343",
+         "text": "The distinctive surface area has decreased from 800 m2 g-1 for pristine AC to 772 m2 g-1 for ZnO-NPs/AC and to 282 m2 g-1 for ZnO-NPs/AC@SiO2 and to 139 m2 g-1 for ZnO-NPs/AC@SiO2@mSiO2 and to 15.4 m2 g-1 for ZnO-NPs@SiO2@mSiO2-N-Gly.",
+         "extracted val": "800 m2 g-1, 772 m2 g-1, 282 m2 g-1, 139 m2 g-1, 15.4 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC47274', 0)": {
+         "doi": "10.1016/j.bioadv.2023.213729",
+         "text": "The mesoporous structure of MGO_4 having an average pore diameter of 5 nm and surface area of 216 m2 g-1 confirmed from BET supports the loading and release kinetics.",
+         "extracted val": "216 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC49241', 0)": {
+         "doi": "10.1021/ja2086323",
+         "text": "The resulting Fe3O4@SiO2@NiAl-LDH microspheres display three-dimensional core-shell architecture with flowerlike morphology, large surface area (83 m2 g-1, and uniform mesochannels (4.3 nm).",
+         "extracted val": "83 m2 g-1",
+         "correct": "y"
+      },
+      "('ATC52326', 0)": {
+         "doi": "10.1021/acsabm.2c00860",
+         "text": "Similar Raman spectra and powder X-ray diffraction patterns between the unloaded and loaded MOFs, accompanied by a decrease in the Brunauer-Emmett-Teller surface area from 616.20 and 155.55 m2 g-1 respectively, corroborate the suggested potential for pore occupation with BAC.",
+         "extracted val": "616.20 m2 g-1, 155.55 m2 g-1",
+         "correct": "y"
+      }
+   }
+}

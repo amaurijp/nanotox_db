@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of altered seedling behavior such as phototropism or gravitropism caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence includes impaired phototropic bending, altered gravitropic response, or disrupted root waving patterns. Consider keywords such as 'phototropism inhibited', 'gravitropism altered', 'impaired bending', or 'abnormal orientation' as indications of toxicity. Consider keywords such as 'normal phototropism', 'gravitropism unaffected', or 'no orientation change' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of altered seedling behavior in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of behavioral alteration, output 'no'. If the sentence does not deal with seedling behavior in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00972', 0)": {
+         "doi": "10.1371/journal.pone.0019976",
+         "text": "We also show that at certain PHF concentrations fungal growth can be enhanced and Arabidopsis thaliana seedlings exhibit longer hypocotyls, while other complex physiological processes remain unaffected.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC04805', 1)": {
+         "doi": "10.3389/fchem.2021.766078",
+         "text": "The results showed that BV promoted the growth of taproots and the development of lateral roots, enhanced the length of the extension zone in roots, increased the number and size of leaf stomata and root activity, reduced the accumulation of ROS in seedlings, and changed the expression levels of genes related to polyamines or hormones.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05976', 1)": {
+         "doi": "10.1007/s11356-014-2822-y",
+         "text": "Qualitative analysis with dichloro-dihydro-fluorescein diacetate and rhodamine 123 fluorescence showed a dose-dependent increase in reactive oxygen species production and changes in mitochondrial membrane potential in the roots of seedlings exposed to different concentrations of silver nanoparticles.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06432', 1)": {
+         "doi": "10.1016/j.scitotenv.2019.135361",
+         "text": "To understand whether silver ions could induce changes in the secondary metabolite profile, seedlings treated with silver nitrate in concentrations equivalent to these of nanoparticles were also analysed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06981', 0)": {
+         "doi": "10.1039/d1en00168j",
+         "text": "In this study, the roots of Arabidopsis thaliana seedlings were treated with nitrogen-doped carbon dots (N-CDs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09072', 0)": {
+         "doi": "10.1016/S1001-0742(12)60301-5",
+         "text": "By comparison, a small amount of Ag+ was absorbed by seedlings, and it did not pronouncedly affect chloroplast structure and other metal ion absorption as AgNPs did.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09388', 1)": {
+         "doi": "10.1111/nph.18711",
+         "text": "We measured selection on postgermination traits relating to drought, freezing, and heat tolerance using a diverse combination of Arabidopsis thaliana mutants and naturally occurring ecotypes.center dot Germination cohorts experienced variable selection: when dry, cold, and hot environments were experienced by seedlings, selection was intensified for drought, freezing, and heat tolerance, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10576', 0)": {
+         "doi": "10.3390/ijms241210356",
+         "text": "The results show that under the influence of nanoparticles, the explant cells of 35S:BBM Arabidopsis thaliana seedling origin did not enter the path of SE.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10601', 0)": {
+         "doi": "10.1021/es4043462",
+         "text": "Rapid elongation led to structural changes in root cell walls: reduction of cell wall thickness and a bias on the orientation of cellulose microfibrils.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12371', 1)": {
+         "doi": "10.3732/ajb.1200264",
+         "text": "To direct their growth, they use their negative gravitropic capacity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13427', 0)": {
+         "doi": "10.1508/cytologia.86.119",
+         "text": "Specifically, we analyzed the effects of 125 mmol L-1 NaCl or 231 mmol L-1 mannitol on the cotyledon pavement cell cortexes in transgenic A. thaliana seedlings expressing green fluorescent protein (GFP)-tagged PATROL1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14019', 2)": {
+         "doi": "10.1111/nph.18992",
+         "text": "At the whole-plant level, GNC and GNL play a more complex role in starch synthesis, degradation and starch granule initiation. center dot Our findings suggest that the light-regulated GNC and GNL help balance phototropic and gravitropic growth responses after the transition from skotomorphogenesis to photomorphogenesis by repressing the growth of starch granules.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14573', 1)": {
+         "doi": "10.1111/pce.12020",
+         "text": "Copper caused membrane disruptions of the root apex in C1OE seedlings but not in copt1 plants; this damage was prevented by pretreatment with Gd3+.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14848', 0)": {
+         "doi": "10.3389/fpls.2019.01322",
+         "text": "Non-thermal plasma holds great potentials as an efficient, economical, and eco-friendly seed pretreatment method for improving the seed germination and seedling growth, but the mechanisms are still unclear.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16952', 0)": {
+         "doi": "10.1016/j.snb.2019.126789",
+         "text": "7-day-old seedlings of Arabidopsis thaliana Col-0 were used in analysis of the penetration/ movement of fluorescent nanoparticles (FNPs) in roots and cotyledons.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19251', 0)": {
+         "doi": "10.1080/15592324.2019.1685728",
+         "text": "Moreover, Arabidopsis seedlings overexpressing AtSOD and CmSOD also displayed greater resistance to chilling and less oxidative injury than NT plants under chilled conditions, indicating that the overexpression of AtSOD and CmSOD in Arabidopsis enhanced chilling tolerance by eliminating center dot O2(-).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20201', 0)": {
+         "doi": "10.1042/BJ20060083",
+         "text": "The Tre6P content of sucrose-a starved Arabidopsis thaliana seedlings in axenic culture increased from 18 to 482 pmol center dot g(-1)FW (fresh weight) after adding sucrose.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23168', 0)": {
+         "doi": "10.1139/g91-052",
+         "text": "At interphase, signals were concentrated in one region of the nucleus, as would be expected from the Rabl orientation typical for dividing cells from cereal root tips.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24060', 0)": {
+         "doi": "10.1016/j.heliyon.2024.e27583",
+         "text": "In this study, we germinated and grew Arabidopsis thaliana seedlings in synthetic medium supplemented with sub-morbid concentrations (4 ug mL-1 of AgNPs and silver nitrate (AgNO3).",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC24162', 0)": {
+         "doi": "10.1074/jbc.RA118.002006",
+         "text": "Analysis of AtGH3.15 promoter-driven yellow fluorescent protein reporter lines revealed that AtGH3.15 is expressed at significant levels in seedlings, roots, and parts of the siliques.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29370', 0)": {
+         "doi": "10.1016/j.molp.2017.09.013",
+         "text": "LC-MS/MS and dot blot analyses reveal a dynamic pattern of m(5)C mRNA modification in various tissues and at different developmental stages. m(5)C-RIP-seq analysis identified 6045 m(5)C peaks in 4465 expressed genes in young seedlings.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC37481', 1)": {
+         "doi": "10.1021/acsanm.3c04167",
+         "text": "On the other hand, this nanocluster alleviated plant abiotic stress via antioxidase-like activity and maintained the regular operation of the photosynthetic system and the growth of A. thaliana seedlings.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC38813', 0)": {
+         "doi": "10.3835/plantgenome2016.08.0078",
+         "text": "For each pair of plant species, we determined sets of conserved synteny blocks using strand orientation and physical mapping.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51881', 0)": {
+         "doi": "10.1007/s11696-024-03421-6",
+         "text": "In experiments conducted with Arabidopsis thaliana seedlings, CNPs derived from B. alba pollen grains (Ba-POL) were found to promote leaf area expansion while simultaneously inhibiting primary root growth.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC51881', 1)": {
+         "doi": "10.1007/s11696-024-03421-6",
+         "text": "In presence of 10 nM IAA, Ba-POL CNP treated seedlings displayed a significant reduction in primary root growth.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

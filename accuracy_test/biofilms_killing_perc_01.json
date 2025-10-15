@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with percentage values related to an biofilm eradication or disruption. Output the percentage symbol with a blank space after each number found (Ex: '10.1 %'). If no percentage is found, output 'None'. Do not output percentage values not related with antibiofilm effect."
+   },
+   "instances": {
+      "('ATC01497', 0)": {
+         "doi": "10.1039/d1ra04542c",
+         "text": "Moreover, the synthesized RGO-NiO nanocomposite exhibited antibiofilm activity (following 10.0 ug mL-1 RGO-NiO), with an inhibition percentage of 94.60 % for B. subtilis, 91.74 % for P. aeruginosa, and 98.03 % for C. neoformans.",
+         "extracted val": "94.60 %, 91.74 %, 98.03 %",
+         "correct": "y"
+      },
+      "('ATC01726', 0)": {
+         "doi": "10.1039/c8nr04111c",
+         "text": "In vitro results show that treatment with MPA NSs under near-infrared (NIR) laser irradiation can efficiently eradicate the established S. aureus biofilms with 99.99 % of the bacteria inside biofilms killed, which shows significantly enhanced therapeutic efficacy compared with the MPA only group or the NIR laser irradiation only group.",
+         "extracted val": "99.99 %",
+         "correct": "y"
+      },
+      "('ATC04272', 0)": {
+         "doi": "10.1016/j.biomaterials.2009.01.052",
+         "text": "Replicative viability experiments revealed that >= 99 % of cells from each type of biofilm were killed via NO release, with the greatest efficacy (>= 99.999 % killing) against gram-negative P. aeruginosa and E. coli biofilms.",
+         "extracted val": "99 %, 99.999 %",
+         "correct": "y"
+      },
+      "('ATC05562', 0)": {
+         "doi": "10.1111/iju.14958",
+         "text": "Under subinhibitory concentration (3.1 mg ml-1 it was found a reduction of microbial adhesion and exopolysaccharide dosages in respectively 83.3 % and 75 % of the bacterial samples.",
+         "extracted val": "83.3 %, 75 %",
+         "correct": "y"
+      },
+      "('ATC06754', 0)": {
+         "doi": "10.3390/biomedicines12020251",
+         "text": "Besides that, results were confirmed using confocal laser scanning microscopy (CLSM), which showed a decrease in the number of living cells to 80 % and 60 % for MBEC and MBIC, respectively, for all the clinical bacterial strains.",
+         "extracted val": "80 %, 60 %",
+         "correct": "y"
+      },
+      "('ATC06866', 1)": {
+         "doi": "10.1007/s13205-020-02509-6",
+         "text": "At this concentration, PEINF equally inhibited biofilm formations of E. coli (90.48 +/- 2.05 %), S. aureus (87.04 +/- 1.59 %) and C. albicans (90.94 +/- 1.03 %).",
+         "extracted val": "90.48 %, 87.04 %, 90.94 %",
+         "correct": "y"
+      },
+      "('ATC07274', 1)": {
+         "doi": "10.1016/j.ijpharm.2019.05.069",
+         "text": "Mixing Soluplus-based micelles with Solutol further enhanced the CHX penetration (71 %) and promoted maximum reduction in biofilm biomass ( > 60 %).",
+         "extracted val": "60 %",
+         "correct": "y"
+      },
+      "('ATC10390', 0)": {
+         "doi": "10.2147/IJN.S202734",
+         "text": "The results revealed improved biofilm inhibition, exopolysaccharide inhibition, and reduced cell viability in test bacteria treated with MGCNT conjugate. P. aeruginosa and S. aureus biofilms were considerably reduced to 60.20 +/- 2.48 % and 67.59 +/- 3.53 %, respectively.",
+         "extracted val": "60.20 %, 67.59 %",
+         "correct": "y"
+      },
+      "('ATC11571', 0)": {
+         "doi": "10.1016/j.ijbiomac.2021.12.031",
+         "text": "The biofilm elimination rate was 58.87 % after exposure to MIC AgNPs.",
+         "extracted val": "58.87 %",
+         "correct": "y"
+      },
+      "('ATC12222', 1)": {
+         "doi": "10.1155/2017/3528295",
+         "text": "Up to 90 % of preformed biofilms of S. aureus and E. coli were destroyed by OAMNPs and APTMS-MNPs.",
+         "extracted val": "90 %",
+         "correct": "y"
+      },
+      "('ATC13919', 0)": {
+         "doi": "10.1016/j.actbio.2021.10.014",
+         "text": "This anti -E. coli capacity of AG + CO-coated MX-loaded MSNs was brought out in an in vivo rabbit model of osteomyelitis where the nanosystem was able to eradicate more than 90 % of the bacterial load within the infected bone.",
+         "extracted val": "90 %",
+         "correct": "y"
+      },
+      "('ATC14549', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.123303",
+         "text": "At the con-centration of 60 ug mL-1, its inhibition rate against the growth of biofilm was 86 %, and elimination rate against biofilm reached 76 %.",
+         "extracted val": "76 %",
+         "correct": "y"
+      },
+      "('ATC15916', 0)": {
+         "doi": "10.1016/j.mimet.2019.105716",
+         "text": "E coli-336 and MRSA-1 strains at their MICs (1500 and 1000 ug ml-1 sharply reduced the biofilm production to 51 % and 24 %.",
+         "extracted val": "51 %, 24 %",
+         "correct": "y"
+      },
+      "('ATC17569', 0)": {
+         "doi": "10.1016/j.molliq.2020.112586",
+         "text": "Moreover, protein-corona and antibiofilm activity are evident from numerous studies including DLS and AFM (e.g. reduction of the roughness of biofilm > 90 %).",
+         "extracted val": "90 %",
+         "correct": "y"
+      },
+      "('ATC18937', 0)": {
+         "doi": "10.1021/acsabm.2c00712",
+         "text": "The Ni NC coating significantly reduced E. coli attachment compared to a soluble nickel coating and reduced E. coli biomass area by 61 % compared to uncoated glass.",
+         "extracted val": "61 %",
+         "correct": "y"
+      },
+      "('ATC21133', 0)": {
+         "doi": "10.1016/j.pdpdt.2020.101811",
+         "text": "Moreover, the viability reduction of 60 % in S. aureus biofilms and 70 % in P. aeruginosa biofilms were obtained after three hours of irradiation with white light and amoxi@AuNP.",
+         "extracted val": "60 %, 70 %",
+         "correct": "y"
+      },
+      "('ATC21275', 0)": {
+         "doi": "10.3390/pharmaceutics14122756",
+         "text": "The antibiofilm inhibition percentages of free nisin and N-PVA-R-PLGA NPs were 28 % and 72 %, respectively.",
+         "extracted val": "28 %, 72 %",
+         "correct": "y"
+      },
+      "('ATC22756', 0)": {
+         "doi": "10.1016/j.molstruc.2023.137222",
+         "text": "Furthermore, biofilms formed by E. coli, S. aureus and P. aeruginosa PAO1 were maximally inhibited at 10 ug mL-1 BiVO4/g-C3N4 to a maximum of 67, 56 and 56 %, respectively.",
+         "extracted val": "67 %, 56 %, 56 %",
+         "correct": "y"
+      },
+      "('ATC25638', 1)": {
+         "doi": "10.3390/antibiotics11111595",
+         "text": "The most correlated compound, identified as betulinic acid (BA), inhibited bispecies biofilms regardless of the three tested couples of strains (ATCC strains: > 40 % inhibition, clinical isolates: approximate to 27 % inhibition), confirming its antibiofilm interest.",
+         "extracted val": "40 %, 27 %",
+         "correct": "y"
+      },
+      "('ATC31209', 0)": {
+         "doi": "10.1007/s13204-020-01630-5",
+         "text": "Bio-fabricated TiO2-NPs reduced biofilm formation in the selected strains by 22 - 70 % at tested sub-MICs.",
+         "extracted val": "22 %, 70 %",
+         "correct": "y"
+      },
+      "('ATC33406', 0)": {
+         "doi": "10.1039/c7tb00311k",
+         "text": "In vitro antimicrobial test with S. aureus, E. coli, P. aeruginosa, P. mirabilis, C. albicans microbes under dynamic conditions revealed that the microbial growth was hampered by 85 % compared with unmodified PDMS.",
+         "extracted val": "85 %",
+         "correct": "y"
+      },
+      "('ATC39588', 0)": {
+         "doi": "10.1016/j.jksus.2022.101866",
+         "text": "Further, the biofilm eradication efficiency was confirmed by 24-well polystyrene method with 24 h time duration and the result of 1000 mg mL-1 were shown 92 % and 94 % alteration against biofilm producing E. coli and P. mirabilis at 600 nm O.D using spectrophotometer.",
+         "extracted val": "92 %, 94 %",
+         "correct": "y"
+      },
+      "('ATC48867', 0)": {
+         "doi": "10.1016/j.seppur.2022.120815",
+         "text": "The biofilm inhibition rates of the composites were determined, where the highest biofilm inhibition against S. aureus and P. aeruginosa was recorded for NC-Ag NPs as 63.85 % and 81.20 %, respectively.",
+         "extracted val": "63.85 %, 81.20 %",
+         "correct": "y"
+      },
+      "('ATC50092', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.124963",
+         "text": "The com-posite microswimmers displayed excellent antibacterial activity against S. aureus biofilm with an efficiency as high as 86.94 %.",
+         "extracted val": "86.94 %",
+         "correct": "y"
+      },
+      "('ATC50876', 0)": {
+         "doi": "10.3389/fmicb.2022.1001865",
+         "text": "4-Nitro, 4-chloro, and 4-fluoro CNMA at >= 150 ug ml-1 significantly inhibited biofilm formation by 94 - 99 %.",
+         "extracted val": "94 %, 99 %",
+         "correct": "y"
+      }
+   }
+}

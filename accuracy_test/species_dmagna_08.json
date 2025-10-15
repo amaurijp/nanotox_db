@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of growth reduction or body-size change caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence includes diminished body length, reduced dry weight, slower growth rate, or stunted individuals. Consider keywords such as 'reduced growth', 'smaller body size', 'growth inhibition', or 'stunted daphnids' as indications of toxicity. Consider keywords such as 'growth unaffected', 'normal size', or 'no growth inhibition' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of growth reduction in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of growth toxicity, output 'no'. If the sentence does not deal with growth in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00071', 0)": {
+         "doi": "10.1080/15226514.2017.1319324",
+         "text": "A simple solution-phase method is used to synthesize ZnO nanoparticles.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00138', 0)": {
+         "doi": "10.1016/j.chemosphere.2016.10.030",
+         "text": "Antimicrobial electrospun poly(vinyl alcohol) (PVA) nanofibers were synthesized by impregnating benzyl triethylammonium chloride (BTEAC) as an antimicrobial agent into PVA nanofibers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00274', 2)": {
+         "doi": "10.1039/c9en01026b",
+         "text": "Cu NP exposures significantly inhibited algal growth rate, D. magna survival, and zebrafish hatching while exposure to equivalent concentrations of CuCl2 (dissolved Cu fraction) and CuO NPs did not.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00692', 0)": {
+         "doi": "10.1016/j.chemosphere.2019.01.103",
+         "text": "Short-term standardized laboratory tests were carried out for evaluating acute and chronic toxicological effects of novel phosphorus (P) adsorbents on Raphidocelis subcapitata (algal growth rate inhibition) and on Daphnia magna (immobilization, with direct and indirect exposure to adsorbents, and uptake-depuration tests).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01029', 0)": {
+         "doi": "10.1039/c6en00361c",
+         "text": "Results indicated that GN promoted the growth and reproduction of daphnids at low concentrations, similar to the other three CNMs.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC01029', 1)": {
+         "doi": "10.1039/c6en00361c",
+         "text": "This may be due to the adsorption of nutrient elements in the exposure medium by the CNMs with high surface areas, which increased the ingestion of nutrient elements by daphnids.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01036', 1)": {
+         "doi": "10.1016/j.chemosphere.2009.10.027",
+         "text": "The results demonstrate that upon sub-lethal exposure, the mortality rates of gestating daphnids increased with time and developmental stage.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01154', 1)": {
+         "doi": "10.1016/j.aquatox.2013.01.005",
+         "text": "Treatments included three different types of nano-TiO2 differing in their coating or crystalline structure but of similar primary size (20 nm) plus a micron-sized bulk material, two exposure levels (1, 10 mg l-1 and two food ration levels of the microalgae Chlorella vulgaris that included a non limiting (1.5 ug C/ml) and a limiting one (0.3 ug C/ml).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01981', 0)": {
+         "doi": "10.1007/s00244-014-0091-x",
+         "text": "SNCs (as total silver concentration) showed far lower chronic compared with acute toxicity to daphnids because the amount of dissolved silver decreased in the presence of prey algae.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02349', 1)": {
+         "doi": "10.1007/s00128-013-1015-6",
+         "text": "In the chronic toxicity experiment with uncapped nTiO(2), the growth, reproduction and survival of D. magna were significantly (p < 0.05) reduced at concentrations ranging from 4.5 to 7.5 mg L-1.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03008', 0)": {
+         "doi": "10.1039/c8en01119b",
+         "text": "Three Magneli TiOx particles and three anatase crystalline phase TiO2 nanomaterials with different primary powder sizes, but similar hydrodynamic diameters in biological media, were investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03144', 0)": {
+         "doi": "10.1016/j.impact.2018.12.004",
+         "text": "In the acute 96-hour toxicity assessments, both the pristine and spent slurries at 4.0 mg mL-1 c-SiO2 NPs had little effect on D. magna morbidity and body sizes.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC04737', 1)": {
+         "doi": "10.1007/s11270-017-3394-5",
+         "text": "The applied test battery included the combination of modified standardized tests (Aliivibrio fischeri bioluminescence inhibition test, Lemna minor growth inhibition test), and nonstandardized bioassays with unconventional physiological endpoints (Tetrahymena pyriformis phagocytic activity, the Daphnia magna heartbeat rate).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05827', 0)": {
+         "doi": "10.3109/17435390.2012.715312",
+         "text": "This study strengthens the argument that size, method of synthesis as well as surface chemistry may affect the uptake and toxic effects of Ag NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07042', 1)": {
+         "doi": "10.1016/j.jece.2023.109688",
+         "text": "The fabricated nanocapsules exhibited a high antifungal activity superior to that of commercially available agents and exerted no significant adverse effects on crop growth and soil microbial communities.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07359', 2)": {
+         "doi": "10.1016/j.impact.2022.100383",
+         "text": "The models developed in this study were implemented in a user-friendly application for assessing the aquatic toxicity of TiO2 based nano-mixtures.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07921', 0)": {
+         "doi": "10.1039/c5en00037h",
+         "text": "Herein, we investigated key biological apical endpoints, such as viability, growth, and reproduction and the expression of genes associated with related molecular pathways in response to exposure to gold nanoparticles (AuNPs) functionalized with either positively charged ligands, polyallyamine hydrochloride, or negatively charged ligands, mercaptopropionic acid, in two model organisms, the bacterium Shewanella oneidensis MR-1 and the water flea Daphnia magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10555', 1)": {
+         "doi": "10.1039/c9en01453e",
+         "text": "Interestingly, elevated nano-TiO2 produced lower As efflux from daphnids, which showed that nano-TiO2 still sequestered some As within this organism.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12116', 0)": {
+         "doi": "10.1016/j.chroma.2011.03.034",
+         "text": "In this study, monodisperse 7, 10 and 20 nm citrate-stabilised AgNPs were synthesised, characterised and then fractionated and sized by flow field-flow fractionation (FFF) and measured with dynamic light scattering (DLS) in different dilutions of the media recommended by OECD for Daphnia magna (water flea) toxicity testing.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13894', 1)": {
+         "doi": "10.1016/j.scitotenv.2019.134869",
+         "text": "It is clearly known that there is the inverse proportion between the size of NPs and the toxic effect.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC17373', 1)": {
+         "doi": "10.1039/c9en01236b",
+         "text": "In natural environments nanoplastics also interact with organic material and form larger aggregates, which may, potentially, reduce their toxicity as they grow in size.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18167', 0)": {
+         "doi": "10.1080/17435390.2018.1464229",
+         "text": "Using a combination of standard ecotoxicological tests and feeding experiments, we assessed the effects of CNF exposure (0.206-20.6 mg L-1 on the feeding (food uptake and gut residence time) and life-history traits (growth and reproduction) in the cladoceran Daphnia magna.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC21109', 1)": {
+         "doi": "10.3390/nano12122036",
+         "text": "Sanding studies were conducted in a tailored designed sanding bench connected to time and size resolving measurement devices.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29275', 1)": {
+         "doi": "10.1021/sc5001435",
+         "text": "XRD and TEM analyses revealed that iron forms amorphous nanosized particles with size depending on reaction time.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52553', 1)": {
+         "doi": "10.1007/s10750-015-2540-6",
+         "text": "In this study, we evaluated the toxicity of nanosized (27.2 +/- A 9.8 nm) and bulk (144.2 +/- A 67.7 nm) Fe3O4 particles to different life stages of the aquatic crustacean Daphnia magna.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

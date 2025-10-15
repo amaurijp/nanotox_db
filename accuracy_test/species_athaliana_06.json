@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of growth suppression caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence of growth suppression includes reduced shoot or root length, decreased fresh or dry biomass, stunted seedlings, or overall inhibited growth. Consider keywords such as 'reduced growth', 'decreased biomass', 'shorter roots', 'growth inhibition', or 'stunted seedlings' as indications of toxicity. Consider keywords such as 'growth unaffected', 'normal biomass', or 'no growth inhibition' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of growth suppression in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of growth suppression, output 'no'. If the sentence does not deal with growth in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00503', 1)": {
+         "doi": "10.1016/j.envres.2018.02.006",
+         "text": "The biomasses of A. thaliana and E. fetida were not significantly changed by WE exposure.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC00972', 0)": {
+         "doi": "10.1371/journal.pone.0019976",
+         "text": "We also show that at certain PHF concentrations fungal growth can be enhanced and Arabidopsis thaliana seedlings exhibit longer hypocotyls, while other complex physiological processes remain unaffected.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC01424', 0)": {
+         "doi": "10.1002/slct.201904205",
+         "text": "This leads to increased root growth in Arabidopsis thaliana.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC02451', 4)": {
+         "doi": "10.1016/j.scitotenv.2013.05.018",
+         "text": "This is the first report showing GNPs as a promising tool to enhance seed yield of plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05282', 0)": {
+         "doi": "10.1021/es5050562",
+         "text": "PAA-EG-coated QDs were relatively stable and taken up from a hydroponic medium through both Arabidopsis leaf petioles and roots, without apparent aggregation, and showed generally uniform distribution in leaves.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07154', 0)": {
+         "doi": "10.1007/s00299-009-0808-x",
+         "text": "The results demonstrate that the growth of Arabidopsis thaliana on media containing OTA was inhibited significantly.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08472', 2)": {
+         "doi": "10.1016/j.envpol.2016.03.026",
+         "text": "We find that as the concentration of nano-TiO2 increases, the biomass, and chlorophyll content in 5-week-old Arabidopsis thaliana plants decrease in a concentration dependent manner.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08532', 1)": {
+         "doi": "10.1016/j.envexpbot.2005.04.007",
+         "text": "Displacement of dots in the sequential images was traced using a motion-analysis program, and the distances between the dots were calculated to analyze plant organ growth.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08532', 4)": {
+         "doi": "10.1016/j.envexpbot.2005.04.007",
+         "text": "This simple and rapid process could be a high throughput method for high resolution analysis of plant organ growth.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09072', 0)": {
+         "doi": "10.1016/S1001-0742(12)60301-5",
+         "text": "AgNPs did not affect seed germination; however, they showed stronger inhibitory effect on root elongation than Ag+.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10121', 1)": {
+         "doi": "10.1016/j.scitotenv.2024.172476",
+         "text": "Carbon nanomaterials induce hormone -related immune responses in the presence of both biotic and abiotic stressors. 2) Considering the distinct features of various nanostructures, metal nanomaterials displayed unique characteristics in seed priming for combating abiotic stresses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10601', 4)": {
+         "doi": "10.1021/es4043462",
+         "text": "Rapid elongation led to structural changes in root cell walls: reduction of cell wall thickness and a bias on the orientation of cellulose microfibrils.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12830', 0)": {
+         "doi": "10.1111/tpj.13105",
+         "text": "We have shown that the addition of Ag NPs to cultivation medium, at levels above 300 mg L-1, inhibited Arabidopsis thaliana root elongation and leaf expansion.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC13286', 1)": {
+         "doi": "10.1038/s41467-022-35066-y",
+         "text": "Positively charged particles accumulate around root surfaces and are not taken up by roots or protoplasts, whereas negatively charged nanoparticles accumulate slowly and become prominent over time in the xylem of intact roots.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13482', 2)": {
+         "doi": "10.1002/etc.2756",
+         "text": "Although there were distinct differences between the nanoparticles in their affect on molecular mechanisms attributable to enhancing germinant growth, both particles altered similar suites of genes related to various pathways and processes related to enhanced growth.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18156', 1)": {
+         "doi": "10.1105/tpc.112.097881",
+         "text": "In root cell growth, adaptation to salinity stress, and stomatal closure, such proteins operate downstream of the plasma membrane NADPH oxidases that produce extracellular superoxide anion, a reactive oxygen species that is readily converted to extracellular hydrogen peroxide and hydroxyl radicals, OH center dot.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18267', 0)": {
+         "doi": "10.1021/acs.est.7b06697",
+         "text": "The results showed that nZVI could remove As(V) from growth media, decrease As uptake by plants, and mitigate As(V) toxicity to plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19197', 4)": {
+         "doi": "10.30848/PJB2021-2(40)",
+         "text": "Combined effect of ZnO and SiO2 i.e. Composite NPs reduced the toxicity caused by ZnO alone which was responsible in reducing the chlorophyll content, overall growth of plant and ethylene production determined through the expression of ethylene regulated genes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC19603', 4)": {
+         "doi": "10.1111/plb.13600",
+         "text": "Moreover, three DEGs were annotated to GA-related processes (DDF1, DDF2, EXPA1), and seven DEGs were associated with root development (RAV1, RGF2, ERF71, ZAT6, MYB77, XT1, and DTX50).center dot In summary, NO inhibits primary root growth partially by repressing GA3-oxidase catalysed GA(3) synthesis in Arabidopsis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24162', 0)": {
+         "doi": "10.1074/jbc.RA118.002006",
+         "text": "Various phytohormones control plant growth and development and mediate biotic and abiotic stress responses.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24975', 1)": {
+         "doi": "10.3389/fpls.2023.1128002",
+         "text": "Expression of VvANN1 in Arabidopsis thaliana enhanced osmotic and drought tolerance through modulating the level of MDA, H2O2, and O-2(center dot-) at the seedling stage, implying that VvANN1 might be involved in the process of ROS homeostasis under drought or osmotic stress conditions.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25626', 1)": {
+         "doi": "10.1186/s13007-022-00850-w",
+         "text": "Phenotypic analysis showed LDH in a range of 1 - 300 ug mL-1 can enhance the root elongation, whereas the same concentration of raw materials dramatically inhibited root elongation, suggesting the nanocrystallization has a dramatical de-toxic effect to Mg(lactate)(2) and Al (lactate)(3.)",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC25626', 2)": {
+         "doi": "10.1186/s13007-022-00850-w",
+         "text": "Since enhancing of root elongation by LDH is an unexpected phenomenon, we further designed experiments to investigate influence of LDH to Arabidopsis seedlings.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32487', 7)": {
+         "doi": "10.1039/d3ra01514a",
+         "text": "These results indicated that N-CDs only induced growth enhancement under excitation light, but they improved salt tolerance with and without excitation light, suggesting that the two effects occurred via distinct signaling pathways.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC37481', 3)": {
+         "doi": "10.1021/acsanm.3c04167",
+         "text": "On the other hand, this nanocluster alleviated plant abiotic stress via antioxidase-like activity and maintained the regular operation of the photosynthetic system and the growth of A. thaliana seedlings.",
+         "extracted val": "no",
+         "correct": "y"
+      }
+   }
+}

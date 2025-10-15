@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of developmental or morphological abnormalities caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence includes carapace deformities, abnormal antennae, delayed molting, or other reported anatomical changes. Consider keywords such as 'malformation', 'deformed', 'abnormal morphology', or 'delayed development' as indications of toxicity. Consider keywords such as 'normal morphology', 'no deformities', or 'structure unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of developmental or morphological abnormalities in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of developmental toxicity, output 'no'. If the sentence does not deal with morphology in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00348', 1)": {
+         "doi": "10.1016/j.jhazmat.2021.126779",
+         "text": "The abnormalities observed in the test species exposed to the leachates were compared and chemical compounds majorly influencing the species were determined by principal component analysis (PCA).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00653', 0)": {
+         "doi": "10.1016/j.envpol.2016.06.001",
+         "text": "Any phenotype change, such as body deformation, led to further examinations on the specific organs of transgenic zebrafish embryos.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00771', 1)": {
+         "doi": "10.3390/biology10121308",
+         "text": "For Xenopus, we applied the FETAX protocol analyzing survival, malformations, growth, heart rate, and the expression of genes involved in the development.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01631', 2)": {
+         "doi": "10.3390/toxics12040252",
+         "text": "However, only the case of GO was analyzed, since the Daphnia magna (D. magna) set exposed to GOP died before completing the time required for morphological analysis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01631', 3)": {
+         "doi": "10.3390/toxics12040252",
+         "text": "Furthermore, the morphological parameters with the greatest statistically significant changes (p<0.05) were associated with the heart and body, while the eye and tail showed less significant changes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02367', 0)": {
+         "doi": "10.1002/etc.3000",
+         "text": "The authors exposed 4 different sizes of copper nanoparticles (CuNPs) and 1 submicron-sized copper particle to 5 cladoceran species (Daphnia magna, Daphnia pulex, Daphnia galeata, Ceriodaphnia dubia, and Chydorus sphaericus) to investigate whether morphological attributes of species can help to assess the acute toxicity of CuNPs across species.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02508', 0)": {
+         "doi": "10.1186/1477-3155-10-14",
+         "text": "All the silver species in this study caused abnormal swimming by the D. magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03397', 0)": {
+         "doi": "10.1016/j.scitotenv.2014.05.056",
+         "text": "Additionally, morphological changes, such as lack of apical spine development and malformed carapaces in D. magna, were observed for organisms after the chronic test.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04736', 0)": {
+         "doi": "10.1016/j.ceramint.2019.05.309",
+         "text": "Copper nanoparticles with different morphologies (needle-like and spheres) were deposited on the surface of ZnO.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05448', 0)": {
+         "doi": "10.3390/nano13050927",
+         "text": "In this work, the structural, vibrational, morphological, and colloidal properties of commercial 15.1 nm TiO2 nanoparticles (NPs) and nanowires (NWs, 5.6 thickness, 74.6 nm length) were studied with the purpose of determining their ecotoxicological properties.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05448', 1)": {
+         "doi": "10.3390/nano13050927",
+         "text": "This was achieved by evaluating acute ecotoxicity experiments carried out in the environmental bioindicator Daphnia magna, where their 24-h lethal concentration (LC50) and morphological changes were evaluated using a TiO2 suspension (pH = 7) with point of zero charge at 6.5 for TiO2 NPs (hydrodynamic diameter of 130 nm) and 5.3 for TiO2 NWs (hydrodynamic diameter of 118 nm).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC05448', 3)": {
+         "doi": "10.3390/nano13050927",
+         "text": "From the morphological experiments, we may conclude that the harmful effects of TiO2 NWs are more severe than those of 100 % anatase TiO2 NPs, likely associated with brookite (36.5 wt. %) and protonic trititanate (63.5 wt. %) presented in TiO2 NWs according to Rietveld quantitative phase analysis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05448', 4)": {
+         "doi": "10.3390/nano13050927",
+         "text": "Specifically, significant change in the heart morphological parameter was observed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07910', 0)": {
+         "doi": "10.1016/j.envres.2016.04.028",
+         "text": "The role of soluble zinc has been determined in Daphnia magna by a morphological approach, integrating a previous paper in which the ultrastructural damages to gut epithelial cells have been studied after ZnO nanoparticles exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07910', 2)": {
+         "doi": "10.1016/j.envres.2016.04.028",
+         "text": "Based on the overall results it can be concluded that dissolved zinc ions played a key role in ZnO nanoparticle toxicity and that the morphological approach is an extremely useful tool for comparing toxicological effects as well.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09916', 0)": {
+         "doi": "10.1016/j.ceramint.2023.01.102",
+         "text": "It was demonstrated that an increase of laser power produced defects and misalignments of the multi-walled carbon nanotubes causing nanoFe2O3 thermal activation in the JA1 nanohybrid, while the graphene oxide phase was detected by Raman spectroscopy and scanning electron microscopy, this last showed that graphene oxide sheets acting as a template for nanoFe2O3 growth in the JA2 nanohybrid.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09916', 2)": {
+         "doi": "10.1016/j.ceramint.2023.01.102",
+         "text": "The results of the morphological measurements showed a negative influence for high concentrations of the nanohybrids, while low concentrations have shown biocompatibility with aquatic life.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC12802', 0)": {
+         "doi": "10.1002/smll.202000301",
+         "text": "Pristine Ag NPs also induce morphological changes including tail losses and lipid accumulation associated with aging phenotypes in the heart, abdomen, and abdominal claw.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12996', 0)": {
+         "doi": "10.1007/s11051-016-3613-9",
+         "text": "This procedure resulted in nine different types of nanoparticles with differing size (5 - 90 nm), morphology, surface Ce3+/Ce4+ ratio, and slightly different crystal structures as characterized using transmission electron microscopy, dynamic light scattering, X-ray photoelectron spectroscopy, and X-ray diffraction measurements with Rietveld refinement.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16007', 0)": {
+         "doi": "10.1039/c2nr31652h",
+         "text": "The activity of the enzymes glutathione reductase and acetylcholine esterase was not affected, nor were proliferation, morphology or vitality of mammalian OLN-93 cells although exposure of the cells to 100 mg Fe per L increased the cellular iron content substantially.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC17067', 0)": {
+         "doi": "10.1016/j.cej.2017.09.118",
+         "text": "The structure, morphologies, and other characteristics of CQDs/BiOCOOH composites were investigated, which confirmed that CQDs were successfully coupled with BiOCOOH.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21109', 0)": {
+         "doi": "10.3390/nano12122036",
+         "text": "The analyzed samples were exposed to different weathering conditions to evaluate the influence of the weathering process on the morphology and size distribution of the particles released.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC33917', 0)": {
+         "doi": "10.1016/j.jwpe.2021.102376",
+         "text": "HRSEM/HRTEM analysis confirmed the formation of agglomerated spherical shape for WO3 nanoparticles and mixture of spherical and rod-like morphology for Al/B doped WO3 nano-composites.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51666', 2)": {
+         "doi": "10.1021/acs.est.2c07174",
+         "text": "Synchrotron-based micro X-ray fluorescence (XRF) elemental mapping identified U co-localized with morphological changes, with substantial accumulation of U in the lumen as well as in the epithelial tissues.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC51903', 0)": {
+         "doi": "10.1007/s12088-024-01327-1",
+         "text": "The optical, morphological, structural, and elemental properties of synthesized silver nanoparticles were investigated by UV-Vis spectroscopy, Scanning electron microscopy (SEM), Fourier transform infrared spectroscopy (FTIR), X-ray diffraction (XRD), Energy-dispersive X-ray analysis (EDX) and Zeta potential.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

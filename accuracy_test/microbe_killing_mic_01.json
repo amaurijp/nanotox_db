@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with minimum inhibitory concentration (MIC) values indicating the antimicrobial effect. Output the concentration unit (ex: mg L-1) with a blank space after each number found (Ex: '10.1 mg L-1' or '10.1 mg mL-1' or '10.1 g mL-1' or '10.1 ug mL-1'). If no value is found, output 'None'. Do not output concentration values not related with minimum inhibitory concentration (MIC)."
+   },
+   "instances": {
+      "('ATC00779', 0)": {
+         "doi": "10.1016/j.carbpol.2014.05.081",
+         "text": "The highest antibacterial activity was obtained with bimetallic Ag/Cu nanoparticles with minimum inhibitory concentrations (MIC) of 0.054 and 0.076 mg L-1 against B. subtilis and E. coli, respectively.",
+         "extracted val": "0.054 mg L-1, 0.076 mg L-1",
+         "correct": "y"
+      },
+      "('ATC01028', 0)": {
+         "doi": "10.1039/c5ra05393e",
+         "text": "The minimal inhibition concentrations (MIC) of GO@CS/ZnO against Escherichia coli and Staphylococcus aureus are only 2.5 ug mL-1 and 5 mg mL-1 respectively.",
+         "extracted val": "2.5 ug mL-1, 5 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC01856', 0)": {
+         "doi": "10.29261/pakvetj/2018.031",
+         "text": "The antimicrobial effect of 30 and 100 mg l-1 silver nanoparticles were investigated against Escherichia coli, Staphylococcus aureus, Salmonella typhimurium, Enterococcus faecalis, Bacillus cereus, Bacillus subtilis, Paenibacillus larvae, Candida albicans and Aspergillus niger.",
+         "extracted val": "30 mg L-1, 100 mg L-1",
+         "correct": "y"
+      },
+      "('ATC07490', 0)": {
+         "doi": "10.1155/2019/4649506",
+         "text": "The MICs of MK-AgNPs against both MRSA and methicillin-sensitive S. aureus (MSSA) strains were 32 ug ml-1, while for ES beta L-producing E. coli, it ranged from 32 to 64 ug ml-1.",
+         "extracted val": "32 ug ml-1, 32 ug ml-1, 32 ug ml-1, 64 ug ml-1",
+         "correct": "n"
+      },
+      "('ATC09961', 0)": {
+         "doi": "10.3390/molecules24173055",
+         "text": "The minimum inhibitory concentration and minimum bactericidal concentration of amoxyclav were 70 ug mL-1 and 140 ug mL-1, respectively, against Proteus mirabilis and 50 ug mL-1 and 100 ug mL-1, respectively, against Staphylococcus aureus.",
+         "extracted val": "70 ug mL-1, 50 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC13863', 0)": {
+         "doi": "10.3389/fphar.2019.01401",
+         "text": "The MIC values for liposomal formulations and free VAN ranged from 0.78 to 1.56 ug ml-1 against both tested strains, with no difference in the inhibition of biofilm formation as compared to free VAN.",
+         "extracted val": "0.78 ug ml-1, 1.56 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC14160', 0)": {
+         "doi": "10.1038/s41598-018-31082-5",
+         "text": "A cypermethrin utilizing bacterial strain (MIC, 450 mg l-1 was isolated from the soil of pesticide contaminated agriculture field and characterized by using polyphasic approach.",
+         "extracted val": "450 mg L-1",
+         "correct": "y"
+      },
+      "('ATC14857', 0)": {
+         "doi": "10.1007/s00253-024-13050-4",
+         "text": "The MIC value of Lam-AuNPs against several drug-resistant microbial pathogens varied from 2 to 1024 ug mL-1 in both standard and host-mimicking media.",
+         "extracted val": "2 ug mL-1, 1024 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC19756', 0)": {
+         "doi": "10.1039/d2tb01778d",
+         "text": "The excellent antibacterial activity of the PFDCs achieves lowest MIC values of 40 and 60 ug mL-1 (i.e., 1.4 and 2.2 mu mol L-1 against E. coli and S. aureus, respectively.",
+         "extracted val": "40 ug mL-1, 60 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC20510', 0)": {
+         "doi": "10.1016/j.lwt.2015.03.086",
+         "text": "The MIC90 of SeNPs against all tested bacteria was 25 ug mL-1, whereas the antibiofilm concentration was 20 ug mL-1 against all bacteria, except B. cereus.",
+         "extracted val": "25 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC24627', 0)": {
+         "doi": "10.1021/acsami.1c23808",
+         "text": "Various in vitro assays confirmed that GOx& HRP@ZIF-8/ASO exhibited excellent antibacterial properties against Escherichia coli, Staphylococcus aureus, methicillin-resistant S. aureus (MRSA) during catalysis of glucose (Glu), especially the minimum inhibitory concentration (MIC) against MRSA was only 16 ug mL-1.",
+         "extracted val": "16 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC25139', 1)": {
+         "doi": "10.1038/s41598-023-35877-z",
+         "text": "Co3O4 nanoparticles 2, with a MIC of 2 ug mL-1, has much higher antifungal activity than clotrimale, whose MIC is 4 ug mL-1, against M. audouinii.",
+         "extracted val": "2 ug mL-1, 4 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC27177', 0)": {
+         "doi": "10.5530/223097131692",
+         "text": "The 32 ug ml-1 Cu NPs concentration showed excellent antimicrobial activity against Gram positive and Gram-negative bacteria.",
+         "extracted val": "32 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC27218', 0)": {
+         "doi": "10.1039/c9tb02823d",
+         "text": "Minimum inhibitory concentration (MIC) values of 70 and 35 ug mL-1 of the Ag@S-GQDs nanocomposite were found to be sufficient to hinder the growth of P. aeruginosa and S. aureus.",
+         "extracted val": "70 ug mL-1, 35 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC28930', 0)": {
+         "doi": "10.1016/j.bioorg.2019.103425",
+         "text": "Due to the results, CP-AgNPs enhanced antimicrobial potential against S. aureus, E. faecalis, P. aeruginosa, A. baumannii and E. coli with MIC and MBC of (0.11, 7.1 ug ml-1, (0.11, 1.7 ug ml-1, (0.11, 0.22 ug ml-1, (0.11, 0.22) and (0.11, 0.44 ug ml-1, respectively.",
+         "extracted val": "0.11 ug ml-1, 7.1 ug ml-1, 0.11 ug ml-1, 1.7 ug ml-1, 0.11 ug ml-1, 0.22 ug ml-1, 0.11 ug ml-1, 0.44 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC32445', 0)": {
+         "doi": "10.1016/j.sjbs.2021.07.009",
+         "text": "AgNPs indicated significant antibacterial activity against S. aureus and K. pneumoniae fwith a zone of inhibition of 17 and 18 mm at a concentration of 1000 mg mL-1 with minimum inhibitory concentration of 15.6 and 62.5 mg mL-1 respectively.",
+         "extracted val": "15.6 mg mL-1, 62.5 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC34325', 1)": {
+         "doi": "10.1007/s10876-022-02326-2",
+         "text": "On the other hand, (NH4)(2)[Co(H2O)(6)](2)V10O28 center dot 4H(2)O exhibited higher antibacterial activity against P. aeruginosa ATCC 9027 (MIC value of 6.300 mg ml-1 in comparison to the nickel analog.",
+         "extracted val": "6.300 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC34870', 0)": {
+         "doi": "10.1007/s13204-011-0048-6",
+         "text": "The in vitro antibacterial assay (100 lg disk(-1) concentration) showed the results of maximum zone of inhibition with the E. coli (18.40 +/- 0.97 mm), and minimum (10.87 +/- 1.33 mm) zone of inhibition with S. aureus but the concentrations of MIC and MBC values ranged between 6.25 and 50.0 ug ml-1 between the selected bacterial strains.",
+         "extracted val": "6.25 ug mL-1, 50.0 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC34927', 0)": {
+         "doi": "10.1016/j.heliyon.2019.e02501",
+         "text": "Results also was ascertained that the minimum inhibitory concentration (MIC) was 25 mg l-1 at 30 min for E. coli and Salmonella enterica, 45 min for Listeria monocyteogens, Staphylococcus aureus, and Candida albicans and 60 min for Aspergillus niger with a noticeable bactericidal impact.",
+         "extracted val": "25 mg l-1",
+         "correct": "y"
+      },
+      "('ATC36926', 0)": {
+         "doi": "10.1021/acs.iecr.9b06606",
+         "text": "Moreover, the PEI-g-OC is able to kill the model bacteria of S. aureus, P. aeruginosa, and E. coli with minimal inhibitory concentrations (MIC) at 3.5, 12.0, and 8.5 mg mL-1, indicating its effect on antibacteria.",
+         "extracted val": "3.5 mg mL-1, 12.0 mg mL-1, 8.5 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC37015', 1)": {
+         "doi": "10.1094/PDIS-05-16-0598-RE",
+         "text": "Zinkicide SG6 had a sevenfold to eightfold lower MIC against Escherichia coli and X. alfalfae subsp. citrumelonis (31 to 250 ug ml-1.",
+         "extracted val": "31 ug ml-1, 250 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC41257', 0)": {
+         "doi": "10.1016/j.arabjc.2023.105084",
+         "text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of ZnO NFs@ cotton were determined as 19.53 mg ml-1 and 39.06 mg ml-1 respectively after exposure to UV light.",
+         "extracted val": "19.53 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC42038', 0)": {
+         "doi": "10.3390/molecules24244571",
+         "text": "Our best analogue 5, showed MICs of 4 ug mL-1 against A. baumannii, E. coli, P. aeruginosa and S. aureus with a hemolytic activity of 47 % against red blood cells.",
+         "extracted val": "4 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC48119', 0)": {
+         "doi": "10.1128/AEM.03280-15",
+         "text": "Our in vitro observations were corroborated by the recent detection of a clinical isolate highly resistant to fluoroquinolones (MIC >= 16 ug ml-1 and belonging to the subtype which easily accumulates QRDR alterations in vitro.",
+         "extracted val": "16 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC51713', 0)": {
+         "doi": "10.1007/s12088-024-01266-x",
+         "text": "1,2,3-triazole functionalized CQDs-NH2 template showed enhanced antibacterial activity against distinct bacterial strains, with minimum inhibitory concentration for standard bacteria, MRSA-bacteria, and clinical resistant bacterial pathogens in the range of 0.25-8, 64-128, and 128 - 256 ug mL-1 respectively.",
+         "extracted val": "0.25 ug mL-1, 64 ug mL-1, 128 ug mL-1",
+         "correct": "y"
+      }
+   }
+}
