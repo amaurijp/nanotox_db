@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of genotoxicity caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence of genotoxicity includes DNA strand breaks, comet assay results, micronuclei formation, chromosomal aberrations, or other reported DNA damage endpoints. Consider keywords such as 'DNA damage', 'genotoxic effect', 'micronuclei', 'comet assay tail moment', or 'chromosomal aberration' as indications of genotoxicity.  Consider keywords such as 'no DNA damage', 'no genotoxic effect', or 'genome integrity unchanged' as indications of non-genotoxicity. Considering all the information provided, respond only 'yes' or 'no' to the following question. Is there any evidence in the input sentence of genotoxicity induced by a nanomaterial in 'Caenorhabditis elegans'? If there is no clear evidence of genotoxicity, output 'no'. If the sentence does not deal with genotoxicity in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC01464', 1)": {
+         "doi": "10.1016/j.chemosphere.2016.01.068",
+         "text": "Reproductive toxicity assays revealed that CMC-nZVI, nFe(3)O(4), and Fe(II)aq significantly decreased offsprings in parental generation (F0) in accompany with the increased intracellular reactive oxygen species (ROS).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01635', 3)": {
+         "doi": "10.1016/j.ecoenv.2021.113064",
+         "text": "After continuous exposure for several generations, worms grew smaller and lived shorter.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01635', 6)": {
+         "doi": "10.1016/j.ecoenv.2021.113064",
+         "text": "Simultaneously, the fertility function of the nematode was impaired under consecutive exposure as reduced brood sizes and oocytes numbers, increased apoptosis of germline, and aberrant expression of reproductive related genes ced-3, ced-4, ced-9, egl-1 and ced-13 were detected in exposed worms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01635', 8)": {
+         "doi": "10.1016/j.ecoenv.2021.113064",
+         "text": "Thus, continuous multi-generational exposure to graphene oxide caused damage to the neuron development and the reproductive system in nematodes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03762', 0)": {
+         "doi": "10.1016/j.biomaterials.2013.03.093",
+         "text": "No significant toxicity was observed in C elegans due to the amide modification. a-SWCNTs were efficiently taken up by worms and caused acute toxicity, including retarded growth, shortened lifespan and defective embryogenesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03762', 1)": {
+         "doi": "10.1016/j.biomaterials.2013.03.093",
+         "text": "Genome-wide gene expression analysis was performed to investigate the toxic molecular mechanisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03889', 0)": {
+         "doi": "10.1016/j.cbpc.2022.109429",
+         "text": "Methods: Through a two-stage food delivery chain model of E. coli and C. elegans, the mRNA expression levels of DAF-2, age-1, PDK-1, Akt-1 and DAF-16 in the insulin growth factor 1 signaling pathway in nematode gonad cells which occurs AgNPs induced apoptosis were evaluated and the apoptosis of gonad cells in the mutant strains of the above key genes were detected.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04399', 2)": {
+         "doi": "10.1016/j.ecoenv.2023.115074",
+         "text": "Our findings revealed the signaling pathways related to the reproductive toxicity caused by RDX in C. elegans and their future generations, which provided the basis for further exploration of the ecological risks of energetic compounds in the environment.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05275', 0)": {
+         "doi": "10.1021/acs.jafc.0c02840",
+         "text": "Here, we investigated polyamino acid biopolymers, inorganic nanomaterials, and hybrid organic-inorganic nanomaterials for delivery of dsRNA and efficacy of gene knockdown using the model nematode Caenorhabditis elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06036', 6)": {
+         "doi": "10.1007/s00244-017-0366-0",
+         "text": "Although transcriptional alteration was not translated to the protein level, this result showed the possible application of a protein level functional study using cDNA sequence information from next-generation sequencing database in nonmodel organisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06376', 4)": {
+         "doi": "10.1021/es803477u",
+         "text": "Overall results of functional genomic studies using mutant analyses suggested that the sod-3 and daf-12 gene expressions may have been related to the AgNPs-induced reproductive failure in C. elegans and that oxidative stress may have been an important mechanism in AgNPs toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06779', 1)": {
+         "doi": "10.1080/17435390.2017.1342011",
+         "text": "The transcriptomic study identified differentially expressed genes following an exposure to SPIONs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06953', 0)": {
+         "doi": "10.1016/j.envpol.2011.03.013",
+         "text": "This phototoxicity was closely related to photocatalytic reactive oxygen species (ROS) generation by the ZnO particles as indicated by concomitant methylene blue photodegradation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08105', 1)": {
+         "doi": "10.1016/j.ecoenv.2021.113083",
+         "text": "Further, qPCR showed that the expression levels of autophagy pathway-related genes, namely Atg-2, Epg-9, Atg-18, Bec-1, and Atg-16.2, in the siRNA@SPION intervention group were significantly lower than those in the control group.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09111', 1)": {
+         "doi": "10.1016/j.jinorgbio.2022.111720",
+         "text": "Expressional change of several key cancer related pathway (JNK (c-Jun N-terminal kinase) and Wnt/beta-catenin (Wingless/Integrated/beta-catenin)) related genes (for instance, jnk-1, wrm-1 and gst-4) were confirmed by RNA sequencing experiments.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12817', 0)": {
+         "doi": "10.1016/j.ecoenv.2021.112178",
+         "text": "In the current study, the sensitivity to a range of secondary stressors (CeO2 NP, Ce3+, Cu2+, Cd2+, and Paraquat) following the multigenerational exposure to silver nanoparticles (Ag NPs NM300 K) or AgNO3 was investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12817', 2)": {
+         "doi": "10.1016/j.ecoenv.2021.112178",
+         "text": "Results showed an increase in sod-1 expression by the F3 generation, accompanied by a reduction of GSSG/GSH ratios, from both AgNO3 and Ag NP exposures.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15271', 7)": {
+         "doi": "10.3390/jox14010008",
+         "text": "Neurodegeneration of specific neurons impairs signaling by classical neurotransmitters as well as neuropeptides and compromises related neuromuscular behaviors in critical phases of life, such as the reproductive phase.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20865', 2)": {
+         "doi": "10.1038/srep32214",
+         "text": "Moreover, mutation of smk-1 gene suppressed the resistant property of mir-231 mutant to GO toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24894', 5)": {
+         "doi": "10.1016/j.ecoenv.2020.110588",
+         "text": "The gene expression profile in P0 was different from that registered in F1, although the expression of sod-4, hsp70, gpx-6 and mtl-2 increased with the surfactant concentration in both generations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31092', 3)": {
+         "doi": "10.1016/j.neulet.2021.135623",
+         "text": "Furthermore, DaD improved the abnormal fat storage and shortened lifespan of the animals with the same genetic background which supports the beneficial action of DaD on the alpha-synuclein-induced DA neurodegeneration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32179', 6)": {
+         "doi": "10.1016/j.impact.2022.100403",
+         "text": "Therefore, we provided the evidence to suggest the roles of oxidative stress activation and related molecular signals in mediating induction of transgenerational PS-NP toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC33603', 0)": {
+         "doi": "10.1016/j.molliq.2022.120415",
+         "text": "The development of third-generation photosensitizers for use in photodynamic therapy (PDT) is one of the most promising directions in current cancer therapy.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51618', 1)": {
+         "doi": "10.1021/acschembio.2c00153",
+         "text": "In contrast, in vivo studies revealed that TAMRA-dATP is extensively trafficked by active pathways into cellular DNA of zebrafish (Danio rerio) and Caenorhabditis elegans where DNA labeling was observed in live animals, even without photochemical release.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52220', 0)": {
+         "doi": "10.1007/s11160-024-09852-4",
+         "text": "Co-expression of fat-1 and fat-2 downregulated srebf1 and genes encoding rate-limiting enzymes for de novo lipogenesis in the liver, leading to decreased circulating triglycerides and cholesterol.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

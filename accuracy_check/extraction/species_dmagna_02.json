@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of toxicity of a nanomaterial tested on the biological species 'Daphnia magna' in the input sentences. Evidence of toxicity includes: (i) Acute toxicity (short-term tests): mortality and immobilization rates over 24\u201348 hours. (ii) Chronic toxicity (long-term tests): reproductive output (number of offspring), growth or body size changes, time to first brood, and changes in behavior (feeding rate, swimming ability). (iii) Developmental and morphological changes: any reported anatomical malformations, morphological alterations, or general sub-lethal stress. (iv) Physiological and biochemical markers: oxidative stress indicators (e.g., ROS, lipid peroxidation), enzymatic activity shifts (e.g., catalase, superoxide dismutase), genotoxicity (DNA damage, micronuclei formation), and changes in lipid or protein content. (v) Behavioral endpoints: reduced feeding or altered swimming patterns that might suggest sub-lethal toxicity. Consider keywords such as 'toxicity', 'adverse effect', 'morbidity', 'reduced reproduction', 'mortality', 'immobilization', 'significant negative impact', 'hormonal disruption', 'DNA damage', 'bioaccumulation', or 'behavioral change' as indications of toxicity. Consider keywords such as 'no observed effect' (NOEL), 'no observed adverse effect' (NOAEL), 'not toxic', and similar terms as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question: Is there any evidence in the input sentence of a toxic effect of a nanomaterial against the species 'Daphnia magna'? If there is no clear evidence of nanomaterial toxicity considering the aspects mentioned above, output 'no'. If the sentence does not deal with toxicity information against 'Daphnia magna' or if you cannot assess the sentence in regard to toxicity against 'Daphnia magna', output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00020', 1)": {
+         "doi": "10.1007/s11356-012-1256-7",
+         "text": "Embryolarval assays were conducted to assess the effects of TiO2 residues of nanomaterial (RNM) on fish early life stages.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00135', 8)": {
+         "doi": "10.1016/j.jhazmat.2020.124966",
+         "text": "The maximum acceptable concentrations were 14.0, 2.9, 3.9 and 1.4 mg L-1 for SL-5, SL-30, SL-60, and SL-100, respectively.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00292', 7)": {
+         "doi": "10.1002/etc.2133",
+         "text": "Such effect of AgNPs on Na and Ca regulation disappeared after cysteine addition, indicating that the soluble Ag released from AgNPs played a major role in the ionoregulatory dysfunction.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00296', 0)": {
+         "doi": "10.1016/j.scitotenv.2018.02.081",
+         "text": "The effects of emerging environmental contaminants on human and environmental health is of high concern, especially those potentially induced by mixtures.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00573', 1)": {
+         "doi": "10.1021/acs.est.5b00538",
+         "text": "Currently there is insufficient insight in the contribution of metal-based nanoparticles and their dissolved ions to the overall toxicity and accumulation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00993', 3)": {
+         "doi": "10.1016/j.envpol.2017.12.034",
+         "text": "The results revealed nonsevere acute toxicities, including immobility (72 h EC50: 443 mg L-1 and mortality (72 h LC50: 45.4 mg L-1, of GO on D. magna.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00993', 4)": {
+         "doi": "10.1016/j.envpol.2017.12.034",
+         "text": "To understand the underlying mechanism of GO exposure, changes in superoxide dismutase (SOD) and lipid peroxidation (LPO) of D. magna exposed to GO were correlated, which revealed elevated GO-mediated oxidative stress and damages, especially in the long-time and high-dose exposure groups.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01600', 7)": {
+         "doi": "10.1021/es062146p",
+         "text": "Nano-C-60 was the only suspension to cause a significant change in heart rate.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03000', 0)": {
+         "doi": "10.1021/es9002444",
+         "text": "CeO2 nanoparticles (CeO2 NPs) are increasingly being used as a catalyst in the automotive industry.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03397', 1)": {
+         "doi": "10.1016/j.scitotenv.2014.05.056",
+         "text": "The objective of this study was to evaluate and compare the aquatic toxicity of CuO nanoparticles (NPs) and microparticles (MPs) through acute and chronic toxicity tests with the freshwater microcrustacean Daphnia magna and an acute toxicity test with the bioluminescent marine bacteria Vibrio fischeri.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04036', 3)": {
+         "doi": "10.1016/j.jhazmat.2022.129303",
+         "text": "Transcriptomics profiling combined with physiological characterizations was applied to investigate the response of Daphnia magna to nano-size antimony trioxide (nATO) and its soluble Sb(III) counterpart antimony potassium tartrate (APT) in the present study.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05264', 6)": {
+         "doi": "10.1080/17435390801935960",
+         "text": "The highest concentration of nanoparticles was found after 12 h.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05623', 2)": {
+         "doi": "10.1007/s11051-016-3541-8",
+         "text": "However, while several ecotoxicity studies have been conducted to investigate the adverse impacts of these NPs on aquatic organisms, research on the implications of spent iron-based NPs is lacking.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05623', 3)": {
+         "doi": "10.1007/s11051-016-3541-8",
+         "text": "In this study, a comparative approach is used, in which the biological effects of three iron-based NPs (Fe3O4 and gamma-Fe2O3 NPs with particle sizes ranging from 20 to 50 nm, and Fe-0-NPs with an average particle size of 40 nm) on Raphidocelis subcapitata (formely known as Pseudokirchneriella subcapitata) and Daphnia magna were investigated using both as-prepared and pollutant-doped Fe-based NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05827', 5)": {
+         "doi": "10.3109/17435390.2012.715312",
+         "text": "This study strengthens the argument that size, method of synthesis as well as surface chemistry may affect the uptake and toxic effects of Ag NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07492', 6)": {
+         "doi": "10.1007/s00216-010-3915-1",
+         "text": "Moreover, the LC50 values for Ag-Au bimetallic nanoparticles were found to be between that of Ag and Au but much closer to that of Ag.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09035', 7)": {
+         "doi": "10.1007/s10653-019-00255-0",
+         "text": "In conclusion, our studies suggest that kaolinite differs with adsorption ability of Cd by MWCNTs, and toxicity is likely to be produced by multivariable regression in the adsorption state.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10665', 11)": {
+         "doi": "10.1002/etc.168",
+         "text": "Chem.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12660', 1)": {
+         "doi": "10.1007/s00128-014-1295-5",
+         "text": "The 48-h LC50 was 4.5 mg L-1 TiO2 NPs, whereas LC50 values for 7 and 14-days exposures were 2.7 and 1.9 mg L-1, respectively.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC12996', 8)": {
+         "doi": "10.1007/s11051-016-3613-9",
+         "text": "This indicated that toxic effects may depend on the colloidal stability of CeO2 nanoparticles during the first day of exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16692', 9)": {
+         "doi": "10.3390/inorganics11100408",
+         "text": "Furthermore, HL and complex 2 display virtually no toxicity to D. magna.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC23565', 6)": {
+         "doi": "10.1002/etc.3172",
+         "text": "Sigma-Aldrich humic acid appeared to alter the response of the organisms to carbon nanotubes compared with that observed in the presence of natural organic matter.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24878', 11)": {
+         "doi": "10.1007/s11356-013-2094-y",
+         "text": "Contrary to our expectations an exposure longer than 24 h resulted in an increase of AgNP toxicity in MT, possibly due to enhanced dissolution of silver.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC31975', 5)": {
+         "doi": "10.1016/j.watres.2022.118536",
+         "text": "The combined toxicity was further confirmed to occur in the daphnid's gut, which was reflected in physiological and biochemical responses mediated by intestinal blockage.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC46619', 11)": {
+         "doi": "10.1016/j.vetpar.2012.02.001",
+         "text": "These results suggest that the leaf methanol, aqueous extracts of E. prostrata and green synthesis of Ag NPs have the potential to be used as an ideal eco-friendly approach for the control of H. bispinosa and H. maculata.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

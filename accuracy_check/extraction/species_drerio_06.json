@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of bioaccumulation of a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence of bioaccumulation includes elevated nanomaterial concentrations in tissues, organ-specific uptake, or trophic transfer potential. Consider keywords such as 'bioaccumulation', 'bioconcentration', 'body burden', 'internalization', or quantitative uptake values as indications of bioaccumulation. Consider keywords such as 'no accumulation', 'no uptake', 'depuration', or 'not detected' as indications of non-bioaccumulation. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of bioaccumulation of a nanomaterial in 'Danio rerio'? If there is no clear evidence of bioaccumulation, output 'no'. If the sentence does not deal with bioaccumulation in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00164', 2)": {
+         "doi": "10.1080/17435390.2022.2133646",
+         "text": "The total copper found in the fish was in the order of mg kg(-1) and it was not directly proportional to the exposure concentration; most of the copper was concentrated in the gastric system.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00227', 5)": {
+         "doi": "10.1016/j.scitotenv.2021.151642",
+         "text": "Despite the lack of a clear pattern, adverse effects were often observed in the lowest environmentally relevant concentrations, raising concerns over the impacts of microplastics on freshwater ecosystems.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00228', 1)": {
+         "doi": "10.1002/etc.4349",
+         "text": "In addition, the uptake and toxicity of ZnO particles to aquatic communities appear to be driven by rapid dissolution and the concomitant impacts of zinc ion toxicity, and the size of the ZnO particles had little impact on uptake or toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00774', 1)": {
+         "doi": "10.1016/j.chemosphere.2017.05.173",
+         "text": "On waterborne exposure, carboxyl-QDs exhibited an intensive adsorption and accumulation in the chorion of embryos, and their predominate target organs were the gill and intestinal tract in larvae.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00778', 1)": {
+         "doi": "10.3390/foods11010095",
+         "text": "The chronic toxicity test results indicated that oxidative stress was only observed in the high concentration group of OCNPs-treated zebrafish.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00848', 0)": {
+         "doi": "10.1021/acsanm.9b02330",
+         "text": "Herein, we report on the evaluation of concentration-dependent toxicity studies of FexOy (Fe3O4) NPs in zebrafish (Danio rerio).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00913', 0)": {
+         "doi": "10.1016/j.jtemb.2019.02.005",
+         "text": "Formulations were prepared by interfacial deposition of preformed polymer method and later tested at concentrations ranging from 0.1 to 2.0 mu M.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00981', 2)": {
+         "doi": "10.1007/s11356-021-13058-7",
+         "text": "The pG and GO bioaccumulation leads to multi organ toxicity in zebrafish larvae.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01059', 0)": {
+         "doi": "10.1016/j.jece.2022.108443",
+         "text": "However, increased malformation rates and mortality at the highest concentration were due to nanoparticle sizes and GO.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01117', 0)": {
+         "doi": "10.1039/c4nr07005d",
+         "text": "Here we report a novel method utilizing the unique photoluminescence properties of plant leaf-derived graphene quantum dots (GQDs) modified with annexin V antibody (Ab(A5)) to form (Ab(A5))-modified GQDs (Ab(A5)-GQDs) enabling us to label apoptotic cells in live zebrafish (Danio rerio).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01184', 0)": {
+         "doi": "10.3390/molecules25092256",
+         "text": "In this study, we evaluated the neurobehavioral toxicity parameters on the adult zebrafish (Danio rerio) at either low (1 mg l-1 or high (10 mg l-1 concentration level of C-MNPs over a period of two weeks by waterborne exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01210', 0)": {
+         "doi": "10.1016/j.ecoenv.2020.111487",
+         "text": "Compared with the single GO or Cr6+ exposure, their co-exposure (GO+Cr6+) significantly enhanced the teratogenicity in a concentration-dependent pattern, and the spinal curvature was observed as the main deformity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01931', 1)": {
+         "doi": "10.1016/j.chemosphere.2020.127456",
+         "text": "Two feeding regimes (with and without food supply) and two PA-MP concentrations (100 mg kg(-1) and 1000 mg kg(-1)) were applied.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01938', 2)": {
+         "doi": "10.1016/j.chemosphere.2019.03.091",
+         "text": "Given the above, 15 nm nano-SiO2 were more likely to enter and accumulate in zebrafish larvae, thus causing more serious oxidative stress in vivo.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01964', 0)": {
+         "doi": "10.2217/nnm-2018-0251",
+         "text": "Cytotoxicity was determined on a tumor cell line at low and high concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02300', 2)": {
+         "doi": "10.1016/j.aquatox.2017.11.017",
+         "text": "Taken together, these data suggest that at least some nanoplastics can penetrate the chorion of developing zebrafish, accumulate in the tissues, and affect physiology and behavior, potentially affecting organismal fitness in contaminated aquatic ecosystems.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02356', 0)": {
+         "doi": "10.1016/j.scitotenv.2016.01.048",
+         "text": "DNA fragmentation was statistically significant for all groups exposed to the magnetic exfoliated vermiculite and for fish exposed to the highest concentration (200 mg L-1 of exfoliated vermiculite, whereas the micronucleus frequency, nuclear abnormalities and histopathological alterations were not statistically significant for the fish exposed to these materials.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02368', 0)": {
+         "doi": "10.3762/bjnano.6.160",
+         "text": "As such, we investigated the toxicity of 17 diverse ZnO NPs varying in both size and surface chemistry to developing zebrafish (exposure concentrations ranging from 0.016 to 250 mg L-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03000', 2)": {
+         "doi": "10.1021/es9002444",
+         "text": "Toxicity could not be related to a direct effect of dissolved Ce or CeO2 NP uptake or adsorption, nor to an indirect effect of nutrient depletion (by sorption to NPs) or physical light restriction (through shading by the NPs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03142', 3)": {
+         "doi": "10.1016/j.envpol.2020.115769",
+         "text": "Nanoparticles mainly accumulated in the gut, where they triggered reactive oxygen species, decreased expression of the antioxidant gene catalase and induced migration of immune cells.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03670', 1)": {
+         "doi": "10.1177/0748233720936825",
+         "text": "For larvae exposed to Cu-NPs, the presence of EDTA reduced the expression ofMT2(1.7-fold) relative to Cu-NP concentration.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05114', 3)": {
+         "doi": "10.3390/ijms232213878",
+         "text": "According to our results, the inclusion of PP-MPs in the feed of D. rerio and P. fluviatilis hampered the cellular function of the gills and hepatic cells by lipid peroxidation, DNA damage, protein ubiquitination, apoptosis, autophagy, and changes in metabolite concentration, providing evidence that the toxicity of PP-MPs is dose dependent.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06335', 0)": {
+         "doi": "10.1021/cg900961k",
+         "text": "By simply changing the concentration of the ionic liquid, the level of reactive 10011 facets can be continuously tuned from 27 to 50 %.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07715', 0)": {
+         "doi": "10.1021/acsbiomaterials.9b01226",
+         "text": "In addition, compared to Dy/Er@A1gPDA NPs (82.4 %), Tb/Eu@AlgPDA NPs exhibited negligible cytotoxicity with > 93.3 % HeLa cell viability found in MTT assays at NP concentrations of up to 0.50 mg mL-1 and high biocompatibility when incubated with zebrafish (Danio rerio) embryos and larvae.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18405', 0)": {
+         "doi": "10.1007/s13762-019-02509-x",
+         "text": "MoO(3)NPs were not added to the reference group I; the procedure was comprised of the following: sampling, isolation, cleaning, measurement of DNA concentrations, polymerase chain reaction, validation and normalization of libraries with subsequent sequencing on the basis of high-performance sequenator (MiSeq Illumina, USA).",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

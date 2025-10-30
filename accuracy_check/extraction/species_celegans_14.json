@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of morphological abnormalities caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence includes anatomical malformations, cuticle deformities, vulval abnormalities, or general sub-lethal structural changes. Consider keywords such as 'malformation', 'morphological change', 'deformed', 'abnormal anatomy', or 'structural defect' as indications of toxicity. Consider keywords such as 'normal morphology', 'no anatomical changes', or 'structure unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of morphological abnormalities in 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of morphological toxicity, output 'no'. If the sentence does not deal with morphology in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC01586', 1)": {
+         "doi": "10.3390/nano11123314",
+         "text": "This study not only suggests a fast and economic C. elegans model to undertake the risk assessment of nanomaterials in the nervous system, but also provides a valuable deep learning approach to quantitatively track subtle morphological changes of neurons at an unbiased level in a nanotoxicological study using C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03279', 0)": {
+         "doi": "10.1002/smll.202306020",
+         "text": "In addition, some abnormal issues occur in the uterus during reproduction assays, such as vulva protrusion, impaired eggs left in the vulva, and egg hatching inside the mother.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03617', 0)": {
+         "doi": "10.1007/s12274-017-1677-1",
+         "text": "Our studies show that (1) the internalized SiNPs do not affect the morphology and physiology of the worms, suggesting the superior biocompatibility of SiNPs in live organisms; (2) the internalized SiNPs cannot cross the basement membrane of C. elegans tissues and they display limited diffusion ability in vivo, providing the possibility of their use as nanoprobes for specific tissue imaging studies in intact animals; (3) more than 80 % of the fluorescence signal of internalized SiNPs remains even after 120 min of continuous laser bleaching, whereas only similar to 20 % of the signal intensity of mCherry or cadmium telluride quantum dots remains under the same condition, indicating the robust photostability of SiNPs in live organisms; and (4) cyclic RGD-peptide-conjugated SiNPs can specifically label muscle attachment structures in live C. elegans, which is the first proof-of-concept example of SiNPs for targeted molecular imaging in these live worms.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC03865', 3)": {
+         "doi": "10.1002/jat.3927",
+         "text": "Thus, parental exposure to TEB induced transgenerational defects in both reproduction and development, emphasizing the significance of considering bio-toxicity over multiple generations to conduct accurate assessment of environmental risks of toxicants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05475', 0)": {
+         "doi": "10.1016/j.fct.2023.113945",
+         "text": "Higher concentrations of Fe3O4@Ag-NPs caused an increase in cell apoptosis in the germline and a decrease in egg laying, which was associated with a decrease in worm swimming movements and abnormalities in the cholinergic neurons.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06285', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.167684",
+         "text": "The results suggested that photoaging induces the generation of EPFRs and reactive oxygen species (O-2(center dot-), center dot OH, and O-1(2)), which altered the physicochemical properties (morphology, crystallinity, and functional groups) of NPS.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06376', 0)": {
+         "doi": "10.1021/es803477u",
+         "text": "Increased expression of the superoxide dismutases-3(sod-3) and abnormal dauer formation protein (daf-12) genes with 0.1 and 0.5 mg L-1 of AgNPs exposures occurred concurrently with significant decreases in reproduction ability.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07354', 0)": {
+         "doi": "10.1016/j.envpol.2017.10.012",
+         "text": "Monitoring of locomotion behaviors throughout the entire life span of C. elegans showed that Ag NPs accelerate the age-associated decline of swimming and increase of uncoordinated movements at concentrations of >= 10 >= ug mL-1, whereas neuromuscular defects did not occur in response to ZnO and CeO2 NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07452', 0)": {
+         "doi": "10.1039/b802338g",
+         "text": "The adult hermaphrodite is anatomically simple with 959 somatic cells and 1 mm in length.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07635', 0)": {
+         "doi": "10.1002/jat.2872",
+         "text": "Silver uptake and localization, larval growth, morphology and DNA damage were utilized as endpoints for toxicity evaluation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07691', 1)": {
+         "doi": "10.1021/acs.analchem.7b02554",
+         "text": "A 20 X 37 nm(2) high-brilliance beam was employed to obtain XRF elemental distribution maps of entire nematodes or anatomical details such as embryos, which could be compared with the CT data, These maps showed Co NPs to be predominantly present within the intestine and the epithelium, and they were not colocalized with Zn granules found in the lysosonie-containing vesicles or Fe agglomerates in the intestine.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07798', 0)": {
+         "doi": "10.7150/thno.81817",
+         "text": "Here we report that dimercapto succinic acid (DMSA)-modified CoxOy nanoparticles (Co3O4 NPs), which have received wide-spread attention in biomedical fields, is a promising UPRmt activator and, more importantly, provides a gate for extending healthy lifespan.Methods: UPRmt activation by Co3O4 NPs was tested in transgenetic Caenorhabditis elegans (C. elegans) specifically expressing UPRmt reporter Phsp-6::GFP, and the underlying mechanism was further validated by mitochondrial morphology, mtDNA/nDNA, metabolism-related genes' expression, mitonuclear protein imbalance, oyxgen assumption and ATP level in C. elegans.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC09832', 1)": {
+         "doi": "10.1016/j.envres.2020.109486",
+         "text": "Such abnormalities obeyed a dose-dependent relationship with NP levels, which were closely related to the delayed spawning time and decreased reproductive rates.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12414', 0)": {
+         "doi": "10.1016/j.envpol.2016.10.086",
+         "text": "The ZnO-NPs did not induce growth defects or decrease head thrashes in C elegans in either media.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC14389', 0)": {
+         "doi": "10.3109/17435390.2015.1073399",
+         "text": "The pathway of protein homeostasis was validated as a major target of SiO2 NPs by behavioral phenotyping, as inhibitors of amyloid formation rescued NP-induced defects of locomotory patterns and egg laying.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15271', 1)": {
+         "doi": "10.3390/jox14010008",
+         "text": "Investigation of neurodegenerative hallmarks and animal behavior revealed a temporal correlation with the acceleration of neuromuscular defects, such as internal hatch in 2-day-old C. elegans.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC16783', 0)": {
+         "doi": "10.2147/IJN.S394666",
+         "text": "The neuropeptide INS-22 was partially involved in Au NPs-induced NaCl sensation defect.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16987', 0)": {
+         "doi": "10.1080/17435390.2019.1652943",
+         "text": "The FTIR and XPS analysis showed that the NPs are made up of graphitic carbon (sp2) and carbon defects (sp3), with abundant hydroxyl and carbonyl groups on the surface.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC17957', 0)": {
+         "doi": "10.1091/mbc.E23-03-0090",
+         "text": "Nervous systems exhibit dramatic diversity in cell morphology and size.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18480', 0)": {
+         "doi": "10.1039/c8ra08156e",
+         "text": "The optimal solvent system for fabrication of CA nanofibers was the acetone/ dimethylformamide (DMF) system (2 : 1 volperc) with incorporation of 0.25 % volperc Tween80, resulting in good morphology of CA nanofibers with av.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19771', 0)": {
+         "doi": "10.1016/j.jep.2015.10.008",
+         "text": "Results: Prolonged exposure to 0.12 - 0.24 g mL-1 of GR did not induce lethality, alter body length, morphology or metabolism, affect brood size, locomotion, the development of D-type GABAergic motor neurons, or induce significant induction of intestinal autofluorescence and intestinal ROS production.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC21012', 0)": {
+         "doi": "10.1021/acsanm.0c03079",
+         "text": "Remarkably, internalization of the nanomaterial by cells was confirmed by transmission electron microscopy, which indicated its accumulation in the cytoplasm, without causing changes in either the size or morphology of the cells.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC27460', 0)": {
+         "doi": "10.1016/j.mtcomm.2020.101346",
+         "text": "The structure and morphology of the prepared composites were characterized by FT-IR, XRD and SEM analysis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC30645', 0)": {
+         "doi": "10.1016/j.scitotenv.2022.160591",
+         "text": "Although 0.1 - 10 ug L-1 6-PPDQ could not influence intestinal morphology, the intestinal permeability was significantly enhanced by 1 - 10 ug L-1 6-PPDQ as indicated by erioglaucine disodium staining.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC36571', 0)": {
+         "doi": "10.1007/s00284-009-9472-1",
+         "text": "Generally only one or two isolates with a particular crystal morphology were isolated from any one sample, however, a few samples contained more, up to 11 isolates, suggesting post-ingestion amplification.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

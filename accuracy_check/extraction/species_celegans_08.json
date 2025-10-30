@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of growth reduction or developmental delay caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence includes diminished body length, reduced growth rate, delayed larval development, or prolonged time to reach adulthood. Consider keywords such as 'reduced growth', 'diminished body length', 'developmental delay', or 'reduced size' as indications of toxicity. Consider keywords such as 'growth unaffected', 'normal development', or 'no developmental delay' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of growth reduction or developmental delay in 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of growth or developmental toxicity, output 'no'. If the sentence does not deal with growth or development in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00081', 0)": {
+         "doi": "10.1016/j.etap.2009.12.003",
+         "text": "Multiple toxic endpoints, Such as stress-response gene expression, growth, fertility, and survival, were analyzed in C. elegans, in response to the CeO2 and TiO2 exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00285', 0)": {
+         "doi": "10.1021/acs.est.7b06099",
+         "text": "In this study, we evaluated the performance of a standard Caenorhabditis elegans (C. elegans) toxicity assay containing an Escherichia coli (E. coli) food supply with silicon, polystyrene, and gold ENPs with different charged coatings and sizes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00432', 0)": {
+         "doi": "10.3390/pharmaceutics15061679",
+         "text": "We hypothesized that antimony-doped SnO2 (ATO) NPs, which contain a combination of antimony (Sb) and tin (Sn) oxides, are good antimicrobial candidates due to their large surface area.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01361', 1)": {
+         "doi": "10.1016/j.ecoenv.2018.07.102",
+         "text": "Epidermal-development related proteins of BLI-1 and IFB-1 acted as downstream targets of MLT-7, and mediated the function of MLT-7 in maintaining the epidermal barrier.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03011', 0)": {
+         "doi": "10.1002/admt.202301222",
+         "text": "Caenorhabditis elegans (C. elegans) nematodes are a powerful model organism for diverse biological and biomedical studies, benefiting from their genetic similarities to humans, small size, and transparency.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03186', 0)": {
+         "doi": "10.1021/acschembio.0c00842",
+         "text": "Iron is absolutely required for the bacterial growth, virulence associated with colonization, and survival from the host immune system.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04014', 0)": {
+         "doi": "10.1016/j.bbabio.2012.10.016",
+         "text": "Recently, we established Tet-mev-1 conditional transgenic mice using our uniquely developed Tet-On/Off system, which can induce the mutated SDHC gene to be equally and competitively expressed compared to the endogenous wild-type SDHC gene.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05094', 1)": {
+         "doi": "10.1002/smll.201600766",
+         "text": "Specifically, clear size-dependent distribution and toxicity of the QDs in the digestive tract are observed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05168', 0)": {
+         "doi": "10.1016/j.jece.2021.106779",
+         "text": "In this work we synthesize and characterize AuNPs using two chemical routes: via sodium citrate and via sodium citrate/borohydride.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06306', 0)": {
+         "doi": "10.7717/peerj.8684",
+         "text": "The nematode Caenorhabditis elegans is a suitable model to study the toxic effects of nanoparticles as it is amenable to comprehensive phenotyping, such as locomotion, growth, neurotoxicity and reproduction.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08290', 1)": {
+         "doi": "10.1016/j.chemosphere.2021.131698",
+         "text": "In vivo experiments on C. elegans were performed using natural feeding of Rhodamine B isothiocyanate-(3 aminopropyl) triethoxysilane functionalized (CuO)-Cu-65 nanoprobes (RBITC-APTES@(CuO)-Cu-65) (size = 7.41 +/- 1 nm) within the range of Predicted Environmental Concentration (PEC) of CuO nanoparticles in soil and sediments.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10544', 1)": {
+         "doi": "10.4209/aaqr.2020.04.0157",
+         "text": "Significant shortening of body size was also observed in nematodes exposed to 0.5 - 5 mg mL-1 for both SiO2 NPs (93 - 81 %) and NH2-SiO2 NPs (94 - 88 %).",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC11094', 0)": {
+         "doi": "10.3390/app12020720",
+         "text": "The physico-chemical and morphological aspects of the GNPs used in this study were analyzed by Raman scattering spectroscopy, electron microscopy, zeta potential as a function of pH, and particle size measurements by dynamic light scattering.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12414', 0)": {
+         "doi": "10.1016/j.envpol.2016.10.086",
+         "text": "The ZnO-NPs did not induce growth defects or decrease head thrashes in C elegans in either media.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC12672', 2)": {
+         "doi": "10.1039/c9en00473d",
+         "text": "Moreover, nanopolystyrene (>= 1 ug L-1 decreased head thrash and body bend and nanopolystyrene (>= 10 ug L-1 affected forward and backward movements in sod-3 or acs-22 mutant nematodes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13335', 0)": {
+         "doi": "10.1002/smtd.202300848",
+         "text": "Here, a NIR photothermal technique is developed to modulate cellular excitability and animal behaviors in Caenorhabditis elegans in vivo via the thermosensitive transient receptor potential vanilloid 1 (TRPV1) channel with an FDA-approved photothermal agent indocyanine green (ICG).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13394', 1)": {
+         "doi": "10.1016/j.envpol.2020.114848",
+         "text": "In adult exposure, [C(2)mim]Br inhibited initial reproduction, total reproduction and lifespan.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13593', 0)": {
+         "doi": "10.1016/j.envpol.2024.123816",
+         "text": "Here we show in Caenorhabditis elegans that exposure to photoaged polystyrene nanoplastics (PSNP-UV) results in worse reproductive performance than pristine PSNP (i.e., embryonic/larval lethality plus a decrease in the brood size, accompanied by a high number of unfertilized eggs), besides it affects size and locomotion behavior.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC14389', 0)": {
+         "doi": "10.3109/17435390.2015.1073399",
+         "text": "Here, we demonstrate that SiO2 NPs effect widespread protein aggregation in the soil nematode Caenorhabditis elegans ranging from induction of amyloid in nucleoli of intestinal cells to facilitation of protein aggregation in body wall muscles and axons of neural cells.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15331', 3)": {
+         "doi": "10.1021/es202417t",
+         "text": "We used three independent and complementary approaches to investigate the mechanisms of toxicity of differentially coated and sized Ag NPs: pharmacological (rescue with trolox and N-acetylcysteine), genetic (analysis of metal-sensitive and oxidative stress-sensitive mutants), and physicochemical (including analysis of dissolution of Ag NPs).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25880', 0)": {
+         "doi": "10.1016/j.envpol.2018.01.037",
+         "text": "Given that the currently used standardized nematode toxicity assays have certain limitations, in this study, we examined the use of a novel nematode offspring counting assay for evaluating soil ecotoxicity based on a previous soil-agar isolation method used to recover live adult nematodes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC26855', 0)": {
+         "doi": "10.1038/cdd.2013.126",
+         "text": "Human-nucleotide-excision repair (NER) deficiency leads to different developmental and segmental progeroid symptoms of which the pathogenesis is only partially understood.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34075', 0)": {
+         "doi": "10.1021/acsomega.8b02463",
+         "text": "The synthesized NCDs emitted bright fluorescence without any pretreatment of the sample under the excitation of UV light and exhibited excitation-dependent fluorescence emission.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34199', 0)": {
+         "doi": "10.1074/jbc.M116.769778",
+         "text": "Studies of cadherin-catenin assembly in a number of metazoans have revealed both similarities and unexpected differences in the biochemical properties of the cadherin center dot catenin complex that likely reflect the developmental and environmental requirements of different tissues and organisms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC39241', 0)": {
+         "doi": "10.1371/journal.pone.0294766",
+         "text": "Adverse effects can impact the survival, growth, or reproduction of organisms, later affecting population dynamics.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

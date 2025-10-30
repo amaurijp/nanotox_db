@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of photosynthetic impairment caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence of photosynthetic impairment includes diminished chlorophyll content, reduced photosystem II efficiency, decreased Fv/Fm ratio, or impaired photochemical quenching. Consider keywords such as 'reduced chlorophyll', 'lower photosynthetic efficiency', 'photosystem inhibition', or 'decreased Fv/Fm' as indications of toxicity. Consider keywords such as 'chlorophyll unchanged', 'photosynthesis unaffected', or 'no photosynthetic effect' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of photosynthetic impairment in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of photosynthetic impairment, output 'no'. If the sentence does not deal with photosynthesis in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC07501', 1)": {
+         "doi": "10.1016/j.envpol.2017.10.116",
+         "text": "The influence of MWCNT and MV on photosynthesis and oxidative stress at the physiological level was consistent with the proteomics analysis, with various over-expressed photosynthesis-related proteins (by more than 2 folds) and various under-expressed oxidative stress related proteins (by about 2-3 folds).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09543', 1)": {
+         "doi": "10.1016/j.chemosphere.2019.124856",
+         "text": "CdSO4 elicited higher levels of oxidative stress compared with QDs, especially the former treatment caused more intense respiration damages and reduction in chlorophyll and carotenoids than the latter.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10229', 1)": {
+         "doi": "10.1021/acsnano.1c08367",
+         "text": "Analysis of physiological and molecular response of A. thaliana chloroplasts and mitochondrion demonstrates that ENMs increase or decrease functionality and organelle genome replication.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10426', 1)": {
+         "doi": "10.1016/j.freeradbiomed.2018.01.014",
+         "text": "Transgenic expression of fusion proteins can target the photosensitizers to specific cell regions and permit the spatial and temporal control of ROS production.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10701', 0)": {
+         "doi": "10.1002/adsu.202100048",
+         "text": "Several functional interfaces between living plants and nanotechnology have been successfully reported for diverse applications, from sensing to photosynthesis and energy production and from modulation of physiological activity to controlled delivery of chemicals.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12371', 0)": {
+         "doi": "10.3732/ajb.1200264",
+         "text": "center dot Premise of the study: To reach favorable conditions for photosynthesis, seedlings grow upward when deprived of light upon underground germination.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12830', 0)": {
+         "doi": "10.1111/tpj.13105",
+         "text": "This also resulted in decreased photosynthetic efficiency and the extreme accumulation of Ag in tissues.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12873', 2)": {
+         "doi": "10.3732/ajb.1200308",
+         "text": "We analyzed hypocotyl phototropism, chloroplast photorelocation movement, and leaf flattening in the phot2 mutant and the respective phot1phot2 double mutant plants. center dot Key results: We demonstrated that unlike the phot2 null mutant, the phot2-10 mutant, which has the defective phot2 LOV2 domain, retained the phototropic response and had unusual chloroplast movement.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13294', 0)": {
+         "doi": "10.1016/j.scitotenv.2018.07.061",
+         "text": "After 3 days of hydroponic exposure, AgNPs (1.0 and 2.5 mg L-1 exerted more severe inhibitory effects on plant (shoot and root) growth and photosynthesis than the same concentrations of Ag+ ions.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC14029', 3)": {
+         "doi": "10.1007/s12011-010-8901-0",
+         "text": "TiO2 NPs treatment could reduce F (480)/F (440) ratio and increase F (650)/F (680) ratio and accelerate the rate of whole chain electron transport and oxygen evolution of the chloroplast.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15170', 0)": {
+         "doi": "10.1007/s10725-007-9236-5",
+         "text": "Plants were challenged with methyl viologen (MV), a redox cycling herbicide that produces superoxide anion (O-2(center dot-)) in the light and in the chloroplasts, generating inhibition of photosynthesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15677', 1)": {
+         "doi": "10.3390/nano9111543",
+         "text": "After treatment with 500 mg nZVI/kg soil, the plant biomass increased by 38 % through enhanced photosynthesis, which was confirmed by the gas-exchange system, carbon isotope ratio and chlorophyll content analysis.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC18104', 0)": {
+         "doi": "10.1371/journal.pone.0132928",
+         "text": "Transgenic Arabidopsis overexpressing PpCBF3 showed significant improvement in freezing (-20 degrees C) tolerance demonstrated by a lower percentage of chlorotic leaves, lower cellular electrolyte leakage (EL) and H2O2 and O-2(center dot-) content, and higher chlorophyll content and photochemical efficiency compared to the wild type.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19197', 1)": {
+         "doi": "10.30848/PJB2021-2(40)",
+         "text": "The chlorophyll contents were decreased to almost 50 percent in response to different concentrations of ZnO while remained unaffected or increased by applying SiO2 NPs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC19251', 0)": {
+         "doi": "10.1080/15592324.2019.1685728",
+         "text": "Compared to NT plants under chilling stress, superoxide (center dot O2(-)) accumulation was significantly lower, and chlorophyll (Chl) contents were significantly higher in all transgenic lines with higher SOD activity.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC19821', 2)": {
+         "doi": "10.1134/S000629791709005X",
+         "text": "The expression level of the gene encoding alpha-CA2 under long day photoperiod as well as of genes of chloroplast beta-CA5 and beta-CA4 from plasma membranes and mitochondrial beta-CA6 under both photoperiods depended insignificantly on light intensity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24060', 2)": {
+         "doi": "10.1016/j.heliyon.2024.e27583",
+         "text": "AgNO3-exposure, on the other hand, did not lead to significant reduction either in chlorophyll concentration or in carbon assimilation rate.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC25557', 0)": {
+         "doi": "10.1007/s11356-024-31970-6",
+         "text": "This study shows that TiNPs alter the morphology and nanomechanical properties of chloroplasts in A. thaliana, which leads to a decrease in membrane elasticity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29314', 2)": {
+         "doi": "10.1016/j.plantsci.2003.12.007",
+         "text": "These results suggested that the overexpressed Cu/Zn-SOD enhances the chloroplast antioxidant system.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31407', 0)": {
+         "doi": "10.1126/sciadv.abc5237",
+         "text": "Artificial regulation of state transition between photosystem I (PSI) and PSII will be a smart and promising way to improve efficiency of natural photosynthesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31407', 3)": {
+         "doi": "10.1126/sciadv.abc5237",
+         "text": "Furthermore, PBF could be absorbed by the Arabidopsis thaliana to speed up cell mitosis and enhance photosynthesis.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC31507', 0)": {
+         "doi": "10.1093/aob/mcp272",
+         "text": "Positive selection in the alpha-crystallin domain (ACD) of the chloroplast small heat shock protein (CPsHSP) gene was found in a previous study and was suggested to be related to the ecological adaptation of Rhododendron species in the subgenus Hymenanthes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31871', 3)": {
+         "doi": "10.1111/j.0031-9317.2004.00308.x",
+         "text": "The present data indicate that overproducing the cytosolic APX in tobacco chloroplasts reduces the toxicity of H2O2.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32487', 1)": {
+         "doi": "10.1039/d3ra01514a",
+         "text": "Under salt stress (150 mmol L-1 NaCl), in the presence of excitation light, the N-CDs treatment significantly increased shoot/root fresh weight and chlorophyll content by 43.29 %, 50.66 % and 22.59 %, and reduced malondialdehyde (MDA) content and relative conductivity by 17.59 % and 32.58 % compared to the control group.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC32548', 2)": {
+         "doi": "10.1039/c8en00323h",
+         "text": "Nanoceria enable higher retention of K+ in leaf mesophyll, thus improving plant photosynthetic performance and biomass against environmental stress e. g. salinity.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

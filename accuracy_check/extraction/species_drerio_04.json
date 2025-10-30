@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of behavioral impairment caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence includes altered swimming speed, erratic movement, reduced feeding, impaired predator avoidance, or other behavioral changes. Consider keywords such as 'altered swimming', 'reduced feeding', 'behavioral change', or 'impaired locomotion' as indications of toxicity. Consider keywords such as 'normal behavior', 'swimming unaffected', or 'no behavioral effect' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of behavioral impairment in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of behavioral toxicity, output 'no'. If the sentence does not deal with behavior in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00068', 0)": {
+         "doi": "10.1016/j.colsurfb.2019.110754",
+         "text": "Naringin is a flavonoid widely known for its pharmacological properties, such as: anti-inflammatory and antioxidant ones, being an ally to avoid oxidative damage.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00277', 0)": {
+         "doi": "10.1016/j.scitotenv.2013.06.101",
+         "text": "AgNP were characterized in each test-media by Transmission Electron Microscopy (TEM) and experiments were performed by Dynamic Light Scattering (DIS) to investigate the aggregation and agglomeration behavior of AgNP under different media chemical composition and test-period.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00662', 0)": {
+         "doi": "10.1016/j.scitotenv.2020.136941",
+         "text": "Induction of mt2 and reduction of ala-d expression levels in liver tissues showed Pb bioavailability after 2-d and 4-d dietary exposure to perovskite-spiked feeds.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00687', 0)": {
+         "doi": "10.1007/s11051-020-04800-2",
+         "text": "Embryotoxicity parameters (survival, hatching rate, and the incidence of anatomical malformations) and behavioral patterns (locomotion during the exploration of a new environment, thigmotaxis, and the escape response to an aversive stimulus) were evaluated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00726', 0)": {
+         "doi": "10.1080/17435390.2017.1306128",
+         "text": "Aqueous exposure to Au NPs resulted in increased relative swimming distance, while no effect was observed for other exposures.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00913', 2)": {
+         "doi": "10.1016/j.jtemb.2019.02.005",
+         "text": "(PhSe)(2)-loaded nanocapsules showed no alteration on travelled distance, immobility, and erratic swimming, suggesting the absence of behavioral impairments.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC00913', 3)": {
+         "doi": "10.1016/j.jtemb.2019.02.005",
+         "text": "Interestingly, the higher concentration tested had anxiolytic-like effects, since animals spent more time in the top area and showed a decreased thigmotaxis behavior.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01957', 2)": {
+         "doi": "10.1016/j.taap.2014.08.018",
+         "text": "These results provide evidence of a lack of biocompatibility of SWNTs modified with short chain PEGs, which leads to the accumulation of the material, tissue damage and behavioral alterations in the tested subjects.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02101', 1)": {
+         "doi": "10.15017/4486553",
+         "text": "Moreover, exposure to ZIF-8 NPs at 9.0 mg L-1 induced hyperactive effects on newly hatched zebrafish, as indicated by significantly higher average swimming speed and spent more time at high mobility status.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02128', 1)": {
+         "doi": "10.1016/j.jhazmat.2023.132880",
+         "text": "In addition, cytotoxicity in the caudal region (34 ng L-1, ROS production, decreased mean swimming speed, and distance covered were observed in all tested concentrations.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02300', 0)": {
+         "doi": "10.1016/j.aquatox.2017.11.017",
+         "text": "Lastly, exposure to PS NPs altered larval behavior as evidenced by swimming hypoactivity in exposed larvae.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02368', 0)": {
+         "doi": "10.3762/bjnano.6.160",
+         "text": "Despite assessing a suite of 19 different developmental, behavioural and morphological endpoints in addition to mortality in this study, mortality was the most common endpoint observed for all of the ZnO NP types tested.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC02492', 1)": {
+         "doi": "10.1007/s40199-023-00473-z",
+         "text": "The acute toxicity and potential anxiolytic activity of CVO, EUG, CVO-NE and B-NE against adult zebrafish models were determined.ResultsCVO, EUG, CVO-NE and B-NE presented low acute toxicity, reduced the locomotor activity and anxious-like behavior of the zebrafish at 4 - 20 mg kg-1.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02886', 1)": {
+         "doi": "10.1002/etc.4275",
+         "text": "At 4 dpf, significant hyperactivity was observed only in the 3 mg l-1 treatment group, whereas 5 dpf larvae exposed to Ag-NPs displayed no significant abnormalities in photomotor behavior.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02946', 1)": {
+         "doi": "10.1016/j.scitotenv.2020.143456",
+         "text": "Regarding in vivo toxicological assays, no robust alterations were recorded in functional, morphological and behavioral end-points analyzed, although a significant adhesion of IOT particles on zebrafish chorion was observed, without a prejudice of embryo hatching.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC03848', 0)": {
+         "doi": "10.1016/j.jhazmat.2013.12.030",
+         "text": "In this study, fertilized zebrafish (Danio rerio) eggs were exposed to various concentrations of ZnO NP suspensions (control, 0.1, 0.5, 1, 5, and 10 mg L-1 or their respective centrifuged supernatants (0.03, 0.01, 0.08, 0.17, 0.75, and 1.21 mg L-1 dissolved Zn ions measured) until reaching free swimming stage.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04627', 0)": {
+         "doi": "10.1016/j.aquatox.2019.105287",
+         "text": "Gene regulation, changes in oxidative stress biomarkers and swimming performance were assessed in Danio rerio (zebrafish) following exposures to nAu.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC06083', 0)": {
+         "doi": "10.1039/d0en00240b",
+         "text": "Transformation of nutrients to their nano-form, such as selenium (Se) engineered nanonutrients (Se-ENNs), is expected to enhance the absorption of the nutrients into fish and increase the efficiency of the feed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06083', 4)": {
+         "doi": "10.1039/d0en00240b",
+         "text": "Ion and particle release from Se-ENNs containing diets in the exposure media was not observed, indicating the stability of the particles in the feed matrices.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06083', 5)": {
+         "doi": "10.1039/d0en00240b",
+         "text": "To determine toxicity, zebrafish (Danio rerio) were nourished using a control diet (without Se and Se-ENNs), Se (sodium selenite) containing diets (with 2.4 or 240 mg Se per kg feed) and Se-ENNs containing diets (with 2.4 or 240 mg Se-ENNs of 60 or 120 nm per kg feed) for 21 days.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06411', 3)": {
+         "doi": "10.1016/j.scitotenv.2020.141878",
+         "text": "Subsequently, behavioral neurotoxicity of SiO2 NPs was further quantified via locomotion response (LMR).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06411', 4)": {
+         "doi": "10.1016/j.scitotenv.2020.141878",
+         "text": "Specifically, the alteration of Light/Dark challenge (LDC) evoked by light/dark stimulation was detected and analyzed by commercially standard behavioral protocols using zebrabox.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC06411', 7)": {
+         "doi": "10.1016/j.scitotenv.2020.141878",
+         "text": "Compared with the FET tests characterized by the detection of embryonic teratogenicity, the neurobehavior phenomics based method can be more sensitive to determine sub-teratogenic toxicity of SiO2 NPs at environmental concentrations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07010', 0)": {
+         "doi": "10.1016/j.ecoenv.2022.114363",
+         "text": "Thus, we evaluated the influence of particle size (20, 40, 60, and 80 nm) on the acute 96-h bioaccumulation and toxicity (swim bladder damage) of AgNPs in zebrafish (Danio rerio) larvae, with a focus on the mechanism of action of Ag+ released from differently sized AgNPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07853', 0)": {
+         "doi": "10.1016/j.ntt.2011.02.002",
+         "text": "We exposed developing zebrafish (Danio rerio) to Ag+ or AgNPs on days 0-5 post-fertilization and evaluated hatching, morphology, survival and swim bladder inflation.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

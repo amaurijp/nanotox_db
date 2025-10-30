@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of germination inhibition caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence of germination inhibition includes reduced germination rate, delayed germination, or lower percentage of seeds sprouting compared with controls. Consider keywords such as 'reduced germination', 'delayed sprouting', 'germination inhibition', or 'lower seed viability' as indications of toxicity. Consider keywords such as 'no effect on germination', 'germination unaffected', or 'normal sprouting' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no' (and nothing else). Is there any evidence in the input sentence of germination inhibition of 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of germination inhibition, output 'no'. If the sentence does not deal with germination in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no', or 'None' between single quote characters (e.g., 'yes', 'no', or 'None')."
+   },
+   "instances": {
+      "('ATC02451', 0)": {
+         "doi": "10.1016/j.scitotenv.2013.05.018",
+         "text": "In this study, exposure to 24 nm size gold nanoparticles (GNPs) at 10 ug ml-1 concentration was found to enhance the total seed yield of Arabidopsis thaliana by 3 times over the control.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC05016', 1)": {
+         "doi": "10.3390/ijms161024174",
+         "text": "However, the 25 mg L-1 treatment resulted in reduced seedling (positive-20 % and negative-3.6 %) and root (positive-48 % and negative-negligible) length.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06777', 0)": {
+         "doi": "10.1002/etc.58",
+         "text": "Three toxicity indicators (seed germination, root elongation, and number of leaves) were quantified following exposure to each nanoparticle at three concentrations: 400, 2,000, and 4,000 mg L-1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06777', 1)": {
+         "doi": "10.1002/etc.58",
+         "text": "Inhibition of seed germination by ZnO depended on particle size, with nanoparticles exerting higher toxicity than larger (micron-sized) particles at equivalent concentrations.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07653', 2)": {
+         "doi": "10.1371/journal.pone.0281756",
+         "text": "When applied together, the concurrent effects of ZnO NPs and MWCNTs on Arabidopsis seedlings appeared to be more negative, as evidenced not only by the further deterioration of several growth indices but also by their synergistic or additive regulation of the activities of several antioxidant enzymes such as superoxide dismutase (SOD), catalase (CAT) and glutathione reductase (GR).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07726', 0)": {
+         "doi": "10.1007/s00128-014-1254-1",
+         "text": "The expression of cell cycle genes and DNA mismatch repair (MMR) genes were analyzed in Arabidopsis thaliana seedlings exposed to 0, 0.2, 0.5 and 1 mg L-1 of silver nanoparticles for 24, 48 and 72 h using real-time PCR.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09072', 1)": {
+         "doi": "10.1016/S1001-0742(12)60301-5",
+         "text": "By comparison, a small amount of Ag+ was absorbed by seedlings, and it did not pronouncedly affect chloroplast structure and other metal ion absorption as AgNPs did.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09508', 0)": {
+         "doi": "10.3109/17435390.2012.658094",
+         "text": "Immersion in AgNP suspension inhibited seedling root elongation and demonstrated a linear dose-response relationship within the tested concentration range.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12371', 2)": {
+         "doi": "10.3732/ajb.1200264",
+         "text": "Lack of BR enhances gravitropic reorientation in 2-d-old seedlings, whereas ethylene does not.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12925', 4)": {
+         "doi": "10.1111/plb.13641",
+         "text": "RT-qPCR results indicate that BnaA09.MYB52 is predominantly expressed in roots and developing seeds of B. napus cv ZS11.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13427', 0)": {
+         "doi": "10.1508/cytologia.86.119",
+         "text": "Specifically, we analyzed the effects of 125 mmol L-1 NaCl or 231 mmol L-1 mannitol on the cotyledon pavement cell cortexes in transgenic A. thaliana seedlings expressing green fluorescent protein (GFP)-tagged PATROL1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13679', 1)": {
+         "doi": "10.1016/j.plaphy.2020.09.036",
+         "text": "The seedlings were then transferred to soil and irrigated with Am-MSNs solutions every 3 days until seed harvesting.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13679', 3)": {
+         "doi": "10.1016/j.plaphy.2020.09.036",
+         "text": "Overall, these findings indicate that following exposure Am-MSNs play a major role in the increase in seed germination, biomass, photosynthetic pigments, photosynthetic capacity and seed yield in A. thaliana.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC13821', 4)": {
+         "doi": "10.1093/jxb/erac150",
+         "text": "GPAW removes seed dormancy blocks by triggering multiple molecular signalling pathways combined with direct chemical tissue weakening to permit seed germination.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14427', 0)": {
+         "doi": "10.1021/jf0717079",
+         "text": "Oleosins are hydrophobic proteins from oleaginous seeds, surrounding and stabilizing oil bodies.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14427', 1)": {
+         "doi": "10.1021/jf0717079",
+         "text": "These assays were used to set up extraction of oleosins from A. thaliana seeds.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14427', 3)": {
+         "doi": "10.1021/jf0717079",
+         "text": "This simple one-step procedure allows selective extraction and concentration of oleosins from seeds without tedious oil body purification.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16607', 0)": {
+         "doi": "10.1007/s00299-018-2277-6",
+         "text": "We explored the uptake, accumulation and effect of CNPs on seedling development and flowering time control in Arabidopsis thaliana (At).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16607', 2)": {
+         "doi": "10.1007/s00299-018-2277-6",
+         "text": "CNPs treatment enhanced seed germination, showed elongated hypocotyl, larger cotyledon area and increased chlorophyll content in At seedlings.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC18515', 1)": {
+         "doi": "10.3390/toxics11070585",
+         "text": "Spraying CdTe-QDs concentration > 0.4 mmol L-1 significantly inhibited the formation of fruit and decreased the number of seeds.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19271', 0)": {
+         "doi": "10.1038/srep10146",
+         "text": "A novel use of Titania nanoparticles as agents in the nano interface interaction between a beneficial plant growth promoting bacterium (Bacillus amyloliquefaciens UCMB5113) and oilseed rape plants (Brassica napus) for protection against the fungal pathogen Alternaria brassicae is presented.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC22603', 0)": {
+         "doi": "10.1155/2023/9874979",
+         "text": "A disinfection of 100 % and 90 % was achieved for the in vitro culture of Arabidopsis thaliana and Psidium guajava (guava) seeds, respectively, with all AgNPs synthesized.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC24256', 0)": {
+         "doi": "10.1166/jnn.2018.14262",
+         "text": "Moreover, compared with the usage of free ABA, the controlled release of the encapsulated phytohormone from MSNs markedly prolonged the expression of the ABA inducible marker gene (AtGALK2) and finally, improved the drought resistance ability of Arabidopsis seedlings under drought stress.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC27693', 1)": {
+         "doi": "10.1007/s11103-019-00827-9",
+         "text": "The discovery of TLP2 gene function can further fulfill the regulatory network of pectin biosynthesis in Arabidopsis thaliana.AbstractArabidopsis seed coat mucilage is an excellent model system to study the biosynthesis, function and regulation of pectin.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34185', 3)": {
+         "doi": "10.1007/s11627-022-10254-z",
+         "text": "Evans blue staining revealed that NnRab18 alleviated the plasma membrane damages of seedling roots.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

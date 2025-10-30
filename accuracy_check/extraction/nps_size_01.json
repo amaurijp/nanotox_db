@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data-miner for nanotechnology papers. Your sole task is to extract only the numeric size values of the nanomaterials or nanoparticles mentioned in the passage. *DEFINITIONS* \u2022 Nanomaterial / nanoparticle size \u2192 any reported linear dimension (diameter, length, width, height, Feret's diameter, hydrodynamic size, etc.) that is explicitly tied to a nano-object (e.g. 'nanoparticle', 'nanotube', 'nanorod', 'CNT', 'NP', 'NPs'). \u2022 Valid units \u2192 nm, \u00b5m, um, \u00c5 / angstrom (case-insensitive). \u2022 Valid formats \u2192 single numbers (10 nm), ranges (10-20 nm or \u2265 20 nm), mean \u00b1 SD (25 \u00b1 3 nm), scientific notation (1.2 \u00d7 10\u00b2 nm), or approximations ('~15 nm', '\u2248 50 nm'). \u2022 Non-size numbers \u2192 anything tied to concentration, dose, wavelength, voltage, pH, time, statistics, or equipment settings. Ignore these. *RULES* 1. The size must be explicitly linked to a nanomaterial term in the same clause or sentence. 2. If multiple valid sizes appear, output each one in the order they appear. 3. Preserve the original text exactly\u2014do not convert units or round numbers. 4. Insert a single blank space between the number string and the unit (e.g. '10.2 nm'). 5. Separate multiple results with a comma and one space ('10 nm, 20-30 nm'). 6. If no valid size is present, output the single token 'None'. 7. Output absolutely nothing else\u2014no explanations, no JSON keys, no newlines except those required by Rule 5 formatting. *EXAMPLES* EXAMPLE 1 text: 'TEM images showed spherical silver nanoparticles with diameters of 12.3 \u00b1 1.8 nm dispersed in water.' your output:  '12.3 nm' EXAMPLE 2 text: 'Carbon nanotubes (CNTs) had an outer diameter of ~15 nm and lengths reaching 3 \u00b5m, while the buffer contained NaCl at 150 mM.' your output: '15 nm, 3 \u00b5m' EXAMPLE 3 text: 'No nanoparticle dimensions were reported; only the zeta-potential (-32 mV) was measured.' your output:  'None' -- end examples --"
+   },
+   "instances": {
+      "('ATC01147', 0)": {
+         "doi": "10.1002/smll.202003654",
+         "text": "Key features of FGP include visible light excitation (488 nm), high fluorescence signal intensity, superior photostability and low interference from tissue auto-fluorescence.",
+         "extracted val": "488 nm",
+         "correct": "n"
+      },
+      "('ATC02207', 0)": {
+         "doi": "10.1016/j.ijpharm.2016.01.060",
+         "text": "In this work, nanocapsules of cellulose acetate with lemongrass oil were developed with the solvent/anti-solvent method with resulting diameter tailored between 95 and 185 nm.",
+         "extracted val": "95 nm, 185 nm",
+         "correct": "y"
+      },
+      "('ATC02236', 0)": {
+         "doi": "10.1088/0957-4484/23/49/495708",
+         "text": "A scanning transmission electron microscope analysis revealed a 30 - 40 nm anatase crystallite size, whereas an average size of 9.6 nm was obtained from Ag NPs.",
+         "extracted val": "30 nm, 40 nm, 9.6 nm",
+         "correct": "y"
+      },
+      "('ATC05737', 0)": {
+         "doi": "10.2174/1871520614666141016165057",
+         "text": "SEM showed the size of CS/PLA-PIC NPs approximately 87 to 200 nm, compared to CS-PLA NPs of 150 nm size.",
+         "extracted val": "87 nm, 200 nm, 150 nm",
+         "correct": "y"
+      },
+      "('ATC07904', 0)": {
+         "doi": "10.1117/1.JBO.20.5.051014",
+         "text": "We investigate the antibacterial effect of ultrafine nanodiamond particles with an average size of 5 nm against the gram-negative bacteria Escherichia coli (E. coli).",
+         "extracted val": "5 nm",
+         "correct": "y"
+      },
+      "('ATC12541', 0)": {
+         "doi": "10.1038/s41598-022-13141-0",
+         "text": "The PCL hybrid membrane containing 3 wt% Ti3C2TX nanoflakes and 5 wt% baicalin exhibited the smallest mean diameter of 210 nm.",
+         "extracted val": "210 nm",
+         "correct": "y"
+      },
+      "('ATC15350', 0)": {
+         "doi": "10.3390/nano11020410",
+         "text": "Scanning electron microscopy (SEM) revealed a mean size of 120 nm for the MgO NPs.",
+         "extracted val": "120 nm",
+         "correct": "y"
+      },
+      "('ATC17985', 0)": {
+         "doi": "10.1007/s11356-022-19116-y",
+         "text": "Among all the formulations, nano-emulsion with 2.5 % oil concentration, 30 min sonication (hydrodynamic size 135.2 nm, zeta potential 36.8 mV, PDI 0.135, and pH 5.12), was selected for all studies.",
+         "extracted val": "135.2 nm",
+         "correct": "y"
+      },
+      "('ATC18988', 0)": {
+         "doi": "10.1186/s12951-014-0036-6",
+         "text": "Conclusions: The resulted particles exhibited favorable characteristics, including the spherical shape, diameter between 64.34 nm and 81.76 nm, positive zeta potential, antibacterial activity, and non-toxicity to the tested cells (OSCC).",
+         "extracted val": "64.34 nm, 81.76 nm",
+         "correct": "y"
+      },
+      "('ATC26139', 0)": {
+         "doi": "10.1021/acsanm.2c03739",
+         "text": "The size and zeta potential of GNR-DPArPEGMA was 78 nm and -37.96 mV, respectively.",
+         "extracted val": "78 nm",
+         "correct": "y"
+      },
+      "('ATC26496', 0)": {
+         "doi": "10.1021/bc200654v",
+         "text": "Here, we used cell surface display to identify disulfide-constrained CaP binding peptides that, when inserted within the active site loop of Escherichia coli thioredoxin 1 (TrxA), readily and reproducibly drive the production of nanoparticles that are 50 - 70 nm in hydrodynamic diameter and consist of an approximately 25 nm amorphous calcium phosphate (ACP) core stabilized by the protein shell.",
+         "extracted val": "50 nm, 70 nm, 25 nm",
+         "correct": "y"
+      },
+      "('ATC35192', 0)": {
+         "doi": "10.1088/2053-1591/ab37b9",
+         "text": "The results of green synthesized CeO2 NPs in XRD and TEM analysis indicates spherical in shape and cubic fluorite structure with an average particles size of 8.2 nm.",
+         "extracted val": "8.2 nm",
+         "correct": "y"
+      },
+      "('ATC35380', 0)": {
+         "doi": "10.1007/s13204-020-01525-5",
+         "text": "The optimum experimental conditions required to synthesize in the 45 - 60 nm size range were determined as a 0.2 mol L-1 Zn(SO4) salt type and concentration, NaOH base type, 18 h reaction time, at 400 rpm mixing speed and 2 h calcination time.",
+         "extracted val": "45 nm, 60 nm",
+         "correct": "y"
+      },
+      "('ATC36144', 0)": {
+         "doi": "10.1016/j.enzmictec.2012.12.006",
+         "text": "Spherical silver nanoparticles were found to have size between 15 and 37 nm by TEM analysis.",
+         "extracted val": "15 nm, 37 nm",
+         "correct": "y"
+      },
+      "('ATC36458', 0)": {
+         "doi": "10.1016/j.colsurfb.2011.02.029",
+         "text": "Chitosan nanocomposites were prepared from chitosan and gold nanoparticles (AuNPs) or silver nanoparticles (AgNPs) of similar to 5 nm size.",
+         "extracted val": "5 nm",
+         "correct": "y"
+      },
+      "('ATC39121', 0)": {
+         "doi": "10.1039/c4ra07372j",
+         "text": "Cellulose fibers immobilized with 2.5 to 21.0 wt% titania (TiO2) nanoparticles of diameter 10 - 20 nm were prepared by a facile single step hydrothermal method.",
+         "extracted val": "10 nm, 20 nm",
+         "correct": "y"
+      },
+      "('ATC44245', 0)": {
+         "doi": "10.1007/s10811-020-02323-w",
+         "text": "TEM observation confirmed the synthesis of 11 - 15 nm spherical NPs.",
+         "extracted val": "11 nm, 15 nm",
+         "correct": "y"
+      },
+      "('ATC45803', 0)": {
+         "doi": "10.1007/s00339-022-06197-2",
+         "text": "The TEM micrographs depicted that V2O5 was formed as rod shapes with diameters of 20 - 30 nm and length of 450 nm, while Mn-Fe3O4 was configured in ellipsoidal shapes with dimensions 25 - 40 nm.",
+         "extracted val": "20 nm, 30 nm, 450 nm, 25 nm, 40 nm",
+         "correct": "n"
+      },
+      "('ATC46668', 0)": {
+         "doi": "10.1007/s10876-019-01746-x",
+         "text": "The obtained particles were in the range of 50 nm.",
+         "extracted val": "50 nm",
+         "correct": "y"
+      },
+      "('ATC47274', 0)": {
+         "doi": "10.1016/j.bioadv.2023.213729",
+         "text": "The mesoporous structure of MGO_4 having an average pore diameter of 5 nm and surface area of 216 m2 g-1 confirmed from BET supports the loading and release kinetics.",
+         "extracted val": "5 nm",
+         "correct": "n"
+      },
+      "('ATC47324', 1)": {
+         "doi": "10.1016/j.polymertesting.2020.107013",
+         "text": "The crystalline average size of the Ag NPs was 20 nm while TiO2 NPs was 15 nm as displayed by the XRD pattern.",
+         "extracted val": "20 nm, 15 nm",
+         "correct": "y"
+      },
+      "('ATC52032', 0)": {
+         "doi": "10.1007/s13399-023-05259-6",
+         "text": "SEM, UV-Vis, EDAX and XRD techniques confirm successful biosynthesis of silver nanoparticles and average particle size was around 40 - 65 nm.",
+         "extracted val": "40 nm, 65 nm",
+         "correct": "y"
+      },
+      "('ATC52084', 0)": {
+         "doi": "10.1080/24701556.2021.1993257",
+         "text": "Stable well-dispersed spherical AgNPs with a mean grain size of 4 nm were successfully synthesized.",
+         "extracted val": "4 nm",
+         "correct": "y"
+      },
+      "('ATC52398', 1)": {
+         "doi": "10.1007/s13399-023-05237-y",
+         "text": "XRD analysis confirmed the coexistence of chitin and ZnO phases, featuring a crystallite size of approximately 17 nm.",
+         "extracted val": "17 nm",
+         "correct": "y"
+      },
+      "('ATC52579', 0)": {
+         "doi": "10.1016/j.cap.2013.12.032",
+         "text": "TEM analysis showed that the spherical AgNPs in the thin layer of gelatin were evenly well dispersed and had mean particle sizes of about 10 - 15 nm.",
+         "extracted val": "10 nm, 15 nm",
+         "correct": "y"
+      }
+   }
+}

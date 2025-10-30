@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with minimum inhibitory concentration (MIC) values indicating the antimicrobial effect. Output the concentration unit (ex: mg L-1) with a blank space after each number found (Ex: '10.1 mg L-1' or '10.1 mg mL-1' or '10.1 g mL-1' or '10.1 ug mL-1'). If no value is found, output 'None'. Do not output concentration values not related with minimum inhibitory concentration (MIC)."
+   },
+   "instances": {
+      "('ATC03887', 0)": {
+         "doi": "10.1016/j.jhazmat.2014.08.073",
+         "text": "The minimum inhibitory concentration value of the TiO2 nanoparticles was found to be 62.50 ug ml-1 for both the bacterial strains.",
+         "extracted val": "62.50 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC04091', 0)": {
+         "doi": "10.1016/j.inoche.2024.112383",
+         "text": "Furthermore, ZnO/MWCNTs indicated the least MIC values of 0.01, 0.001 mg mL-1, and MBC values of 0.01, 0.001 mg mL-1 against E.coli and S. aureus respectively.",
+         "extracted val": "0.01 mg mL-1, 0.001 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC04241', 0)": {
+         "doi": "10.1016/j.materresbull.2013.09.055",
+         "text": "The minimum inhibitory concentrations (MIC) were determined as 500 mg L-1, 350 mg L-1 and 200 mg L-1 against bacteria, respectively.",
+         "extracted val": "500 mg L-1, 350 mg L-1, 200 mg L-1",
+         "correct": "y"
+      },
+      "('ATC05202', 0)": {
+         "doi": "10.1021/acs.analchem.3c03492",
+         "text": "The antimicrobial activity of ZnO@Ag was proved by the microbroth dilution method, and the minimum inhibitory concentrations (MICs) of S. aureus, E. coli, and V. parahemolyticus were 40, 50, and 55 ug mL-1, respectively.",
+         "extracted val": "40 ug mL-1, 50 ug mL-1, 55 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC06670', 0)": {
+         "doi": "10.1166/jnn.2017.14638",
+         "text": "The nanocomposite presented excellent antibacterial activities against both Gram-negative (Escherichia coli) and Gram-positive (Staphylococcus aureus) bacteria, with respective minimum inhibitory concentration as 40 and 60 ug mL-1, respectively.",
+         "extracted val": "40 ug mL-1, 60 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC10232', 0)": {
+         "doi": "10.2754/avb202392030279",
+         "text": "Based on the evaluation of the growth curve, PLGA/MUP NPs inhibited growth of the both tested strains already at a concentration of 0.29 ug ml-1, and their inhibitory effect at concentrations from 0.29 to 1.17 ug ml-1 was comparable with free MUP using the disk-diffusion method.",
+         "extracted val": "0.29 ug ml-1, 1.17 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC10890', 1)": {
+         "doi": "10.1007/s11356-022-22516-9",
+         "text": "Additionally, a time-kill curve analysis was performed and for ternary nanocomposite; the killing response was most effective as the complete killing was achieved at 3 h of incubation at 3-MIC (9.75 ug mL-1.",
+         "extracted val": "9.75 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC11532', 0)": {
+         "doi": "10.3390/biomedicines12051104",
+         "text": "The nanocomposite displayed broad-range antimicrobial potential against the test pathogens, with minimum inhibitory concentrations (MICs) ranging between 31.25 and 125.0 ug mL-1, and biofilm inhibition up to 80 - 96 %.",
+         "extracted val": "31.25 ug mL-1, 125.0 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC11894', 0)": {
+         "doi": "10.3390/nano11041045",
+         "text": "In addition, appropriate antifungal effects with the minimum inhibitory concentration (MIC) values of 18.75, 37.5, and 75 ug mL-1 against Candida krusei, Candida glabrata, and Candida albicans, respectively, were noted for this new bionanomaterial.",
+         "extracted val": "18.75 ug mL-1, 37.5 ug mL-1, 75 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC13841', 0)": {
+         "doi": "10.1016/j.jics.2024.101133",
+         "text": "As a result, it emerged that ZnO nanoparticles synthesized from hybrid Verbascum x calcicolum were effective on gram-positive bacteria and gram-negative bacteria such as Staphylococcus aureus (MIC = 160 mg ml-1 for VcZnO), Pseudomonas aeruginosa (MIC = 80 mg ml-1 for VcZnO), Klebsiella pneumoniae (MIC = 40 mg ml-1 for VcZnO and, MIC = 120 mg ml-1 for VcSe), Escherichia coli (MIC = 20 mg ml-1 for VcZnO).",
+         "extracted val": "160 mg ml-1, 80 mg ml-1, 40 mg ml-1, 120 mg ml-1, 20 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC14126', 0)": {
+         "doi": "10.4491/eer.2020.454",
+         "text": "Minimum inhibitory concentration in ug mL-1 of silver nanoparticles was found to be as low as 33.3 for resistant Streptococcus haemolyticus; 11.1 for Staphylococcus aureus and E Coli; and 3.7 ug mL-1 for resistant Pseudomonas aeruginosa.",
+         "extracted val": "33.3 ug mL-1, 11.1 ug mL-1, 3.7 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC21005', 0)": {
+         "doi": "10.1016/j.mseb.2020.114709",
+         "text": "The MIC and MBC values of the nanocomposite were measured as 256 and 512 ug mL-1, respectively.",
+         "extracted val": "256 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC21235', 0)": {
+         "doi": "10.1111/lam.13331",
+         "text": "Collected samples were directly cultivated on MacConkey agar with cefotaxime (2 mg l-1, whereas intestinal swabs of slaughtered pigs and surface swabs from pig carcasses were also pre-enriched in buffered peptone water without antimicrobials before the cultivation.",
+         "extracted val": "2 mg L-1",
+         "correct": "y"
+      },
+      "('ATC22673', 0)": {
+         "doi": "10.1016/j.foodchem.2015.10.043",
+         "text": "The minimum inhibitory concentration (MIC) of PLA/CEO/beta-CD nanofilm against Escherichia coli and Staphylococcus aureus was approximately 1 mg ml-1 (corresponding CEO concentration 11.35 ug ml-1 and minimum bactericidal concentration (MBC) was approximately 7 mg ml-1 (corresponding CEO concentration 79.45 ug ml-1.",
+         "extracted val": "1 mg ml-1, 11.35 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC27188', 2)": {
+         "doi": "10.1016/j.poly.2015.07.075",
+         "text": "Further, with the fungal strains, complex Cl was highly active against Candida albicans with an MIC value of 1.6 ug mL-1, which is almost 10 times better than the standard (Fluconazole).",
+         "extracted val": "1.6 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC27876', 0)": {
+         "doi": "10.3390/gels8120815",
+         "text": "In addition, CEO-CSNPs showed a minimum inhibitory concentration against Staphylococcus aureus, Salmonella infantis and Escherichia coli of 5.29, 10.57 and 10.57 ug mL-1, respectively.",
+         "extracted val": "5.29 ug mL-1, 10.57 ug mL-1, 10.57 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC28097', 0)": {
+         "doi": "10.1007/s42250-023-00656-w",
+         "text": "The synthesized CdS nanoparticles exhibited potent activity (MIC = > 256 ug ml-1 against the MRSA (ATCC 4330).",
+         "extracted val": "256 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC28751', 2)": {
+         "doi": "10.7754/Clin.Lab.2022.220315",
+         "text": "Ability of biofilm formation was dramatically reduced by 1/4 MIC concentration (2 ug mL-1 against the CRAB and 1/2 MIC concentration (2 ug mL-1 in the case of the MRSA isolates.",
+         "extracted val": "2 ug mL-1, 2 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC29342', 0)": {
+         "doi": "10.1007/s11814-016-0196-1",
+         "text": "Minimum inhibitory concentration (MIC) of MnWO4 nanoflowers was found to be 10 ug ml-1.",
+         "extracted val": "10 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC34359', 0)": {
+         "doi": "10.1186/s40543-016-0104-7",
+         "text": "From minimum inhibitory concentration (MIC) results, it was observed that WARDEEP exhibited a strong antibiotic activity against Proteus and Streptococcus species at a least value of 12.5 mg mL-1 concentration.",
+         "extracted val": "12.5 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC43677', 0)": {
+         "doi": "10.20450/mjcce.2022.2526",
+         "text": "It was determined that whereas the ligand indicated modest antimicrobial activity against Staphylococcus aureus and Candida albicans at a concentration of 6.25 ug ml-1, the palladium complex was significantly effective against C. albicans at a concentration of 6.25 ug ml-1.",
+         "extracted val": "6.25 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC44254', 0)": {
+         "doi": "10.1016/j.carbpol.2014.01.008",
+         "text": "The as-synthesised Ag-NPs show better antibacterial efficacy than the antibiotics; ciproflaxin and imipenem against Pseudomonas aeruginosa with minimum inhibition concentration (MIC) of 6 ug mL-1, and better efficacy than imipenem against Escherichia coli with MIC of 10 ug mL-1.",
+         "extracted val": "6 ug mL-1, 10 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC47325', 1)": {
+         "doi": "10.1038/s41598-023-49637-6",
+         "text": "The MIC and MFC of CaONPs against Candida albicans were 200 ug ml-1 and 250 ug ml-1, respectively.",
+         "extracted val": "200 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC48617', 0)": {
+         "doi": "10.1039/c8tb00907d",
+         "text": "Polycat@AgNPs showed superior antimicrobial activity to cat@AgNPs and cat-borax@AgNPs as well as citrate@AgNPs, exhibiting MICs of only 1.25 ug mL-1 (Ag) for Pseudomonas aeruginosa and Acinetobacter baumannii.",
+         "extracted val": "1.25 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC52263', 0)": {
+         "doi": "10.1007/s13369-023-08650-7",
+         "text": "Antibacterial activity tests indicated a significant enhancement in antibacterial properties, with minimum inhibitory concentrations of 1.5 and 3 mg mL-1 against Acinetobacter baumannii and Staphylococcus aureus, respectively.",
+         "extracted val": "1.5 mg mL-1, 3 mg mL-1",
+         "correct": "y"
+      }
+   }
+}

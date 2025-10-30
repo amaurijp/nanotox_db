@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of metallic nanomaterials described in the input sentences. Examples of metallic nanomaterials include gold (Au), silver (Ag), copper (Cu), nickel (Ni), iron (Fe), aluminum (Al), and other metals. The composition may appear as abbreviations or chemical formulas. Output only the core chemical composition(s) using their chemical symbol(s) or formula(s). If more than one metallic nanomaterial is mentioned, list each distinct composition in a Python list format, for example: ['Au', 'Ag', 'Cu']. Focus exclusively on metallic nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'Au' or 'Ag' or 'Cu')."
+   },
+   "instances": {
+      "('ATC00598', 0)": {
+         "doi": "10.1039/c3ra46194g",
+         "text": "Gold nanostars have recently been used for colorimetric biosensors but they typically require surface modification with antibodies or aptamers for cellular detection.",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC01568', 0)": {
+         "doi": "10.1021/acsami.5b02209",
+         "text": "Ag-CoFe2O4-graphene oxide (Ag-CoFe2O4-GO) nanocomposite was synthesized by doping silver and CoFe2O4 nanoparticles on the surface of GO, which was used to purify both bacteria and Pb(II) contaminated water.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC01568', 1)": {
+         "doi": "10.1021/acsami.5b02209",
+         "text": "Ag-CoFe2O4-graphene oxide (Ag-CoFe2O4-GO) nanocomposite was synthesized by doping silver and CoFe2O4 nanoparticles on the surface of GO, which was used to purify both bacteria and Pb(II) contaminated water.",
+         "extracted val": "CoFe2O4",
+         "correct": "y"
+      },
+      "('ATC03114', 0)": {
+         "doi": "10.1039/d1ce00421b",
+         "text": "Herein, we developed a facile and green strategy for the preparation of a nanostructured Fe3O4@PDA@Ni-DT composite by anchoring decatungstate-based nickel(ii) complex (Ni-DT) ([Ni(HL)(2)](2)[W10O32]center dot 4H(2)O, HL = 2-acetylpyridine thiosemicarbazone) onto hybrid Fe3O4@PDA (PDA = polydopamine) nanosheets.",
+         "extracted val": "Fe3O4",
+         "correct": "y"
+      },
+      "('ATC07962', 0)": {
+         "doi": "10.1016/j.molliq.2019.03.010",
+         "text": "The GOSHGeI was employed as the stabilizing agent for the direct sun-ray mediated photo-chemically synthesized 'Green' silver nanoparticles (Ag-NPs).",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC10025', 0)": {
+         "doi": "10.1016/j.molstruc.2024.137615",
+         "text": "This study investigated the synthesis of silver nanoparticles (AgNPs) using the aqueous extract of Haloxylon persicum leaf as a rangeland plant.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC10622', 0)": {
+         "doi": "10.1016/j.inoche.2023.110390",
+         "text": "In this research, terbium vanadate-silver peroxide (TbVO4-AgO) nanostructures were prepared by precipitation method.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC10882', 0)": {
+         "doi": "10.1016/j.bios.2018.06.005",
+         "text": "A fiber optic surface plasmon resonance (FOSPR) sensor was developed for detection of Escherichia coli O157:H7 (E. coli O157:H7) in water and juice, based on antimicrobial peptides (AMP), Magainin I, as recognition elements and silver nanoparticles-reduced graphene oxide (AgNPs-rGO) nanocomposites assisted signal amplification.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC12474', 0)": {
+         "doi": "10.1080/15368378.2023.2208610",
+         "text": "This work attempts to reduce bacterial activity and growth characteristics of Staphylococcus aureus using nanoparticles (FexOy nanoparticles and silver nanoparticles) and extremely low frequency electric fields (ELF-EF).",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC13033', 0)": {
+         "doi": "10.1016/j.chemosphere.2021.129825",
+         "text": "Silver nanoparticles (AgNPs) have shown to be toxic to freshwater cyanobacterial species, and sodium hypochlorite (NaOCl) is a common oxidant for the treatment of cyanobacterial cells.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC13140', 0)": {
+         "doi": "10.1021/acs.jpcc.6b12962",
+         "text": "Gold nanoparticle-piroxicam anion conjugates (Au NP-Pir) were synthesized in a green method using laser ablation of a gold foil in an aqueous solution of anionic piroxicam (NaPir).",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC13396', 0)": {
+         "doi": "10.1016/j.envpol.2016.08.016",
+         "text": "In this study, we investigated the effects of size, surface coating (charge) of silver nanoparticles (AgNPs) - a most commonly-used nanoparticle-type, on the bioaccumulation in, and toxicity (survival, growth, cocoon production) to the earthworm Lumbricus rubellus.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC13645', 0)": {
+         "doi": "10.1039/c8tx00103k",
+         "text": "This work aimed to synthesize silver nanoparticles via an environmentally benign route, using the aqueous extract of Punica granatum as a precursor as well as a stabilizing and reducing agent.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC20323', 4)": {
+         "doi": "10.1007/s00604-022-05318-1",
+         "text": "Interestingly, the fluorescence of all of these CDs can be significantly quenched by hydroxyl radical (center dot OH) and iron ion (Fe3+); however, these CDs showed very different response characteristics to other metal ions (e.g., Co2+, Ni2+, Cu2+, Ce3+, Mn2+, Ag+, and Fe2+).",
+         "extracted val": "Mn",
+         "correct": "n"
+      },
+      "('ATC21497', 0)": {
+         "doi": "10.1002/slct.202002385",
+         "text": "Here, we report an eco-friendly, benign and rapid mycogenic synthesis of gold nanoparticles of various shapes using cell-free extract of the fungusBipolaris oryzae(B. oryzae).",
+         "extracted val": "Au",
+         "correct": "y"
+      },
+      "('ATC22191', 0)": {
+         "doi": "10.1016/j.inoche.2023.111250",
+         "text": "Cupric nitrate (Cu (NO3)2) and Nickel nitrate (Ni (NO3)2) as intermediate precursors in Allium staivum (Garlic) extract were used to synthesize Pure and Ni-doped CuO nanoparticles.",
+         "extracted val": "Cu",
+         "correct": "n"
+      },
+      "('ATC23429', 0)": {
+         "doi": "10.3390/antibiotics11111503",
+         "text": "The present work was conducted to evaluate the effect of green synthesized silver nanoparticles on the biochemical constituents of wheat crops infected with spot blotch disease.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC25489', 0)": {
+         "doi": "10.1166/jbn.2022.3308",
+         "text": "Eventually, in this method extracted proteins from isolated fungus were utilized to synthesize highly biocompatible zinc nanoparticles (ZnO NPs).",
+         "extracted val": "Zn",
+         "correct": "y"
+      },
+      "('ATC26130', 0)": {
+         "doi": "10.1002/vnl.21840",
+         "text": "This article successfully prepared bacterial cellulose (BC) loaded silver and TiO2 nanoparticles (Ag-plated TiO2/BC composite pellicle) by in situ embedding method.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC27201', 1)": {
+         "doi": "10.1080/21691401.2021.1938592",
+         "text": "Previously we have reported synthesis of nanoparticles Dysprosium (Dy) substituted with manganese (Mn) zinc (Zn) by using ultrasonication method.",
+         "extracted val": "Mn",
+         "correct": "n"
+      },
+      "('ATC32297', 0)": {
+         "doi": "10.1016/j.procbio.2007.02.005",
+         "text": "Reports on the cell-associated biosynthesis of silver nanoparticles using microorganisms have been published, but these methods of synthesis are rather slow.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC39428', 0)": {
+         "doi": "10.3389/fmicb.2019.00282",
+         "text": "Due to the broad antimicrobial spectrum, silver nanoparticles have turned into a noteworthy decision for the improvement of new medication.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC41969', 0)": {
+         "doi": "10.1186/s11671-019-2987-x",
+         "text": "Nanocomposites and a composite based on poly(butylene adipate-co-terephthalate) (PBAT) were synthesized using commercial copper nanoparticles (Cu-NPs), copper/Cu2O nanoparticles (Cu|Cu2O-NPs), and copper sulfate (CuSO4), respectively.",
+         "extracted val": "Cu",
+         "correct": "y"
+      },
+      "('ATC43315', 0)": {
+         "doi": "10.1016/j.bcab.2020.101620",
+         "text": "This study aimed to investigate the antibacterial activity of the extract, and silver nanoparticles synthesized by the extract, against gram-positive and gram-negative bacterial strains.",
+         "extracted val": "Ag",
+         "correct": "y"
+      },
+      "('ATC44025', 0)": {
+         "doi": "10.1016/j.jlumin.2018.05.047",
+         "text": "Herein, we report the new ultra fast silver nanoparticles (SNPs) synthesis via green route using aqueous Spathodea campanulata leaf extracts without using any external reducing. stabilizing agent and assessment of their bio-logical application.",
+         "extracted val": "Ag",
+         "correct": "y"
+      }
+   }
+}

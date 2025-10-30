@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of enzymatic activity alteration caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence includes changes in catalase, superoxide dismutase, glutathione peroxidase, acetylcholinesterase, or other physiological enzymes. Consider keywords such as 'altered catalase activity', 'SOD increase', 'enzyme inhibition', or 'enzyme induction' as indications of toxicity. Consider keywords such as 'enzyme activity unchanged', 'no enzymatic effect', or 'normal catalase levels' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of enzymatic activity alteration in 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of enzymatic alteration, output 'no'. If the sentence does not deal with enzymatic activity in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00688', 1)": {
+         "doi": "10.1016/j.cbpc.2022.109477",
+         "text": "On the other hand, chitosan nanocapsules exposure blunted SOD-3 expression.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00963', 0)": {
+         "doi": "10.1016/j.cej.2023.145316",
+         "text": "Herein, we constructed a watersoluble dendronized chitooligosaccharide polymer Cos-G3-Dns with glutathione-responsive SO2-releasing property via a one-step copper-catalyzed azide-alkyne click reaction for antibacterial application.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04882', 0)": {
+         "doi": "10.2147/IJN.S130960",
+         "text": "Our results further showed that oxidative stress response and MAPK signaling-related genes, such as GAS1, SOD2, SOD3, MEK1, and PMK1, might be key factors for reactive oxygen species production and toxic responses to BNNSs and BN-800-2 exposure.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06447', 4)": {
+         "doi": "10.1128/mbio.03394-21",
+         "text": "Wild-type and Delta MnSOD D. radiodurans and C. elegans were monitored for gamma radiation sensitivities over their life spans while gauging Mn2+-antioxidant content by electron paramagnetic resonance (EPR) spectroscopy, a powerful new approach to determining the in vivo Mn-antioxidant content of cells as they age.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06924', 1)": {
+         "doi": "10.1007/s11356-024-31949-3",
+         "text": "In contrast, when worms were exposed to chemically synthesized AgNP (PVP-AgNP), an increase in ROS, SOD, and GST activity and a reduction in oxidative stress resistance were observed.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08260', 0)": {
+         "doi": "10.2131/jts.45.117",
+         "text": "The NPs exposed group showed enhanced germ cell apoptosis and increased oxidative stress as seen through an increase in ROS and malondialdehyde (MDA), and decrease in reduced glutathione (GSH).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09836', 0)": {
+         "doi": "10.1016/j.scitotenv.2022.159058",
+         "text": "Furthermore, the following expression of antioxidation-related enzymes was activated in vivo as indicated by the GFP-labelled C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC09908', 0)": {
+         "doi": "10.1021/bi800197m",
+         "text": "However, little is known about its enzymatic activity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12298', 3)": {
+         "doi": "10.1021/acsinfecdis.1c00014",
+         "text": "Herewith, LCNPs are showcased as a promising protective delivery system for novel biofilm dispersing enzymes combined with antibiotics, enabling infection-directed therapy and improved performance.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13394', 0)": {
+         "doi": "10.1016/j.envpol.2020.114848",
+         "text": "Results showed that [C(2)mim]Br significantly stimulated O-2(-)center dot as the oxidative stress and superoxide dismutase (SOD) as the antioxidant defense.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC14276', 0)": {
+         "doi": "10.1002/jsfa.12447",
+         "text": "In C. elegans, CCE significantly reduced ROS accumulation, increased SOD activity by 2.01-fold and CAT activity by 2.30-fold, decreased MDA content by 36.76 %, prolonging the lifespan of nematodes by 13.33 % under H2O2 stimulation and improving bioavailability in vivo.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC16925', 2)": {
+         "doi": "10.1186/s12864-021-07695-y",
+         "text": "Nanopore sequencing uncovered that the genomes of the two isolates have evolved to favor the specific route of the de novo synthesis pathway of vitamin B6 (cofactor of cysl enzymes) through serC or pdxA2 homologs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19741', 0)": {
+         "doi": "10.1021/acsfoodscitech.1c00124",
+         "text": "Herein, we report a facile multiplex enzyme-free electrochemical immunoassay for the detection of foodborne pathogens such as Listeria monocytogenes (Lm) using thionine labeled anti-Lm and Enterobacter cloacae (Ec) using ferrocene labeled anti-Ec as redox probes with Au nanoparticles- (NPs) decorated multiwalled carbon nanotubes (AuNPs-MWCNTs) composites as a detection platform.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23943', 0)": {
+         "doi": "10.1016/j.freeradbiomed.2022.09.030",
+         "text": "The results indicated that DAF-16/SOD-3 pathway was required in the protective effects of CS@Tan IIA.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25061', 0)": {
+         "doi": "10.1016/j.scitotenv.2020.137665",
+         "text": "Induction of antioxidant defenses was measured through the application of a SOD-1 reporter, and the HyPer and GRX biosensor strains to monitor changes in the cellular redox state.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25875', 4)": {
+         "doi": "10.1021/bi9804636",
+         "text": "Separate experiments also demonstrate that, at least for the mitochondrial enzyme, helix instability or irregularity is not important for recognition of G:U.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC26494', 0)": {
+         "doi": "10.1016/j.jep.2023.116741",
+         "text": "Fluorescence microscopy was used to record the expression of SOD-3::GFP, GST-4::GFP, SOD-1::YFP, and the nuclear translocation of SKN-1 and DAF-16.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28561', 0)": {
+         "doi": "10.1038/s41565-019-0365-6",
+         "text": "Cellular reporters of enzyme activity are based on either fluorescent proteins or small molecules.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28561', 4)": {
+         "doi": "10.1038/s41565-019-0365-6",
+         "text": "We have thus quantitatively mapped disulfide reduction exclusively in endosomes in Caenorhabditis elegans and identified that exchange is mediated by minor populations of the enzymes PDI-3 and TRX-1 resident in endosomes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32179', 0)": {
+         "doi": "10.1016/j.impact.2022.100403",
+         "text": "At the F1-G of 1 ug L-1 PS-NPs-exposed nematodes, RNAi knockdown of daf-2 with function to inhibit oxidative stress suppressed the transgenerational toxicity and increased the mitochondrial SOD-3 expression.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC32179', 2)": {
+         "doi": "10.1016/j.impact.2022.100403",
+         "text": "Moreover, we observed the dynamic expressions of mev-1, daf-2, and sod-2 transgenerationally after exposure to 1 ug L-1 PS-NPs at P0-G, which further suggested the involvement of MEV-1, DAF-2, and SOD-3 in affecting induction of transgenerational PS-NP toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC36580', 0)": {
+         "doi": "10.2174/1386207323666200514074128",
+         "text": "The inhibitor was able to efficiently defend against neuronal death in PD model of C. elegans and the neuroprotective effects were attributed to its anti-oxidant activities, supported by the increase in superoxide dismutase, catalase and the diminution of acetylcholinesterase and reactive oxygen species levels.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC49175', 4)": {
+         "doi": "10.1186/s12915-022-01414-z",
+         "text": "We focus particularly on the sponges (phylum Porifera), a sister group to all other metazoans, from which these enzymes have not previously been described.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52220', 0)": {
+         "doi": "10.1007/s11160-024-09852-4",
+         "text": "Co-expression of fat-1 and fat-2 downregulated srebf1 and genes encoding rate-limiting enzymes for de novo lipogenesis in the liver, leading to decreased circulating triglycerides and cholesterol.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52220', 1)": {
+         "doi": "10.1007/s11160-024-09852-4",
+         "text": "In contrast, FAT-2 and FAT-1 + FAT-2 upregulated hepatic hnf4a, nr1h3 and key enzymes in glycolysis and the pentose phosphate pathway.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}
