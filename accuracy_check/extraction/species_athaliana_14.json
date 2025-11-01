@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of morphological abnormalities caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence includes leaf deformities, necrosis, chlorosis, root hair abnormalities, or other visible structural changes. Consider keywords such as 'necrosis', 'chlorosis', 'leaf deformation', 'abnormal root', or 'morphological alteration' as indications of toxicity. Consider keywords such as 'normal morphology', 'no necrosis', or 'structure unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of morphological abnormalities in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of morphological toxicity, output 'no'. If the sentence does not deal with morphology in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00006', 0)": {
+         "doi": "10.1016/j.ecoenv.2018.07.099",
+         "text": "The underlying mechanisms by which nZVI induces toxicity might be a combination of oxidative stress and another mechanism such as cell membrane disruption, chlorosis and hypoxia.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05415', 0)": {
+         "doi": "10.1016/j.jhazmat.2018.11.065",
+         "text": "ZnSe QDs treatment had no statistically significant differences in morphology but led to increased antioxidant response in the leaves at the level of gene expression and production secondary antioxidant metabolites.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC07525', 0)": {
+         "doi": "10.1007/s12374-023-09399-0",
+         "text": "This study aims to determine the effects of Trichoderma koningiopsis and the combination of T. koningiopsis and FexOy nanoparticles (FeO-NPs) on the biochemical, physiological, and anatomical responses of Arabidopsis thaliana under drought stress.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09522', 0)": {
+         "doi": "10.1021/jacsau.3c00616",
+         "text": "Moreover, Ca-HG nanostructure was altered in mutants with abnormal cellulose, pectin, or hemicellulose content.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09679', 0)": {
+         "doi": "10.1016/j.plantsci.2006.02.010",
+         "text": "The inoculation of Psm into nia1 nia2 A. thaliana caused leaf chlorosis whereas the HR was induced in wild-type plants.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10040', 0)": {
+         "doi": "10.1093/plphys/kiad644",
+         "text": "Extracellular vesicles (EVs) isolated from sorghum have a heterogeneous morphology and contain proteins also found in isolated Arabidopsis EVs, including the commonly used marker PENETRATION1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10722', 0)": {
+         "doi": "10.3732/ajb.1200436",
+         "text": "The gravity persistent signal (gps) mutants of Arabidopsis thaliana were previously identified as having an altered response to gravity when reoriented relative to the gravity vector in the cold, with the gps1 mutant exhibiting a complete loss of tropic response under these conditions. center dot Methods: Thermal asymmetric interlaced (TAIL) PCR was used to identify the gene defective in gps1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11901', 0)": {
+         "doi": "10.1007/BF02668780",
+         "text": "Later in the infection process, some plants showed complete chlorosis and wilting prior to bolting.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC11901', 1)": {
+         "doi": "10.1007/BF02668780",
+         "text": "Bolts that were developed by infected plants were chlorotic and deformed.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC12566', 0)": {
+         "doi": "10.1073/pnas.2304306120",
+         "text": "Here, using iron deficiency-induced plant chlorosis as an indicator phenotype, we evaluated the iron transport capacity of Fe3O4 nanoparticles coated with citrate (CA) or polyacrylic acid (PAA) in the plant rhizosphere.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC15227', 0)": {
+         "doi": "10.1016/j.envpol.2017.09.034",
+         "text": "Here we investigated the interactive effects of DM and AgNPs on the physiological morphology, photosynthesis and antioxidant system of Arabidopsis thaliana.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC17496', 1)": {
+         "doi": "10.1111/nph.15249",
+         "text": "The morphology of the VPS29-associated late endosomes (LE) is altered from small dots in the wild-type to aberrant enlarged circles in the usl1 mutants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18899', 0)": {
+         "doi": "10.1016/j.scitotenv.2016.10.017",
+         "text": "We subjected plants to different ZnO NPs and Zn ion concentrations (0, 20, 50, 100 and 200 mg L-1 and analyzed resulting morphological changes, transcriptional regulation of genes involved in Zn-homeostasis, macro-and microelement homeostasis, as well as auxin regulation.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC18899', 1)": {
+         "doi": "10.1016/j.scitotenv.2016.10.017",
+         "text": "These findings will help to design safer strategies for the application of ZnO NPs as plant fertilizer without compromising the morphological and nutritional qualities as well as for the future phytoremediation purposes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18994', 0)": {
+         "doi": "10.1111/j.1365-313X.2008.03595.x",
+         "text": "To investigate the vein patterning process, we performed screens for defects in juvenile leaf vein patterning in Arabidopsis thaliana lines subjected to mutagenesis via diepoxybutane, activation tagging or the Dissociation/Activator transposon.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18994', 1)": {
+         "doi": "10.1111/j.1365-313X.2008.03595.x",
+         "text": "We identified over 40 vein pattern defective lines, providing a phenotypic resource for the testing of vein patterning models.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18994', 4)": {
+         "doi": "10.1111/j.1365-313X.2008.03595.x",
+         "text": "The ontogeny of common defective patterns should be accommodated into any robust model for the ontogeny and evolution of pattern.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC22032', 0)": {
+         "doi": "10.1111/nph.19161",
+         "text": "Comparison of hvtdf1 transcriptome data revealed several pathways were delayed, endorsing the observed retarded anther morphology.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23302', 0)": {
+         "doi": "10.1111/nph.19378",
+         "text": "High water loss observed in mur1 was independent from stomatal movements and instead could be linked to metabolic defects.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23302', 2)": {
+         "doi": "10.1111/nph.19378",
+         "text": "However, impaired fucosylation of xyloglucan, N-linked glycans, and arabinogalactan proteins did not explain the aberrant water loss of mur1 mutants.center dot Partial reversion of mur1 water loss phenotype by borate supplementation and high water loss observed in boron uptake mutants link mur1 gas exchange phenotypes to pleiotropic consequences of L-fucose and boron deficiency, which in turn affect mechanical and morphological properties of stomatal complexes and whole-plant physiology.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25246', 0)": {
+         "doi": "10.1186/s12870-015-0581-7",
+         "text": "Rather than exhibiting only spheroid or ellipsoidal shapes, the cells adapt their shape to fit the local space and are capable of growing past each other, taking on growth and morphological characteristics with greater complexity than observed even in whole plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC27900', 0)": {
+         "doi": "10.3390/nano13111736",
+         "text": "Seedlings exposed to Nanofer STAR displayed symptoms of toxicity, including chlorosis and reduced growth.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC29370', 0)": {
+         "doi": "10.1016/j.molp.2017.09.013",
+         "text": "Mutations in TRM4B display defects in root development and decreased m(5)C peaks.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31410', 0)": {
+         "doi": "10.1021/am303208t",
+         "text": "Following treatment of leaves with NLCP analysis of cuticular wax micromorphology revealed less wax solubilization in the monocot species.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC51669', 0)": {
+         "doi": "10.1007/s00709-024-01954-x",
+         "text": "The size was also confirmed via transmission electron microscopy with morphology of a cup-shaped appearance which is the typical mammalian exosome's morphology.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

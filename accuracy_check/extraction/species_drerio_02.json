@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of toxicity of a nanomaterial tested on the biological species 'Danio rerio' in the input sentences. Evidence of toxicity includes: (i) Acute toxicity (short-term tests): mortality, abnormal hatching rates, or other acute effects over typical exposure periods (e.g., 24\u201396 hours). (ii) Chronic toxicity (long-term tests): reduced growth or body length, altered reproductive output (e.g., number of eggs laid or hatchlings), and prolonged effects on physiology (e.g., organ development). (iii) Developmental and morphological changes: any reported anatomical malformations, deformities, or general sub-lethal stress such as abnormal swim bladder inflation. (iv) Physiological and biochemical markers: oxidative stress indicators (e.g., ROS, lipid peroxidation), enzymatic activity shifts (e.g., catalase, superoxide dismutase), genotoxicity (DNA damage, micronuclei formation), and changes in lipid or protein content. (v) Behavioral endpoints: altered swimming patterns, feeding behavior, or any other observed sub-lethal behavioral changes. Consider keywords such as 'toxicity', 'adverse effect', 'morbidity', 'reduced reproduction', 'mortality', 'hatching failure', 'significant negative impact', 'hormonal disruption', 'DNA damage', 'bioaccumulation', or 'behavioral change' as indications of toxicity. Consider keywords such as 'no observed effect' (NOEL), 'no observed adverse effect' (NOAEL), 'not toxic', and similar terms as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question: Is there any evidence in the input sentence of a toxic effect of a nanomaterial against the species 'Danio rerio'? If there is no clear evidence of nanomaterial toxicity considering the aspects mentioned above, output 'no'. If the sentence does not deal with toxicity information against 'Danio rerio' or if you cannot assess the sentence in regard to toxicity against 'Danio rerio', output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00059', 3)": {
+         "doi": "10.1021/acs.est.9b01636",
+         "text": "The presence of C-60 promoted accumulation of Cd in D. magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00405', 7)": {
+         "doi": "10.1016/j.envpol.2007.06.069",
+         "text": "(c) 2007 Elsevier Ltd. All rights reserved.",
+         "extracted val": "toxicity",
+         "correct": "n"
+      },
+      "('ATC00726', 9)": {
+         "doi": "10.1080/17435390.2017.1306128",
+         "text": "This was not observed for Au NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00753', 2)": {
+         "doi": "10.1007/s11356-021-12423-w",
+         "text": "In this study, we evaluated toxic effects of AuNRs on cladoceran and fish (Ceriodaphnia dubia and Danio rerio) and their recovery after post-exposure periods.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01081', 5)": {
+         "doi": "10.1016/j.chemosphere.2023.138970",
+         "text": "FCNs and NFCNs are not easy to cross the physical barriers in zebrafish embryos or larvae, and can be excreted from intestine by adult fish, which proves their biosecurity to zebrafish.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC01090', 6)": {
+         "doi": "10.1007/s11356-022-19693-y",
+         "text": "Moreover, in silico and in vivo findings illustrated that the mortality rate of zebrafish increased significantly in a concentration-dependent manner; however, the mortality rate reduced greatly in the presence of AgNPs during 96-h exposure.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01317', 3)": {
+         "doi": "10.1016/j.envpol.2017.03.033",
+         "text": "When tested in the presence of HA, both GO and bw-GO stabilities were enhanced in water.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02115', 3)": {
+         "doi": "10.1016/j.jhazmat.2014.10.039",
+         "text": "As compared with PCP treatment, the co-exposure of PCP and n-TiO2 enhanced the induction of ROS generation, eventually leading to lipid peroxidation and DNA damage.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02370', 8)": {
+         "doi": "10.3390/nano14030255",
+         "text": "The total protein and cytochrome P450 contents were determined.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02535', 6)": {
+         "doi": "10.1016/j.ecoenv.2022.113458",
+         "text": "Simultaneously, the activity and transcription of antioxidant enzymes (T-SOD, CuZn-SOD, Mn-SOD, CAT, GPx and GST) as well as antioxidant GSH contents were extensively inhibited by TAN and n-TiO2 via Nrf2-Keap1 signaling.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02599', 8)": {
+         "doi": "10.1016/j.jphotobiol.2020.112028",
+         "text": "This work thus illustrates that the AuPd-rGO/PDA nanocomposite could behave as favourable nanoplatform for tumor therapeutics.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02840', 2)": {
+         "doi": "10.1186/s12951-021-00910-8",
+         "text": "A difficulty is that plain AA is unstable, due to the effects of light, high temperature, and oxygen, among others.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03383', 4)": {
+         "doi": "10.1016/j.etap.2019.01.007",
+         "text": "Combined oxidative stress responses to the NPs and NAOP in D. rerio as a function of their mixture levels showed inhibition, alleviation, and reinforce.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03609', 7)": {
+         "doi": "10.1080/17435390.2016.1214763",
+         "text": "Silver ion (Ag+) concentrations were <0.001 mg L-1 at all times, with no significant effects on the VEGF pathway.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03730', 6)": {
+         "doi": "10.1080/09603123.2019.1570489",
+         "text": "Onion root tip assay revealed high toxicity when treated with MNPs than magnetosomes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03730', 7)": {
+         "doi": "10.1080/09603123.2019.1570489",
+         "text": "The MNPs were further tested for its toxicity against A. salina and 50 % mortality rate was observed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03772', 7)": {
+         "doi": "10.1002/jbt.23173",
+         "text": "In this study, zebrafish embryos were treated with AgNPs 0.5, 1, 2, 3, 4 or 5 L nanoparticles/ml for 24 to 96 h post fertilization.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03939', 4)": {
+         "doi": "10.1016/j.scitotenv.2014.01.077",
+         "text": "At 96 hpf the larvae were either subjected to a swirling stress and euthanized, or raised to adulthood (10 months) in silver-free water and then net-stressed, euthanized, and sampled.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04359', 5)": {
+         "doi": "10.1016/j.envpol.2021.117541",
+         "text": "This review provides an update on harmful effects from exposure to environmental chemicals, involving metallic elements, nanoparticles, persistent organic pollutants, pesticides and pharmaceutical formulations on craniofacial skeletal development in zebrafish embryos.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC05369', 4)": {
+         "doi": "10.1002/etc.4938",
+         "text": "Based on the median lethal concentration at 48 h (LC50(48h)), BSiO2#THY (LC50(48h) = 1.06 mg L-1 presented similar toxic potential as thymol (LC50(48h) = 1.03 mg L-1 for A. salina, showing that BSiO2 had no influence on BSiO2#THY toxicity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06678', 3)": {
+         "doi": "10.1016/j.jksus.2018.05.004",
+         "text": "Upon modification, thereby elucidating a competitive quantum yield of 15 % (C-dots-PEG(1500N)) and 12.6 % (C-dots-BPEI).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08149', 7)": {
+         "doi": "10.1016/j.phymed.2023.155092",
+         "text": "Results: The results showed that the total amounts of AAI, AAII, and ALI ranged from 0.0004 to 0.1858 g center dot g-1(%) from different samples, including Aristolochia debilis, Fibraurea recisa, Asarum, Wantongjingu tablets, Jiuwei-qianghuo granules, and Xiaoqinglong granules in descending order.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10669', 7)": {
+         "doi": "10.1089/zeb.2016.1302",
+         "text": "This new OTC administration method seems much more efficient with respect to the traditional way of exposure and has the potentiality to reduce antibiotic utilization and possible environmental impacts.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21997', 6)": {
+         "doi": "10.1016/j.mcp.2009.04.004",
+         "text": "Respective results were obtained in dot blot and Southern blot hybridization experiments when using this sex-specific fragment as the probe.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC27289', 10)": {
+         "doi": "10.1021/acs.chemrestox.4c00053",
+         "text": "These findings decisively demonstrate that not only smaller AgNPs but also the shape of the AgNPs influences their biological compatibility.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

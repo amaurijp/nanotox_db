@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of toxicity of a nanomaterial tested on the biological species 'Caenorhabditis elegans' in the input sentences. Evidence of toxicity includes: (i) Acute toxicity (short-term tests): mortality or decreased viability over typical exposure periods (e.g., 24\u201348 hours). (ii) Chronic toxicity (long-term tests): reduced reproduction (e.g., brood size), diminished growth or body length, delays in development, or other prolonged effects. (iii) Developmental and morphological changes: any reported anatomical malformations, alterations in developmental stages, or general sub-lethal stress. (iv) Physiological and biochemical markers: oxidative stress indicators (e.g., ROS, lipid peroxidation), enzymatic activity shifts (e.g., catalase, superoxide dismutase), genotoxicity (DNA damage, micronuclei formation), and changes in lipid or protein content. (v) Behavioral endpoints: impaired locomotion (e.g., reduced thrashing or body bends), feeding deficits, or other behavioral changes suggesting sub-lethal toxicity. Consider keywords such as 'toxicity', 'adverse effect', 'morbidity', 'reduced reproduction', 'mortality', 'significant negative impact', 'hormonal disruption', 'DNA damage', 'bioaccumulation', or 'behavioral change' as indications of toxicity. Consider keywords such as 'no observed effect' (NOEL), 'no observed adverse effect' (NOAEL), 'not toxic', and similar terms as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no' (and nothing else) to the following question: Is there any evidence in the input sentence of a toxic effect of a nanomaterial against the species 'Caenorhabditis elegans'? If there is no clear evidence of nanomaterial toxicity considering the aspects mentioned above, output 'no'. If the sentence does not deal with toxicity information against 'Caenorhabditis elegans' or if you cannot assess the sentence in regard to toxicity against 'Caenorhabditis elegans', output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00271', 0)": {
+         "doi": "10.1016/j.ecoenv.2023.115893",
+         "text": "There is limited understanding of nanoparticle potential ecotoxicity, particularly regarding the influence of environmental factors that can be transferred through the food chain.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00432', 6)": {
+         "doi": "10.3390/pharmaceutics15061679",
+         "text": "ATO NPs at 1 mg mL-1 significantly inhibited biofilm formation by UPEC, S. aureus, and dual-species biofilms and reduced their main virulence attributes, such as the cell surface hydrophobicity of UPEC and hemolysis of S. aureus and dual-species biofilms.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01762', 4)": {
+         "doi": "10.1021/acs.langmuir.7b02854",
+         "text": "Graphene prepared in serum was directly transferred to cell culture media without post -treatments.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02792', 2)": {
+         "doi": "10.1016/j.mtbio.2021.100175",
+         "text": "Herein, near-infrared (NIR) fluorescent single-walled carbon nanotubes (SWCNTs) are utilized for in vivo imaging within the gastrointestinal track of C. elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03762', 10)": {
+         "doi": "10.1016/j.biomaterials.2013.03.093",
+         "text": "(C) 2013 Elsevier Ltd. All rights reserved.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03878', 6)": {
+         "doi": "10.1021/acsami.7b03672",
+         "text": "Quasi-spherical AgNPs showed substantial antibiofilm activity in vitro with 96 % (+/- 2 %), 97 % (+/- 1 %), and 98 % (+/- 1 %) biofilm killing of SA, MRSA, and PA, respectively, while significantly reducing mortality of infected nematodes.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC04405', 1)": {
+         "doi": "10.1021/es404503c",
+         "text": "We synthesized CeO2-NPs functionalized with positively charged, negatively charged, and neutral coatings.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05380', 2)": {
+         "doi": "10.3390/nano11061551",
+         "text": "Contextually, we investigated the impact of surface charge on toxicity of superparamagnetic FexOy coated with a wrapping polymeric envelop that confers them optimal colloidal stability.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07307', 0)": {
+         "doi": "10.1016/j.jhazmat.2016.05.070",
+         "text": "There is considerable concern over the potential ecotoxicity to soil ecosystems posed,by zero-valent iron nanoparticles (Fe-0 NPs) released from in situ environmental remediation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07452', 4)": {
+         "doi": "10.1039/b802338g",
+         "text": "Accumulation of Cu occurs in the head and at a location 1/3 of the way up the body from the tail compared to the un- exposed control.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07798', 5)": {
+         "doi": "10.7150/thno.81817",
+         "text": "Finally, the effect of Co3O4 NPs on mitochondrial homeostasis and D-galactose-induced cell viability decline in mammalian cells were studied.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07918', 3)": {
+         "doi": "10.1166/jbn.2014.1897",
+         "text": "In this study, RES-loaded nanoparticles (RES-NPs) were prepared based on amphiphilic methoxy-polyethyleneglycol-poly-caprolactone (mPEG-PCL) block copolymers, which improve the physical properties of resveratrol in aqueous solution.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09985', 1)": {
+         "doi": "10.1016/j.etap.2016.01.001",
+         "text": "Therefore, the present study was envisaged to explore the possible effects of CUR and BCP in suppression of cadmium quantum dots (CdTe QDs) induced toxicity in Caenorhabditis elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10478', 2)": {
+         "doi": "10.3390/foods10051127",
+         "text": "Hydrogen bonds might play a major role in the formation of NPs, which has also been verified by a lower binding constant of EGCG with LY/Ps NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10706', 3)": {
+         "doi": "10.1016/j.scitotenv.2023.169461",
+         "text": "The increased germ cell apoptosis was even higher in F1 and F2 generations, but returned to control level in F3 generation.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC13212', 9)": {
+         "doi": "10.1021/es503559n",
+         "text": "Consequently, the careful choice of the type of FeOx and the type of associated OM may help in reducing the ecological risks if actively applied to the subsurface.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13394', 5)": {
+         "doi": "10.1016/j.envpol.2020.114848",
+         "text": "In egg exposure, [C(2)mim]Br increased the lifespan, stimulated initial reproduction and inhibited the total reproduction.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC19920', 5)": {
+         "doi": "10.1002/etc.2674",
+         "text": "Although both materials agglomerated to a comparable secondary particle size of 300 nm to 1500 nm and were ingested into the intestine, only nanoscale-TiO2 significantly inhibited reproduction (lowest-observed-effect-concentration [LOEC]: 10 mg L-1.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC20756', 3)": {
+         "doi": "10.1039/c4nr00699b",
+         "text": "In contrast, feeding with UV-treated OP50 suppressed GO toxicity and accumulation in the intestine and maintained the relatively normal immune response of animals.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC24894', 12)": {
+         "doi": "10.1016/j.ecoenv.2020.110588",
+         "text": "None of the tested genes followed a classical concentration-neurotoxicity relationship.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC25003', 2)": {
+         "doi": "10.1021/acs.langmuir.3c00372",
+         "text": "To overcome this limitation, we rationally designed a novel nanocomposite based on Bi2MoO6/ MoS2/AuNRs (BMO-MSA), which simultaneously possesses both the high photodynamic ability and POD-like activity under NIR-II light irradiation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC32954', 0)": {
+         "doi": "10.1016/j.jhazmat.2021.127587",
+         "text": "Interactions between nanomaterials (NMs) and coexisting contaminants are important contributors to their joint biological effects, while the reverse actions of bioresponses in determining the toxic interaction between NMs and contaminants were rarely understood.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34026', 0)": {
+         "doi": "10.3390/toxics10110699",
+         "text": "In nematode Caenorhabditis elegans, exposure to polystyrene nanoparticles (PS-NPs) at predicted environmental concentrations can cause induction of transgenerational toxicity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC42620', 4)": {
+         "doi": "10.1080/00032719.2020.1854277",
+         "text": "Furthermore, eighteen polyphenol and flavonoid constituents in the extract were identified by using ultra-high performance liquid chromatography-diode array detector-tandem mass spectrometry (UPLC-DAD-MSn) method and standard chemicals.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC52218', 4)": {
+         "doi": "10.1021/acsbiomaterials.2c00946",
+         "text": "Physiological responses, evaluated in vivo using Caenorhabditis elegans as the animal model, showed no impact on fertility and embryonic viability, induction of an oxidative stress response, and a mild impact on animal locomotion.",
+         "extracted val": "yes",
+         "correct": "y"
+      }
+   }
+}

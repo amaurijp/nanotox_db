@@ -1,0 +1,308 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a nanotoxicology evidence validator. TASK: Given a text input and a candidate conclusion ('yes' or 'no' to the question 'Is your previous answer about the toxicity assessment correct?'), decide whether that conclusion is supported by the text input. DEFINITIONS: - 'Toxic' = the passage reports at least one statistically or descriptively significant adverse biological outcome attributed to the nanomaterial in a living organism, cell culture, or in vitro substitute. Valid endpoints include (but are not limited to): mortality, abnormal hatching, developmental delay, growth inhibition, oxidative-stress markers, genotoxicity, enzyme dysregulation, bioaccumulation, behavioural change, reproduction impairment, morphological pathology. - 'Not toxic' = the passage explicitly states the nanomaterial produced no significant adverse effect in the study (e.g. 'no significant toxicity', 'did not affect growth', 'no mortality observed'). DECISION RULES: 1. If multiple endpoints are reported, a single valid adverse outcome is enough to label the study 'toxic'. 2. Ignore dose magnitude, exposure time, or mitigation comments ('may recover after five days')\u2014only the presence or absence of adverse outcome matters for this classification. 4. Output format: \u2022 output 'yes' or 'no' to the question 'Is your previous answer about the toxicity assessment correct?' if you conclude that the previous asnwer is correct based on the current inputs. \u2022 output 'no' if you conclude that the previous asnwer is wrong based on the current inputs or if you conclude that there is insufficient or conflicting evidence. Return nothing else \u2014 no explanations, no JSON keys. EXAMPLE 1 - confirmation of the previous answer > input text: (beginning of the input text) From the sentence 'Silver nanoparticles caused >30 % mortality and severe oxidative stress in Danio rerio embryos', it was evaluated if there is (or not) a toxicity effect for the endpoint 'mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'mortality' considering the species 'Danio rerio'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? (end of the input text) > candidate output: 'yes' - a correct answer was previously given, there is indeed a 'toxic' effect described > your output: 'yes' EXAMPLE 2 - confirmation of the previous answer > input text: (beginning of the input text) From the sentence 'Administration of a suspension of carbon nanotubes did not affect the growth of the C. elegans population studied', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? (end of the input text) > candidate output: 'yes' - a correct answer was previously given - there is 'no toxic' effect described > your output: 'yes' EXAMPLE 3 - identifying a wrong answer previously given > input text: (beginning of the input text) From the sentence 'Exposure to the nanomaterial significantly increased ROS levels in D. magna, indicating oxidative stress.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'oxidative stress'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'oxidative stress' considering the species 'Daphnia magna'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? (end of the input text) > candidate output: 'no' - there is a wrong assessment about the toxicity. The input text describes a toxic behavior of an agent but your previous answer was that there is no toxic behavior. > your output: 'No' -- end examples --"
+   },
+   "instances": {
+      "(ATC00326,107)": {
+         "doi": "10.1080/02757540.2022.2162893",
+         "llm input": "From the sentence 'It was aimed to determine the median lethal concentrations, growth retardation and developmental malformation effects and the effects of mixed nanoparticle exposure to selected enzyme biomarkers resulting from the exposure of embryos to NPs.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Danio rerio'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "It was aimed to determine the median lethal concentrations, growth retardation and developmental malformation effects and the effects of mixed nanoparticle exposure to selected enzyme biomarkers resulting from the exposure of embryos to NPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "n"
+      },
+      "(ATC00414,88)": {
+         "doi": "10.1016/j.aquatox.2013.12.024",
+         "llm input": "From the sentence 'Alterations in the activities of CAT and GST were indicative of oxidative stress, although no clear dose-response relationship was observed.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'oxidative stress'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'oxidative stress' considering the species 'Danio rerio'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Alterations in the activities of CAT and GST were indicative of oxidative stress, although no clear dose-response relationship was observed.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "oxidative stress",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC00624,70)": {
+         "doi": "10.1016/j.cbpc.2022.109448",
+         "llm input": "From the sentence 'By reducing pathogen virulence, ZnO NPs significantly improved worms' physiological functions such as pharyngeal pumping, body length, reproduction, and movement.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'behavioral impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'behavioral impairment' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "By reducing pathogen virulence, ZnO NPs significantly improved worms' physiological functions such as pharyngeal pumping, body length, reproduction, and movement.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "behavioral impairment",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC00711,36)": {
+         "doi": "10.1016/j.chemosphere.2019.125625",
+         "llm input": "From the sentence 'After exposure from L1-larvae to adult day-1, nanopolystyrene (100 ug L-1 reduced brood size and induced severe germline apoptosis, and nanopolystyrene (10 - 100 ug L-1 decreased locomotion behavior, induced obvious reactive oxygen species (ROS) production, and activated noticeable mitochondrial unfolded protein response (mt UPR).', it was evaluated if there is (or not) a toxicity effect for the endpoint 'reproductive impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'reproductive impairment' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "After exposure from L1-larvae to adult day-1, nanopolystyrene (100 ug L-1 reduced brood size and induced severe germline apoptosis, and nanopolystyrene (10 - 100 ug L-1 decreased locomotion behavior, induced obvious reactive oxygen species (ROS) production, and activated noticeable mitochondrial unfolded protein response (mt UPR).",
+         "parameters checked": {
+            "nanomaterial_composition": "Al2O3",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "reproductive impairment",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC00720,13)": {
+         "doi": "10.1016/j.ecoenv.2015.08.009",
+         "llm input": "From the sentence 'The hatching rate and survival of embryos decreased in a dose dependent manner.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Danio rerio'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The hatching rate and survival of embryos decreased in a dose dependent manner.",
+         "parameters checked": {
+            "nanomaterial_composition": "MgO",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC02248,43)": {
+         "doi": "10.1080/01480545.2018.1523186",
+         "llm input": "From the sentence 'The results showed that >= 0.5 - 1 ug ml-1 of ZrO(2)NPs instigated developmental acute toxicity in these embryos, causing mortality, hatching delay, and malformation.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'acute mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'acute mortality' considering the species 'Danio rerio'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The results showed that >= 0.5 - 1 ug ml-1 of ZrO(2)NPs instigated developmental acute toxicity in these embryos, causing mortality, hatching delay, and malformation.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZrO2",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "acute mortality",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC02451,114)": {
+         "doi": "10.1016/j.scitotenv.2013.05.018",
+         "llm input": "From the sentence 'In addition, 24 nm size GNP exposure at both 10 and 80 ug ml-1 concentrations has significantly improved seed germination rate, vegetative growth and free radical scavenging activity.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Arabidopsis thaliana'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In addition, 24 nm size GNP exposure at both 10 and 80 ug ml-1 concentrations has significantly improved seed germination rate, vegetative growth and free radical scavenging activity.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Arabidopsis thaliana",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC02803,68)": {
+         "doi": "10.1016/j.watres.2012.11.018",
+         "llm input": "From the sentence 'We for the first time radio-synthesized the nZnO and followed its uptake and depuration in D. magna.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Daphnia magna'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "We for the first time radio-synthesized the nZnO and followed its uptake and depuration in D. magna.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Daphnia magna",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC03801,69)": {
+         "doi": "10.1016/j.scitotenv.2013.12.043",
+         "llm input": "From the sentence 'In the microcosm experiment, using two different natural soils, Al2O3 or Ag nanoparticles did not affect the Caenorhabditis elegans toxicity endpoints growth, survival, or reproduction.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'acute mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'acute mortality' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In the microcosm experiment, using two different natural soils, Al2O3 or Ag nanoparticles did not affect the Caenorhabditis elegans toxicity endpoints growth, survival, or reproduction.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "acute mortality",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC04194,77)": {
+         "doi": "10.3390/toxics11120989",
+         "llm input": "From the sentence 'However, there was a decrease in the reproduction (brood size) and locomotion (body bending and head thrashing) of the nematodes as the TiO2 NP concentration increased.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'reproductive impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'reproductive impairment' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "However, there was a decrease in the reproduction (brood size) and locomotion (body bending and head thrashing) of the nematodes as the TiO2 NP concentration increased.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "reproductive impairment",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC04549,19)": {
+         "doi": "10.1016/j.chemosphere.2020.126536",
+         "llm input": "From the sentence 'The results indicated that the presence of n-TiO2 significantly enhanced the PCP-induced thyroid endocrine disruption but not the neurobehavioral defects in zebrafish larvae.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'genotoxicity / DNA Damage'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'genotoxicity / DNA Damage' considering the species 'Danio rerio'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The results indicated that the presence of n-TiO2 significantly enhanced the PCP-induced thyroid endocrine disruption but not the neurobehavioral defects in zebrafish larvae.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "genotoxicity / DNA Damage",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC05794,8)": {
+         "doi": "10.1002/bab.2527",
+         "llm input": "From the sentence 'We also found that ZnO NPs significantly enhance the C. elegan's lifespan, locomotion, pharyngeal pumping, chemotaxis behavior also diminish the ROS deposition and intracellular productionMoreover, thioflavin T staining demonstrated that ZnO NPs substantially attenuated the A beta deposition in the C. elegans strain as compared to untreated worms.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'behavioral impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'behavioral impairment' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "We also found that ZnO NPs significantly enhance the C. elegan's lifespan, locomotion, pharyngeal pumping, chemotaxis behavior also diminish the ROS deposition and intracellular productionMoreover, thioflavin T staining demonstrated that ZnO NPs substantially attenuated the A beta deposition in the C. elegans strain as compared to untreated worms.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "behavioral impairment",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC07002,32)": {
+         "doi": "10.1080/15287394.2022.2054888",
+         "llm input": "From the sentence 'These changes adversely affected the fitness and survival of Daphnia magna and negatively influenced offspring growth and reproduction.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'reproductive impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'reproductive impairment' considering the species 'Daphnia magna'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "These changes adversely affected the fitness and survival of Daphnia magna and negatively influenced offspring growth and reproduction.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Daphnia magna",
+            "toxicity_endpoints": "reproductive impairment",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC07152,32)": {
+         "doi": "10.1016/j.scitotenv.2022.156079",
+         "llm input": "From the sentence 'It was demonstrated that both wastewater-borne NPs are considered non-toxic to daphnids at tested concentrations, considering the endpoints at the individual (survival, growth, reproduction) and subcellular (biochemical markers) levels.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'acute mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'acute mortality' considering the species 'Daphnia magna'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "It was demonstrated that both wastewater-borne NPs are considered non-toxic to daphnids at tested concentrations, considering the endpoints at the individual (survival, growth, reproduction) and subcellular (biochemical markers) levels.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Daphnia magna",
+            "toxicity_endpoints": "acute mortality",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC07152,54)": {
+         "doi": "10.1016/j.scitotenv.2022.156079",
+         "llm input": "From the sentence 'It was demonstrated that both wastewater-borne NPs are considered non-toxic to daphnids at tested concentrations, considering the endpoints at the individual (survival, growth, reproduction) and subcellular (biochemical markers) levels.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'oxidative stress'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'oxidative stress' considering the species 'Daphnia magna'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "It was demonstrated that both wastewater-borne NPs are considered non-toxic to daphnids at tested concentrations, considering the endpoints at the individual (survival, growth, reproduction) and subcellular (biochemical markers) levels.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Daphnia magna",
+            "toxicity_endpoints": "oxidative stress",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC07209,4)": {
+         "doi": "10.3389/fbioe.2020.560349",
+         "llm input": "From the sentence 'SWCNT-COOH preserved their electrical properties when embedded inside the root matrix, both at a microscopic level and a macroscopic level, and did not significantly affect the mechanical properties of A. thaliana roots.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Arabidopsis thaliana'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "SWCNT-COOH preserved their electrical properties when embedded inside the root matrix, both at a microscopic level and a macroscopic level, and did not significantly affect the mechanical properties of A. thaliana roots.",
+         "parameters checked": {
+            "nanomaterial_composition": "C",
+            "biological_species": "Arabidopsis thaliana",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC09985,63)": {
+         "doi": "10.1016/j.etap.2016.01.001",
+         "llm input": "From the sentence 'Furthermore, BCP and CUR attenuate oxidative stress triggered by QD.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'oxidative stress'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'oxidative stress' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Furthermore, BCP and CUR attenuate oxidative stress triggered by QD.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cd",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "oxidative stress",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC13851,31)": {
+         "doi": "10.1016/j.jhazmat.2012.03.083",
+         "llm input": "From the sentence 'Exposure to 0.01-23.1 mg L-1 of Al2O3-NPs induced a decrease in locomotion behavior, a severe stress response, and a severe oxidative stress; however, these effects were only detected in nematodes exposed to 23.1 mg L-1 of bulk Al2O3.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'enzymatic activity alteration'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'enzymatic activity alteration' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Exposure to 0.01-23.1 mg L-1 of Al2O3-NPs induced a decrease in locomotion behavior, a severe stress response, and a severe oxidative stress; however, these effects were only detected in nematodes exposed to 23.1 mg L-1 of bulk Al2O3.",
+         "parameters checked": {
+            "nanomaterial_composition": "Al2O3",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "enzymatic activity alteration",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC13851,34)": {
+         "doi": "10.1016/j.jhazmat.2012.03.083",
+         "llm input": "From the sentence 'Moreover, treatment with antioxidants or SOD-3 overexpression not only suppressed oxidative stress but also prevented adverse effects on locomotion behaviors from Al2O3-NPs exposure.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'enzymatic activity alteration'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'enzymatic activity alteration' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, treatment with antioxidants or SOD-3 overexpression not only suppressed oxidative stress but also prevented adverse effects on locomotion behaviors from Al2O3-NPs exposure.",
+         "parameters checked": {
+            "nanomaterial_composition": "Al2O3",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "enzymatic activity alteration",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC13979,63)": {
+         "doi": "10.1002/etc.3917",
+         "llm input": "From the sentence 'Regression analysis showed a higher degree of positive correlation between the concentration of Ag in the nongut tissues than gut tissues and the mortality of daphnids.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'acute mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'acute mortality' considering the species 'Daphnia magna'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Regression analysis showed a higher degree of positive correlation between the concentration of Ag in the nongut tissues than gut tissues and the mortality of daphnids.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Daphnia magna",
+            "toxicity_endpoints": "acute mortality",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC18899,115)": {
+         "doi": "10.1016/j.scitotenv.2016.10.017",
+         "llm input": "From the sentence 'We subjected plants to different ZnO NPs and Zn ion concentrations (0, 20, 50, 100 and 200 mg L-1 and analyzed resulting morphological changes, transcriptional regulation of genes involved in Zn-homeostasis, macro-and microelement homeostasis, as well as auxin regulation.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'developmental alterations'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'developmental alterations' considering the species 'Arabidopsis thaliana'? Your previous answer for this question was: 'yes'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "We subjected plants to different ZnO NPs and Zn ion concentrations (0, 20, 50, 100 and 200 mg L-1 and analyzed resulting morphological changes, transcriptional regulation of genes involved in Zn-homeostasis, macro-and microelement homeostasis, as well as auxin regulation.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Arabidopsis thaliana",
+            "toxicity_endpoints": "developmental alterations",
+            "toxicity_yes_no": "yes"
+         },
+         "correct": "y"
+      },
+      "(ATC19230,40)": {
+         "doi": "10.1021/es304511z",
+         "llm input": "From the sentence 'There were no significant changes on survival rate under all generations by AuNP maternal exposure to the F0 generation.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'acute mortality'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'acute mortality' considering the species 'Caenorhabditis elegans'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "There were no significant changes on survival rate under all generations by AuNP maternal exposure to the F0 generation.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Caenorhabditis elegans",
+            "toxicity_endpoints": "acute mortality",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC24060,59)": {
+         "doi": "10.1016/j.heliyon.2024.e27583",
+         "llm input": "From the sentence 'In this study, we germinated and grew Arabidopsis thaliana seedlings in synthetic medium supplemented with sub-morbid concentrations (4 ug mL-1 of AgNPs and silver nitrate (AgNO3).', it was evaluated if there is (or not) a toxicity effect for the endpoint 'germination inhibition'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'germination inhibition' considering the species 'Arabidopsis thaliana'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study, we germinated and grew Arabidopsis thaliana seedlings in synthetic medium supplemented with sub-morbid concentrations (4 ug mL-1 of AgNPs and silver nitrate (AgNO3).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Arabidopsis thaliana",
+            "toxicity_endpoints": "germination inhibition",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC32408,4)": {
+         "doi": "10.1021/acsnano.7b05723",
+         "llm input": "From the sentence 'PNC with a low Ce3+/Ce4+ ratio (35.0 %) reduce leaf ROS levels by 52 %, including hydrogen peroxide, superoxide anion, and hydroxyl radicals.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'bioaccumulation'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'bioaccumulation' considering the species 'Arabidopsis thaliana'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "PNC with a low Ce3+/Ce4+ ratio (35.0 %) reduce leaf ROS levels by 52 %, including hydrogen peroxide, superoxide anion, and hydroxyl radicals.",
+         "parameters checked": {
+            "nanomaterial_composition": "CeO2",
+            "biological_species": "Arabidopsis thaliana",
+            "toxicity_endpoints": "bioaccumulation",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      },
+      "(ATC52557,196)": {
+         "doi": "10.1080/15287394.2017.1331597",
+         "llm input": "From the sentence 'In addition, no marked DNA damage was detected in embryos after exposure to CTAB-AuNR.', it was evaluated if there is (or not) a toxicity effect for the endpoint 'reproductive impairment'. Consider the question: Is there any evidence in the input sentence of a possible toxic effect for the endpoint 'reproductive impairment' considering the species 'Danio rerio'? Your previous answer for this question was: 'no'. Is your previous answer about the toxicity assessment correct? Considering all information provided, respond 'yes' or 'no' (and nothing else). Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In addition, no marked DNA damage was detected in embryos after exposure to CTAB-AuNR.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Danio rerio",
+            "toxicity_endpoints": "reproductive impairment",
+            "toxicity_yes_no": "no"
+         },
+         "correct": "y"
+      }
+   }
+}

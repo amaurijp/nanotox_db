@@ -1,0 +1,294 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology. Your primary responsibility is to verify whether the previously extracted 'nanomaterial zeta potential' (including numerical values and units of measurement) accurately matches the input text. *Rules* - You must confirm that the extracted zeta potential indeed applies to a 'nanomaterial core composition' or (if applicable) a 'nanomaterial morphology' that was also previously extracted, ensuring the input text explicitly associates that zeta potential with the particular nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.) or the particular nanomaterial morphology (examples: 'nanoparticle' = 'NPs', 'nanotube' = 'NTs', 'nanorod'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C'; the core composition of 'PEG-modified silver NPs' is 'Ag'). - You must also check that the stated zeta potential (for example, '-20 mV', '10-30 mV', or approximate descriptors such as 'around -15 mV') indeed corresponds to the nanomaterial core composition or morphology mentioned in the input text, and that any units of measurement (\u00b5V, mV, etc.) match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'We produced silver nanoparticles (Ag NPs) with diameters of 25 nm and with zeta potential of -35 mV.' that this nanomaterial has a zeta potential value (or values) of '-35 mV'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: For a nanomaterial with core composition 'carbon' and morphology 'nanorod', it was extracted from the sentence 'The nanorods (ZnO) exhibited lengths of 200 nm and zeta potential of 12 mV, whereas carbon nanotubes (CNTs) averaged 15 nm in diameter.' that this nanomaterial has a zeta potential value (or values) of '12 mV'. Was the extraction correct? your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC08436,12)": {
+         "doi": "10.2478/aiht-2023-74-3684",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.' that this nanomaterial has a zeta potential value (or values) of '-17.9 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-17.9 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC08436,30)": {
+         "doi": "10.2478/aiht-2023-74-3684",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.' that this nanomaterial has a zeta potential value (or values) of '-17.9 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-17.9 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC08436,36)": {
+         "doi": "10.2478/aiht-2023-74-3684",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.' that this nanomaterial has a zeta potential value (or values) of '-17.9 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The G-AgNPs were 52.0 +/- 10.9 nm in size, with a 0.285 +/- 0.034 polydispersity index (PDI), and a -17.9 +/- 0.9 mV zeta potential.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-17.9 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC08436,9)": {
+         "doi": "10.2478/aiht-2023-74-3684",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'For H-AgNPs these characteristics were 23.9 +/- 1.0 nm, 0.280 +/- 0.032, and -21.3 +/- 2.7 mV, respectively.' that this nanomaterial has a zeta potential value (or values) of '-21.3 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "For H-AgNPs these characteristics were 23.9 +/- 1.0 nm, 0.280 +/- 0.032, and -21.3 +/- 2.7 mV, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-21.3 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,116)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'Zn' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "n"
+      },
+      "(ATC09945,124)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'Zn' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,180)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,220)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,228)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,252)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).' that this nanomaterial has a zeta potential value (or values) of '-5.69 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM, SEM, and XRD revealed their hexagonal crystalline structures with nanoscale size ZnONPs_BPE (57.4 +/- 13.8 nm, -9.62 mV) and ZnONPs_DSE (72.6 +/- 17.1 nm, -5.69 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-5.69 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC16254,104)": {
+         "doi": "10.1016/j.matlet.2017.07.102",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential of AgNPs were -36.49 to -22.25 mV.' that this nanomaterial has a zeta potential value (or values) of '-36.49 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential of AgNPs were -36.49 to -22.25 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-36.49 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC16254,4)": {
+         "doi": "10.1016/j.matlet.2017.07.102",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential of AgNPs were -36.49 to -22.25 mV.' that this nanomaterial has a zeta potential value (or values) of '-22.25 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential of AgNPs were -36.49 to -22.25 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-22.25 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC16254,56)": {
+         "doi": "10.1016/j.matlet.2017.07.102",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential of AgNPs were -36.49 to -22.25 mV.' that this nanomaterial has a zeta potential value (or values) of '-36.49 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential of AgNPs were -36.49 to -22.25 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-36.49 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC16254,64)": {
+         "doi": "10.1016/j.matlet.2017.07.102",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential of AgNPs were -36.49 to -22.25 mV.' that this nanomaterial has a zeta potential value (or values) of '-36.49 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential of AgNPs were -36.49 to -22.25 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-36.49 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC21842,0)": {
+         "doi": "10.1016/j.pharma.2022.12.007",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The ES-AgNPs displayed a mean particle size of 137 +/- 3 nm (PDI of 0.168 +/- 0.02) and zeta potential of 18.2 +/- 0.8 mV.' that this nanomaterial has a zeta potential value (or values) of '18.2 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The ES-AgNPs displayed a mean particle size of 137 +/- 3 nm (PDI of 0.168 +/- 0.02) and zeta potential of 18.2 +/- 0.8 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "18.2 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC25080,48)": {
+         "doi": "10.17179/excli2016-710",
+         "llm input": "For a nanomaterial with core composition 'Au' and morphology 'nanoparticle', it was extracted from the sentence 'The diameter of Au-BRN-LvN-NPs and BRN capped Au-NPs were found to be (58.65 +/- 2 nm, 38.11 +/- 2 nm), zeta potential (-9.01 mV, -13.8 mV) and surface morphology (similar to 13.2 nm, 11.4 nm) respectively.' that this nanomaterial has a zeta potential value (or values) of '-9.01 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The diameter of Au-BRN-LvN-NPs and BRN capped Au-NPs were found to be (58.65 +/- 2 nm, 38.11 +/- 2 nm), zeta potential (-9.01 mV, -13.8 mV) and surface morphology (similar to 13.2 nm, 11.4 nm) respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-9.01 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC27598,6)": {
+         "doi": "10.1039/d3ra07733k",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The zeta potentials for the nanoparticles were low, -26.8 +/- 7.55 and -26.2 +/- 2.87 mV for AgNP@Fo and AgNP@OR, respectively, demonstrating a similar negative charge.' that this nanomaterial has a zeta potential value (or values) of '-26.2 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The zeta potentials for the nanoparticles were low, -26.8 +/- 7.55 and -26.2 +/- 2.87 mV for AgNP@Fo and AgNP@OR, respectively, demonstrating a similar negative charge.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-26.2 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC28879,10)": {
+         "doi": "10.1016/j.ijbiomac.2020.02.291",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential size analyzer indicated the average size and zeta potential of GP-AgNPs were 7837 nm and -32.9 mV, whereas FCS-GP-AgNPs had 53.6 mV and 79.65 nm respectively.' that this nanomaterial has a zeta potential value (or values) of '-32.9 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential size analyzer indicated the average size and zeta potential of GP-AgNPs were 7837 nm and -32.9 mV, whereas FCS-GP-AgNPs had 53.6 mV and 79.65 nm respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-32.9 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC33267,0)": {
+         "doi": "10.21161/mjm.221396",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Further characterization by transmission electron microscopy, X-ray diffraction and dynamic light scattering revealed well-dispersed spherical crystalline in nature SNPs with a mean size of 14 nm and zeta potential of - 24.47 mV.' that this nanomaterial has a zeta potential value (or values) of '-24.47 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Further characterization by transmission electron microscopy, X-ray diffraction and dynamic light scattering revealed well-dispersed spherical crystalline in nature SNPs with a mean size of 14 nm and zeta potential of - 24.47 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-24.47 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC33360,4)": {
+         "doi": "10.3390/nano13030475",
+         "llm input": "For a nanomaterial with core composition 'Au' and morphology 'nanoparticle', it was extracted from the sentence 'The stability measurement showed zeta potential as -24.9 mV and -25.2 mV for CT-AuNPs and CX-AuNPs, respectively.' that this nanomaterial has a zeta potential value (or values) of '-25.2 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The stability measurement showed zeta potential as -24.9 mV and -25.2 mV for CT-AuNPs and CX-AuNPs, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-25.2 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC35335,0)": {
+         "doi": "10.1039/c8tx00267c",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'The primary size obtained was 26.3 nm (XRD) and 33.5 +/- 6.5 nm (TEM), whereas, the secondary size was found to be 287 +/- 5.2 nm with -32.8 +/- 1.8 mV zeta-potential denoting the physical colloid chemistry of ZnONPs.' that this nanomaterial has a zeta potential value (or values) of '-32.8 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The primary size obtained was 26.3 nm (XRD) and 33.5 +/- 6.5 nm (TEM), whereas, the secondary size was found to be 287 +/- 5.2 nm with -32.8 +/- 1.8 mV zeta-potential denoting the physical colloid chemistry of ZnONPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-32.8 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC37633,0)": {
+         "doi": "10.1016/j.jddst.2023.104897",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'AgNPs prepared by CFP extract obtained a homogeneous circular-shaped morphology with a size of 27.13 +/- 8.35 nm with a zeta potential of 22.44 +/- 0.37 mV.' that this nanomaterial has a zeta potential value (or values) of '22.44 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "AgNPs prepared by CFP extract obtained a homogeneous circular-shaped morphology with a size of 27.13 +/- 8.35 nm with a zeta potential of 22.44 +/- 0.37 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "22.44 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC42863,0)": {
+         "doi": "10.1002/aoc.5667",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'The shape of the resulted nanoparticles is fusiform nanoflowers with an average hydrodynamic size of 275.46 +/- 0.20 nm and a zeta potential of -8.23 +/- 0.26 mV.' that this nanomaterial has a zeta potential value (or values) of '-8.23 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The shape of the resulted nanoparticles is fusiform nanoflowers with an average hydrodynamic size of 275.46 +/- 0.20 nm and a zeta potential of -8.23 +/- 0.26 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-8.23 mV"
+         },
+         "correct": "n"
+      },
+      "(ATC46956,0)": {
+         "doi": "10.1155/2021/5525690",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The AgNPs showed a good stability of -23.9 +/- 1.02 mV.' that this nanomaterial has a zeta potential value (or values) of '-23.9 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs showed a good stability of -23.9 +/- 1.02 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-23.9 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC49518,0)": {
+         "doi": "10.1155/2019/8214675",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'AgNP mean sizes by DLS were 80.82 +/- 1.16 nm and sizes between 2 and 10 nm by TEM, with a zeta potential of -47.72 +/- 1.05 mV.' that this nanomaterial has a zeta potential value (or values) of '-47.72 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "AgNP mean sizes by DLS were 80.82 +/- 1.16 nm and sizes between 2 and 10 nm by TEM, with a zeta potential of -47.72 +/- 1.05 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-47.72 mV"
+         },
+         "correct": "y"
+      },
+      "(ATC51740,0)": {
+         "doi": "10.1007/s12602-023-10179-y",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The zeta value of MO@AgNPs was - 36.5 +/- 0.6 mV, which was stable at 25 degrees C and 4 degrees C.' that this nanomaterial has a zeta potential value (or values) of '-36.5 mV'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial zeta potential', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The zeta value of MO@AgNPs was - 36.5 +/- 0.6 mV, which was stable at 25 degrees C and 4 degrees C.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_zeta_potential": "-36.5 mV"
+         },
+         "correct": "y"
+      }
+   }
+}

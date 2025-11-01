@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on the toxicity against living species and you extract numerical values related with the toxicity effect. For the text I will input next, output only the numbers associated with the half-lethal maximal effective concentration (LC50) values indicating the toxicity effect. Output the concentration unit (ex: mg L-1) with a blank space after each number found (Ex: '10.1 mg L-1' or '10.1 mg mL-1' or '10.1 g mL-1' or '10.1 ug mL-1'). If no value is found, output 'None'. Do not output concentration values not related with half-lethal maximal effective concentration (LC50)."
+   },
+   "instances": {
+      "('ATC00182', 0)": {
+         "doi": "10.1080/15440478.2021.1932673",
+         "text": "The EC50 and LC50 for D. magna and D. rerio were above 100 mg L-1 and classified as nonhazardous to the aquatic environment according to the Globally Harmonized System (GHS).",
+         "extracted val": "100 mg L-1",
+         "correct": "y"
+      },
+      "('ATC00955', 0)": {
+         "doi": "10.1016/j.scitotenv.2018.08.280",
+         "text": "Our results showed that GO induced significant toxicity to S. obtiquus and D. magna, and the median lethal concentrations (72 h-LC50 and 48 h-LC50) for acute toxicity were 20.6 and 84.2 mg L-1, respectively, while the 21 d-LC50 for chronic toxicity to D. magna was 3.3 mg L-1.",
+         "extracted val": "20.6 mg L-1, 84.2 mg L-1, 3.3 mg L-1",
+         "correct": "y"
+      },
+      "('ATC01081', 0)": {
+         "doi": "10.1016/j.chemosphere.2023.138970",
+         "text": "The LC50 values of FCNs and N-FCNs on zebrafish embryo at 96 hpf are 1610 mg L-1 and 649 mg L-1, respectively.",
+         "extracted val": "1610 mg L-1, 649 mg L-1",
+         "correct": "y"
+      },
+      "('ATC02082', 0)": {
+         "doi": "10.3390/ijms22115568",
+         "text": "Estimated LC50 values were 2.132 mg L-1 and 1.500 mg L-1 for zebrafish embryos and adults, respectively.",
+         "extracted val": "2.132 mg L-1, 1.500 mg L-1",
+         "correct": "y"
+      },
+      "('ATC02378', 1)": {
+         "doi": "10.1039/c9en00598f",
+         "text": "(confidence intervals) 4.3 - 8.1 ug L-1, which were significantly different than the LC50 values for nano-bifenthrin (11.2 ug L-1; 95 % C.I. 9.1-13.4 ug L-1.",
+         "extracted val": "11.2 ug L-1",
+         "correct": "y"
+      },
+      "('ATC02944', 0)": {
+         "doi": "10.1016/j.etap.2018.12.011",
+         "text": "The acute toxicity (96 h) of ZnO (LC50: 100 - 110 mg l-1 and TiO2 (LC50: 80 - 90 mg l-1 NPs were identified by using probit analysis.",
+         "extracted val": "100 mg l-1, 110 mg l-1, 80 mg l-1, 90 mg l-1",
+         "correct": "y"
+      },
+      "('ATC03045', 0)": {
+         "doi": "10.1080/03067319.2021.1933462",
+         "text": "The 24-h LC50 was 435.24, 327.08 and 76.54 mg L-1 and NOEC was 147.59, 103.851 and 25.662 mg L-1 for E. coli, P. aeruginosa and S. aureus, respectively.",
+         "extracted val": "435.24 mg L-1, 327.08 mg L-1, 76.54 mg L-1",
+         "correct": "y"
+      },
+      "('ATC03885', 0)": {
+         "doi": "10.1016/j.scitotenv.2020.136521",
+         "text": "Comparative cellular toxicity analysis showed higher biocompatibility of G-MgO NP compared to MgO NP with reference to the morphological changes. notochord development, and heartbeat rate in embryonic zebrafish LC50 of G-MgO NP was 520 ug mL-1 compared to 410 ug mL-1 of MgO NP.",
+         "extracted val": "520 ug mL-1, 410 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC04457', 0)": {
+         "doi": "10.1002/tox.22993",
+         "text": "The 96 hours LC(50)was recorded at 6.258 mg l-1.",
+         "extracted val": "6.258 mg L-1",
+         "correct": "y"
+      },
+      "('ATC04736', 0)": {
+         "doi": "10.1016/j.ceramint.2019.05.309",
+         "text": "Composites exert toxicity at lower concentrations than ZnO, observing LC50 values for L. papuana of 79.30 +/- 6.70 ug mL-1, and 5.59 +/- 0.46 ug mL-1 for ZnO and Cu@ZnO, respectively.",
+         "extracted val": "79.30 ug mL-1, 5.59 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC05059', 0)": {
+         "doi": "10.1016/j.chemosphere.2014.08.031",
+         "text": "All embryos died during the first 24 h when exposed to undiluted sock-AgNP and spun-AgNP solutions resulting in significantly lower LC50 values (0.14 and 0.26 mg L-1 compared to AgNO3 (0.80 mg L-1.",
+         "extracted val": "0.14 mg L-1, 0.26 mg L-1, 0.80 mg L-1",
+         "correct": "y"
+      },
+      "('ATC05369', 0)": {
+         "doi": "10.1002/etc.4938",
+         "text": "Based on the median lethal concentration at 48 h (LC50(48h)), BSiO2#THY (LC50(48h) = 1.06 mg L-1 presented similar toxic potential as thymol (LC50(48h) = 1.03 mg L-1 for A. salina, showing that BSiO2 had no influence on BSiO2#THY toxicity.",
+         "extracted val": "1.06 mg L-1, 1.03 mg L-1",
+         "correct": "y"
+      },
+      "('ATC05427', 0)": {
+         "doi": "10.1155/2015/219074",
+         "text": "LC(50)s for D. pulex were higher at 2.81 and 4.45 mg L-1 for pristine and oxidised DWCNTs, respectively; however, P. reticulata had lower values of 113.64 mg L-1 and 214.0 mg L-1 for the same CNTs correspondingly. P. subcapitata had EC(50)s of 17.95 mg L-1 and 10.93 mg L-1 for the pristine and oxidised DWCNTs, respectively.",
+         "extracted val": "2.81 mg L-1, 4.45 mg L-1, 113.64 mg L-1, 214.0 mg L-1",
+         "correct": "y"
+      },
+      "('ATC05760', 0)": {
+         "doi": "10.1016/j.tox.2021.153012",
+         "text": "For the L1 and L4 stage worms, the 48-h median lethal concentrations (LC(50)s) of La(NO3)(3)center dot 6H(2)O were 93.163 and 648.0 mg L-1 respectively.",
+         "extracted val": "93.163 mg L-1, 648.0 mg L-1",
+         "correct": "y"
+      },
+      "('ATC08300', 1)": {
+         "doi": "10.1016/j.scitotenv.2022.153307",
+         "text": "However, the addition of surfactant increased the LC50 of 40 nm and 60 nm to 2.93 and 3.24 mg L-1, respectively.",
+         "extracted val": "2.93 mg L-1, 3.24 mg L-1",
+         "correct": "y"
+      },
+      "('ATC13810', 0)": {
+         "doi": "10.1016/j.envpol.2010.11.030",
+         "text": "Specifically, at 2 mg L-1 nano-TiO2, the (LC50) of Cu2+ concentration observed to kill half the population, decreased from 111 ug L-1 to 42 ug L-1.",
+         "extracted val": "111 ug L-1, 42 ug L-1",
+         "correct": "y"
+      },
+      "('ATC14598', 0)": {
+         "doi": "10.1021/es900647f",
+         "text": "The 96 h LC50 of MWNTs was determined to be 2.48 mg L-1.",
+         "extracted val": "2.48 mg L-1",
+         "correct": "y"
+      },
+      "('ATC18861', 0)": {
+         "doi": "10.1007/s11356-018-3810-4",
+         "text": "P25 showed the greatest phototoxicity with a 24-h LC50 of 6.0 mg L-1 (95 % CI 5.95, 6.3), followed by the f-TiO2 (LC50=6.55 mg L-1 (95 % CI 6.35, 6.75)), and b-TiO2 was the least toxic.",
+         "extracted val": "6.0 mg L-1, 6.55 mg L-1",
+         "correct": "y"
+      },
+      "('ATC20298', 0)": {
+         "doi": "10.3390/inorganics11120462",
+         "text": "Additionally, they exhibited a good insecticidal effect on Culex quinquefasciatus larvae, with low LC50 55.716 ug mL-1 and LC90 123.657 ug mL-1 values.",
+         "extracted val": "55.716 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC21243', 0)": {
+         "doi": "10.1016/j.jtemb.2018.10.017",
+         "text": "In addition, Cr-SeNWs were highly effective as larvicides against Zika virus and Japanese encephalitis mosquito vectors, i.e., Culex quinquefasciatus and Culex tritaeniorhynchus, with LC50 values of 4.15 and 4.85 mg l-1, respectively.",
+         "extracted val": "4.15 mg l-1, 4.85 mg l-1",
+         "correct": "y"
+      },
+      "('ATC34564', 0)": {
+         "doi": "10.1016/j.jphotobiol.2017.07.026",
+         "text": "Maximum efficacy was achieved by Pm AgNPs against Ae. aegypti after 24 h (LC50 34.88; LC90 64.56 mg ml-1, if compared to the P. murex seed extract.",
+         "extracted val": "34.88 mg ml-1",
+         "correct": "y"
+      },
+      "('ATC37203', 0)": {
+         "doi": "10.1039/c7en01039g",
+         "text": "Results showed that pure Fe2O3 NPs could inhibit the bacterial growth with a median lethal concentration (24 h LC50) of 23.58 mg L-1, while surface-bound HA could significantly mitigate the toxicity of Fe2O3 with the highest LC50 of 4774.23 mg L-1, which were corroborated by the transcriptional regulation of Pseudomonas putida cell activity-related genes.",
+         "extracted val": "23.58 mg L-1, 4774.23 mg L-1",
+         "correct": "y"
+      },
+      "('ATC44431', 0)": {
+         "doi": "10.1016/j.pmpp.2017.01.002",
+         "text": "In particular, LC50 of AgNP ranged from 8.668 (larva I) to 17.975 mg l-1 (pupa) for A. aegypti, and from 20.937 (larva I) to 46.896 mg l-1 (pupa) for S. litura.",
+         "extracted val": "8.668 mg L-1, 17.975 mg L-1, 20.937 mg L-1, 46.896 mg L-1",
+         "correct": "y"
+      },
+      "('ATC52156', 0)": {
+         "doi": "10.1007/s11356-023-30145-z",
+         "text": "CuONPs were found to be severely toxic just within 48 h of exposure as seen from the lethal value (48 h LC50) of 0.137 +/- 0.002 mg l-1.",
+         "extracted val": "0.137 mg l-1",
+         "correct": "y"
+      },
+      "('ATC52434', 1)": {
+         "doi": "10.1007/s13399-023-04026-x",
+         "text": "While the LC50 values for Gc extract were 18.666, 20.673, and 19.688 ug mL-1, respectively, all three larval species showed similar potential activity.",
+         "extracted val": "18.666 ug mL-1, 20.673 ug mL-1, 19.688 ug mL-1",
+         "correct": "y"
+      }
+   }
+}

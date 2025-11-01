@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of behavioral impairment caused by a nanomaterial in the biological species 'Caenorhabditis elegans' present in the input sentence. Evidence includes reduced locomotion, altered thrashing frequency, decreased body bends, impaired pharyngeal pumping, feeding deficits, or other behavioral changes. Consider keywords such as 'impaired locomotion', 'reduced thrashing', 'behavioral change', 'feeding deficit', or 'neuromuscular toxicity' as indications of behavioral impairment. Consider keywords such as 'normal behavior', 'locomotion unaffected', 'feeding unchanged', or 'no behavioral effect' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of behavioral impairment in 'Caenorhabditis elegans' caused by a nanomaterial? If there is no clear evidence of behavioral toxicity, output 'no'. If the sentence does not deal with behavior in 'Caenorhabditis elegans' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00425', 0)": {
+         "doi": "10.1016/j.aquatox.2010.07.016",
+         "text": "We characterized the physicochemical behavior, uptake, toxicity (growth inhibition), and mechanism of toxicity of three AgNPs with different sizes and polyvinylpyrrolidone (PVP) or citrate coatings to the nematode Caenorhabditis elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01062', 0)": {
+         "doi": "10.1016/j.biomaterials.2014.11.048",
+         "text": "To further assess their anti-aging and anti-stress potential, we employed Caenorhabditis elegans (C elegans) as a model organism to evaluate the effects of fullerenol on the growth, development, behavior and anti-stress ability in vivo.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01855', 0)": {
+         "doi": "10.1166/jnn.2018.15190",
+         "text": "The effects of C-QDs and possible behavioral changes in C. elegans were evaluated under treatment conditions.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03074', 0)": {
+         "doi": "10.2147/IJN.S138790",
+         "text": "Built on a present C. elegans bioassay with estimated TBTK/TD parameters, we found that average bioconcentration factors in C. elegans exposed to waterborne and food-borne Fe(0)NPs were similar to 50 and similar to 5x10(-3), respectively, whereas 10 % inhibition concentrations for fertility, locomotion, and development, were 1.26 (95 % CI 0.19-5.2), 3.84 (0.38-42), and 6.78 (2.58-21) ug.g(-1), respectively, implicating that fertility is the most sensitive endpoint in C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03849', 1)": {
+         "doi": "10.1016/j.fct.2024.114576",
+         "text": "Our results showed that HgS nanoparticles could suppress locomotion, defecation, egg-laying, and associative learning behaviors in N2 C. elegans, while no significant alterations were observed in the VC1241 C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC04194', 0)": {
+         "doi": "10.3390/toxics11120989",
+         "text": "The effects of commercially available (C-TiO2) and synthetically (S-TiO2) prepared TiO2 NP solutions on lethality, lifespan, growth, reproduction, locomotion, and gene expression were studied in C. elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC04311', 0)": {
+         "doi": "10.1039/c0jm02854a",
+         "text": "beta-NaYF4 : Yb, Er upconversion nanoparticles (UCNPs) can emit bright green fluorescence under near-infrared (NIR) light excitation which is safe to the body and can penetrate deeply into tissues.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04595', 0)": {
+         "doi": "10.1039/c8en00412a",
+         "text": "In this study, we investigated the effects of polystyrene N/MPs with diameter sizes of 100 and 500 nm at the nanoscale and 1.0, 2.0 and 5.0 m at the microscale on the survival, lifespan, motor behavior, movement-related neurons and oxidative stress in Caenorhabditis elegans.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC04811', 0)": {
+         "doi": "10.1080/17435390.2022.2099768",
+         "text": "After exposure to NPs up to 40 mg mL-1, C. elegans larval development, survival, feeding behavior, defecation cycles, movement and reproduction were monitored. C. elegans survival and other monitored behavioral evolutions do not show significant changes, except for a slight statistical reduction in the reproductive profile.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC05081', 0)": {
+         "doi": "10.3390/brainsci13070999",
+         "text": "Here, we developed and investigated the biological effects of TQ-loaded polymeric nanocapsules (NCTQ) in an AD model in transgenic Caenorhabditis elegans expressing human A & beta;(1-42) in their body-wall muscles and Swiss mice injected with A & beta;(25-35).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05911', 0)": {
+         "doi": "10.1002/smll.202302907",
+         "text": "Advantage of a multisystemic approach is then taken to compare plastic nanoparticles effects in vitro, through cytotoxic readouts in mammalian cell culture, and in vivo, through behavioral readouts in the nematode Caenorhabditis elegans (C. elegans), a powerful 3R-complying model organism for toxicology studies.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06133', 3)": {
+         "doi": "10.1021/acsnano.3c05245",
+         "text": "By measuring pharyngeal calcium levels, we found that the impact of Ppy NPs on the pumping rate could be mediated through calcium signaling.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06306', 2)": {
+         "doi": "10.7717/peerj.8684",
+         "text": "Gene set enrichment analyses revealed that exposures to Ag and SiO2 consistently downregulated several biological processes (regulations in locomotion, reproductive process and cell growth) and pathways (neuroactive ligand-receptor interaction, wnt and MAPK signaling, etc.), with opposite effects on genes involved in innate immunity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07354', 1)": {
+         "doi": "10.1016/j.envpol.2017.10.012",
+         "text": "By means of a fluorescing reporter worm expressing tryptophan hydroxylase-1::DsRed Ag NP-induced behavioral defects were correlated to axonal protein aggregation and neurodegeneration in single serotonergic HSN as well as sensory ADF neurons.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC07744', 1)": {
+         "doi": "10.1016/j.xpro.2024.102858",
+         "text": "Using NIR light allows for superior tissue penetration to manipulate neuronal activities and locomotion behavior.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08237', 0)": {
+         "doi": "10.1002/tox.23616",
+         "text": "The results demonstrated that sublethal exposure to fluopimomide adversely affected the nematodes growth, locomotive behaviors, reproduction, and lifespan, accompanying with enhanced of reactive oxygen species (ROS) generation, lipid and lipofuscin accumulation, and malondialdehyde content.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC09111', 0)": {
+         "doi": "10.1016/j.jinorgbio.2022.111720",
+         "text": "This complex resulted reduction of lifespan, body length and egg laying rate under dark and light irradiation in both N2 (wild-type, cisplatin resistant) and ok938 (asna-1, cisplatin sensitive) C. elegans.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12790', 5)": {
+         "doi": "10.1021/es500608e",
+         "text": "This study also suggests computational behavior analysis is a suitable tool for addressing the integrative impact of chemical stress alongside with toxicogenomic approach.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15005', 3)": {
+         "doi": "10.1371/journal.pone.0091825",
+         "text": "In addition, GF exposure induced increase in defecation cycle length and deficits in development of AVL and DVB neurons controlling the defecation behavior.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC16412', 2)": {
+         "doi": "10.1016/j.envint.2024.108640",
+         "text": "Notably, correlation analysis revealed a significantly negative correlation between EPFRs levels and the locomotory behaviors and neurotransmitter contents of nematodes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC21541', 0)": {
+         "doi": "10.1534/genetics.112.139618",
+         "text": "Immunofluorescence with a SPE-5-specific monoclonal antibody shows that SPE-5 expression begins in spermatocytes and is found in all subsequent stages of spermatogenesis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC22661', 0)": {
+         "doi": "10.1039/c5tx00373c",
+         "text": "With regard to the underlying cellular mechanisms, we found that MWCNT pre-exposure enhanced colony formation of Candida albicans in the body of nematodes, and suppressed innate immune response of nematodes by decreasing expression levels of some antimicrobial genes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC33112', 0)": {
+         "doi": "10.1016/j.jhazmat.2020.123005",
+         "text": "We found that PS considerably affected the reproduction and locomotion, as well as increased the oxidative stress of worms regardless of their surface properties.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC38725', 0)": {
+         "doi": "10.3389/ftox.2022.917749",
+         "text": "Fluorescence was detected in the pharyngeal and gut lumen regions of the worms after 4 h of treatment, for exposure concentrations > 0.163 ug mg(-1).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC39902', 2)": {
+         "doi": "10.1016/j.watres.2023.120367",
+         "text": "These findings reveal an important transformation behavior of nanoplastics in the environment and emphasize the importance of accounting for photochlorination to accurately assess the ecological risk of nanoplastics.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,294 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology. Your primary responsibility is to verify whether the previously extracted 'nanomaterial size' (including numerical values and units of measurement) accurately matches the input text. *Rules* - You must confirm that the extracted size information indeed applies to a 'nanomaterial core composition' or (if applicable) a 'nanomaterial morphology' that was also previously extracted, ensuring the input text explicitly associates that size with the particular nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.) or the particular nanomaterial morphology (examples: 'nanoparticle' = 'NPs', 'nanotube' = 'NTs', 'nanorod'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C' or 'carbon'; the core composition of 'PEG-modified silver NPs' is 'Ag' or 'silver'). - You must also check that the stated size (for example, '10 nm', '50-100 nm', or approximate descriptors such as 'around 20 nm') indeed corresponds to the nanomaterial core composition or morphology mentioned in the input text, and that any units of measurement (nm, \u00b5m, etc.) match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Transmission-electron microscopy revealed silver nanoparticles (Ag NPs) with diameters of 25 nm dispersed in the polymer matrix.' that this nanomaterial has a size value (or values) of '25 nm'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: For a nanomaterial with core composition 'carbon' and morphology 'nanorod', it was extracted from the sentence 'The nanorods (ZnO) exhibited lengths of 200 nm and widths near 40 nm, whereas carbon nanotubes (CNTs) averaged 15 nm in diameter.' that this nanomaterial has a size value (or values) of '15 nm'. Was the extraction correct? your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC00459,24)": {
+         "doi": "10.1007/s12668-022-01026-5",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The Ag particles had a spherical structure, with sizes ranging from 3 to 60 nm.' that this nanomaterial has a size value (or values) of '3 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The Ag particles had a spherical structure, with sizes ranging from 3 to 60 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "3 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC03608,64)": {
+         "doi": "10.3390/chemistry5030136",
+         "llm input": "For a nanomaterial with core composition 'MgO' and morphology 'nanoparticle', it was extracted from the sentence 'Data showed the efficacy of the plant aqueous extract in forming spherical, crystalline-nature, well-arranged MgO-NPs with sizes in the range of 10 - 45 nm with average sizes of 24.82 +/- 8.85 nm.' that this nanomaterial has a size value (or values) of '45 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Data showed the efficacy of the plant aqueous extract in forming spherical, crystalline-nature, well-arranged MgO-NPs with sizes in the range of 10 - 45 nm with average sizes of 24.82 +/- 8.85 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "MgO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "45 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC03906,6)": {
+         "doi": "10.1007/s42452-019-0272-3",
+         "llm input": "For a nanomaterial with core composition 'Zn' and morphology 'nanoparticle', it was extracted from the sentence 'The nanoparticles have hexagonal wurtzite structure with a mean diameter of 19.7 nm for 3 % dye capped nanoparticle and 30.6 nm for uncapped nanoparticle and are composed by a mixture of small crystallites and disordered ZnO particles.' that this nanomaterial has a size value (or values) of '30.6 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The nanoparticles have hexagonal wurtzite structure with a mean diameter of 19.7 nm for 3 % dye capped nanoparticle and 30.6 nm for uncapped nanoparticle and are composed by a mixture of small crystallites and disordered ZnO particles.",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "30.6 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC04479,20)": {
+         "doi": "10.3109/03639045.2013.845840",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Ag nanoparticles having 20 +/- 2 nm size in diameter show maximum zone of inhibition (23 +/- 2.2 mm) in comparison to 40 nm and 70 nm diameter nanoparticles for Pseudomonas aeruginosa.' that this nanomaterial has a size value (or values) of '70 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Ag nanoparticles having 20 +/- 2 nm size in diameter show maximum zone of inhibition (23 +/- 2.2 mm) in comparison to 40 nm and 70 nm diameter nanoparticles for Pseudomonas aeruginosa.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "70 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC05191,105)": {
+         "doi": "10.1049/iet-nbt.2014.0068",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The size of AgNPs was found in the range of 10-80 , 5-80 and 5 - 90 nm with an average size of 31.85, 25.43 and 23.29 nm by P. capsulatum, P. putaminum and P. citri, respectively.' that this nanomaterial has a size value (or values) of '23.29 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The size of AgNPs was found in the range of 10-80 , 5-80 and 5 - 90 nm with an average size of 31.85, 25.43 and 23.29 nm by P. capsulatum, P. putaminum and P. citri, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "23.29 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC05659,18)": {
+         "doi": "10.1590/0104-6632.20190362s20180027",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanorod', it was extracted from the sentence 'ZnO-NPs were identified as nanorods with the length between 90.1 and 100 nm (10.5 % frequency), the diameter between 80.1 and 90 nm (21 % frequency), and wurtzite type crystalline structure.' that this nanomaterial has a size value (or values) of '80.1 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "ZnO-NPs were identified as nanorods with the length between 90.1 and 100 nm (10.5 % frequency), the diameter between 80.1 and 90 nm (21 % frequency), and wurtzite type crystalline structure.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanorod",
+            "nanomaterial_size": "80.1 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC05659,19)": {
+         "doi": "10.1590/0104-6632.20190362s20180027",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanorod', it was extracted from the sentence 'ZnO-NPs were identified as nanorods with the length between 90.1 and 100 nm (10.5 % frequency), the diameter between 80.1 and 90 nm (21 % frequency), and wurtzite type crystalline structure.' that this nanomaterial has a size value (or values) of '90 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "ZnO-NPs were identified as nanorods with the length between 90.1 and 100 nm (10.5 % frequency), the diameter between 80.1 and 90 nm (21 % frequency), and wurtzite type crystalline structure.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanorod",
+            "nanomaterial_size": "90 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC07766,20)": {
+         "doi": "10.1007/s11696-023-02814-3",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'With the presence of surface-bonded phenolic groups, the particle size of Ag NPs and Cu2O NPs (spherical) was revealed to be 20.53 +/- 1.15 nm and 3.06 +/- 0.04 nm, respectively.' that this nanomaterial has a size value (or values) of '20.53 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "With the presence of surface-bonded phenolic groups, the particle size of Ag NPs and Cu2O NPs (spherical) was revealed to be 20.53 +/- 1.15 nm and 3.06 +/- 0.04 nm, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "20.53 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC08729,2)": {
+         "doi": "10.1016/j.mtcomm.2019.100647",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'At the present work, hyperbranched polyamide (HBPA) was used to prepare AgNPs within a hyperbranched network with narrow size distribution and average diameter of ca. 2 - 5 nm.' that this nanomaterial has a size value (or values) of '5 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "At the present work, hyperbranched polyamide (HBPA) was used to prepare AgNPs within a hyperbranched network with narrow size distribution and average diameter of ca. 2 - 5 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "5 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC08729,6)": {
+         "doi": "10.1016/j.mtcomm.2019.100647",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'At the present work, hyperbranched polyamide (HBPA) was used to prepare AgNPs within a hyperbranched network with narrow size distribution and average diameter of ca. 2 - 5 nm.' that this nanomaterial has a size value (or values) of '5 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "At the present work, hyperbranched polyamide (HBPA) was used to prepare AgNPs within a hyperbranched network with narrow size distribution and average diameter of ca. 2 - 5 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "5 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC12146,34)": {
+         "doi": "10.1007/s00253-022-12105-8",
+         "llm input": "For a nanomaterial with core composition 'CuO' and morphology 'nanoparticle', it was extracted from the sentence 'SEM pictures revealed that the particles were rectangular, truncated triangle and spherical in shape, with sizes ranging between 4.9 nm, 18.4 nm and 23.8 nm determined using X-ray diffraction.' that this nanomaterial has a size value (or values) of '23.8 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "SEM pictures revealed that the particles were rectangular, truncated triangle and spherical in shape, with sizes ranging between 4.9 nm, 18.4 nm and 23.8 nm determined using X-ray diffraction.",
+         "parameters checked": {
+            "nanomaterial_composition": "CuO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "23.8 nm"
+         },
+         "correct": "n"
+      },
+      "(ATC16990,3)": {
+         "doi": "10.2217/nnm-2023-0112",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The prepared smaller particles were found using transmission electron microscopy to be spherical in shape with sizes 39, 77 and 44 nm for PG-Ag@rt, PG-Ag@70 and PG-Ag+CeO2@70 respectively.' that this nanomaterial has a size value (or values) of '39 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The prepared smaller particles were found using transmission electron microscopy to be spherical in shape with sizes 39, 77 and 44 nm for PG-Ag@rt, PG-Ag@70 and PG-Ag+CeO2@70 respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "39 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC17048,12)": {
+         "doi": "10.1016/j.colsurfa.2023.131411",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'dot', it was extracted from the sentence 'TEM analysis showed spherical dots of AgNPs (< 10 nm) on the surface or in matrix of ZIF-8 particles, and also their XPS spectra displayed two peaks corresponding to Ag 3d(3/2) and Ag 3d(5/2).' that this nanomaterial has a size value (or values) of '10 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM analysis showed spherical dots of AgNPs (< 10 nm) on the surface or in matrix of ZIF-8 particles, and also their XPS spectra displayed two peaks corresponding to Ag 3d(3/2) and Ag 3d(5/2).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "dot",
+            "nanomaterial_size": "10 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC19145,1)": {
+         "doi": "10.1039/c7ra10605j",
+         "llm input": "For a nanomaterial with core composition 'Cu2O' and morphology 'nanoparticle', it was extracted from the sentence 'The morphologies, phase compositions and structures were recorded for the obtained Cu2O NPs with sizes of 10, 50, 100 and 200 nm.' that this nanomaterial has a size value (or values) of '50 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The morphologies, phase compositions and structures were recorded for the obtained Cu2O NPs with sizes of 10, 50, 100 and 200 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cu2O",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "50 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC24696,20)": {
+         "doi": "10.1007/s12649-020-01237-5",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'DLS and TEM revealed a spherical nano-sized particle with effective diameters of 138.6 nm and mean size of 13.11 nm, respectively while zeta potential was - 35.85 mV.' that this nanomaterial has a size value (or values) of '13.11 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "DLS and TEM revealed a spherical nano-sized particle with effective diameters of 138.6 nm and mean size of 13.11 nm, respectively while zeta potential was - 35.85 mV.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "13.11 nm"
+         },
+         "correct": "n"
+      },
+      "(ATC25080,16)": {
+         "doi": "10.17179/excli2016-710",
+         "llm input": "For a nanomaterial with core composition 'Au' and morphology 'nanoparticle', it was extracted from the sentence 'The diameter of Au-BRN-LvN-NPs and BRN capped Au-NPs were found to be (58.65 +/- 2 nm, 38.11 +/- 2 nm), zeta potential (-9.01 mV, -13.8 mV) and surface morphology (similar to 13.2 nm, 11.4 nm) respectively.' that this nanomaterial has a size value (or values) of '38.11 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The diameter of Au-BRN-LvN-NPs and BRN capped Au-NPs were found to be (58.65 +/- 2 nm, 38.11 +/- 2 nm), zeta potential (-9.01 mV, -13.8 mV) and surface morphology (similar to 13.2 nm, 11.4 nm) respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "38.11 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC27077,1)": {
+         "doi": "10.1016/j.anaerobe.2020.102153",
+         "llm input": "For a nanomaterial with core composition 'ZnO2' and morphology 'nanoparticle', it was extracted from the sentence 'In this study glucose-1-phosphate (Glc-1P) biofunctionalized zinc peroxide (ZnO2) nanoparticles of four different synthesis ratio (1-10:1) and sizes (4 - 5 nm) were tested against the anaerobes Fusobacterium nucleatum, Porphyromonas gingivalis, and Prevotella intermedia, as well as against Aggregatibacter actinomycetemcomitans, Enterococcus faecalis, Staphylococcus aureus, Lactobacillus paracasei, and the yeast Candida albicans.' that this nanomaterial has a size value (or values) of '5 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study glucose-1-phosphate (Glc-1P) biofunctionalized zinc peroxide (ZnO2) nanoparticles of four different synthesis ratio (1-10:1) and sizes (4 - 5 nm) were tested against the anaerobes Fusobacterium nucleatum, Porphyromonas gingivalis, and Prevotella intermedia, as well as against Aggregatibacter actinomycetemcomitans, Enterococcus faecalis, Staphylococcus aureus, Lactobacillus paracasei, and the yeast Candida albicans.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO2",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "5 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC27077,14)": {
+         "doi": "10.1016/j.anaerobe.2020.102153",
+         "llm input": "For a nanomaterial with core composition 'ZnO2' and morphology 'nanoparticle', it was extracted from the sentence 'In this study glucose-1-phosphate (Glc-1P) biofunctionalized zinc peroxide (ZnO2) nanoparticles of four different synthesis ratio (1-10:1) and sizes (4 - 5 nm) were tested against the anaerobes Fusobacterium nucleatum, Porphyromonas gingivalis, and Prevotella intermedia, as well as against Aggregatibacter actinomycetemcomitans, Enterococcus faecalis, Staphylococcus aureus, Lactobacillus paracasei, and the yeast Candida albicans.' that this nanomaterial has a size value (or values) of '4 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study glucose-1-phosphate (Glc-1P) biofunctionalized zinc peroxide (ZnO2) nanoparticles of four different synthesis ratio (1-10:1) and sizes (4 - 5 nm) were tested against the anaerobes Fusobacterium nucleatum, Porphyromonas gingivalis, and Prevotella intermedia, as well as against Aggregatibacter actinomycetemcomitans, Enterococcus faecalis, Staphylococcus aureus, Lactobacillus paracasei, and the yeast Candida albicans.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO2",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "4 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC27733,2)": {
+         "doi": "10.1016/j.jece.2022.108889",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'ST-AgNPs nanoparticles are spherical, crystallizing with a size ranging from 10 to 30 nm, and are stable (-27.2 mV).' that this nanomaterial has a size value (or values) of '30 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "ST-AgNPs nanoparticles are spherical, crystallizing with a size ranging from 10 to 30 nm, and are stable (-27.2 mV).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "30 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC30394,18)": {
+         "doi": "10.1016/j.jddst.2022.103874",
+         "llm input": "For a nanomaterial with core composition 'Au' and morphology 'nanoparticle', it was extracted from the sentence 'In the colloidal dispersion, spherical and dispersed CMC-AuNPs with a diameter range of 10 - 90 nm were found.' that this nanomaterial has a size value (or values) of '90 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In the colloidal dispersion, spherical and dispersed CMC-AuNPs with a diameter range of 10 - 90 nm were found.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "90 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC32938,8)": {
+         "doi": "10.4025/actascitechnol.v43i1.52011",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'AgNPs presented maximum absorbance between 420 and 430 nm, the mean diameter obtained by DLS ranged from 130.43 to 352.93 nm and the polydispersity index (PdI) ranged from 0.523 to 0.689.' that this nanomaterial has a size value (or values) of '130.43 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "AgNPs presented maximum absorbance between 420 and 430 nm, the mean diameter obtained by DLS ranged from 130.43 to 352.93 nm and the polydispersity index (PdI) ranged from 0.523 to 0.689.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "130.43 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC35445,6)": {
+         "doi": "10.3390/nano14050462",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'In this study, we examined the bactericidal properties of mesoporous SiO2-coated silver nanoparticles, varying the core sizes (ca. 28 nm and 51 nm).' that this nanomaterial has a size value (or values) of '51 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study, we examined the bactericidal properties of mesoporous SiO2-coated silver nanoparticles, varying the core sizes (ca. 28 nm and 51 nm).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "51 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC36521,1)": {
+         "doi": "10.3390/molecules27144618",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'The round shape morphology of Ag NPs with a mean diameter in the range 20 - 80 nm was analyzed via SEM images.' that this nanomaterial has a size value (or values) of '80 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The round shape morphology of Ag NPs with a mean diameter in the range 20 - 80 nm was analyzed via SEM images.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "80 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC37381,28)": {
+         "doi": "10.14719/pst.1449",
+         "llm input": "For a nanomaterial with core composition 'Au' and morphology 'nanoparticle', it was extracted from the sentence 'AuNPs size was found in the range of 5 - 40 nm, whereas BMNPs showed their size in the range of 5 - 30 nm.' that this nanomaterial has a size value (or values) of '40 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "AuNPs size was found in the range of 5 - 40 nm, whereas BMNPs showed their size in the range of 5 - 30 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "40 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC42249,0)": {
+         "doi": "10.1039/d4ra00004h",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Zeta potential analysis showed a slight negative surface charge for the stability of Ag@SeO2 NPs, where TEM revealed spherical nanoparticles with an average size of 20 nm.' that this nanomaterial has a size value (or values) of '20 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Zeta potential analysis showed a slight negative surface charge for the stability of Ag@SeO2 NPs, where TEM revealed spherical nanoparticles with an average size of 20 nm.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "20 nm"
+         },
+         "correct": "y"
+      },
+      "(ATC52325,6)": {
+         "doi": "10.2174/0115672018279213240110045557",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'Finally, the cytotoxicity and the hemolytic activity were evaluated.Results ZnO NPs were prepared, and results showed that their size was around 10 nm with a spherical shape and a zeta potential of -21.9.' that this nanomaterial has a size value (or values) of '10 nm'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial size', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Finally, the cytotoxicity and the hemolytic activity were evaluated.Results ZnO NPs were prepared, and results showed that their size was around 10 nm with a spherical shape and a zeta potential of -21.9.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_size": "10 nm"
+         },
+         "correct": "y"
+      }
+   }
+}

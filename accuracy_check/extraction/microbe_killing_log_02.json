@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on microbiology and you extract numerical values related with antimicrobial effect. For the text I will input next, output only the numbers associated with log values indicating the reduction of the microbial population. Output the log unit (ex: log10 or log or logs) with a blank space after each number found (Ex: '2.2 logs'). If no value is found, output 'None'. Do not output any other values not related the reduction of the microbial population."
+   },
+   "instances": {
+      "('ATC00023', 0)": {
+         "doi": "10.1016/j.foodcont.2023.110089",
+         "text": "Fish fillets wrapped with ZN/PVA-TQ-RS nanofibers exhibited significantly lower total viable counts (7.6 log CFU/g), psychrotrophic bacteria counts (7.1 log CFU/g), peroxide values (0.95 meq/kg lipid), thiobarbituric acid reactive substances values (0.62 mg MDA/kg sample), E. coli O157:H7 counts (5.7 log CFU/g), and demon-strated better sensory characteristics (overall acceptability: 4.8) compared to the other experimental groups (P & LE; 0.05).",
+         "extracted val": "7.6 logs, 7.1 logs, 5.7 logs",
+         "correct": "y"
+      },
+      "('ATC00442', 0)": {
+         "doi": "10.1007/s10570-015-0854-1",
+         "text": "The grafted CNF showed no change in the morphology or thermal stability, meanwhile a significant reduction in bacterial concentration of 1.3 logs for B. subtilis, 1.8 log for S. aureus and 3.8 logs for E. coli was observed.",
+         "extracted val": "1.3 logs, 1.8 log, 3.8 logs",
+         "correct": "y"
+      },
+      "('ATC01421', 0)": {
+         "doi": "10.1002/cphc.201900181",
+         "text": "At physiological pH, photosensitized inactivation of Staphylococcus aureus mediated by 1 mol L-1 BDP-C-60 exhibited a 4.5 log decrease of cell survival (> 99.997 %) after 15min irradiation.",
+         "extracted val": "4.5 logs",
+         "correct": "y"
+      },
+      "('ATC01484', 0)": {
+         "doi": "10.1016/j.freeradbiomed.2014.10.514",
+         "text": "In the absence of oxygen, microbial photokilling was highly potentiated (up to 5 logs) by the addition of azide anions.",
+         "extracted val": "5 logs",
+         "correct": "y"
+      },
+      "('ATC01588', 1)": {
+         "doi": "10.1016/j.cej.2021.132772",
+         "text": "When using real tap water, 5.5 log E. coli removal required 5.70 kWh m(-3), which was drastically lowered to 1.38 kWh m(-3) using intermittent current and thus exploiting the capacitive properties of graphene.",
+         "extracted val": "5.5 logs",
+         "correct": "y"
+      },
+      "('ATC02184', 0)": {
+         "doi": "10.1016/j.cej.2021.131902",
+         "text": "Particularly, MONC-3 with optimal ratio can completely inactivate 7.6 log of E. coli and S. aureus within 60 min and 100 min, respectively.",
+         "extracted val": "7.6 logs",
+         "correct": "y"
+      },
+      "('ATC02246', 1)": {
+         "doi": "10.1016/j.msec.2019.110377",
+         "text": "However modest inactivation results were observed against Gram-positive Staphylococcus aureus ATCC-6538 (98.3 %, 1.8 log units inactivation).",
+         "extracted val": "1.8 logs",
+         "correct": "y"
+      },
+      "('ATC04845', 0)": {
+         "doi": "10.1039/c5ra17965c",
+         "text": "The results show the nanostructured surfaces by ATT significantly improved the photoactivity of copper sheets, among which copper nanowires demonstrated the highest photoactivity in bactericidal and photovoltaic effects since they completely inactivated 5 log of Escherichia coli K-12 within 1.5 h and produced 35 mV photovoltage under visible irradiation.",
+         "extracted val": "5 logs",
+         "correct": "y"
+      },
+      "('ATC06773', 0)": {
+         "doi": "10.1007/s10562-023-04409-9",
+         "text": "Over 7 log of MRSA was killed in 3 h, 7 log of S. epidermidis was killed in 3 h, and 93.3 % decomposition of E. coli was achieved in 3 h.",
+         "extracted val": "7 logs",
+         "correct": "y"
+      },
+      "('ATC07682', 0)": {
+         "doi": "10.1021/acssuschemeng.9b05057",
+         "text": "A 0.5 min exposure to various EWNS-based nanosanitizers reduced Escherichia coli, Staphylococcus aureus, and bacteriophage MS2 by similar to 3, 1, and 2 log, respectively.",
+         "extracted val": "3 logs, 1 log, 2 logs",
+         "correct": "y"
+      },
+      "('ATC11068', 0)": {
+         "doi": "10.1016/j.jphotochem.2021.113374",
+         "text": "We attained disinfection of E.coli K12 having a concentration of 107 CFU/mL with a smaller quantity of 1.5 GOT (1.05 g L-1, obtaining 99.9 % (3 log units) of inactivity in 30 min. while for 1.5 GOB (0.1 g L-1 resulting in 89 % (<1 log units) disinfection in 60 min. under simulated visible-light.",
+         "extracted val": "3 logs",
+         "correct": "y"
+      },
+      "('ATC13434', 0)": {
+         "doi": "10.1021/es401906x",
+         "text": "Irradiation of FAC solutions markedly enhanced inactivation of B. subtilis spores in 10 inM phosphate buffer; increasing inactivation rate constants by as much as 600 %, shortening inactivation curve lag phase by up to 73 % and lowering CTs required for 2 log inactivation by as much as 71 % at pH 8.0 and 10 degrees C.",
+         "extracted val": "2 logs",
+         "correct": "y"
+      },
+      "('ATC13785', 0)": {
+         "doi": "10.1111/j.1365-2672.2009.04597.x",
+         "text": "Exposure to 200 mu l l-1 of citral at pH 4 center dot 0 for 24 h at 20 degrees C caused the inactivation of more than 5 log cycles of cells starting at an inoculum size of 106 or 107 CFU ml-1, whereas increasing the cell concentration to 109 CFU ml-1 caused < 1 log cycle of inactivation.",
+         "extracted val": "5 logs",
+         "correct": "y"
+      },
+      "('ATC15092', 0)": {
+         "doi": "10.3390/pharmaceutics15020327",
+         "text": "The nanofibers loaded with both photosensitizers and irradiated with both wavelengths reduced the bacterial viability (similar to 4.4 log, 99.996 %) significantly more than the nanofibers loaded with only one photosensitizer (<1.7 log, 97.828 %) or irradiated with only one wavelength (<2.0 log, 98.952 %).",
+         "extracted val": "4.4 logs",
+         "correct": "y"
+      },
+      "('ATC15491', 1)": {
+         "doi": "10.1021/acsami.2c14475",
+         "text": "Meanwhile, in the cycle experiment, more than 6 log inactivation of E. coli was achieved using an antibacterial ceramic sheet after 2-h NIR light irradiation, and the stability of the antibacterial ceramic was discussed.",
+         "extracted val": "6 logs",
+         "correct": "y"
+      },
+      "('ATC16359', 0)": {
+         "doi": "10.1111/lam.12443",
+         "text": "After 5days at 8 degrees C, E.coli O157:H7 was reduced more than 4 log by the NCMC center dot pSNG film and this reduction remained almost the same until 18days at 8 degrees C when E.coli O157:H7 was reduced > 5 log)CFUg(-1) meat.",
+         "extracted val": "4 logs, 5 logs",
+         "correct": "y"
+      },
+      "('ATC16430', 2)": {
+         "doi": "10.1111/j.1750-3841.2008.01013.x",
+         "text": "After 8 d incubation, the cell populations of Salmonella in LEW in the presence of 1.12 and 0.28 mg ZnO/mL were reduced by 6.1 and 4.1 log CFU/mL over that of controls, respectively.",
+         "extracted val": "6.1 logs, 4.1 logs",
+         "correct": "y"
+      },
+      "('ATC24400', 0)": {
+         "doi": "10.1111/lam.13675",
+         "text": "Carvacrol exhibited effective additive antibacterial activity in combined treatment with octanoic acid (OA) in terms of its fractional inhibitory index (0 center dot 63-0 center dot 88) and time-kill effect in reducing about 6 log CFU/mL bacterial cells in less than 5 min.",
+         "extracted val": "6 logs",
+         "correct": "y"
+      },
+      "('ATC25727', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.127583",
+         "text": "Results showed 6 log CFU/ml reduction in MRSA treated with the CS/ZnO/LL37-NPs.",
+         "extracted val": "6 logs",
+         "correct": "y"
+      },
+      "('ATC27691', 0)": {
+         "doi": "10.1021/acs.est.0c02424",
+         "text": "Indeed, compared to UV/PAA, PAA-UV/PAA could achieve additional 4.7-5.4, 4.1-5.3, and 2.9 - 3.4 log inactivation of E. coli, E. durans, and S. epidermidis, respectively, in clean water and secondary/tertiary wastewater effluents when the same amounts of PAA and UV doses were applied in both approaches.",
+         "extracted val": "4.7 logs, 5.4 logs, 4.1 logs, 5.3 logs, 2.9 logs, 3.4 logs",
+         "correct": "y"
+      },
+      "('ATC28325', 0)": {
+         "doi": "10.1038/s41598-022-13375-y",
+         "text": "Dissolution tests have demonstrated controlled release of Ag+ over time, resulting in a significant bacterial reduction (up to 7 log), against both non-AMR and AMR strains of both Gram-positive and Gram-negative bacteria (Staphylococcus aureus, Enterococcus faecalis, Escherichia coli and Pseudomonas aeruginosa).",
+         "extracted val": "7 logs",
+         "correct": "y"
+      },
+      "('ATC29067', 1)": {
+         "doi": "10.1021/es505868a",
+         "text": "Using the EPES approach and for an aerosol Concentration of 50 000 #/cm(3) at 90 min of exposure, results show a 1.4 log reduction for E. coli on organic tomato surfaces, as compared to the control (same conditions in regards to temperature and Relative Humidity).",
+         "extracted val": "1.4 logs",
+         "correct": "y"
+      },
+      "('ATC49771', 0)": {
+         "doi": "10.1016/j.jhazmat.2022.128722",
+         "text": "When the S/Fe was 0.1, the inactivation efficiency of 1120 mg L-1 S-nZVI on the donor and recipient bacteria were 2.36 +/- 0.03 log and 3.50 +/- 0.17 log after 30 min, respectively (initial ARB concentration asymptotic to 5 x10(7) CFU/mL).",
+         "extracted val": "2.36 logs, 3.50 logs",
+         "correct": "y"
+      },
+      "('ATC49902', 0)": {
+         "doi": "10.2147/IJN.S108253",
+         "text": "Most importantly, experiments in the in vitro model revealed a 2.7 log reduction in the number (colony forming units/mL) of P. aeruginosa on the nanoroughened ETTs compared to the untreated PVC ETTs after 24 hours.",
+         "extracted val": "2.7 logs",
+         "correct": "y"
+      },
+      "('ATC52756', 0)": {
+         "doi": "10.1159/000113066",
+         "text": "Pretreatment of the skin with Maresome (TM) reduced the number of attached MRSA by 3 - 4 log units in comparison to the control.",
+         "extracted val": "3 logs, 4 logs",
+         "correct": "y"
+      }
+   }
+}

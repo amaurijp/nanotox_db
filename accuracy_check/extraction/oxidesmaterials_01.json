@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner specialized in nanotechnology. Your task is to extract the core chemical composition of oxide nanomaterials described in the input sentences. Examples of oxide nanomaterials include titanium dioxide (TiO2), zinc oxide (ZnO), silica (SiO2), copper oxide (CuO), iron oxide (Fe2O3), and other metal oxides. The composition may appear as abbreviations or chemical formulas. Output only the core chemical composition(s) using their chemical symbol(s) or formula(s). If more than one oxide nanomaterial is mentioned, list each distinct composition in a Python list format, for example: ['TiO2', 'ZnO', 'SiO2']. Focus exclusively on oxide nanomaterials and ignore any other types of materials. Output the core composition between single quote characters (e.g, 'TiO2' or 'ZnO' or 'SiO2')."
+   },
+   "instances": {
+      "('ATC00293', 0)": {
+         "doi": "10.1093/toxsci/kfp064",
+         "text": "To investigate tissue distribution and toxicity of TiO2 (TiO2) nanoparticles that may enter into fish, we conducted a series of injection studies.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC03184', 0)": {
+         "doi": "10.1016/j.ijpharm.2020.119937",
+         "text": "We delineate the excellent bactericidal efficacy of stable heterojunction nanocomposites composed of single-walled carbon nanotubes (SWCNTs) and CuO (CuO) synthesized via facile recrystallization and calcination.",
+         "extracted val": "CuO",
+         "correct": "y"
+      },
+      "('ATC03484', 1)": {
+         "doi": "10.1007/s11356-018-2251-4",
+         "text": "Effects of functionalization and grafting of TiO2, CeO2, and SiO2 nanoparticles (NPs) were investigated, and toxicity of pristine, functionalized, and grafted NP towards Daphnia magna was measured.",
+         "extracted val": "CeO2",
+         "correct": "n"
+      },
+      "('ATC04485', 0)": {
+         "doi": "10.1007/s11270-018-3852-8",
+         "text": "Bioaccumulation of TiO2 NPs by plants (Elodea canadensis) and fish (Danio rerio) in the source of contamination was investigated.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC08849', 0)": {
+         "doi": "10.1002/mame.202200241",
+         "text": "The dressing is prepared by cross-linked non-woven zein nanofibers with quaternized TiO2 (TiO2) nanoparticles coating.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC10650', 0)": {
+         "doi": "10.1149/2162-8777/abfc26",
+         "text": "The present study explores the fabrication of non-woven fabric treated with polyvinyl alcohol (PVA) hydrogel including ZnO nanoparticles (ZnO-NPs), and mesoporous SiO2 nanoparticles (MS-NPs) to develop wound dressings that can help to heal the wound.",
+         "extracted val": "ZnO",
+         "correct": "n"
+      },
+      "('ATC15628', 0)": {
+         "doi": "10.1186/s40643-024-00759-3",
+         "text": "ZnO and gold NPs (ZnO@AuNPs) biosynthesis as a bimetallic was prepared via the eco-friendly manner currently.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC16158', 0)": {
+         "doi": "10.1007/s00128-016-2022-1",
+         "text": "Aggregation and dissolution of CuO and ZnO nanoparticles (NPs) increased with increasing exposure time (24, 48, and 72 h).",
+         "extracted val": "CuO",
+         "correct": "n"
+      },
+      "('ATC16304', 0)": {
+         "doi": "10.13005/ojc/380211",
+         "text": "Powder XRD analysis showed that the as-prepared nanoparticles have cubic Y2O3 structure with an average crystallite diameter of 34 - 58 nm.",
+         "extracted val": "Y2O3",
+         "correct": "y"
+      },
+      "('ATC16376', 0)": {
+         "doi": "10.3390/su141912412",
+         "text": "Secondly, ZnO (ZnO) nanowires were fabricated on the laser-induced bumps using a hydrothermal synthesis method.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC17509', 0)": {
+         "doi": "10.1016/j.envpol.2009.08.017",
+         "text": "The acute toxicity of CuO and ZnO nanoparticles in artificial freshwater (AFW) and in natural waters to crustaceans Daphnia magna and Thamnocephalus platyurus and protozoan Tetrahymena thermophila was compared.",
+         "extracted val": "CuO",
+         "correct": "n"
+      },
+      "('ATC18034', 0)": {
+         "doi": "10.3390/antibiotics9090572",
+         "text": "The aim of the present work is the synthesis of electrospun TiO2 nanofibers (NFs) in the presence of different amounts of air-argon mixtures using sol-gel and electrospinning approaches.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC21454', 0)": {
+         "doi": "10.1016/j.surfcoat.2013.01.003",
+         "text": "TiO2 nanoparticles and composite nanoparticles consisting of AgI/AgCl/TiO2 were prepared.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      },
+      "('ATC24157', 0)": {
+         "doi": "10.1016/j.toxlet.2014.01.036",
+         "text": "Two different types of nanomaterials, carbon nanotubes (CNTs) and tungsten trioxide (WO3) nanoplates, were simply mixed with naked DNA plasmid, respectively, in two different contact modes, dry or wet (in solution), for varied time periods.",
+         "extracted val": "WO3",
+         "correct": "y"
+      },
+      "('ATC25667', 0)": {
+         "doi": "10.1007/s42452-021-04365-2",
+         "text": "This paper presents research results of biocidal effect of thermoplastic- polyester-elastomer (TPE-E) with incorporation of hybrid Ag/ZnO/SiO2 NPs (silver/ZnO/SiO2 nanoparticles).",
+         "extracted val": "ZnO",
+         "correct": "n"
+      },
+      "('ATC27027', 0)": {
+         "doi": "10.1039/c8ra02823k",
+         "text": "Low environmental stability of ZnO nanostructures in hydrophilic systems is a crucial factor limiting their practical applications.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC28808', 0)": {
+         "doi": "10.1016/j.materresbull.2016.12.044",
+         "text": "Uniform sized (20 nm) silver nanoparticles (Ag NPs) have been decorated on the surface of mesoporous SiO2 flakes (MSF) through a simple chemical route and characterized by powder x-ray diffraction (PXRD), BET adsorption isotherm, FTIR, TEM, UV-vis spectroscopy.",
+         "extracted val": "SiO2",
+         "correct": "y"
+      },
+      "('ATC31431', 1)": {
+         "doi": "10.1016/j.chemosphere.2021.133340",
+         "text": "In this work, carbon quantum dots (C-dots) were integrated with Cu2O/SrTiO3 p-n heterojunction to optimize the photocatalytic activity.",
+         "extracted val": "SrTiO3",
+         "correct": "n"
+      },
+      "('ATC33047', 0)": {
+         "doi": "10.1016/j.ceramint.2016.10.041",
+         "text": "Herein, Ag-doped MgO (MgO) nanoparticles were prepared by a citric acid-assist sol-gel method.",
+         "extracted val": "MgO",
+         "correct": "y"
+      },
+      "('ATC36017', 0)": {
+         "doi": "10.1007/s00339-020-3380-4",
+         "text": "Magnetic study displays that the Mn doped ZnO nanoparticles show ferro-magnetism at room temperature and the variation of the Mn percentage can tailor the ferromagnetic behavior of the nano-particles.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC36365', 0)": {
+         "doi": "10.1016/j.ijbiomac.2023.129039",
+         "text": "The positive-charged HQ-HMCSs were constructed by chitosan-based hydrothermal carbonization onto Fe3O4 nanospheres and subsequent aqueous hyperbranching quaternization with 1,4-butanediol diglycidyl ether and methylamine.",
+         "extracted val": "Fe3O4",
+         "correct": "y"
+      },
+      "('ATC38837', 0)": {
+         "doi": "10.1080/10667857.2016.1147130",
+         "text": "Vanadia (V2O5, V2O5) nanoparticles are being widely explored in a variety of fields including sensing, solar cells and batteries.",
+         "extracted val": "V2O5",
+         "correct": "y"
+      },
+      "('ATC41025', 0)": {
+         "doi": "10.1016/j.colsurfa.2012.10.042",
+         "text": "New composites of nanofibrillated cellulose (NFC) and ZnO nanoparticles (NP) have been prepared by electrostatic assembly in aqueous medium and using polyelectrolytes as macromolecular linkers.",
+         "extracted val": "ZnO",
+         "correct": "y"
+      },
+      "('ATC42960', 0)": {
+         "doi": "10.1016/j.ijbiomac.2024.130856",
+         "text": "Hence, our study aims to synthesize and characterize Hyaluronan grafted phloroglucinol loaded Mesoporous SiO2 nanoparticles (MSN-PG-HA).",
+         "extracted val": "SiO2",
+         "correct": "y"
+      },
+      "('ATC49164', 0)": {
+         "doi": "10.1007/s12221-018-1025-4",
+         "text": "Nylon 6 fabric with self-cleaning properties was prepared by corona discharge pre-treatment and coating with TiO2 nanoparticles (NPs) using pad-dry-cure technique.",
+         "extracted val": "TiO2",
+         "correct": "y"
+      }
+   }
+}

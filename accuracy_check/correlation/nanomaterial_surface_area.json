@@ -1,0 +1,118 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology. Your primary responsibility is to verify whether the previously extracted 'nanomaterial surface area' (including numerical values and units of measurement) accurately matches the input text. *Rules* - You must confirm that the extracted surface area information indeed applies to a 'nanomaterial core composition' or (if applicable) a 'nanomaterial morphology' that was also previously extracted, ensuring the input text explicitly associates that surface area with the particular nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.) or the particular nanomaterial morphology (examples: 'nanoparticle' = 'NPs', 'nanotube' = 'NTs', 'nanorod'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C' or 'carbon'; the core composition of 'PEG-modified silver NPs' is 'Ag' or 'silver'). - You must also check that the stated surface area (for example, '10 m2 g-1', '50-100 m2 g-1', or approximate descriptors such as 'around 20 m2 g-1') indeed corresponds to the nanomaterial core composition or morphology mentioned in the input text, and that any units of measurement (m2/mg, m2/g, m2 mg-1, m2 g-1, etc.) match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'We produced silver nanoparticles (Ag NPs) with diameters of 25 nm and with surface area of 20 m2 g-1.' that this nanomaterial has a surface area value (or values) of '20 m2 g-1'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: For a nanomaterial with core composition 'carbon' and morphology 'nanorod', it was extracted from the sentence 'The nanorods (ZnO) exhibited lengths of 200 nm and surface area of 5 m2 g-1, whereas carbon nanotubes (CNTs) averaged 15 nm in diameter.' that this nanomaterial has a surface area value (or values) of '5 m2 g-1'. Was the extraction correct? your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC04099,0)": {
+         "doi": "10.1002/app.51749",
+         "llm input": "For a nanomaterial with core composition 'TiO2' and morphology 'nanoparticle', it was extracted from the sentence 'The pore radius (14.47 A degrees) and specific surface area (157.89 m2 g-1 of TiO2 NPs were measured by BET analysis.' that this nanomaterial has a surface area value (or values) of '157.89 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The pore radius (14.47 A degrees) and specific surface area (157.89 m2 g-1 of TiO2 NPs were measured by BET analysis.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "157.89 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC11669,0)": {
+         "doi": "10.1016/j.arabjc.2022.104506",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'The hexagonal wurtzite structure of GsZnO-Nps is determined by X-ray diffractometry (XRD), the average crystallite size is 13.82 nm, total crystallinity was 95.91 % and high specific-surface-area is 77.38 m2 g-1.' that this nanomaterial has a surface area value (or values) of '77.38 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The hexagonal wurtzite structure of GsZnO-Nps is determined by X-ray diffractometry (XRD), the average crystallite size is 13.82 nm, total crystallinity was 95.91 % and high specific-surface-area is 77.38 m2 g-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "77.38 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC15958,60)": {
+         "doi": "10.1007/s11696-024-03340-6",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'The surface area of synthesized ZnO NPs was obtained as 22.721 m2 g-1 using Brunauer-Emmett-Teller (BET) analysis.' that this nanomaterial has a surface area value (or values) of '22.721 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The surface area of synthesized ZnO NPs was obtained as 22.721 m2 g-1 using Brunauer-Emmett-Teller (BET) analysis.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "22.721 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17192,1)": {
+         "doi": "10.48084/etasr.5782",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.' that this nanomaterial has a surface area value (or values) of '417 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "417 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17192,3)": {
+         "doi": "10.48084/etasr.5782",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.' that this nanomaterial has a surface area value (or values) of '417 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "417 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17192,5)": {
+         "doi": "10.48084/etasr.5782",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.' that this nanomaterial has a surface area value (or values) of '417 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Due to the surface cover of silver nanoparticles, S-BET and V-total of Ag/OMC slightly decreased to 417 m2 g-1 and 0.38cm(3)/g, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "417 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC25329,0)": {
+         "doi": "10.1016/j.matchemphys.2023.128110",
+         "llm input": "For a nanomaterial with core composition 'Cu' and morphology 'nanoparticle', it was extracted from the sentence 'The micrograph of CuNPs showed heterogeneous clusters, with SBET = 8 & PLUSMN; 0.05 m2 g-1, Vp = 0.04 & PLUSMN; 0.02 cm3 g-1 and ZP =-29.63 & PLUSMN; 2.31 mV and H2-type hysteresis.' that this nanomaterial has a surface area value (or values) of '0.05 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The micrograph of CuNPs showed heterogeneous clusters, with SBET = 8 & PLUSMN; 0.05 m2 g-1, Vp = 0.04 & PLUSMN; 0.02 cm3 g-1 and ZP =-29.63 & PLUSMN; 2.31 mV and H2-type hysteresis.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cu",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "0.05 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC32188,0)": {
+         "doi": "10.1016/j.msec.2021.112093",
+         "llm input": "For a nanomaterial with core composition 'Ag' and morphology 'nanoparticle', it was extracted from the sentence 'Results from a textural analysis indicate a 7.5 nm mesopore size and 307.6 m2 g-1 surface area for Ag/80S.' that this nanomaterial has a surface area value (or values) of '307.6 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Results from a textural analysis indicate a 7.5 nm mesopore size and 307.6 m2 g-1 surface area for Ag/80S.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "307.6 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC39517,0)": {
+         "doi": "10.1016/j.molliq.2022.121090",
+         "llm input": "For a nanomaterial with core composition 'ZnO' and morphology 'nanoparticle', it was extracted from the sentence 'ZnO-NPs showed a negative charge surface (-11.6 +/- 0.2 mV), pH(ZCP) approximate to 003; 7.16 with type III and H1 hysteresis (S-BET = 3.9 m2 g-1, and Dp = 16.2 nm) indicating a mesoporous material with pores open at both ends.' that this nanomaterial has a surface area value (or values) of '3.9 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "ZnO-NPs showed a negative charge surface (-11.6 +/- 0.2 mV), pH(ZCP) approximate to 003; 7.16 with type III and H1 hysteresis (S-BET = 3.9 m2 g-1, and Dp = 16.2 nm) indicating a mesoporous material with pores open at both ends.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "3.9 m2 g-1"
+         },
+         "correct": "y"
+      },
+      "(ATC52191,12)": {
+         "doi": "10.1007/s12668-024-01464-3",
+         "llm input": "For a nanomaterial with core composition 'SiO2' and morphology 'nanoparticle', it was extracted from the sentence 'TEM images showed that SiO2 nanoparticles had a uniform shape with a size of around 50 nm SiO2@Ag-NPs' surface area and homogeneous pores are 78 m2 g-1 and 2.71 nm, respectively, with purity over 98 %.' that this nanomaterial has a surface area value (or values) of '78 m2 g-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial surface area', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "TEM images showed that SiO2 nanoparticles had a uniform shape with a size of around 50 nm SiO2@Ag-NPs' surface area and homogeneous pores are 78 m2 g-1 and 2.71 nm, respectively, with purity over 98 %.",
+         "parameters checked": {
+            "nanomaterial_composition": "SiO2",
+            "nanomaterial_morphology": "nanoparticle",
+            "nanomaterial_surface_area": "78 m2 g-1"
+         },
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,294 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology/nanotoxicology. Your primary responsibility is to verify whether the previously extracted parameter, 'minimum inhibitory concentration' (MIC), including numerical values and any corresponding units, accurately matches the input text. *Rules* - You must confirm that the extracted MIC indeed applies to a 'biological species' or (if applicable) a 'nanomaterial core composition' that was also previously extracted, ensuring the input text explicitly associates that MIC with the particular biological species (for example, 'Escherichia coli', 'Staphylococcus aureus') or nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.). - Keep in mind possible biological species abbreviations (for example, 'E. coli', 'S. aureus'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C'; the core composition of 'PEG-modified silver NPs' is 'Ag'). - You must also verify that the stated MIC (for example, '10 \u00b5g/mL', '25 \u00b5g mL-1', or approximate descriptors such as 'around 20 \u00b5g mL-1') indeed corresponds to the biological species or nanomaterial core composition mentioned in the input text, and that any units of measurement ('\u00b5g mL-1', 'g L-1', 'g/mL', 'g/L') match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Silver nanoparticles were tested against S. aureus and a significant effect was observed: MIC of 10-30 ug mL-1 depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of MIC of '10 ug mL-1'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'C'. From the sentence 'Carbon nanomaterials (e.g., graphene oxide or carbon nanotubes) were tested against E. coli and showed a significant antimicrobial effect, yielding a MIC of 10 ug mL-1 depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of MIC of '10 ug mL-1'. Was the extraction correct? - your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC00375,36)": {
+         "doi": "10.1515/gps-2023-0251",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'Interestingly, ZnO NPs showed significant potential in suppressing the growth of Staphylococcus aureus ATCC BAA-1026, Bacillus subtilis ATCC 6633, Escherichia coli ATCC 25922, and Klebsiella pneumoniae ATCC 13883, with decreasing order of minimum inhibitory concentrations: S. aureus = B. subtilis (15.63 ug mL-1 > E. coli (62.50 ug mL-1 > K. pneumoniae (125.00 ug mL-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '15.63 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Interestingly, ZnO NPs showed significant potential in suppressing the growth of Staphylococcus aureus ATCC BAA-1026, Bacillus subtilis ATCC 6633, Escherichia coli ATCC 25922, and Klebsiella pneumoniae ATCC 13883, with decreasing order of minimum inhibitory concentrations: S. aureus = B. subtilis (15.63 ug mL-1 > E. coli (62.50 ug mL-1 > K. pneumoniae (125.00 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "15.63 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC04695,42)": {
+         "doi": "10.1016/j.jcis.2020.06.058",
+         "llm input": "It was previously extracted that the biological species 'Brevibacillus brevis' was exposed to or tested with a nanomaterial whose core composition is defined as 'Cu2O'. From the sentence 'GO/Cu2O exhibited average activity index, minimum inhibitory concentration (MIC) values, and viable cell numbers of 1.523, 10.438 ug mL-1, and 82.962 % for Bacillus subtilis, Brevibacillus brevis and Bacillus thuriginesis), 1.453, 32.00 ug mL-1, and 68.418 % for Pseudomonas aeruginosa and Escherichia coli) and 68.608 % for Candida albicans, respectively.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '10.438 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "GO/Cu2O exhibited average activity index, minimum inhibitory concentration (MIC) values, and viable cell numbers of 1.523, 10.438 ug mL-1, and 82.962 % for Bacillus subtilis, Brevibacillus brevis and Bacillus thuriginesis), 1.453, 32.00 ug mL-1, and 68.418 % for Pseudomonas aeruginosa and Escherichia coli) and 68.608 % for Candida albicans, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cu2O",
+            "biological_species": "Brevibacillus brevis",
+            "microbe_killing_mic": "10.438 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC05527,24)": {
+         "doi": "10.1016/j.jphotobiol.2016.01.016",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The AgNPs showed prominent antibacterial motion with MIC values of 125 ug mL-1 against Bacillus subtilis and Staphylococcus aureus while 250 ug mL-1 against Escherichia coli.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '125 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs showed prominent antibacterial motion with MIC values of 125 ug mL-1 against Bacillus subtilis and Staphylococcus aureus while 250 ug mL-1 against Escherichia coli.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "125 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC07861,0)": {
+         "doi": "10.22207/JPAM.15.4.12",
+         "llm input": "It was previously extracted that the biological species 'Bacillus subtilis' was exposed to or tested with a nanomaterial whose core composition is defined as 'Zn'. From the sentence 'The antibacterial analysis revealed that ZnO NPs inhibited the growth of all tested strains (Escherichia coli, Staphylococcus aureus, Salmonella typhi, Bacillus subtilis, and Klebsiella pneumoniae) to a greater extent (MIC ranged between 0.013 +/- 0.004-0.0625 +/- 0 mg mL-1 as compared with ZnO compound (Bulk material).', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.013 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial analysis revealed that ZnO NPs inhibited the growth of all tested strains (Escherichia coli, Staphylococcus aureus, Salmonella typhi, Bacillus subtilis, and Klebsiella pneumoniae) to a greater extent (MIC ranged between 0.013 +/- 0.004-0.0625 +/- 0 mg mL-1 as compared with ZnO compound (Bulk material).",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "biological_species": "Bacillus subtilis",
+            "microbe_killing_mic": "0.013 mg mL-1"
+         },
+         "correct": "n"
+      },
+      "(ATC08729,0)": {
+         "doi": "10.1016/j.mtcomm.2019.100647",
+         "llm input": "It was previously extracted that the biological species 'Bacillus subtilis' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Microbiological assays performed with the resulting hybrid hyperbranched HBP-AgNPs network (HBPENs) by AR presented antimicrobial activity against Staphylococcus aureus, Escherichia coli, Bacillus subtilis, Pseudomonas aeruginosa, and Candida albicans with minimum inhibitory concentration (MIC) values ranging from 9.1 +/- 0.2 to 56.6 +/- 0.2 ug ml-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '9.1 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Microbiological assays performed with the resulting hybrid hyperbranched HBP-AgNPs network (HBPENs) by AR presented antimicrobial activity against Staphylococcus aureus, Escherichia coli, Bacillus subtilis, Pseudomonas aeruginosa, and Candida albicans with minimum inhibitory concentration (MIC) values ranging from 9.1 +/- 0.2 to 56.6 +/- 0.2 ug ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Bacillus subtilis",
+            "microbe_killing_mic": "9.1 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC08729,12)": {
+         "doi": "10.1016/j.mtcomm.2019.100647",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Microbiological assays performed with the resulting hybrid hyperbranched HBP-AgNPs network (HBPENs) by AR presented antimicrobial activity against Staphylococcus aureus, Escherichia coli, Bacillus subtilis, Pseudomonas aeruginosa, and Candida albicans with minimum inhibitory concentration (MIC) values ranging from 9.1 +/- 0.2 to 56.6 +/- 0.2 ug ml-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '9.1 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Microbiological assays performed with the resulting hybrid hyperbranched HBP-AgNPs network (HBPENs) by AR presented antimicrobial activity against Staphylococcus aureus, Escherichia coli, Bacillus subtilis, Pseudomonas aeruginosa, and Candida albicans with minimum inhibitory concentration (MIC) values ranging from 9.1 +/- 0.2 to 56.6 +/- 0.2 ug ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mic": "9.1 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC09178,18)": {
+         "doi": "10.3390/min12030364",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'Antibacterial evaluation results indicate that MAG/C-ZnO/APT nanocomposites with CTAB and MAG doses of 2.5 % and 0.25 %, respectively, exhibited synergistically enhanced inhibitory activities against Escherichia coli, Staphylococcus aureus, Enterococcus faecalis, Pseudomonas aeruginosa, methicillin-resistant Staphylococcus aureus and extended-spectrum beta-lactamases Escherichia coli, with minimum inhibitory concentrations of 1, 0.1, 0.25, 5, 0.1, and 2.5 mg mL-1, respectively, which are better than those of ZnO/APT, C-ZnO/APT and MAG.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '1 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Antibacterial evaluation results indicate that MAG/C-ZnO/APT nanocomposites with CTAB and MAG doses of 2.5 % and 0.25 %, respectively, exhibited synergistically enhanced inhibitory activities against Escherichia coli, Staphylococcus aureus, Enterococcus faecalis, Pseudomonas aeruginosa, methicillin-resistant Staphylococcus aureus and extended-spectrum beta-lactamases Escherichia coli, with minimum inhibitory concentrations of 1, 0.1, 0.25, 5, 0.1, and 2.5 mg mL-1, respectively, which are better than those of ZnO/APT, C-ZnO/APT and MAG.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "1 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC09549,32)": {
+         "doi": "10.1007/s40097-021-00439-0",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) of Pc-AgNPs was found for S. aureus (5.0 +/- 1.15 ug mL-1, B. cereus (6.25 +/- 0.58 ug mL-1, S. enterica (3.75 +/- 0.73 ug mL-1 and E. coli (3.12 +/- 1.25 ug mL-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '5.0 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) of Pc-AgNPs was found for S. aureus (5.0 +/- 1.15 ug mL-1, B. cereus (6.25 +/- 0.58 ug mL-1, S. enterica (3.75 +/- 0.73 ug mL-1 and E. coli (3.12 +/- 1.25 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "5.0 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC09780,2)": {
+         "doi": "10.1016/j.colsurfb.2009.10.008",
+         "llm input": "It was previously extracted that the biological species 'Vibrio cholera' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Silver nanoparticles 10 ug ml-1 were recorded as the minimal inhibitory concentration (MIC) against E. coli and V. cholerae.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '10 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Silver nanoparticles 10 ug ml-1 were recorded as the minimal inhibitory concentration (MIC) against E. coli and V. cholerae.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Vibrio cholera",
+            "microbe_killing_mic": "10 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC12879,8)": {
+         "doi": "10.1007/s12668-019-00650-y",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'MIC of green synthesized AgNPs were found against Escherichia coli, Pseudomonas aeruginosa, Bacillus subtilis, and Staphylococcus aureus as 12, 10, 14, and 15 ug ml-1, respectively. alpha-Amylase inhibition assay of green synthesized AgNPs revealed that percent inhibition of alpha-amylase decreased with increasing concentration of green synthesized AgNPs.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '12 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "MIC of green synthesized AgNPs were found against Escherichia coli, Pseudomonas aeruginosa, Bacillus subtilis, and Staphylococcus aureus as 12, 10, 14, and 15 ug ml-1, respectively. alpha-Amylase inhibition assay of green synthesized AgNPs revealed that percent inhibition of alpha-amylase decreased with increasing concentration of green synthesized AgNPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mic": "12 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC12885,12)": {
+         "doi": "10.1088/2053-1591/aab861",
+         "llm input": "It was previously extracted that the biological species 'Bacillus cereus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The MIC values of synthesized AgNPs for Bacillus cereus, Klebsiella pneumoniae, Escherichia coli and Staphylococcus aureus were found to be 8 ug ml-1, 16 ug ml-1, 16 ug ml-1 and 32 ug ml-1, respectively.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '8 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MIC values of synthesized AgNPs for Bacillus cereus, Klebsiella pneumoniae, Escherichia coli and Staphylococcus aureus were found to be 8 ug ml-1, 16 ug ml-1, 16 ug ml-1 and 32 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Bacillus cereus",
+            "microbe_killing_mic": "8 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC14447,64)": {
+         "doi": "10.1111/jam.13723",
+         "llm input": "It was previously extracted that the biological species 'Candida albicans' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Study of antimicrobial activity of AgNPs against Bacillus subtilis, Staphylococcus aureus, Escherichia coli, Candida albicans and Malassezia furfur evaluated by minimum inhibitory concentration (MIC) and minimum biocidal concentration (MBC) assays revealed that MICs of AgNPs from IF11 and IF17 strains against bacteria and yeasts were found to be in the range of 16-128 and 8 - 256 ug ml-1, while MBCs were in the range of 48-192 and 32 - 256 ug ml-1 respectively.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '16 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Study of antimicrobial activity of AgNPs against Bacillus subtilis, Staphylococcus aureus, Escherichia coli, Candida albicans and Malassezia furfur evaluated by minimum inhibitory concentration (MIC) and minimum biocidal concentration (MBC) assays revealed that MICs of AgNPs from IF11 and IF17 strains against bacteria and yeasts were found to be in the range of 16-128 and 8 - 256 ug ml-1, while MBCs were in the range of 48-192 and 32 - 256 ug ml-1 respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Candida albicans",
+            "microbe_killing_mic": "16 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC15708,16)": {
+         "doi": "10.1016/j.jksus.2023.102959",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'FAgNPs and MAgNPs had MIC values of 15 ug ml-1 against S. aureus, compared to 30 ug ml-1 against E. coli.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '15 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "FAgNPs and MAgNPs had MIC values of 15 ug ml-1 against S. aureus, compared to 30 ug ml-1 against E. coli.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "15 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC16536,128)": {
+         "doi": "10.1007/s13399-021-02187-1",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values of SSE-ZnONPs against gram-negative Escherichia coli, Pseudomonas aeruginosa, and Gram-positive bacteria Bacillus cereus, and Staphylococcus aureus were found to be 1250, 625, 625, and 2500 ug ml-1 and 1000, 5000, 2500, and 5000 ug l-1, respectively.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '1250 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values of SSE-ZnONPs against gram-negative Escherichia coli, Pseudomonas aeruginosa, and Gram-positive bacteria Bacillus cereus, and Staphylococcus aureus were found to be 1250, 625, 625, and 2500 ug ml-1 and 1000, 5000, 2500, and 5000 ug l-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mic": "1250 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17335,1)": {
+         "doi": "10.1038/s41598-020-73497-z",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Cu2O'. From the sentence 'The lipopeptide stabilized Cu2O NPs with an ultra-small size of 30 +/- 2 nm diameter exhibited potent antimicrobial activity against both Gram-positive and Gram-negative bacteria with a minimum inhibitory concentration of 62.5 ug mL-1 at pH5.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '62.5 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The lipopeptide stabilized Cu2O NPs with an ultra-small size of 30 +/- 2 nm diameter exhibited potent antimicrobial activity against both Gram-positive and Gram-negative bacteria with a minimum inhibitory concentration of 62.5 ug mL-1 at pH5.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cu2O",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mic": "62.5 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC18253,24)": {
+         "doi": "10.3390/catal12050462",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The synthesized Ag-NPs exhibit antibacterial and anti-Candida activity against Staphylococcus aureus, Bacillus subtilis, Pseudomonas aeruginosa, Escherichia coli, Candida albicans, C. glabrata, C. tropicalis, and C. parapsilosis, with inhibition zones ranging between 9.3 +/- 0.5 to 20.8 +/- 0.3 nm based on concentrations used and MIC values between 6.25 to 25 mg l-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '6.25 mg L-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The synthesized Ag-NPs exhibit antibacterial and anti-Candida activity against Staphylococcus aureus, Bacillus subtilis, Pseudomonas aeruginosa, Escherichia coli, Candida albicans, C. glabrata, C. tropicalis, and C. parapsilosis, with inhibition zones ranging between 9.3 +/- 0.5 to 20.8 +/- 0.3 nm based on concentrations used and MIC values between 6.25 to 25 mg l-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mic": "6.25 mg L-1"
+         },
+         "correct": "y"
+      },
+      "(ATC33066,2)": {
+         "doi": "10.3390/molecules26154479",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'In addition, smaller-sized AgNPs showed higher antimicrobial properties, and the minimum inhibitory concentration (MIC) values against both E. coli and S. aureus were 0.32 mg mL-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.32 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In addition, smaller-sized AgNPs showed higher antimicrobial properties, and the minimum inhibitory concentration (MIC) values against both E. coli and S. aureus were 0.32 mg mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "0.32 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC33469,2)": {
+         "doi": "10.1002/slct.202100873",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Among these, AgNPs showed maximum zone of inhibition (ZOI) 23 mm for Staphylococcus aureus when compared to AuNPs, and the minimum inhibitory concentration of AgNPs was found to be 64 ug mL-1 for S. aureus.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '64 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Among these, AgNPs showed maximum zone of inhibition (ZOI) 23 mm for Staphylococcus aureus when compared to AuNPs, and the minimum inhibitory concentration of AgNPs was found to be 64 ug mL-1 for S. aureus.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "64 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC40661,0)": {
+         "doi": "10.1049/nbt2.12054",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) of AgNPs against P. aeruginosa and Staphylococcus aureus was recorded at between 15 and 20 ug ml-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '15 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) of AgNPs against P. aeruginosa and Staphylococcus aureus was recorded at between 15 and 20 ug ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mic": "15 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC41242,1)": {
+         "doi": "10.3390/su142316052",
+         "llm input": "It was previously extracted that the biological species 'Saccharomyces cerevisiae' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'Microscopic examinations revealed that Saccharomyces cerevisiae microorganisms are present in vinasse and that the minimum inhibitory concentration for the ZnO-NPs is 1.56 g L-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '1.56 g L-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Microscopic examinations revealed that Saccharomyces cerevisiae microorganisms are present in vinasse and that the minimum inhibitory concentration for the ZnO-NPs is 1.56 g L-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Saccharomyces cerevisiae",
+            "microbe_killing_mic": "1.56 g L-1"
+         },
+         "correct": "y"
+      },
+      "(ATC42980,36)": {
+         "doi": "10.55251/jmbfs.9962",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'The biosynthesized ZnO NPs showed potent antimicrobial activity against Gram-positive and Gram-negative bacteria as well as pathogenic yeast with minimum inhibition concentration (MIC) values of 500 and 800 ug ml-1 against Staphylococcus aureus ATCC 25923 and Pseudomonas aeruginosa ATCC 27853 and 600 ug ml-1 against Candida albicans ATCC 10231.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '500 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The biosynthesized ZnO NPs showed potent antimicrobial activity against Gram-positive and Gram-negative bacteria as well as pathogenic yeast with minimum inhibition concentration (MIC) values of 500 and 800 ug ml-1 against Staphylococcus aureus ATCC 25923 and Pseudomonas aeruginosa ATCC 27853 and 600 ug ml-1 against Candida albicans ATCC 10231.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "500 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC46110,0)": {
+         "doi": "10.1016/j.ijbiomac.2023.127579",
+         "llm input": "It was previously extracted that the biological species 'Candida albicans' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The MIC values of PPP-AgNPs for E. coli, S. aureus, C. albicans, C. glabrata, and C. parapsilosis are 0.05 mg mL-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.05 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MIC values of PPP-AgNPs for E. coli, S. aureus, C. albicans, C. glabrata, and C. parapsilosis are 0.05 mg mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Candida albicans",
+            "microbe_killing_mic": "0.05 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC48052,0)": {
+         "doi": "10.1038/s41598-024-54702-9",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The AgNPs revealed impressive antibacterial activities against MDR Escherichia coli and Pseudomonas aeruginosa (MIC ranging from 0.93 to 3.75 mg ml-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.93 mg ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs revealed impressive antibacterial activities against MDR Escherichia coli and Pseudomonas aeruginosa (MIC ranging from 0.93 to 3.75 mg ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mic": "0.93 mg ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC48914,32)": {
+         "doi": "10.3390/antibiotics11070853",
+         "llm input": "It was previously extracted that the biological species 'Chromobacterium violaceum' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The synthesized AgNPs showed MIC values of 12.5 ug mL-1 against Chromobacterium violaceum (C. violaceum) and 25 ug mL-1 against Pseudomonas aeruginosa (P. aeruginosa), which demonstrated their antibacterial abilities.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '12.5 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The synthesized AgNPs showed MIC values of 12.5 ug mL-1 against Chromobacterium violaceum (C. violaceum) and 25 ug mL-1 against Pseudomonas aeruginosa (P. aeruginosa), which demonstrated their antibacterial abilities.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Chromobacterium violaceum",
+            "microbe_killing_mic": "12.5 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC51701,8)": {
+         "doi": "10.1007/s11164-024-05298-2",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The AgNPs displayed potent antimicrobial activity against a range of pathogens including Escherichia coli (E. coli), Klebsiella pneumoniae (K. pneumoniae), Staphylococus aureus (S. aureus), Bacillus subtilis subsp. spizizenii (B. subtilis), and Candida albicans (C. albicans) with minimum inhibitory concentrations and minimum bactericidal/fungicidal concentrations as low as 0.13 mg mL-1.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.13 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs displayed potent antimicrobial activity against a range of pathogens including Escherichia coli (E. coli), Klebsiella pneumoniae (K. pneumoniae), Staphylococus aureus (S. aureus), Bacillus subtilis subsp. spizizenii (B. subtilis), and Candida albicans (C. albicans) with minimum inhibitory concentrations and minimum bactericidal/fungicidal concentrations as low as 0.13 mg mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mic": "0.13 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC51772,4)": {
+         "doi": "10.1007/s12088-024-01281-y",
+         "llm input": "It was previously extracted that the biological species 'Enterobacter cloacae' was exposed to or tested with a nanomaterial whose core composition is defined as 'Cu'. From the sentence 'The MICs and MBCs of the BS-CuNPs against test MDR bacteria were <= 0.625 mg ml-1 which was significantly lesser (p < 0.05) than the same exhibited by CuNPs.', it was then extracted that this exposure/test resulted in a minimum inhibitory concentration (MIC) value (or values) of '0.625 mg ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum inhibitory concentration (MIC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MICs and MBCs of the BS-CuNPs against test MDR bacteria were <= 0.625 mg ml-1 which was significantly lesser (p < 0.05) than the same exhibited by CuNPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "Cu",
+            "biological_species": "Enterobacter cloacae",
+            "microbe_killing_mic": "0.625 mg ml-1"
+         },
+         "correct": "y"
+      }
+   }
+}

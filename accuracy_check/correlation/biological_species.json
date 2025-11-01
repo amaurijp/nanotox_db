@@ -1,0 +1,268 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotoxicology. Your primary responsibility is to verify whether the extracted 'biological species' and the nanomaterial description (including 'core composition' and, if applicable, 'morphology') accurately match the text. Specifically, you must verify that the biological species (examples: 'Escherichia coli', 'Staphylococcus aureus', 'Daphnia magna') or its abbreviation (examples: 'E. coli', 'S. aureus') was indeed tested or exposed to a nanomaterial in the text. Besides, you must confirm that the nanomaterial's core composition (examples: 'silver' = 'Ag', 'carbon' = 'C', 'zinc oxide' = 'ZnO', 'titanium oxide' = 'TiO2'), along with any morphology (examples: 'nanoparticle' = 'NPs', 'nanotube' = 'NTs', 'nanorod'), is correctly identified from the text. Finally, you must confirm that the species-nanomaterial relationship is correct, ensuring that the text actually indicates that species was exposed to or tested with that specific nanomaterial. Key points to consider: - Ignore additional functionalizations or coatings (examples: 'PEG-modified', 'functionalized') when identifying the core composition; focus on the elemental or compound core (examples: 'Ag', 'ZnO', 'TiO2'). - In case the nanomaterial morphology is not provided, look for the relation between the species and the nanomaterial composition only. - Pay attention to synonyms (examples: 'zebrafish' = 'Danio rerio'). - If multiple species or multiple nanomaterials are mentioned, verify that each pair (species + nanomaterial) is accurately extracted and actually tested or exposed in the text. - Approve the extracted information if both the species and nanomaterial (composition + morphology) align with the text, and the text indicates a testing or exposure relationship. - You do not need to provide any extra commentary beyond confirming whether the extraction is accurate or not and explaining any errors if they exist."
+   },
+   "instances": {
+      "(ATC01546,1)": {
+         "doi": "10.1039/c8ra08148d",
+         "llm input": "From the sentence 'Moreover, the antimicrobial activities of HA and HA@Ag against Escherichia coli (E. coli), Pseudomonas aeruginosa (P. aeruginosa) and Staphylococcus aureus (S. aureus) were evaluated via broth dilution, filter paper diffusion, optical density (OD600) and electron microscopy observation.', it was extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, the antimicrobial activities of HA and HA@Ag against Escherichia coli (E. coli), Pseudomonas aeruginosa (P. aeruginosa) and Staphylococcus aureus (S. aureus) were evaluated via broth dilution, filter paper diffusion, optical density (OD600) and electron microscopy observation.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa"
+         },
+         "correct": "y"
+      },
+      "(ATC07399,24)": {
+         "doi": "10.1016/j.msec.2015.06.033",
+         "llm input": "From the sentence 'The antimicrobial activities of green synthesized AgNPs and drug blended AgNPs have been evaluated against the dental caries and periodontal disease causing microorganisms such as Streptococcus mutans, Staphylococcus aureus, Lactobacillus acidophilus, Micrococcus luteus, Bacillus subtilis, Escherichia coli, Pseudomonas aeruginosa and Candida albicans.', it was extracted that the biological species 'Streptococcus mutans' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antimicrobial activities of green synthesized AgNPs and drug blended AgNPs have been evaluated against the dental caries and periodontal disease causing microorganisms such as Streptococcus mutans, Staphylococcus aureus, Lactobacillus acidophilus, Micrococcus luteus, Bacillus subtilis, Escherichia coli, Pseudomonas aeruginosa and Candida albicans.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Streptococcus mutans"
+         },
+         "correct": "y"
+      },
+      "(ATC07861,10)": {
+         "doi": "10.22207/JPAM.15.4.12",
+         "llm input": "From the sentence 'The antibacterial analysis revealed that ZnO NPs inhibited the growth of all tested strains (Escherichia coli, Staphylococcus aureus, Salmonella typhi, Bacillus subtilis, and Klebsiella pneumoniae) to a greater extent (MIC ranged between 0.013 +/- 0.004-0.0625 +/- 0 mg mL-1 as compared with ZnO compound (Bulk material).', it was extracted that the biological species 'Bacillus subtilis' was exposed to or tested with the nanomaterial with the core composition defined as: 'ZnO'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial analysis revealed that ZnO NPs inhibited the growth of all tested strains (Escherichia coli, Staphylococcus aureus, Salmonella typhi, Bacillus subtilis, and Klebsiella pneumoniae) to a greater extent (MIC ranged between 0.013 +/- 0.004-0.0625 +/- 0 mg mL-1 as compared with ZnO compound (Bulk material).",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Bacillus subtilis"
+         },
+         "correct": "y"
+      },
+      "(ATC08087,16)": {
+         "doi": "10.3389/fbioe.2022.856651",
+         "llm input": "From the sentence 'The in vitro antibacterial effects of Lceo-AgNPs against microbial susceptible multidrug-resistant Escherichia coli (E. coli) and methicillin-resistant Staphylococcus aureus (MRSA) were determined.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The in vitro antibacterial effects of Lceo-AgNPs against microbial susceptible multidrug-resistant Escherichia coli (E. coli) and methicillin-resistant Staphylococcus aureus (MRSA) were determined.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC08103,32)": {
+         "doi": "10.1016/j.inoche.2023.111391",
+         "llm input": "From the sentence 'The susceptibility of dental pathogens was found for RutAgSeNPs as follows: C. albicans < E. coli < S. aureus < S. mutans.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'AgSe'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The susceptibility of dental pathogens was found for RutAgSeNPs as follows: C. albicans < E. coli < S. aureus < S. mutans.",
+         "parameters checked": {
+            "nanomaterial_composition": "AgSe",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC09634,1)": {
+         "doi": "10.2298/CICEQ150824002E",
+         "llm input": "From the sentence 'The minimum inhibitory concentration (MIC) of AgNPs against a Gram-positive (Staphylococcus aureus) and Gram-negative (Escherichia coli) bacteria was determined to be 375 ug ml-1.', it was extracted that the biological species 'Escherichia coli' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) of AgNPs against a Gram-positive (Staphylococcus aureus) and Gram-negative (Escherichia coli) bacteria was determined to be 375 ug ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli"
+         },
+         "correct": "y"
+      },
+      "(ATC09780,2)": {
+         "doi": "10.1016/j.colsurfb.2009.10.008",
+         "llm input": "From the sentence 'Silver nanoparticles 10 ug ml-1 were recorded as the minimal inhibitory concentration (MIC) against E. coli and V. cholerae.', it was extracted that the biological species 'Vibrio cholera' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Silver nanoparticles 10 ug ml-1 were recorded as the minimal inhibitory concentration (MIC) against E. coli and V. cholerae.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Vibrio cholera"
+         },
+         "correct": "y"
+      },
+      "(ATC10088,60)": {
+         "doi": "10.3390/antibiotics11111466",
+         "llm input": "From the sentence 'STEM and DLS analysis confirmed the flower-like morphology of gold nanoparticle clusters of R. officinalis-AuNFs (R-AuNFs) and H. italicum-AuNFs (H-AuNFs) with a size of 20 - 130 nm and 15 - 90 nm, respectively.', it was extracted that the biological species 'Helichrysum italicum' was exposed to or tested with the nanomaterial with the core composition defined as: 'Au'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "STEM and DLS analysis confirmed the flower-like morphology of gold nanoparticle clusters of R. officinalis-AuNFs (R-AuNFs) and H. italicum-AuNFs (H-AuNFs) with a size of 20 - 130 nm and 15 - 90 nm, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Helichrysum italicum"
+         },
+         "correct": "n"
+      },
+      "(ATC13466,8)": {
+         "doi": "10.1007/s12668-019-00612-4",
+         "llm input": "From the sentence 'The AgNPs displayed inhibitory activity against a range of human pathogenic bacterial species: Escherichia coli (ATCC 35218), Klebsiella pneumoniae (ATCC 700603), Staphylococcus aureus (ATCC 43300), Enterococcus faecalis (ATCC 5129), and Pseudomonas aeruginosa (ATCC 27853). E. coli was the most sensitive to the silver nanoparticles (MIC 6.25 g mL-1 followed by K. pneumonia and P. aeruginosa (MIC 12.5 g mL-1. E. faecalis was resistant to silver nanoparticles.', it was extracted that the biological species 'Escherichia coli' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs displayed inhibitory activity against a range of human pathogenic bacterial species: Escherichia coli (ATCC 35218), Klebsiella pneumoniae (ATCC 700603), Staphylococcus aureus (ATCC 43300), Enterococcus faecalis (ATCC 5129), and Pseudomonas aeruginosa (ATCC 27853). E. coli was the most sensitive to the silver nanoparticles (MIC 6.25 g mL-1 followed by K. pneumonia and P. aeruginosa (MIC 12.5 g mL-1. E. faecalis was resistant to silver nanoparticles.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli"
+         },
+         "correct": "y"
+      },
+      "(ATC14245,36)": {
+         "doi": "10.1002/slct.202304481",
+         "llm input": "From the sentence 'The antibacterial assay results clearly indicate that the TcAgNPs exhibited the maximum activity against Salmonella typhi, with inhibition zone (IZ) values of (40 +/- 1.4 mm), followed by Bacillus subtilis (35.66 +/- 2.0 mm), Staphylococcus aureus (32.6 +/- 0.64 mm), Escherichia. coli (29.66 +/- 2.05 mm), Listeria monocytogenes (27 +/- 1.63 mm), and Klebsiella pneumoniae exhibiting the least IZ values (23 +/- 1.6 mm).', it was extracted that the biological species 'Salmonella typhi' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial assay results clearly indicate that the TcAgNPs exhibited the maximum activity against Salmonella typhi, with inhibition zone (IZ) values of (40 +/- 1.4 mm), followed by Bacillus subtilis (35.66 +/- 2.0 mm), Staphylococcus aureus (32.6 +/- 0.64 mm), Escherichia. coli (29.66 +/- 2.05 mm), Listeria monocytogenes (27 +/- 1.63 mm), and Klebsiella pneumoniae exhibiting the least IZ values (23 +/- 1.6 mm).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Salmonella typhi"
+         },
+         "correct": "y"
+      },
+      "(ATC15757,32)": {
+         "doi": "10.3389/fmicb.2024.1345423",
+         "llm input": "From the sentence 'Moreover, the biosynthesized Ag-NPs demonstrated weak antifungal activity against Aspergillus brasiliensis and Candida albicans, with MICs of 500 and 1,000 ug mL-1, respectively.', it was extracted that the biological species 'Candida albicans' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, the biosynthesized Ag-NPs demonstrated weak antifungal activity against Aspergillus brasiliensis and Candida albicans, with MICs of 500 and 1,000 ug mL-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Candida albicans"
+         },
+         "correct": "y"
+      },
+      "(ATC18362,6)": {
+         "doi": "10.1007/s10876-021-02024-5",
+         "llm input": "From the sentence 'The MIC of RDL-TiO2 NPs were exhibited 15.62 ug mL-1 for S. aureus and B. cereus, 31.25 ug mL-1 for E. coli and 62.5 ug mL-1 for S. enterica.', it was extracted that the biological species 'Escherichia coli' was exposed to or tested with the nanomaterial with the core composition defined as: 'TiO2'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MIC of RDL-TiO2 NPs were exhibited 15.62 ug mL-1 for S. aureus and B. cereus, 31.25 ug mL-1 for E. coli and 62.5 ug mL-1 for S. enterica.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Escherichia coli"
+         },
+         "correct": "y"
+      },
+      "(ATC20453,32)": {
+         "doi": "10.3390/antibiotics11060800",
+         "llm input": "From the sentence 'The AgNPs were evaluated to determine their in vitro antibacterial effect against Escherichia coli, Pseudomonas aeruginosa and Staphylococcus aureus.', it was extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs were evaluated to determine their in vitro antibacterial effect against Escherichia coli, Pseudomonas aeruginosa and Staphylococcus aureus.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa"
+         },
+         "correct": "y"
+      },
+      "(ATC21366,6)": {
+         "doi": "10.1080/10667857.2021.1906390",
+         "llm input": "From the sentence 'The AgNPs displayed antibacterial activity against Staphylococcus aureus followed by Bacillus cereus, Klebsiella pneumoniae and Escherichia coli with minimum inhibitory concentrations (MICs) ranged from 61.5 to 125 ug mL-1.', it was extracted that the biological species 'Klebsiella pneumoniae' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The AgNPs displayed antibacterial activity against Staphylococcus aureus followed by Bacillus cereus, Klebsiella pneumoniae and Escherichia coli with minimum inhibitory concentrations (MICs) ranged from 61.5 to 125 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Klebsiella pneumoniae"
+         },
+         "correct": "y"
+      },
+      "(ATC23497,0)": {
+         "doi": "10.18311/jsst/2020/24875",
+         "llm input": "From the sentence 'Scanning Electron Microscopy (SEM) showed NP clusters accumulating over E. coli to have D-cl similar to D-Ag whereas those lying outside the bacteria to have D-cl similar to 3D(Ag), consistent with a strong size selectivity of antimicrobial efficacy.', it was extracted that the biological species 'Escherichia coli' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Scanning Electron Microscopy (SEM) showed NP clusters accumulating over E. coli to have D-cl similar to D-Ag whereas those lying outside the bacteria to have D-cl similar to 3D(Ag), consistent with a strong size selectivity of antimicrobial efficacy.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli"
+         },
+         "correct": "y"
+      },
+      "(ATC25001,48)": {
+         "doi": "10.1016/j.micpath.2018.08.025",
+         "llm input": "From the sentence 'CSE-AgNPs exhibited zone of inhibition against S. aureus (15 mm), E. colt (13 mm), S. typhimurium (13 mm) and L. monocytogenes (10 mm) and minimum inhibitory concentration (MIC) of 26, 53, 106 and 212 ug ml-1, respectively.', it was extracted that the biological species 'Salmonella typhimurium' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "CSE-AgNPs exhibited zone of inhibition against S. aureus (15 mm), E. colt (13 mm), S. typhimurium (13 mm) and L. monocytogenes (10 mm) and minimum inhibitory concentration (MIC) of 26, 53, 106 and 212 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Salmonella typhimurium"
+         },
+         "correct": "y"
+      },
+      "(ATC25241,3)": {
+         "doi": "10.1016/j.inoche.2023.111422",
+         "llm input": "From the sentence 'Antibacterial properties of ZnO-Am against Escherichia coli, Pseudomonas aeruginosa, Staphylococcus aureus, and Bacillus cereus bacteria was evaluated.', it was extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with the nanomaterial with the core composition defined as: 'ZnO'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Antibacterial properties of ZnO-Am against Escherichia coli, Pseudomonas aeruginosa, Staphylococcus aureus, and Bacillus cereus bacteria was evaluated.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Pseudomonas aeruginosa"
+         },
+         "correct": "y"
+      },
+      "(ATC26968,364)": {
+         "doi": "10.1016/j.surfin.2020.100697",
+         "llm input": "From the sentence 'Due to the results, the MIC values for synthesized CML@Ag-NPs and CML@Au-NPs against S. aureus, E. faecalis, P. aeruginosa, A. baumannii, E. coli, K. pneumonia and P. mirabilis were 0.29 and 750 ug ml-1, 0.5 and 185 ug ml-1, 0.29 and 750 ug ml-1, 0.29 and 1500 ug ml-1, 0.29 and 750 ug ml-1, 0.5 and 370 ug ml-1, 0.2 and 750 ug ml-1, respectively.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Au'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Due to the results, the MIC values for synthesized CML@Ag-NPs and CML@Au-NPs against S. aureus, E. faecalis, P. aeruginosa, A. baumannii, E. coli, K. pneumonia and P. mirabilis were 0.29 and 750 ug ml-1, 0.5 and 185 ug ml-1, 0.29 and 750 ug ml-1, 0.29 and 1500 ug ml-1, 0.29 and 750 ug ml-1, 0.5 and 370 ug ml-1, 0.2 and 750 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC27006,768)": {
+         "doi": "10.1166/jbmb.2022.2199",
+         "llm input": "From the sentence 'The synergistic efficiency of TVE-AgNPs-CS or ZnONPs-CS combined with erythromycin against Streptococcus mutans (S. mutans), Bacillus subtilis (B. subtilis) and Pseudomonas aeruginosa (P aeruginosa) was estimated by broth micro-dilution assays, agar diffusion and biofilm formation.', it was extracted that the biological species 'Bacillus subtilis' was exposed to or tested with the nanomaterial with the core composition defined as: 'ZnO'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The synergistic efficiency of TVE-AgNPs-CS or ZnONPs-CS combined with erythromycin against Streptococcus mutans (S. mutans), Bacillus subtilis (B. subtilis) and Pseudomonas aeruginosa (P aeruginosa) was estimated by broth micro-dilution assays, agar diffusion and biofilm formation.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Bacillus subtilis"
+         },
+         "correct": "y"
+      },
+      "(ATC27443,56)": {
+         "doi": "10.1002/aoc.6478",
+         "llm input": "From the sentence 'Furthermore, the PKL@AgNPs showed strong antibacterial and antifungal activities against Escherichia coli, Klebsiella pneumoniae, Staphylococcus aureus, Streptococcus mutans, Streptococcus mitis, Enterococcus faecalis, and Candida albicans with minimum inhibitory concentration (MIC) values of 0.58, 0.58, 0.58, 1.17, 2.34, 1.17, and 0.15 ug ml-1, respectively.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Furthermore, the PKL@AgNPs showed strong antibacterial and antifungal activities against Escherichia coli, Klebsiella pneumoniae, Staphylococcus aureus, Streptococcus mutans, Streptococcus mitis, Enterococcus faecalis, and Candida albicans with minimum inhibitory concentration (MIC) values of 0.58, 0.58, 0.58, 1.17, 2.34, 1.17, and 0.15 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC33469,2)": {
+         "doi": "10.1002/slct.202100873",
+         "llm input": "From the sentence 'Among these, AgNPs showed maximum zone of inhibition (ZOI) 23 mm for Staphylococcus aureus when compared to AuNPs, and the minimum inhibitory concentration of AgNPs was found to be 64 ug mL-1 for S. aureus.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Among these, AgNPs showed maximum zone of inhibition (ZOI) 23 mm for Staphylococcus aureus when compared to AuNPs, and the minimum inhibitory concentration of AgNPs was found to be 64 ug mL-1 for S. aureus.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC38498,12)": {
+         "doi": "10.1016/j.surfin.2021.100963",
+         "llm input": "From the sentence 'AgNPs@SSE displayed inhibitory activity against S. aureus, A. baumannii and E. coli compared to other bacteria with MIC value of 1.2, 2.35 and 2.35 ug ml-1, respectively.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "AgNPs@SSE displayed inhibitory activity against S. aureus, A. baumannii and E. coli compared to other bacteria with MIC value of 1.2, 2.35 and 2.35 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      },
+      "(ATC40514,0)": {
+         "doi": "10.1049/iet-nbt.2017.0043",
+         "llm input": "From the sentence 'The synthesised Gk-AgNPs showed antifungal activity and exhibited minimum inhibitory concentration and minimal fungicidal concentration values ranging from 3.5 to 6.5 ug mL-1 against Aspergillus parasiticus (NRRL-2999) and Aspergillus flavus (NRRL-6513).', it was extracted that the biological species 'Aspergillus flavus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The synthesised Gk-AgNPs showed antifungal activity and exhibited minimum inhibitory concentration and minimal fungicidal concentration values ranging from 3.5 to 6.5 ug mL-1 against Aspergillus parasiticus (NRRL-2999) and Aspergillus flavus (NRRL-6513).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Aspergillus flavus"
+         },
+         "correct": "y"
+      },
+      "(ATC41852,0)": {
+         "doi": "10.1039/d0ra08287b",
+         "llm input": "From the sentence 'The MICs of AgNPs for E. coli and S. aureus were both 50.0 ug mL-1.', it was extracted that the biological species 'Escherichia coli' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MICs of AgNPs for E. coli and S. aureus were both 50.0 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli"
+         },
+         "correct": "y"
+      },
+      "(ATC44446,24)": {
+         "doi": "10.3390/nano13030502",
+         "llm input": "From the sentence 'Antimicrobial sensitivity was observed in Capnocytophaga gingivalis (MIB/MIC 10 - 5 mg mL-1, Eikenella corrodens (MIB 10 mg mL-1, and Streptococcus sanguinis (MIB 20 mg mL-1 at high concentrations of the MgO-NPs and at lower concentrations of the MgO-NPs in Actinomyces israelii (MIB 0.039 mg mL-1, Fusobacterium nucleatum subsp. nucleatum (MIB/MIC 5 - 2.5 mg mL-1, Porphyromonas gingivalis (MIB 20 mg/mL/MIC 2.5 mg mL-1, Prevotella intermedia (MIB 0.625 mg mL-1, Staphylococcus aureus (MIC 2.5 mg mL-1, Streptococcus mutans (MIB 20 mg/mL/MIC 0.321 mg mL-1, and Streptococcus sobrinus (MIB/MIC 5 - 2.5 mg mL-1.', it was extracted that the biological species 'Porphyromonas gingivalis' was exposed to or tested with the nanomaterial with the core composition defined as: 'MgO'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Antimicrobial sensitivity was observed in Capnocytophaga gingivalis (MIB/MIC 10 - 5 mg mL-1, Eikenella corrodens (MIB 10 mg mL-1, and Streptococcus sanguinis (MIB 20 mg mL-1 at high concentrations of the MgO-NPs and at lower concentrations of the MgO-NPs in Actinomyces israelii (MIB 0.039 mg mL-1, Fusobacterium nucleatum subsp. nucleatum (MIB/MIC 5 - 2.5 mg mL-1, Porphyromonas gingivalis (MIB 20 mg/mL/MIC 2.5 mg mL-1, Prevotella intermedia (MIB 0.625 mg mL-1, Staphylococcus aureus (MIC 2.5 mg mL-1, Streptococcus mutans (MIB 20 mg/mL/MIC 0.321 mg mL-1, and Streptococcus sobrinus (MIB/MIC 5 - 2.5 mg mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "MgO",
+            "biological_species": "Porphyromonas gingivalis"
+         },
+         "correct": "y"
+      },
+      "(ATC51750,0)": {
+         "doi": "10.1007/s13399-022-03705-5",
+         "llm input": "From the sentence 'The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of AgNPs against the clinically isolated pathogen S. aureus were 3.12 ug mL-1 and 4.5 ug mL-1.', it was extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with the nanomaterial with the core composition defined as: 'Ag'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'biological species', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of AgNPs against the clinically isolated pathogen S. aureus were 3.12 ug mL-1 and 4.5 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus"
+         },
+         "correct": "y"
+      }
+   }
+}

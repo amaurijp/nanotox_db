@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a data miner that deals with scientific texts on the toxicity against living species and you extract numerical values related with the toxicity effect. For the text I will input next, output only the numbers associated with the half-lethal maximal effective concentration (LC50) values indicating the toxicity effect. Output the concentration unit (ex: mg L-1) with a blank space after each number found (Ex: '10.1 mg L-1' or '10.1 mg mL-1' or '10.1 g mL-1' or '10.1 ug mL-1'). If no value is found, output 'None'. Do not output concentration values not related with half-lethal maximal effective concentration (LC50)."
+   },
+   "instances": {
+      "('ATC00155', 0)": {
+         "doi": "10.1016/j.impact.2023.100457",
+         "text": "No observable acute effects were detected up to 415.2 mg LDH/L while the 96 h-LC50 was estimated as 559.9 mg L-1.",
+         "extracted val": "559.9 mg L-1",
+         "correct": "y"
+      },
+      "('ATC01132', 0)": {
+         "doi": "10.1016/j.ecoenv.2021.113076",
+         "text": "The lethal concentrations (LC50) for GO at 24-h and 48-h exposure were 2.52 and 2.36 mg mL-1, respectively, in the filter paper contact test and the LC50 on day 14 was 68.8 g kg(-1) in the natural soil test.",
+         "extracted val": "2.52 mg mL-1, 2.36 mg mL-1",
+         "correct": "y"
+      },
+      "('ATC04740', 0)": {
+         "doi": "10.3906/zoo-1006-36",
+         "text": "The 24 h LC50 of Cd and As to Daphnia magna was estimated to be 44 ug L-1 for Cd, and 509 ug L-1 for As, respectively.",
+         "extracted val": "44 ug L-1, 509 ug L-1",
+         "correct": "y"
+      },
+      "('ATC04740', 1)": {
+         "doi": "10.3906/zoo-1006-36",
+         "text": "With Behrens-Karber method the 24 h LC50 of these metals was found to be 46 ug L-1 and 509 ug L-1, respectively.",
+         "extracted val": "46 ug L-1, 509 ug L-1",
+         "correct": "y"
+      },
+      "('ATC05760', 0)": {
+         "doi": "10.1016/j.tox.2021.153012",
+         "text": "For the L1 and L4 stage worms, the 48-h median lethal concentrations (LC(50)s) of La(NO3)(3)center dot 6H(2)O were 93.163 and 648.0 mg L-1 respectively.",
+         "extracted val": "93.163 mg L-1, 648.0 mg L-1",
+         "correct": "y"
+      },
+      "('ATC07041', 0)": {
+         "doi": "10.1002/etc.4720",
+         "text": "The highest toxicity was observed for ZnONPs (median lethal concentration [LC50] similar to 15 mg L-1 and Zn2+ ions (LC50 similar to 13 mg L-1, whereas the lowest toxicity found for ZnO nanorods (ZnONRG LC50 similar to 60 mg L-1; ZnONRS LC50 similar to 42 mg L-1.",
+         "extracted val": "15 mg L-1, 13 mg L-1, 60 mg L-1, 42 mg L-1",
+         "correct": "y"
+      },
+      "('ATC12524', 0)": {
+         "doi": "10.1016/j.pestbp.2023.105559",
+         "text": "It had a toxic effect against B. alexandrina snails with LC50 20.43 mg l-1.",
+         "extracted val": "20.43 mg l-1",
+         "correct": "y"
+      },
+      "('ATC13205', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.165952",
+         "text": "Probit analysis revealed that the median lethal concentrations (LC50) for 24 h and 36 h exposure were 100 and 58.29 mg L-1, respectively.",
+         "extracted val": "100 mg L-1, 58.29 mg L-1",
+         "correct": "y"
+      },
+      "('ATC16287', 0)": {
+         "doi": "10.1016/j.ecoenv.2016.06.021",
+         "text": "Ch-AgNP were tested against larvae and pupae of the malaria vector Anopheles stephensi obtaining LC50 ranging from 3.18 mg l-1 (I) to 6.54 mg l-1 (pupae).",
+         "extracted val": "3.18 mg l-1, 6.54 mg l-1",
+         "correct": "y"
+      },
+      "('ATC18915', 0)": {
+         "doi": "10.1016/j.jphotobiol.2022.112540",
+         "text": "ZnONPs prepared with an ablation time of 20 min were safer and more biocompatible than those prepared with an ablation time of 30 min, which were toxic to ARPE-19 cells with LC50 (11.3 ug mL-1 and LC90 (18.3 ug mL-1.",
+         "extracted val": "11.3 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC19751', 0)": {
+         "doi": "10.3390/jfb13030112",
+         "text": "Furthermore, tested crud extract and SeNPs severely induced larvicidal activity for tested mosquitoes with LC50 and LC90 of 219.841, 950.087 mg L-1 and 75.411, 208.289 mg L-1, respectively.",
+         "extracted val": "219.841 mg L-1, 75.411 mg L-1",
+         "correct": "y"
+      },
+      "('ATC19909', 0)": {
+         "doi": "10.1016/j.micpath.2017.03.019",
+         "text": "Plb-ZnO NPs were toxic to Ceriodaphnia cornuta neonates (LC50: 28 ug L-1.",
+         "extracted val": "28 ug L-1",
+         "correct": "y"
+      },
+      "('ATC25344', 0)": {
+         "doi": "10.1088/2053-1591/ab3cbe",
+         "text": "Toxicity studies revealed 43.30 +/- 0.57 % (LC50) mortality for Artemia salina larvae at 100 ug ml-1 concentrations within 48 hrs, indicating less toxicity to non-target species.",
+         "extracted val": "100 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC27715', 0)": {
+         "doi": "10.1016/j.etap.2019.02.013",
+         "text": "The 48 h LC50 value of AuNPs was 14 +/- 0.14 mg L-1 against M. macrocopa.",
+         "extracted val": "14 mg L-1",
+         "correct": "y"
+      },
+      "('ATC28520', 0)": {
+         "doi": "10.1016/j.mtcomm.2022.103228",
+         "text": "The ecotoxicity assessment attributed that Am-ZnO NPs were toxic to C. cornuta and 100 % mor-tality of test organism was noticed at 125 mg L-1 (LC50 of 54 mg L-1.",
+         "extracted val": "54 mg L-1",
+         "correct": "y"
+      },
+      "('ATC33633', 0)": {
+         "doi": "10.17576/jsm-2019-4809-09",
+         "text": "Asp-SONPs-PVA also displayed highest insecticidal activity against both tested insects (Tribolium casterium and Callosobruchus chinensis) having LC50 value of 15.917, and 37.6365 and highest percent mortality at 1000 mg l-1 was 67 %, and 73 %, respectively.",
+         "extracted val": "15.917 mg L-1, 37.6365 mg L-1",
+         "correct": "y"
+      },
+      "('ATC37033', 0)": {
+         "doi": "10.1007/s00436-015-4671-0",
+         "text": "Maximum efficacy was observed against A. stephensi larvae, with LC50 ranging from 16.156 mg l-1 (larva I) to 28.881 mg l-1 (pupa).",
+         "extracted val": "16.156 mg l-1, 28.881 mg l-1",
+         "correct": "y"
+      },
+      "('ATC39608', 0)": {
+         "doi": "10.1007/s10876-019-01679-5",
+         "text": "The larvicidal study showed that the AgNPs were highly active against theCulex quinquefasciatus larvae and the LC(50)value observed was 68.889 ug ml-1 and LC(90)value observed was 392.117.",
+         "extracted val": "68.889 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC40740', 0)": {
+         "doi": "10.1016/j.scitotenv.2022.159512",
+         "text": "The highest percentage of mortality recorded at 900 ug mL-1 was 96 % and 94 % in the 2nd instar of A. aegypti and S. litura larvae, respectively, and exhibited the LC50 and LC90 values 5 of 458.79 and 531.01 ug mL-1, respectively.",
+         "extracted val": "458.79 ug mL-1",
+         "correct": "y"
+      },
+      "('ATC45309', 0)": {
+         "doi": "10.1007/s10876-020-01927-z",
+         "text": "The ZnONPs showed strong antioxidant property (DPPH, H2O2 and ABTS(+) radical assay) and expressed good larval toxicity against Ae. aegypti and Cx. quinquefasciatus (IVth instar larvae) with the least LC50 and LC90 values (10.1, 25.6 and 14.4, 31.7 mg l-1 after 24 h treatment, respectively.",
+         "extracted val": "10.1 mg l-1, 14.4 mg l-1",
+         "correct": "y"
+      },
+      "('ATC45309', 1)": {
+         "doi": "10.1007/s10876-020-01927-z",
+         "text": "The in vitro cytotoxicity assay depicted a significant level of cytotoxic effects (LC50 values 42.26 ug ml-1 of ZnONPs against the A549 lung cancer cells, even at low dose.",
+         "extracted val": "42.26 ug ml-1",
+         "correct": "y"
+      },
+      "('ATC45311', 0)": {
+         "doi": "10.1007/s00436-011-2387-3",
+         "text": "The maximum efficacy was observed in Cu NPs and copper acetate solution against the larvae of A. subpictus, C. quinquefasciatus, and R. microplus with LC50 and r (2) values of 0.95 and 23.47, 1.01 and 15.24, and 1.06 and 14.14 mg L-1 with r (2) = 0.766; 0.957 and 0.908; 0.946; and 0.816 and 0.945, respectively.",
+         "extracted val": "23.47 mg L-1, 15.24 mg L-1, 14.14 mg L-1",
+         "correct": "y"
+      },
+      "('ATC47520', 0)": {
+         "doi": "10.1021/acsomega.2c07531",
+         "text": "The LC50 and LC90 values are 8.963 and 20.515 mg l-1 for CRE-AgNPs against A. aegypti larvae, respectively.",
+         "extracted val": "8.963 mg l-1",
+         "correct": "y"
+      },
+      "('ATC50118', 1)": {
+         "doi": "10.1007/s11356-016-6832-9",
+         "text": "LC50 of C. tomentosum-synthesized AgNP ranged from 18.1 (larva I) to 40.7 mg l-1 (pupa).",
+         "extracted val": "18.1 mg L-1, 40.7 mg L-1",
+         "correct": "y"
+      },
+      "('ATC51677', 0)": {
+         "doi": "10.1007/s13399-024-05356-0",
+         "text": "Green-produced AgNPs had the highest insecticidal activity against Sitophilus oryzae, with LC50 values of 6.08 ug mL-1 compared to adults of Tribolium castaneum, which were 7.03 ug mL-1.",
+         "extracted val": "6.08 ug mL-1, 7.03 ug mL-1",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,294 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology/nanotoxicology. Your primary responsibility is to verify whether the previously extracted parameter, 'minimum bactericidal concentration' (MBC) (including numerical values and any corresponding units), accurately matches the input text. *Rules* - You must confirm that the extracted MBC indeed applies to a 'biological species' or (if applicable) a 'nanomaterial core composition' that was also previously extracted, ensuring the input text explicitly associates that MBC with the particular biological species (for example, 'Escherichia coli', 'Staphylococcus aureus') or nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.). - Keep in mind possible biological species abbreviations (for example, 'E. coli', 'S. aureus'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C'; the core composition of 'PEG-modified silver NPs' is 'Ag'). - You must also verify that the stated MBC (for example, '10 \u00b5g/mL', '25 \u00b5g mL-1', or approximate descriptors such as 'around 20 \u00b5g mL-1') indeed corresponds to the biological species or nanomaterial core composition mentioned in the input text, and that any units of measurement ('\u00b5g mL-1', 'g L-1', 'g/mL', 'g/L') match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Silver nanoparticles were tested against S. aureus and a significant effect was observed: MBC of 10-30 ug mL-1 depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of MBC of '10 ug mL-1'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'C'. From the sentence 'Carbon nanomaterials (e.g., graphene oxide or carbon nanotubes) were tested against E. coli and showed a significant antimicrobial effect, yielding a MBC of 10 ug mL-1 depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of MBC of '10 ug mL-1'. Was the extraction correct? - your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC00887,0)": {
+         "doi": "10.14715/cmb/2016.62.9.8",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Also the MBC of AgNPs was 200 ug mL-1 for E. coli and there was no result observed for S. aureus bacteria.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '200 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Also the MBC of AgNPs was 200 ug mL-1 for E. coli and there was no result observed for S. aureus bacteria.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "200 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC02725,0)": {
+         "doi": "10.1016/j.arabjc.2015.08.008",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) of the Ag NPs against a multi-drug resistant Escherichia coli was 4 ug mL-1 and the minimum bactericidal concentration MBC) was 8 ug mL-1, while the MIC and MBC against a resistant strain of Staphylococcus aureus were slightly higher at 8 ug mL-1 and 16 ug mL-1 respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '8 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) of the Ag NPs against a multi-drug resistant Escherichia coli was 4 ug mL-1 and the minimum bactericidal concentration MBC) was 8 ug mL-1, while the MIC and MBC against a resistant strain of Staphylococcus aureus were slightly higher at 8 ug mL-1 and 16 ug mL-1 respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "8 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC02725,48)": {
+         "doi": "10.1016/j.arabjc.2015.08.008",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) of the Ag NPs against a multi-drug resistant Escherichia coli was 4 ug mL-1 and the minimum bactericidal concentration MBC) was 8 ug mL-1, while the MIC and MBC against a resistant strain of Staphylococcus aureus were slightly higher at 8 ug mL-1 and 16 ug mL-1 respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '8 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) of the Ag NPs against a multi-drug resistant Escherichia coli was 4 ug mL-1 and the minimum bactericidal concentration MBC) was 8 ug mL-1, while the MIC and MBC against a resistant strain of Staphylococcus aureus were slightly higher at 8 ug mL-1 and 16 ug mL-1 respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "8 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC04331,24)": {
+         "doi": "10.3390/pr7120873",
+         "llm input": "It was previously extracted that the biological species 'Vibrio cholera' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Moreover, the antibacterial activity of triangular silver nanoplates was considerably improved in comparison with that of spherical shape when tested against Gram-positive and Gram-negative bacteria species, with 6.0 ug mL-1 of triangular silver nanoplates as the MBC (Minimum bactericidal concentration) for Escherichia coli and Vibrio cholera, and 8.0 ug mL-1 as the MBC for Staphylococcus aureus and Pseudomonas aeruginosa.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '6.0 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, the antibacterial activity of triangular silver nanoplates was considerably improved in comparison with that of spherical shape when tested against Gram-positive and Gram-negative bacteria species, with 6.0 ug mL-1 of triangular silver nanoplates as the MBC (Minimum bactericidal concentration) for Escherichia coli and Vibrio cholera, and 8.0 ug mL-1 as the MBC for Staphylococcus aureus and Pseudomonas aeruginosa.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Vibrio cholera",
+            "microbe_killing_mbc": "6.0 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC08087,0)": {
+         "doi": "10.3389/fbioe.2022.856651",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of Lceo-AgNPs against E. coli were 25 and 50 ug ml-1.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '50 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) of Lceo-AgNPs against E. coli were 25 and 50 ug ml-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "50 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC08140,32)": {
+         "doi": "10.1016/j.jcis.2016.03.021",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'Significant antibacterial activity of ALE-ZnONPs was observed against extended spectrum beta lactamases (ESBL) positive E. coli, Pseudomonas aeruginosa, and methicillin resistant S. aureus (MRSA) clinical isolates exhibiting the MIC and MBC values of 2200, 2400 and 2300, 2700 ug ml-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '2300 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Significant antibacterial activity of ALE-ZnONPs was observed against extended spectrum beta lactamases (ESBL) positive E. coli, Pseudomonas aeruginosa, and methicillin resistant S. aureus (MRSA) clinical isolates exhibiting the MIC and MBC values of 2200, 2400 and 2300, 2700 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "2300 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC09804,0)": {
+         "doi": "10.3390/foods12091746",
+         "llm input": "It was previously extracted that the biological species 'Enterococcus faecalis' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The nanoparticles' MIC values varied from 5.19 ug mL-1 to 61 ug mL-1, while their MBC values ranged from 46 ug mL-1 to 119 ug mL-1.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '46 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The nanoparticles' MIC values varied from 5.19 ug mL-1 to 61 ug mL-1, while their MBC values ranged from 46 ug mL-1 to 119 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Enterococcus faecalis",
+            "microbe_killing_mbc": "46 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC10979,7)": {
+         "doi": "10.1016/j.envres.2022.114706",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The lowest minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values were calculated as > 40 ug mL-1 using G-Ag and GP, while G-AgPVPy showed as 10 ug mL-1 against Staphylococcus aureus.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '10 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The lowest minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values were calculated as > 40 ug mL-1 using G-Ag and GP, while G-AgPVPy showed as 10 ug mL-1 against Staphylococcus aureus.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "10 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC14447,128)": {
+         "doi": "10.1111/jam.13723",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Study of antimicrobial activity of AgNPs against Bacillus subtilis, Staphylococcus aureus, Escherichia coli, Candida albicans and Malassezia furfur evaluated by minimum inhibitory concentration (MIC) and minimum biocidal concentration (MBC) assays revealed that MICs of AgNPs from IF11 and IF17 strains against bacteria and yeasts were found to be in the range of 16-128 and 8 - 256 ug ml-1, while MBCs were in the range of 48-192 and 32 - 256 ug ml-1 respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '48 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Study of antimicrobial activity of AgNPs against Bacillus subtilis, Staphylococcus aureus, Escherichia coli, Candida albicans and Malassezia furfur evaluated by minimum inhibitory concentration (MIC) and minimum biocidal concentration (MBC) assays revealed that MICs of AgNPs from IF11 and IF17 strains against bacteria and yeasts were found to be in the range of 16-128 and 8 - 256 ug ml-1, while MBCs were in the range of 48-192 and 32 - 256 ug ml-1 respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "48 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC16254,96)": {
+         "doi": "10.1016/j.matlet.2017.07.102",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'MIC and MBC of AgNPs against Enterococcus faecalis, Staphylococcus aureus, Acinetobacter baumannii, Escherichia coli, Klebsiella pneumoniae, and Pseudomonas aeruginosa ranged between 7.8-62.5 and 62.5 - 125 ug ml-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '62.5 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "MIC and MBC of AgNPs against Enterococcus faecalis, Staphylococcus aureus, Acinetobacter baumannii, Escherichia coli, Klebsiella pneumoniae, and Pseudomonas aeruginosa ranged between 7.8-62.5 and 62.5 - 125 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "62.5 ug ml-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17438,16)": {
+         "doi": "10.1039/c5ra01848j",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Moreover, the AgNPs were found to be smaller in size (ranging from 10 - 25 nm) with potent antibacterial activity (MIC and MBC values against the most prevalent urinary tract pathogens, Escherichia coli and Staphylococcus aureus, being 15.6 +/- 0.0 mg mL-1 and 31.25 +/- 0.0 mg mL-1 respectively).', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '31.25 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, the AgNPs were found to be smaller in size (ranging from 10 - 25 nm) with potent antibacterial activity (MIC and MBC values against the most prevalent urinary tract pathogens, Escherichia coli and Staphylococcus aureus, being 15.6 +/- 0.0 mg mL-1 and 31.25 +/- 0.0 mg mL-1 respectively).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "31.25 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC17438,8)": {
+         "doi": "10.1039/c5ra01848j",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Moreover, the AgNPs were found to be smaller in size (ranging from 10 - 25 nm) with potent antibacterial activity (MIC and MBC values against the most prevalent urinary tract pathogens, Escherichia coli and Staphylococcus aureus, being 15.6 +/- 0.0 mg mL-1 and 31.25 +/- 0.0 mg mL-1 respectively).', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '31.25 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Moreover, the AgNPs were found to be smaller in size (ranging from 10 - 25 nm) with potent antibacterial activity (MIC and MBC values against the most prevalent urinary tract pathogens, Escherichia coli and Staphylococcus aureus, being 15.6 +/- 0.0 mg mL-1 and 31.25 +/- 0.0 mg mL-1 respectively).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "31.25 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC18362,0)": {
+         "doi": "10.1007/s10876-021-02024-5",
+         "llm input": "It was previously extracted that the biological species 'Bacillus cereus' was exposed to or tested with a nanomaterial whose core composition is defined as 'TiO2'. From the sentence 'The MBC were found to be 125 ug mL-1 for S. aureus and B. cereus while 250 ug mL-1 for E. coli and S. enterica.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '125 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MBC were found to be 125 ug mL-1 for S. aureus and B. cereus while 250 ug mL-1 for E. coli and S. enterica.",
+         "parameters checked": {
+            "nanomaterial_composition": "TiO2",
+            "biological_species": "Bacillus cereus",
+            "microbe_killing_mbc": "125 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC24343,0)": {
+         "doi": "10.1016/j.matchemphys.2022.126689",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'We found that Ag-TA NPs and Ag-TA-RC50 NPs showed a minimum inhibitory concentration of 25 ug mL-1 and a minimum bactericidal concentration of 50 ug mL-1 against different species of microbes (Escherichia coli and Staphylococcus aureus).', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '50 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "We found that Ag-TA NPs and Ag-TA-RC50 NPs showed a minimum inhibitory concentration of 25 ug mL-1 and a minimum bactericidal concentration of 50 ug mL-1 against different species of microbes (Escherichia coli and Staphylococcus aureus).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "50 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC24343,2)": {
+         "doi": "10.1016/j.matchemphys.2022.126689",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'We found that Ag-TA NPs and Ag-TA-RC50 NPs showed a minimum inhibitory concentration of 25 ug mL-1 and a minimum bactericidal concentration of 50 ug mL-1 against different species of microbes (Escherichia coli and Staphylococcus aureus).', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '50 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "We found that Ag-TA NPs and Ag-TA-RC50 NPs showed a minimum inhibitory concentration of 25 ug mL-1 and a minimum bactericidal concentration of 50 ug mL-1 against different species of microbes (Escherichia coli and Staphylococcus aureus).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "50 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC25808,8)": {
+         "doi": "10.1038/s41598-021-92006-4",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The nanoparticles exhibited strong minimum inhibitory concentration (MIC) values of 12.5 and 6.25 mu g/mu l and minimum bactericidal concentration (MBC) values of 12.5 and 12.5 ug mL-1 against E. coli and P. aeruginosa, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '12.5 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The nanoparticles exhibited strong minimum inhibitory concentration (MIC) values of 12.5 and 6.25 mu g/mu l and minimum bactericidal concentration (MBC) values of 12.5 and 12.5 ug mL-1 against E. coli and P. aeruginosa, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mbc": "12.5 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC26187,320)": {
+         "doi": "10.2147/IJN.S157958",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The nanoparticles exhibited minimum inhibitory concentration values of 6.25 and 5 ug mL-1 and minimum bactericidal concentration values of 12.5 and 25 ug mL-1 against P. aeruginosa and E. coil, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '12.5 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The nanoparticles exhibited minimum inhibitory concentration values of 6.25 and 5 ug mL-1 and minimum bactericidal concentration values of 12.5 and 25 ug mL-1 against P. aeruginosa and E. coil, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mbc": "12.5 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC26527,16)": {
+         "doi": "10.2147/IJN.S124294",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'MIC and MBC values were in the range of 0.93-7.5 and 3.75 - 15 ug mL-1, respectively, which were superior to the reported values in literature.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '3.75 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "MIC and MBC values were in the range of 0.93-7.5 and 3.75 - 15 ug mL-1, respectively, which were superior to the reported values in literature.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "3.75 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC26527,32)": {
+         "doi": "10.2147/IJN.S124294",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'MIC and MBC values were in the range of 0.93-7.5 and 3.75 - 15 ug mL-1, respectively, which were superior to the reported values in literature.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '3.75 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "MIC and MBC values were in the range of 0.93-7.5 and 3.75 - 15 ug mL-1, respectively, which were superior to the reported values in literature.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Staphylococcus aureus",
+            "microbe_killing_mbc": "3.75 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC28930,240)": {
+         "doi": "10.1016/j.bioorg.2019.103425",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Due to the results, CP-AgNPs enhanced antimicrobial potential against S. aureus, E. faecalis, P. aeruginosa, A. baumannii and E. coli with MIC and MBC of (0.11, 7.1 ug ml-1, (0.11, 1.7 ug ml-1, (0.11, 0.22 ug ml-1, (0.11, 0.22) and (0.11, 0.44 ug ml-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '7.1 ug ml-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Due to the results, CP-AgNPs enhanced antimicrobial potential against S. aureus, E. faecalis, P. aeruginosa, A. baumannii and E. coli with MIC and MBC of (0.11, 7.1 ug ml-1, (0.11, 1.7 ug ml-1, (0.11, 0.22 ug ml-1, (0.11, 0.22) and (0.11, 0.44 ug ml-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "microbe_killing_mbc": "7.1 ug ml-1"
+         },
+         "correct": "n"
+      },
+      "(ATC31970,4)": {
+         "doi": "10.1002/jctb.6724",
+         "llm input": "It was previously extracted that the biological species 'Salmonella enterica' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The antibacterial activity showed that AgNPs displayed a minimum inhibitory concentration of 20 - 30 ug mL-1 and a minimum bactericidal concentration of 30 - 40 ug mL-1.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '30 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial activity showed that AgNPs displayed a minimum inhibitory concentration of 20 - 30 ug mL-1 and a minimum bactericidal concentration of 30 - 40 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Salmonella enterica",
+            "microbe_killing_mbc": "30 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC31970,8)": {
+         "doi": "10.1002/jctb.6724",
+         "llm input": "It was previously extracted that the biological species 'Serratia marcescens' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The antibacterial activity showed that AgNPs displayed a minimum inhibitory concentration of 20 - 30 ug mL-1 and a minimum bactericidal concentration of 30 - 40 ug mL-1.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '30 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial activity showed that AgNPs displayed a minimum inhibitory concentration of 20 - 30 ug mL-1 and a minimum bactericidal concentration of 30 - 40 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Serratia marcescens",
+            "microbe_killing_mbc": "30 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC35445,10)": {
+         "doi": "10.3390/nano14050462",
+         "llm input": "It was previously extracted that the biological species 'Salmonella enterica' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'In particular, the larger Ag@mSiO2 nanoparticles showed a minimum inhibitory concentration (MIC) and a minimum bactericidal concentration (MBC) of 18 ug mL-1 in the Salmonella strain.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '18 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In particular, the larger Ag@mSiO2 nanoparticles showed a minimum inhibitory concentration (MIC) and a minimum bactericidal concentration (MBC) of 18 ug mL-1 in the Salmonella strain.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Salmonella enterica",
+            "microbe_killing_mbc": "18 ug mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC35621,0)": {
+         "doi": "10.1007/s12602-022-09961-1",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values of green synthesized AgNPs against the MDR-EAEC strains were found to be 7.80 mg L-1 and 15.60 mg L-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '15.60 mg L-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The minimum inhibitory concentration (MIC) and minimum bactericidal concentration (MBC) values of green synthesized AgNPs against the MDR-EAEC strains were found to be 7.80 mg L-1 and 15.60 mg L-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "15.60 mg L-1"
+         },
+         "correct": "y"
+      },
+      "(ATC45792,8)": {
+         "doi": "10.3390/nano12234167",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The obtained Ag-C-1, Ag-C-2, Ag-C-3 and Ag-C-4 nanohybrids have shown their MICs and MBCs against E. coli and C. albicans in the range of 4 - 12 mg mL-1 and 2 - 24 mg mL-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '2 mg mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The obtained Ag-C-1, Ag-C-2, Ag-C-3 and Ag-C-4 nanohybrids have shown their MICs and MBCs against E. coli and C. albicans in the range of 4 - 12 mg mL-1 and 2 - 24 mg mL-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "2 mg mL-1"
+         },
+         "correct": "y"
+      },
+      "(ATC47913,0)": {
+         "doi": "10.2147/IJN.S274535",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The MIC and MBC were determined as 8 - 16 ug mL-1 and 32 ug mL-1, respectively.', it was then extracted that this exposure/test resulted in a minimum bactericidal concentration (MBC) value (or values) of '32 ug mL-1'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'minimum bactericidal concentration (MBC)', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The MIC and MBC were determined as 8 - 16 ug mL-1 and 32 ug mL-1, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "microbe_killing_mbc": "32 ug mL-1"
+         },
+         "correct": "y"
+      }
+   }
+}

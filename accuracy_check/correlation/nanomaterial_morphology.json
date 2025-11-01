@@ -1,0 +1,268 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology. Your primary responsibility is to determine whether nanomaterial descriptions extracted from text are accurate. Specifically, you must verify that the 'core composition' (examples: 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.) and the 'morphology' (examples: 'nanoparticle' or 'NPs', 'nanotube' or 'NTs', 'nanosheet', 'nanorod', etc.) were correctly extracted from the input text. The core composition and morphology together are related to a single nanomaterial (examples: 'silver nanoparticle' or 'AgNPs', 'carbon nanotube' or 'CNTs', 'carbon dot' or 'Cdots', 'titania nanotube' or 'TiO2 nanotubes', etc.). Consider only the core composition of the nanomaterial (examples: the core composition of 'functionalized carbon nanotubes' is 'C' and the morphology is 'nanotube'; the core composition of 'PEG-modified silver NPs' is 'Ag' and the morphology is 'nanoparticle'). Consider that core chemical composition can be defined with abbreviations (examples: 'silver' = 'Ag', 'carbon' = 'C', 'zinc oxide' = 'ZnO', 'titanium oxide' = 'TiO2'). Also, consider that the morphology of a nanomaterial can be defined with abbreviations (examples: 'nanoparticles' = 'NPs', 'nanotubes' = 'NTs'). Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube')."
+   },
+   "instances": {
+      "(ATC01903,382)": {
+         "doi": "10.5004/dwt.2021.27498",
+         "llm input": "From the sentence 'The present study aimed to characterize silver and FexOy nanoparticles (NPs) synthesized by Bacillus subtilis for their physicochemical properties and antibacterial activities.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The present study aimed to characterize silver and FexOy nanoparticles (NPs) synthesized by Bacillus subtilis for their physicochemical properties and antibacterial activities.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC02063,32)": {
+         "doi": "10.1007/s11356-015-5668-z",
+         "llm input": "From the sentence 'Three typically shaped AgNPs, nanocubes, nanospheres, and nanowires, were prepared via a microwave-assisted method and characterized by TEM, UV-vis, and XRD.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanosphere'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Three typically shaped AgNPs, nanocubes, nanospheres, and nanowires, were prepared via a microwave-assisted method and characterized by TEM, UV-vis, and XRD.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanosphere"
+         },
+         "correct": "y"
+      },
+      "(ATC02466,82)": {
+         "doi": "10.1007/s00253-010-2692-2",
+         "llm input": "From the sentence 'The antibacterial activity of ZnO nanoparticles has been investigated and presented in this paper.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The antibacterial activity of ZnO nanoparticles has been investigated and presented in this paper.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC02572,31)": {
+         "doi": "10.1080/21691401.2020.1730390",
+         "llm input": "From the sentence 'The present study highlights the biological synthesis of silver nanoparticles (AgNPs) using Sphingobium sp. MAH-11 and also their antibacterial mechanisms against drug-resistant pathogenic microorganisms.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The present study highlights the biological synthesis of silver nanoparticles (AgNPs) using Sphingobium sp. MAH-11 and also their antibacterial mechanisms against drug-resistant pathogenic microorganisms.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC07490,41)": {
+         "doi": "10.1155/2019/4649506",
+         "llm input": "From the sentence 'In this study, the aqueous extract of Murraya koenigii leaves was used for synthesis of silver nanoparticles.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study, the aqueous extract of Murraya koenigii leaves was used for synthesis of silver nanoparticles.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC08931,33)": {
+         "doi": "10.3390/pr8040388",
+         "llm input": "From the sentence 'Silver nanoparticle (AgNP) based approaches using plant materials have been accepted as biomedical applications.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Silver nanoparticle (AgNP) based approaches using plant materials have been accepted as biomedical applications.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09224,18)": {
+         "doi": "10.1016/j.jenvman.2020.110962",
+         "llm input": "From the sentence 'In this work, silver nanoparticles have been synthesized with an average particle size of 35 nm, within 90s, using microwave and Sapindus mukorossi extract as a stabilizing agent.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this work, silver nanoparticles have been synthesized with an average particle size of 35 nm, within 90s, using microwave and Sapindus mukorossi extract as a stabilizing agent.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09455,1125)": {
+         "doi": "10.1111/jam.15177",
+         "llm input": "From the sentence 'Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09455,348)": {
+         "doi": "10.1111/jam.15177",
+         "llm input": "From the sentence 'Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09455,667)": {
+         "doi": "10.1111/jam.15177",
+         "llm input": "From the sentence 'Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09455,818)": {
+         "doi": "10.1111/jam.15177",
+         "llm input": "From the sentence 'Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Aims The use of cyanobacterial cell extracts for the synthesis of ZnO nanoparticles (ZnO NPs) seems to be superior to other methods of synthesis because of its a green, environmentally friendly and low-cost approach.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC09945,235)": {
+         "doi": "10.3390/su15119048",
+         "llm input": "From the sentence 'In the present study, ZnO nanoparticles (ZnONPs) were eco-friendly synthesized using banana peel (BPE) and date seed (DSE) extracts.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In the present study, ZnO nanoparticles (ZnONPs) were eco-friendly synthesized using banana peel (BPE) and date seed (DSE) extracts.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC14320,27)": {
+         "doi": "10.3390/polym14091834",
+         "llm input": "From the sentence 'The present study aimed to suggest a simple and environmentally friendly biosynthesis method of silver nanoparticles (AgNPs) using the strain Bacillus sonorensis MAHUQ-74 isolated from kimchi.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The present study aimed to suggest a simple and environmentally friendly biosynthesis method of silver nanoparticles (AgNPs) using the strain Bacillus sonorensis MAHUQ-74 isolated from kimchi.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC14447,93)": {
+         "doi": "10.1111/jam.13723",
+         "llm input": "From the sentence 'In the present study, we report remarkable antimicrobial activity of silver nanoparticles (AgNPs) synthesized from Streptomyces calidiresistens IF11 and IF17 strains, including inhibition of biofilm formation and synergistic effect of AgNPs and antibiotics against selected bacteria and yeasts.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In the present study, we report remarkable antimicrobial activity of silver nanoparticles (AgNPs) synthesized from Streptomyces calidiresistens IF11 and IF17 strains, including inhibition of biofilm formation and synergistic effect of AgNPs and antibiotics against selected bacteria and yeasts.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC16816,11)": {
+         "doi": "10.1177/0954411913499290",
+         "llm input": "From the sentence 'Silver and magnetic (Fe3O4) nanoparticles have attracted wide attention as novel antimicrobial agents due to their unique chemical and physical properties.', it was extracted that the nanomaterial core composition is 'Fe3O4' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Silver and magnetic (Fe3O4) nanoparticles have attracted wide attention as novel antimicrobial agents due to their unique chemical and physical properties.",
+         "parameters checked": {
+            "nanomaterial_composition": "Fe3O4",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC16867,84)": {
+         "doi": "10.1007/s13204-018-0863-0",
+         "llm input": "From the sentence 'ZnO nanoparticles own decent bactericidal activity against clinically isolated bacterial species, however, its bactericidal concentrations are compromised.', it was extracted that the nanomaterial core composition is 'Zn' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "ZnO nanoparticles own decent bactericidal activity against clinically isolated bacterial species, however, its bactericidal concentrations are compromised.",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC16969,260)": {
+         "doi": "10.1016/j.msec.2020.111844",
+         "llm input": "From the sentence 'Here, we study the effect of hierarchical and one-dimensional (1D) metal oxide nanorods (H-NRs) such as gamma-Al2O3, beta-MnO2, and ZnO as microbial inhibitors on the antimicrobial efficiency in aqueous solution.', it was extracted that the nanomaterial core composition is 'MnO2' and the nanomaterial morphology is 'nanorod'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Here, we study the effect of hierarchical and one-dimensional (1D) metal oxide nanorods (H-NRs) such as gamma-Al2O3, beta-MnO2, and ZnO as microbial inhibitors on the antimicrobial efficiency in aqueous solution.",
+         "parameters checked": {
+            "nanomaterial_composition": "MnO2",
+            "nanomaterial_morphology": "nanorod"
+         },
+         "correct": "y"
+      },
+      "(ATC16969,374)": {
+         "doi": "10.1016/j.msec.2020.111844",
+         "llm input": "From the sentence 'Here, we study the effect of hierarchical and one-dimensional (1D) metal oxide nanorods (H-NRs) such as gamma-Al2O3, beta-MnO2, and ZnO as microbial inhibitors on the antimicrobial efficiency in aqueous solution.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanorod'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Here, we study the effect of hierarchical and one-dimensional (1D) metal oxide nanorods (H-NRs) such as gamma-Al2O3, beta-MnO2, and ZnO as microbial inhibitors on the antimicrobial efficiency in aqueous solution.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanorod"
+         },
+         "correct": "y"
+      },
+      "(ATC25001,63)": {
+         "doi": "10.1016/j.micpath.2018.08.025",
+         "llm input": "From the sentence 'Green synthesis of silver nanoparticles (AgNPs) is environmentally satisfactory because of their low cost and safe to nature.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Green synthesis of silver nanoparticles (AgNPs) is environmentally satisfactory because of their low cost and safe to nature.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC25951,113)": {
+         "doi": "10.22207/JPAM.15.3.49",
+         "llm input": "From the sentence 'In the current study, ZnO nanoparticles (ZnO-NP) were prepared using extracellular extracts of Aspergillus niger.', it was extracted that the nanomaterial core composition is 'Zn' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In the current study, ZnO nanoparticles (ZnO-NP) were prepared using extracellular extracts of Aspergillus niger.",
+         "parameters checked": {
+            "nanomaterial_composition": "Zn",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC26187,321)": {
+         "doi": "10.2147/IJN.S157958",
+         "llm input": "From the sentence 'With the purpose of expanding the auxiliary application of C. sativa in the field of bio-nanotechnology, we explored the plant for green and efficient synthesis of gold nanoparticles (AuNPs) and silver nanoparticles (AgNPs).', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "With the purpose of expanding the auxiliary application of C. sativa in the field of bio-nanotechnology, we explored the plant for green and efficient synthesis of gold nanoparticles (AuNPs) and silver nanoparticles (AgNPs).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC26968,32)": {
+         "doi": "10.1016/j.surfin.2020.100697",
+         "llm input": "From the sentence 'In this study, eco-friendly and green synthesis of noble-metal nanoparticles using C. monogyna leaf extract (CML@X-NPs, X= Ag, Au) as capping agent and reducing agent were reported.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this study, eco-friendly and green synthesis of noble-metal nanoparticles using C. monogyna leaf extract (CML@X-NPs, X= Ag, Au) as capping agent and reducing agent were reported.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC27006,1176)": {
+         "doi": "10.1166/jbmb.2022.2199",
+         "llm input": "From the sentence 'Antibacterial and antibiofilm efficiencies of silver and ZnO nanoparticles combined with chitosan and erythromycin against several bacterial oral diseases have been, therefore, demonstrated.', it was extracted that the nanomaterial core composition is 'ZnO' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Antibacterial and antibiofilm efficiencies of silver and ZnO nanoparticles combined with chitosan and erythromycin against several bacterial oral diseases have been, therefore, demonstrated.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC28930,210)": {
+         "doi": "10.1016/j.bioorg.2019.103425",
+         "llm input": "From the sentence 'In this work, a cost-effective/green/high-efficient/facile process for the preparation of silver nanoparticles using C. pentagyna (CP-AgNPs) fruit extractas as reducing agent and capping agent was reported.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In this work, a cost-effective/green/high-efficient/facile process for the preparation of silver nanoparticles using C. pentagyna (CP-AgNPs) fruit extractas as reducing agent and capping agent was reported.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      },
+      "(ATC45792,7)": {
+         "doi": "10.3390/nano12234167",
+         "llm input": "From the sentence 'Strong signals of Ag, Cu and O in the EDX spectra revealed that the as-synthesized nanostructures are bimetallic Ag-CuO nanohybrids.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanostructure'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Strong signals of Ag, Cu and O in the EDX spectra revealed that the as-synthesized nanostructures are bimetallic Ag-CuO nanohybrids.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanostructure"
+         },
+         "correct": "y"
+      },
+      "(ATC46256,9)": {
+         "doi": "10.20506/rst.37.3.2888",
+         "llm input": "From the sentence 'This study aims to investigate the antimycobacterial activity of silver nanoparticles (AgNPs) by determining the minimal inhibitory concentration (MIC) of AgNPs, using the microplate Ala mar blue assay.', it was extracted that the nanomaterial core composition is 'Ag' and the nanomaterial morphology is 'nanoparticle'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'nanomaterial morphology', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "This study aims to investigate the antimycobacterial activity of silver nanoparticles (AgNPs) by determining the minimal inhibitory concentration (MIC) of AgNPs, using the microplate Ala mar blue assay.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "nanomaterial_morphology": "nanoparticle"
+         },
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of enzymatic activity alteration caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence includes changes in catalase, superoxide dismutase, glutathione-S-transferase, acetylcholinesterase, or other key enzymes. Consider keywords such as 'altered catalase', 'SOD increase', 'enzyme inhibition', or 'enzyme induction' as indications of toxicity. Consider keywords such as 'enzyme activity unchanged', 'no enzymatic effect', or 'normal catalase levels' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of enzymatic activity alteration in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of enzymatic alteration, output 'no'. If the sentence does not deal with enzymatic activity in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00110', 0)": {
+         "doi": "10.5277/epe140111",
+         "text": "The effects of four different kinds of nanoparticles (NPs), namely, CuO, ZnO, TiO2, and Au, of the sizes ranging from <20 nm to 50 nm on Daphnia magna, early life stage of zebrafish, and various enzymes have been investigated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00234', 2)": {
+         "doi": "10.1016/j.wse.2020.06.007",
+         "text": "The change trend and range of enzyme activity indicated that the granules could cause serious oxidative stress to D. magna and D. rerio, and the changes were consistent with the results of toxicity experimentation.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01136', 1)": {
+         "doi": "10.1016/j.envpol.2019.03.078",
+         "text": "Following exposure to both hyperbranched polymers, a clear overproduction of reactive oxygen species took place accompanied by concentration-dependent enzymatic antioxidant response.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01802', 1)": {
+         "doi": "10.1016/j.watres.2017.07.023",
+         "text": "The results revealed a significant reduction in the digestion and filtration rates, as well as gut impairment and inhibition of digestive enzymes (cellulose, amylase, trypsin, and beta-galactosidase) activity of C-60 exposed daphnia.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC03128', 0)": {
+         "doi": "10.1007/s40201-020-00561-1",
+         "text": "The amount of glutathione was reduced after the exposure of NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03541', 0)": {
+         "doi": "10.1016/j.talanta.2015.09.063",
+         "text": "Next to dissolution of exposed D. magna by tetra methyl ammonium hydroxide (TMAH), a new enzymatic dissolution approach was explored by using trypsin.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03647', 0)": {
+         "doi": "10.1080/19443994.2014.996014",
+         "text": "Acute tests were performed: immobilization assay with the crustaceans and enzymatic assay with D. magna, as well as chronic tests; Growth assay with the protozoans and reproduction assay with D. magna.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04036', 1)": {
+         "doi": "10.1016/j.jhazmat.2022.129303",
+         "text": "Moreover, nATO exposure enhanced the autophagy activity, reflected by the up-regulated expression of hypoxia-inducible factor-1 alpha, calmodulin-dependent protein kinase-beta, and inositolrequiring enzyme 1.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04289', 1)": {
+         "doi": "10.1016/j.aquatox.2020.105517",
+         "text": "At higher concentrations of ZnO, oxidative stress was induced leading to increase MDA level and decrease SOD activity at 28 degrees C.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04952', 0)": {
+         "doi": "10.1007/s11356-022-23695-1",
+         "text": "The catalase activity, reduced glutathione level, and malonaldehyde content in D. magna also varied with the NNPs concentrations.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05507', 0)": {
+         "doi": "10.1016/j.aquatox.2018.03.001",
+         "text": "In addition, QDs-indolicidin induced a significantly higher production of reactive oxygen species (ROS) gradually in each generation and an impairment of enzymes response to oxidative stress such as superoxide dismutase (SOD), catalase (CAT) and glutathione transferase (GST).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC05962', 0)": {
+         "doi": "10.1371/journal.pntd.0010667",
+         "text": "The present study aimed to evaluate the molluscicidal effects of silver nanoparticles on Biomphalaria alexandrina, B. glabrata, Oncomelania hupensis, snail intermediate hosts of intestinal schistosomes (i.e. Schistosoma mansoni and S. japonicum), along with the changes their antioxidant enzymes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06292', 0)": {
+         "doi": "10.1016/j.watres.2024.121377",
+         "text": "Changes of bioaccumulation of TiO2 NPs and Cu in D. magna ultimately affected the activities of intracellular antioxidant enzymes such as SOD, CAT, GSH-Px, and the transmembrane protein Na+/K+-ATPase.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06292', 1)": {
+         "doi": "10.1016/j.watres.2024.121377",
+         "text": "Molecular docking calculations demonstrated that changes of activities of these biological enzymes were due to the interaction between TiO2 NPs, Cu, and amino acid residues near the sites with the lowest binding energy and active center of the enzyme.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07002', 1)": {
+         "doi": "10.1080/15287394.2022.2054888",
+         "text": "This response seemed to be related to imbalance in enzymatic/non-enzymatic antioxidant enzymes associated with intracellular overproduction of ROS and significant increase in MDA levels, indicating that the integrity and function of the cell membrane was damaged.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC08380', 2)": {
+         "doi": "10.1016/j.chemosphere.2017.08.132",
+         "text": "The expression of SOD in the water-borne treatment decreased by about four times in comparison with the dietary-borne treatment, and the SOD enzyme activity of the water-borne treatment was significantly lower than that of the dietary borne treatment.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC10126', 0)": {
+         "doi": "10.1016/j.ecoenv.2019.06.002",
+         "text": "Herein, the effects of the exopolysaccharides (EPS) levan, produced by the bacterium Bacillus licheniformis NS032 and pullulan, produced by the fungus Aureobasidium pullulans CH-1 in the presence of copper (Cu2+) have been investigated for the first time on antioxidant enzyme activity, respiration and Cu2+ bioaccumulation of Daphnia magna as well as the bioluminescence of Vibrio fischeri.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10126', 1)": {
+         "doi": "10.1016/j.ecoenv.2019.06.002",
+         "text": "The activity of catalase (CAT) was significantly diminished after acute exposure to Cu2+ in comparison to treatments with Cu2+ and EPS, while in the prolonged acute exposure the CAT activity did not show statistically significant (P <= 0.05) differences between treatments with and without the EPS.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10359', 0)": {
+         "doi": "10.1016/j.envpol.2023.123107",
+         "text": "NP effects were assessed at the biochemical level by investigating the amount of reactive oxygen species (ROS) and the activity of the antioxidant enzyme catalase (CAT) and at the behavioral level by evaluating the swimming behavior (distance moved).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC11360', 1)": {
+         "doi": "10.1039/d0en01264e",
+         "text": "In contrast, ARGO induced a 55 % increase in H(2)DCFDA fluorescence and 342 % increase in catalase activity in bacteria.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC11863', 0)": {
+         "doi": "10.1016/j.scitotenv.2024.170441",
+         "text": "After Ce exposure at environmentally relevant concentrations (0.5-3.5 mu M), significant increases in superoxide dismutase activity and malondialdehyde content were observed in Daphnia magna, while significant decreases in catalase activity and H2O2 content occurred.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC15154', 0)": {
+         "doi": "10.1039/c9ra03513c",
+         "text": "Reactive oxygen species (ROS), superoxide dismutase (SOD) and Na+/K+-adenosine triphosphatase (ATPase) were measured as key biomarkers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15378', 1)": {
+         "doi": "10.1631/jzus.B1200113",
+         "text": "Based on substrate studies, the purified enzyme preferred butyrylthiocholine iodide (BTCh) [with maximum velocity (V (max))/Michaelis constant (K (m))=8.428 L/(min center dot mg protein)] to acetylthiocholine iodide (ATCh) [with V (max)/K (m)=5.346 L/(min center dot mg protein)] as its substrate.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15378', 2)": {
+         "doi": "10.1631/jzus.B1200113",
+         "text": "Activity of the purified enzyme was suppressed by high concentrations of either ATCh or BTCh.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19937', 1)": {
+         "doi": "10.3762/bjnano.10.175",
+         "text": "In vitro evaluation on human cells demonstrated that the toxicity of AgNPs and AuNPs prepared in the presence of cysteine was similar to the polymer-based nanoparticles with the same core material, while the use of glutathione for nanoparticle stabilization was considerably less toxic.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

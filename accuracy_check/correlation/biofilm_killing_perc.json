@@ -1,0 +1,151 @@
+{
+   "info": {
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "model_personality": "You are a data miner checker specializing in nanotechnology/nanotoxicology. Your primary responsibility is to verify whether the previously extracted parameter, 'percentage of biofilm killing,' including numerical values (and any corresponding units, such as '%'), accurately matches the input text. *Rules* - You must confirm that the extracted percentage of biofilm killing indeed applies to a 'biological species' or (if applicable) a 'nanomaterial core composition' that was also previously extracted, ensuring the input text explicitly associates that percentage with the particular biological species (for example, 'Escherichia coli', 'Staphylococcus aureus') or nanomaterial core composition (for example, 'silver', 'carbon', 'zinc oxide', 'silica', 'titania', etc.). - Keep in mind possible biological species abbreviations (for example, 'E. coli', 'S. aureus'). - Consider only the nanomaterial's core composition (for example, the core composition of 'functionalized carbon nanotubes' is 'C'; the core composition of 'PEG-modified silver NPs' is 'Ag'). - You must also verify that the stated percentage of biofilm killing (for example, '10 %', '25 %', or approximate descriptors such as 'around 20 %') indeed corresponds to the biological species or nanomaterial core composition mentioned in the input text, and that any units of measurement ('%', etc.) match what appears in the input text. - Do not distinguish singular and plural extracted values (example: 'nanotubes' is equivalent to 'nanotube'). *EXAMPLES* EXAMPLE 1 - input text: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Silver nanoparticles were tested against S. aureus and a significant effect was observed: biofilm killing (reduction) of 98 % depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of biofilm killing of '98 %'. Was the extraction correct? - your output:  'yes' EXAMPLE 2: It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'C'. From the sentence 'Carbon nanomaterials (e.g., graphene oxide or carbon nanotubes) were tested against E. coli and showed a significant antimicrobial effect, yielding a biofilm reduction of 87 % depending on the nanomaterial concentration.', it was then extracted that this exposure/test resulted in a value (or values) of biofilm killing of '87 %'. Was the extraction correct? - your output:  'no' -- end examples --"
+   },
+   "instances": {
+      "(ATC05680,0)": {
+         "doi": "10.1016/j.ijbiomac.2023.128573",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Furthermore, our study showed that green-synthesized AgNPs at MIC significantly reduced the biofilm production of E. coli (70.37 %) and S. aureus (67.40 %).', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '70.37 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Furthermore, our study showed that green-synthesized AgNPs at MIC significantly reduced the biofilm production of E. coli (70.37 %) and S. aureus (67.40 %).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "biofilm_killing_perc": "70.37 %"
+         },
+         "correct": "y"
+      },
+      "(ATC08931,480)": {
+         "doi": "10.3390/pr8040388",
+         "llm input": "It was previously extracted that the biological species 'Enterococcus faecalis' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'Antibiofilm activity of Ns-AgNPs was evident as at 12.5 ug mL-1 Ns-AgNps restricted the biofilm formation by 88.42 % for Enterococcus faecalis, 84.92 % for E. coli, 81.86 % for Klebsiella pneumonia, 82.84 % for Staphylococcus aureus, and 49.9 % for Pseudomonas aeruginosa, respectively.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '88.42 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Antibiofilm activity of Ns-AgNPs was evident as at 12.5 ug mL-1 Ns-AgNps restricted the biofilm formation by 88.42 % for Enterococcus faecalis, 84.92 % for E. coli, 81.86 % for Klebsiella pneumonia, 82.84 % for Staphylococcus aureus, and 49.9 % for Pseudomonas aeruginosa, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Enterococcus faecalis",
+            "biofilm_killing_perc": "88.42 %"
+         },
+         "correct": "y"
+      },
+      "(ATC12938,0)": {
+         "doi": "10.1021/acsomega.2c07142",
+         "llm input": "It was previously extracted that the biological species 'Staphylococcus aureus' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'The lowest concentration of ZnO nanorods with over 75 % biofilm killing in all strains tested was 32 ug mL-1.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '75 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The lowest concentration of ZnO nanorods with over 75 % biofilm killing in all strains tested was 32 ug mL-1.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Staphylococcus aureus",
+            "biofilm_killing_perc": "75 %"
+         },
+         "correct": "y"
+      },
+      "(ATC16536,256)": {
+         "doi": "10.1007/s13399-021-02187-1",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'SSE-ZnONPs, with a concentration of 600 ug ml-1, prevented up to 60 % and 30 % of biofilm formation by Pseudomonas aeruginosa and Staphylococcus aureus, respectively.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '60 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "SSE-ZnONPs, with a concentration of 600 ug ml-1, prevented up to 60 % and 30 % of biofilm formation by Pseudomonas aeruginosa and Staphylococcus aureus, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Pseudomonas aeruginosa",
+            "biofilm_killing_perc": "60 %"
+         },
+         "correct": "y"
+      },
+      "(ATC22305,96)": {
+         "doi": "10.1016/j.micpath.2024.106546",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Au'. From the sentence 'Sub-MIC of EB-AuNPs reduces biofilm formation in P. aeruginosa, K. pneumoniae, L. monocytogenes, and S. aureus by 57.22 %, 58.60 %, 33.80 %, and 91.13 %, respectively.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '57.22 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Sub-MIC of EB-AuNPs reduces biofilm formation in P. aeruginosa, K. pneumoniae, L. monocytogenes, and S. aureus by 57.22 %, 58.60 %, 33.80 %, and 91.13 %, respectively.",
+         "parameters checked": {
+            "nanomaterial_composition": "Au",
+            "biological_species": "Pseudomonas aeruginosa",
+            "biofilm_killing_perc": "57.22 %"
+         },
+         "correct": "y"
+      },
+      "(ATC23009,0)": {
+         "doi": "10.1016/j.jece.2023.111309",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'After OE-AgNP treatment, biofilms of E. coli and P. aeruginosa were efficiently scavenged with a scavenging rate of more than 60 %; the extracellular polysaccharide concentrations in biofilms were also ruduced.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '60 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "After OE-AgNP treatment, biofilms of E. coli and P. aeruginosa were efficiently scavenged with a scavenging rate of more than 60 %; the extracellular polysaccharide concentrations in biofilms were also ruduced.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "biofilm_killing_perc": "60 %"
+         },
+         "correct": "y"
+      },
+      "(ATC34022,0)": {
+         "doi": "10.1016/j.procbio.2019.10.027",
+         "llm input": "It was previously extracted that the biological species 'Candida albicans' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'In prebiofilm effect studies, AgNPs (0.51 ug ml-1 exhibited 81 % reducing effect on biofilm formation.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '81 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In prebiofilm effect studies, AgNPs (0.51 ug ml-1 exhibited 81 % reducing effect on biofilm formation.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Candida albicans",
+            "biofilm_killing_perc": "81 %"
+         },
+         "correct": "y"
+      },
+      "(ATC34022,8)": {
+         "doi": "10.1016/j.procbio.2019.10.027",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'In prebiofilm effect studies, AgNPs (0.51 ug ml-1 exhibited 81 % reducing effect on biofilm formation.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '81 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "In prebiofilm effect studies, AgNPs (0.51 ug ml-1 exhibited 81 % reducing effect on biofilm formation.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Escherichia coli",
+            "biofilm_killing_perc": "81 %"
+         },
+         "correct": "y"
+      },
+      "(ATC41285,0)": {
+         "doi": "10.1016/j.inoche.2023.111140",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The biofilm inhibition percentage of the TA-AgNPs at a concentration of 1024 ug ml-1 was 79.5 % for P. aeruginosa and 76.2 % for S. aureus (p < 0.05).', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '79.5 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The biofilm inhibition percentage of the TA-AgNPs at a concentration of 1024 ug ml-1 was 79.5 % for P. aeruginosa and 76.2 % for S. aureus (p < 0.05).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "biofilm_killing_perc": "79.5 %"
+         },
+         "correct": "y"
+      },
+      "(ATC45183,0)": {
+         "doi": "10.1007/s00203-021-02609-8",
+         "llm input": "It was previously extracted that the biological species 'Escherichia coli' was exposed to or tested with a nanomaterial whose core composition is defined as 'ZnO'. From the sentence 'Finally, the ZnONPs effectively reduced the biofilm formation with the highest percentage (91.08 %) of inhibition against E. coli at 75 ug ml-1 concentration.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '91.08 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "Finally, the ZnONPs effectively reduced the biofilm formation with the highest percentage (91.08 %) of inhibition against E. coli at 75 ug ml-1 concentration.",
+         "parameters checked": {
+            "nanomaterial_composition": "ZnO",
+            "biological_species": "Escherichia coli",
+            "biofilm_killing_perc": "91.08 %"
+         },
+         "correct": "y"
+      },
+      "(ATC48617,0)": {
+         "doi": "10.1039/c8tb00907d",
+         "llm input": "It was previously extracted that the biological species 'Acinetobacter baumannii' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'An Ag concentration of only 5 mg mL-1, was sufficient for a 99.9 % reduction in biofilm cell viability and a 99.1 % reduction in biofilm biomass with polycat@AgNPs.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '99.9 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "An Ag concentration of only 5 mg mL-1, was sufficient for a 99.9 % reduction in biofilm cell viability and a 99.1 % reduction in biofilm biomass with polycat@AgNPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Acinetobacter baumannii",
+            "biofilm_killing_perc": "99.9 %"
+         },
+         "correct": "y"
+      },
+      "(ATC48617,10)": {
+         "doi": "10.1039/c8tb00907d",
+         "llm input": "It was previously extracted that the biological species 'Pseudomonas aeruginosa' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'An Ag concentration of only 5 mg mL-1, was sufficient for a 99.9 % reduction in biofilm cell viability and a 99.1 % reduction in biofilm biomass with polycat@AgNPs.', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '99.9 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "An Ag concentration of only 5 mg mL-1, was sufficient for a 99.9 % reduction in biofilm cell viability and a 99.1 % reduction in biofilm biomass with polycat@AgNPs.",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Pseudomonas aeruginosa",
+            "biofilm_killing_perc": "99.9 %"
+         },
+         "correct": "y"
+      },
+      "(ATC48914,32)": {
+         "doi": "10.3390/antibiotics11070853",
+         "llm input": "It was previously extracted that the biological species 'Chromobacterium violaceum' was exposed to or tested with a nanomaterial whose core composition is defined as 'Ag'. From the sentence 'The formation of biofilm was also significantly inhibited at 1/2 x MIC in C. violaceum (76.49 %) and in P. aeruginosa (65.31 %).', it was then extracted that this exposure/test resulted in a percentage of biofilm killing value (or values) of '76.49 %'. Considering all information provided, respond 'yes' or 'no' (and nothing else) for the following question: Does the sentence contain the extracted values and do they follow the pattern described by the context? In case the sentence has several matches for the parameter 'percentage of biofilm killing/inhibition', consider if the extracted value (or values) is one of them. Your output must be between single quote characters (e.g, 'output').",
+         "input text": "The formation of biofilm was also significantly inhibited at 1/2 x MIC in C. violaceum (76.49 %) and in P. aeruginosa (65.31 %).",
+         "parameters checked": {
+            "nanomaterial_composition": "Ag",
+            "biological_species": "Chromobacterium violaceum",
+            "biofilm_killing_perc": "76.49 %"
+         },
+         "correct": "y"
+      }
+   }
+}

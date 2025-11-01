@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of DNA damage or genotoxicity caused by a nanomaterial in the biological species 'Arabidopsis thaliana' present in the input sentence. Evidence includes comet assay tail moments, DNA strand breaks, micronuclei formation, chromosomal aberrations, or \u03b3-H2AX foci. Consider keywords such as 'DNA damage', 'genotoxic effect', 'comet assay', 'micronuclei', or 'chromosomal aberration' as indications of genotoxicity. Consider keywords such as 'no DNA damage', 'genome integrity unchanged', or 'no genotoxic effect' as indications of non-genotoxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of DNA damage in 'Arabidopsis thaliana' caused by a nanomaterial? If there is no clear evidence of genotoxicity, output 'no'. If the sentence does not deal with DNA damage in 'Arabidopsis thaliana' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC01402', 0)": {
+         "doi": "10.1016/j.jhazmat.2013.06.063",
+         "text": "The toxicity of graphene on suspensions of Arabidopsis thaliana (Columbia ecotype) T87 cells was investigated by examining the morphology, mitochondrial dysfunction, reactive oxygen species generation (ROS), and translocation of graphene as the toxicological endpoints.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02323', 1)": {
+         "doi": "10.3390/cells7120266",
+         "text": "The cDNAs of seven Arabidopsis thaliana MTs (AtMT1a, AtMT1c, AtMT2a, AtMT2b, AtMT3, AtMT4a and AtMT4b) and four Noccaea caerulescens MTs (NcMT1, NcMT2a, NcMT2b and NcMT3) fused to myrGFP displaying an N-terminal myristoylation sequence for plasma membrane targeting were expressed in S. cerevisiae and checked for Ag(I)-related phenotype.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03797', 2)": {
+         "doi": "10.1002/yea.320111009",
+         "text": "In particular, the highly expressed ADH1 gene is represented in this database by no less than 20 EST sequences.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04765', 7)": {
+         "doi": "10.1002/jrs.5758",
+         "text": "From SERS, the limit of detection of gDNA was found to be similar to 10 and 1 ng mu l(-1) with Ag and Au NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07726', 4)": {
+         "doi": "10.1007/s00128-014-1254-1",
+         "text": "The results show that AtPCNA and MMR genes could be used as potential molecular biomarkers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09029', 0)": {
+         "doi": "10.1134/S0026893314020162",
+         "text": "PELPK1, a novel Arabidopsis thaliana gene was earlier annotated to encode a protein of sub-family, PELPK under hydroxyproline-rich glycoprotein (HRGP) super-family of proteins.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC10040', 0)": {
+         "doi": "10.1093/plphys/kiad644",
+         "text": "Nanoparticle tracking analysis, dynamic light scattering, and cryo-electron tomography showed the presence of a heterogeneous population of EVs isolated from the apoplastic wash of sorghum leaves.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12051', 1)": {
+         "doi": "10.1016/j.jhazmat.2019.121975",
+         "text": "Further, the transcription of genes related to flowering and floral organ development in P-AgNPs and O-Con plants was downregulated by approximately 10 - 40 % compared to the transcription in P-Con plants and showed a stronger decrease in the O-AgNPs group to 30 - 50 % of that in the P-AgNPs group.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC12248', 0)": {
+         "doi": "10.1007/s11103-005-3454-x",
+         "text": "AtAUR3 showed dot-like distribution on condensed chromosomes at prophase and then localized at the metaphase plate.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC13952', 2)": {
+         "doi": "10.1111/nph.18801",
+         "text": "Furthermore, we show that higher endogenous miR394 levels are required for the elevated embryogenic potential of the Columbia accession compared with Ler, providing a mechanistic explanation for this natural variation.center dot Our transcriptional analysis provides a framework for miR394 function in regulating pluripotency by expanding WUS-mediated direct transcriptional repression.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC14639', 0)": {
+         "doi": "10.1039/c6en00189k",
+         "text": "These results were further supported by the differential regulation of three iron-regulating genes, including ferric chelate reductase (FRO), iron-regulated transporter (IRT) and ferritin (FER), at various time points.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC16802', 1)": {
+         "doi": "10.1111/j.1438-8677.2010.00377.x",
+         "text": "Illumination with 100 mu mol center dot m-2 center dot s-1 blue light induced down-regulation of several genes and might point to cascades that could be important for sensing low levels of blue light.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC18577', 2)": {
+         "doi": "10.1007/s00253-020-10355-y",
+         "text": "In this study, several types of ssRNA and siRNA duplexes targeting the neomycin phosphotransferase II (NPTII) transgene were in vitro-synthesized and externally applied to the leaf surface of 4-week-old transgenic Arabidopsis thaliana plants.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19197', 3)": {
+         "doi": "10.30848/PJB2021-2(40)",
+         "text": "Combined effect of ZnO and SiO2 i.e. Composite NPs reduced the toxicity caused by ZnO alone which was responsible in reducing the chlorophyll content, overall growth of plant and ethylene production determined through the expression of ethylene regulated genes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC19685', 0)": {
+         "doi": "10.1007/s00232-007-9011-6",
+         "text": "The values determined with the second method were less affected by the heterogeneity of the protoplast samples and were around 30 % of the respective isoosmotic protoplast volume.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC20335', 1)": {
+         "doi": "10.1021/acs.analchem.3c00065",
+         "text": "By integrating the capture probe, fuel strand, primer, and template onto the surface of a magnetic nanoparticle (MNP), we demonstrated a magnetic DNA nanomachine that could conduct an on-particle cascade amplification reaction in response to the presence of target microRNA.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC21989', 0)": {
+         "doi": "10.1111/nph.18694",
+         "text": "center dot Agrobacterium tumefaciens microbe-associated molecular pattern elongation factor Tu (EF-Tu) is perceived by orthologs of the Arabidopsis immune receptor EFR activating pattern-triggered immunity (PTI) that causes reduced T-DNA-mediated transient expression.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23168', 0)": {
+         "doi": "10.1139/g91-052",
+         "text": "The distribution of telomeric repeats in Hordeum vulgare (barley) and Secale cereale (rye) was studied by DNA-DNA in situ hybridization to root-tip chromosome preparations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC26017', 9)": {
+         "doi": "10.1046/j.1365-313X.1999.00383.x",
+         "text": "We found that 49 lines contain Ds insertion mutations, and that five lines contain Ds mutations in genes that are mapped to the sequenced CIC7E11/8B11 genomic DNA region.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC28624', 1)": {
+         "doi": "10.1016/j.jhazmat.2024.134084",
+         "text": "The UFP treatment led to diverse changes in gene expression, including the deregulation of genes involved in Fe and Cu homeostasis.",
+         "extracted val": "None",
+         "correct": "n"
+      },
+      "('ATC29370', 0)": {
+         "doi": "10.1016/j.molp.2017.09.013",
+         "text": "5-Methylcytosine (m(5)C) is a well-characterized DNA modification, and is also predominantly reported in abundant non-coding RNAs in both prokaryotes and eukaryotes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC29813', 0)": {
+         "doi": "10.1021/acssensors.1c01022",
+         "text": "Synthetic auxins such as 1-naphthalene acetic acid (NAA) and 2,4-dichlorophenoxyacetic acid (2,4-D) have been extensively used in plant tissue cultures and as herbicides because they are chemically more stable and potent than most endogenous auxins.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC30930', 0)": {
+         "doi": "10.1111/nph.19166",
+         "text": "center dot Restorer-of-fertility (Rf) genes encode pentatricopeptide repeat (PPR) proteins that are targeted to mitochondria where they specifically bind to transcripts that induce cytoplasmic male sterility and repress their expression.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC31306', 1)": {
+         "doi": "10.1007/s40626-021-00223-z",
+         "text": "Here we aimed to find a AL gene from the drought and salt stress tolerant plant Conringia planisiliqua.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC34185', 2)": {
+         "doi": "10.1007/s11627-022-10254-z",
+         "text": "Quantitative gene expression analysis showed that oxidative stress-related genes including oxidative signal-inducible 1 (OXI1), Cu/Zn superoxide dismutase (Cu/Zn SOD), catalase2 (CAT2), CAT3, monodehydroascorbate reductase (MDHAR), glutathione reductase 1 (GR1), and glutathione peroxidase 6 (GPX6) were significantly downregulated in the NnRab18-optimized group.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of acute mortality or immobilization caused by a nanomaterial in the biological species 'Daphnia magna' present in the input sentence. Evidence of acute toxicity includes increased mortality, immobilization, or reduced survival within 24\u201348 h exposure periods. Consider keywords such as 'mortality', 'lethality', 'immobilization', 'LC50', or 'reduced survival' as indications of acute toxicity. Consider keywords such as 'no mortality', 'survival unchanged', or 'immobilization not observed' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of acute mortality or immobilization in 'Daphnia magna' caused by a nanomaterial? If there is no clear evidence of acute toxicity, output 'no'. If the sentence does not deal with acute mortality or immobilization in 'Daphnia magna' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00274', 0)": {
+         "doi": "10.1039/c9en01026b",
+         "text": "Cu NP exposures significantly inhibited algal growth rate, D. magna survival, and zebrafish hatching while exposure to equivalent concentrations of CuCl2 (dissolved Cu fraction) and CuO NPs did not.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00296', 0)": {
+         "doi": "10.1016/j.scitotenv.2018.02.081",
+         "text": "The effect criteria were parental mortality, somatic growth and several reproductive parameters.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00664', 0)": {
+         "doi": "10.1080/02772248.2016.1249368",
+         "text": "The acute toxicity of monodispersed 6 nm and <100 nm poly-dispersed CuxOy nanoparticles toward Daphnia magna was assessed using 48h immobilization tests.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00791', 0)": {
+         "doi": "10.1016/j.chemosphere.2015.06.049",
+         "text": "After 24 h of exposure to QDs (100 ug L-1 as total Cd), the D. magna whole body Cd concentration significantly increased with no mortality for all QDs.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC01008', 0)": {
+         "doi": "10.1021/acs.est.5b03966",
+         "text": "Two standardized toxicity bioassays, the immobilization of the invertebrate Daphnia magna and the bioluminescence inhibition of the marine bacteria Vibrio fischeri, have been used.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01036', 0)": {
+         "doi": "10.1016/j.chemosphere.2009.10.027",
+         "text": "Understanding sub-lethal effects may be particularly important to determining ecosystem responses as current levels of nanomaterial release are low compared to levels projected for the future. in this work, the sub-lethal effects and bioaccumulation of water stable, nanocrystalline fullerenes as C-60, (termed nC(60)) were studied in Daphnia magna, a globally distributed, parthenogenetic zooplankton.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01902', 1)": {
+         "doi": "10.1016/j.aquatox.2015.01.023",
+         "text": "Detrimental effects of AgNP on survival, growth and reproduction were observed in concentrations higher than 10 ug Ag/L, whereas the animals exposed to 10 ug Ag/L had larger body length and produced more offspring than controls at both food treatments.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02349', 2)": {
+         "doi": "10.1007/s00128-013-1015-6",
+         "text": "In contrast, no mortalities were observed for Daphnia exposed to carboxy-functionalized capped nTiO(2) at concentrations up to 30 mg L-1.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC02409', 1)": {
+         "doi": "10.3103/S1063455X21060023",
+         "text": "According to aquatic hazard classification of USEPA, nanoparticles with LC50 value above 100 mg L-1 have lower acute toxicity for aquatic animals.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04110', 1)": {
+         "doi": "10.1016/j.scitotenv.2016.11.095",
+         "text": "The laboratory mixture of both nanomaterials showed that toxicity was dependent on the doses of ZnO and Ag used (immobilization) or presented a synergistic pattern (reproduction).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04813', 0)": {
+         "doi": "10.1016/j.aquatox.2014.03.011",
+         "text": "We exposed the 5 day old D. magna for 72 h to sublethal concentration of CuO and ZnO NPs in synthetic moderately hard water (MHW) with and without dissolved natural organic matter (NOM) and estimated the glutathione-S-transferase (GST) activity, formation of oxidized glutathione (GSSG), and amounts of thiobarbituric acid reacting substances (TEARS) and metallothionein (MT).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05038', 0)": {
+         "doi": "10.1016/j.envpol.2011.11.035",
+         "text": "Chronic exposure of daphnia to by-product of aged TiO2 nanoparticles brought by food induced low mortality but decreased growth and reproduction which can be partly related to the modification of the digestive physiology of daphnia.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05507', 0)": {
+         "doi": "10.1016/j.aquatox.2018.03.001",
+         "text": "Exposing D. magna to sub-lethal concentrations of the complex QDs-indolicidin, a normal survival of daphnids was observed from F0 to F2, but a delay of first brood, fewer broods per female, a decrease of length of about 50 % compared to control.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC06706', 0)": {
+         "doi": "10.1007/s10570-024-05747-6",
+         "text": "Both the median effective concentration (EC50) and median lethal concentration (LC50) were > 100 mg L-1.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC07152', 1)": {
+         "doi": "10.1016/j.scitotenv.2022.156079",
+         "text": "Accordingly, this study aimed to: (i) assess the chronic (21-d) effects of wastewater-borne AgNPs (0.3-23.5 ug L-1 Ag) and TiO(2)NPs (2.7 - 3.9 ug L-1 Ti) on survival, growth and reproduction of Daphnia magna; (ii) determine the short-term (96-h) effects of wastewater-borne AgNPs (30.3 ug L-1 Ag) and TiO(2)NPs (6.3 ug L-1 Ti) at the subcellular level (biochemical markers of neurotoxicity, anaerobic metabolism and oxidative stress); and (iii) compare the effects obtained in (i) and (ii) with the corresponding ones induced by effluent-supplemented and water-dispersed NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07179', 0)": {
+         "doi": "10.1186/s12302-023-00727-2",
+         "text": "The resulting eluates were used in acute tests, i.e., bioluminescence test with Aliivibrio fischeri (DIN EN ISO 11348-1:2009), algae growth test with Desmodesmus subspicatus (OECD No. 201) and immobilization test with Daphnia magna (OECD No. 202), as well as chronic tests, i.e., the Daphnia magna reproduction test (OECD No. 211) and the nematode growth and reproduction test with Caenorhabditis elegans (ISO 10872:2010).ResultsWhile no acute or chronic ecotoxicological effects of the eluates were observed for fibrous stone wool material, the milled test materials showed some chronic effects on aquatic invertebrates.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07910', 0)": {
+         "doi": "10.1016/j.envres.2016.04.028",
+         "text": "Data from the acute toxicity tests gave an EC50 value of 0.99 mg L-1 and showed that no immobilization appeared up to 0.3 mg Zn/L.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC08389', 0)": {
+         "doi": "10.1016/j.chemosphere.2009.11.013",
+         "text": "Moreover, upon chronic exposure to nTiO(2) for 21 d, daphnia displayed severe growth retardation and mortality, as well as reproductive defects.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08600', 0)": {
+         "doi": "10.1039/c9en00666d",
+         "text": "Negligible lethal toxicity was observed by either TiO2 formulation when illuminated by visible light, although swimming performance was significantly affected.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09095', 0)": {
+         "doi": "10.1007/s11270-017-3617-9",
+         "text": "Our observations were based on mortality and reproduction (hatchability) for the terrestrial and aquatic assays.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09916', 0)": {
+         "doi": "10.1016/j.ceramint.2023.01.102",
+         "text": "Daphnids were cultured and exposed to different concentrations of both nanohybrids to obtain the median lethal concentration and morphological data.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC10917', 1)": {
+         "doi": "10.3390/nano10102048",
+         "text": "The EC20 value for immobilization was 50 mg L-1, while, for physiological and behavioural endpoints, it ranged from 8.1 mg L-1 (feeding activity) to 14.8 mg L-1 (immobilization).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC14136', 1)": {
+         "doi": "10.1002/etc.3184",
+         "text": "For the acute (48-h) exposure, a 50 % lethal concentration (LC50) of 29.3 (23.6-36.3) mg L-1 and a 50 % effective concentration (EC50) of 6.7 mg L-1 in the swimming velocity endpoint were determined.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC22949', 0)": {
+         "doi": "10.1016/j.jenvman.2022.115515",
+         "text": "It was found that 100 % mortality was achieved when approximately 60 % of the remaining TOC was present in the samples, indicating that toxic degradation byproducts were formed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC33917', 0)": {
+         "doi": "10.1016/j.jwpe.2021.102376",
+         "text": "Bandgap energy reduced from 2.42 eV to 1.70 eV due to the immobilization of Al and B.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

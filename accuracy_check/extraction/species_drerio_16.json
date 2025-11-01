@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of acute mortality or abnormal hatching caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence of acute toxicity includes increased mortality, abnormal or delayed hatching, reduced survival, or other effects within 24\u201396 h exposure periods. Consider keywords such as 'mortality', 'lethality', 'hatching failure', 'reduced survival', or 'LC50' as indications of acute toxicity. Consider keywords such as 'no mortality', 'normal hatching', or 'survival unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of acute mortality or abnormal hatching in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of acute toxicity, output 'no'. If the sentence does not deal with acute mortality or hatching in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00097', 0)": {
+         "doi": "10.1002/etc.3208",
+         "text": "The endpoints assessed for D. magna were immobilization, feeding inhibition, and reproduction output.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00123', 0)": {
+         "doi": "10.1016/j.jhazmat.2012.03.080",
+         "text": "Pure CeO2 provoked no effects, but CuO-CeO2 mixed oxides induced some sublethal effects on fish and affected daphnids' survival.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01059', 1)": {
+         "doi": "10.1016/j.jece.2022.108443",
+         "text": "However, increased malformation rates and mortality at the highest concentration were due to nanoparticle sizes and GO.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01090', 0)": {
+         "doi": "10.1007/s11356-022-19693-y",
+         "text": "In this study, in silico modeling was designed to examine the antagonistic effect of mercuric chloride (HgCl2) and silver nanoparticles (AgNPs) on the mortality rate of zebrafish (Danio rerio) based on response surface methodology (RSM).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01090', 4)": {
+         "doi": "10.1007/s11356-022-19693-y",
+         "text": "The most critical conditions of mortality rate were occurred by HgCl2 concentration of 0.23 mg L-1 and AgNP concentration of 0.04 mg L-1 that yielding maximum fish mortality rate of 96.541 %.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01130', 3)": {
+         "doi": "10.1016/j.carbon.2019.08.063",
+         "text": "This suggests that the mechanism of MWCNT-induced mortality of embryonic zebrafish is physical, driven by electrostatic and shape effects, both of which are related to nanomaterial aggregation.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02363', 2)": {
+         "doi": "10.1007/s12011-021-02855-3",
+         "text": "The survival rates decreased in a dose-dependent manner.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02849', 0)": {
+         "doi": "10.1002/jat.4512",
+         "text": "The results showed that up to 10 & mu;M ORY-1001 or 199 did not significantly affect the cellular viability of HUVECs but substantially reduced the release of inflammatory interleukin-8 (IL-8) and IL-6.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02909', 0)": {
+         "doi": "10.1021/es304987r",
+         "text": "Selenite exposures resulted in high mortality to embryos/larvae while selenate and SeNPs were nontoxic.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02910', 0)": {
+         "doi": "10.1002/etc.1918",
+         "text": "Our findings for the first time revealed that: (1) QDs facilitated the accumulation of Cu2+ in zebrafish; (2) QDs caused higher mortality, lower hatch rate, and more malformations of the exposed zebrafish; (3) junction, bifurcation, crossing, particles, and aggregation of the exposed FLI-1 transgenic zebrafish larvae can be observed; (4) embryo cell apoptosis appeared in the head and tail region; and (5) synergistic effects played an important role during joint exposure.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC02918', 2)": {
+         "doi": "10.1016/j.chemosphere.2021.131902",
+         "text": "After 96h of treatment, the LC50 of CHT@MSNs-fl-glucans was 2.66 times higher than CHT-WP.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03142', 1)": {
+         "doi": "10.1016/j.envpol.2020.115769",
+         "text": "Finally, although PS NPs did not induce mortality in wild-type larvae, immunodeficient and infected larvae had decreased survival upon exposure to PS NPs.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03249', 0)": {
+         "doi": "10.1590/1678-4324-2024230143",
+         "text": "After exposure, the nauplii from the control group presented 20 % mortality, whereas the 25 ug mL-1, 50 ug mL-1, and 100 ug L-1 groups had 46.7 %, 70 %, and 100 % mortality, respectively.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03265', 0)": {
+         "doi": "10.1016/j.taap.2018.07.019",
+         "text": "However, in comparison to free DOX, Doxil (R) has not shown significant improvements regarding survival.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03521', 1)": {
+         "doi": "10.20950/1678-2305/bip.2024.50.e882",
+         "text": "Thus, the biofloc system can be a viable alternative to zebrafish larviculture without the use of conventional live food, and the addition of biofloc once (O1) at the beginning of larval rearing achieves good growth and survival results.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05179', 0)": {
+         "doi": "10.1016/j.molstruc.2021.130006",
+         "text": "The toxicity evaluation in the zebrafish model (Danio rerio) suggests that the Agitraco complex has better therapeutic profile and improved antifungal efficacy with respect to the parent drug, which were also proven in vivo using the zebrafish model of lethal disseminated candidiasis.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05234', 0)": {
+         "doi": "10.1007/s10646-015-1541-6",
+         "text": "Accordingly, the sublethal toxicity of TiO2 NPs suspensions with different HA and NaCl concentrations toward zebrafish (Danio rerio) was evaluated by monitoring the changes of superoxide dismutase, catalase, malonaldehyde and glutathione in gill, liver and intestine.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05369', 2)": {
+         "doi": "10.1002/etc.4938",
+         "text": "Also, BSiO2#THY significantly induced sublethal effects as thymol, and both were genotoxic for zebrafish.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07853', 3)": {
+         "doi": "10.1016/j.ntt.2011.02.002",
+         "text": "AgNPs are less potent than Ag+ with respect to dysmorphology and loss of viability, but nevertheless produce neurobehavioral effects that highly depend on particle coating and size, rather than just reflecting the release of Ag+.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC10173', 0)": {
+         "doi": "10.1016/j.envpol.2019.07.115",
+         "text": "Confocal microscopy was employed to investigate nanoplastic ingestion and tissue infiltration, while potential sub-lethal effects were evaluated by measuring several endpoints, which covered the adverse effects at the molecular (protein carbonylation), cellular (P-glycoprotein, activity of several antioxidant/detoxifying enzymes) and organism levels by evaluating of possible changes in the embryos' swimming behaviour.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC15292', 0)": {
+         "doi": "10.1002/jat.3142",
+         "text": "A dose-dependent decline in cell viability was observed in CHSE-214 cells exposed to Al2O3 NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC23764', 0)": {
+         "doi": "10.1016/j.actatropica.2021.106089",
+         "text": "The results show that camphor and 1,8-cineole monoterpenes did not induce snail mortality.",
+         "extracted val": "None",
+         "correct": ""
+      },
+      "('ATC51657', 0)": {
+         "doi": "10.1007/s12649-024-02577-2",
+         "text": "Thelethal concentration (LC50) values determined as 12.5 and 50 ug ml-1.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC51707', 1)": {
+         "doi": "10.1002/tox.24024",
+         "text": "Our results showed an increase in embryo and larvae mortality in those exposed to 0.065 mg L-1, as well as a reduction in spontaneous embryo movements.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC52557', 2)": {
+         "doi": "10.1080/15287394.2017.1331597",
+         "text": "At sublethal concentrations, CTAB-AuNR suspensions were found to produce developmental abnormalities such as tail deformities, pericardial edema, decreased body length, and delayed eye, head, and tail elongation development.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of developmental or morphological deformities caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence includes spinal curvature, edema, craniofacial malformations, abnormal swim bladder inflation, or other anatomical changes. Consider keywords such as 'malformation', 'deformity', 'spinal curvature', 'pericardial edema', or 'abnormal swim bladder' as indications of toxicity. Consider keywords such as 'normal morphology', 'no deformities', or 'structure unchanged' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of developmental or morphological deformities in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of developmental toxicity, output 'no'. If the sentence does not deal with morphology in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00107', 0)": {
+         "doi": "10.1016/j.ecoenv.2018.06.078",
+         "text": "Very small percentages of mortality and abnormalities were observed in D. rerio exposed with and without the infrared lamp.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00333', 0)": {
+         "doi": "10.1016/j.chemosphere.2020.127657",
+         "text": "Such accumulation was associated with higher frequency of erythrocyte nuclear abnormalities such as constricted erythrocyte nuclei, vacuole, blebbed, kidney-shaped and micronucleated erythrocytes in Nile tilapia exposed to CNFs via food chain.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00337', 0)": {
+         "doi": "10.1016/j.cbpc.2017.03.004",
+         "text": "Exposure of adults, even at the environmentally relevant silver concentration, caused a significant reduction of fecundity by the second week of treatment and resulting embryos showed a higher prevalence of malformations than control embryos.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00393', 0)": {
+         "doi": "10.1016/j.mtcomm.2021.102725",
+         "text": "Properties of chemically synthesized Zn1_xGdxO (x = 0.01, 0.03 and 0.05) nanorods were explored through microstructural, morphological, toxicity and magnetic characterizations.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00930', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.163447",
+         "text": "Thus, effects on the cnidarian Hydra viridissima (mortality, mor-phology, regeneration ability, and feeding behavior) and the fish Danio rerio (mortality, morphological alterations, and swimming behavior) were tested at NPLs concentrations in the 0.001 to 100 mg L-1 range.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00990', 0)": {
+         "doi": "10.1088/2515-7639/ab9522",
+         "text": "We evaluate the effect of LIG, administered in different concentrations to zebrafish embryos, on different biological parameters, including embryo viability and morphological changes.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01023', 0)": {
+         "doi": "10.1007/s11270-023-06731-9",
+         "text": "However, embryos malformations and larval mortality rates were higher across the treatments.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02128', 0)": {
+         "doi": "10.1016/j.jhazmat.2023.132880",
+         "text": "The present study investigated the developmental toxicity, vasotoxicity, cytotoxicity, ROS induction, and behavioral impairments in zebrafish (Danio rerio) exposed to environmentally relevant polystyrene NPs (PS-NPs) concen-trations (0.04, 34 ng L-1, and 34 ug L-1 for 144 h through multiple biomarkers response (mortality, frequency of spontaneous contractions, heart rate, and morphological changes).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02363', 0)": {
+         "doi": "10.1007/s12011-021-02855-3",
+         "text": "Next, the alterations in survival rate, hatching rate, and morphology of the larvae at 96 h were monitored.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02818', 0)": {
+         "doi": "10.3390/app14020538",
+         "text": "In this study, the developmental toxicity of C10 was evaluated on zebrafish (Danio rerio) embryos at an exposure level of 0 - 2000 ug L-1, and acute toxicity was determined with respect to lethal effects, hatching rates, and morphological changes.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02849', 0)": {
+         "doi": "10.1002/jat.4512",
+         "text": "In vivo, 24 h treatment with up to 100 nM ORY-1001 reduced blood speed without changing morphologies or locomotor activities in zebrafish larvae.",
+         "extracted val": "no",
+         "correct": "n"
+      },
+      "('ATC02946', 0)": {
+         "doi": "10.1016/j.scitotenv.2020.143456",
+         "text": "Regarding in vivo toxicological assays, no robust alterations were recorded in functional, morphological and behavioral end-points analyzed, although a significant adhesion of IOT particles on zebrafish chorion was observed, without a prejudice of embryo hatching.",
+         "extracted val": "no",
+         "correct": "y"
+      },
+      "('ATC02995', 1)": {
+         "doi": "10.1039/c2ib00130f",
+         "text": "By using scoring spectra of early developmental stages such as 2 or 3 dpf, we compared the malformation speeds of zebrafish exposed to different concentrations of MSRMs during the time 1 to 6 dpf.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03108', 0)": {
+         "doi": "10.1016/j.inoche.2021.108447",
+         "text": "The prepared composite nanomaterial is thoroughly characterized for understanding its crystal structure and surface morphology.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03163', 4)": {
+         "doi": "10.1111/jfb.14240",
+         "text": "This is the first study to report a quick, reliable and welfare-compatible method of inducing skeletal abnormalities in a vertebrate model during the post-embryonic period.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC03265', 1)": {
+         "doi": "10.1016/j.taap.2018.07.019",
+         "text": "MMDOX showed lower lethal effects, morphological alterations and neurotoxic effects than the free drug.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03609', 0)": {
+         "doi": "10.1080/17435390.2016.1214763",
+         "text": "Previously published data has suggested that PVP-AgNP exposure can inhibit the expression of genes within the vascular endothelial growth factor (VEGF) signaling pathway, leading to delayed and abnormal vascular development.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC06153', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.162096",
+         "text": "Results showed that all particle sizes of PS-NPs produced developmental toxicity in zebrafish embryos and induced neuronal loss, axonal deletion/shortening/hybridization, and developmental and apoptotic-related ge-netic alterations, ultimately leading to behavioral abnormalities.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC06650', 0)": {
+         "doi": "10.1016/j.ecoenv.2020.111032",
+         "text": "Although kidney morphology appeared intact, the lumen of the proximal tubule was enlarged, and the cells of the distal tubule were vacuolated.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07371', 0)": {
+         "doi": "10.1149/1945-7111/aba33d",
+         "text": "Scanning electron microscopy (SEM) revealed the smooth outer surface morphologies of polymer coatings, which filled in the ridges and grooves of the bare unmodified carbon electrode and energy-dispersive X-ray spectroscopy (EDX) confirmed PEDOT:Nafion incorporation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07853', 0)": {
+         "doi": "10.1016/j.ntt.2011.02.002",
+         "text": "We exposed developing zebrafish (Danio rerio) to Ag+ or AgNPs on days 0-5 post-fertilization and evaluated hatching, morphology, survival and swim bladder inflation.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC08072', 0)": {
+         "doi": "10.1016/j.ecoenv.2020.110642",
+         "text": "Vitality rate, alterations in the morphology and behavior of the larvae and the genomic stability were analyzed.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC09252', 0)": {
+         "doi": "10.1007/s10646-013-1114-5",
+         "text": "Embryos were treated with AgNP (particle size: > 90 % < 20 nm) and AgNO3 in ISO water for 48 h and consequently displayed effects such as delayed development, tail malformations and edema.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC09252', 1)": {
+         "doi": "10.1007/s10646-013-1114-5",
+         "text": "These embryos exhibited the same malformations than for AgNO3 and AgNPs, but the embryo toxicity of the sewage treatment effluent was higher (EC50 = 142 ug l-1; 48 hpf).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC51609', 0)": {
+         "doi": "10.1080/15287394.2024.2362809",
+         "text": "Data demonstrated that, in general, environmentally relevant concentrations of BP-3 and TiO2 NPs, either alone or in a mixture, did not significantly induce changes in heart and spontaneous contractions frequencies, levels of reactive oxygen species (ROS), morphological and morphometric parameters as well as mortality rates during 144 hr exposure.",
+         "extracted val": "no",
+         "correct": "n"
+      }
+   }
+}

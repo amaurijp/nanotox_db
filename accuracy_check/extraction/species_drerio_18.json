@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of oxidative stress caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence of oxidative stress includes elevated reactive oxygen species (ROS), increased lipid peroxidation, protein carbonylation, glutathione depletion, or altered antioxidant enzyme activities. Consider keywords such as 'elevated ROS', 'increased MDA', 'oxidative damage', 'redox imbalance', or 'lipid peroxidation' as indications of oxidative stress. Consider keywords such as 'no oxidative stress', 'ROS unchanged', or 'antioxidant status normal' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of oxidative stress in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of oxidative stress, output 'no'. If the sentence does not deal with oxidative stress in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00041', 0)": {
+         "doi": "10.1016/j.cbpc.2019.04.004",
+         "text": "The present study evaluated silver nanoparticle (AgNPs) toxicity using biomarkers of oxidative and metabolic stress, immunological impairment and cellular damage in zebrafish (Danio rerio), as well as the optimal dose of vitamin E neutralizing undesirable effects.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00178', 0)": {
+         "doi": "10.3109/17435390.2013.875232",
+         "text": "Nano-TiO2 exposure alone did not induce generation of reactive oxygen species, lipid peroxidative oxidation, gene transcription or thyroid hormone levels.",
+         "extracted val": "No",
+         "correct": "n"
+      },
+      "('ATC00449', 1)": {
+         "doi": "10.1016/j.aquatox.2020.105546",
+         "text": "Similarly, the levels of oxidative stress biomarkers (reactive oxygen species, superoxide dismutase, catalase activities and malondialdehyde), apoptosis (apoptosis rate, caspase-3 and caspase-9 activities) and DNA damage (comet assay and comet olive tails) decreased in the presence of MWCNTs compared to those exposed to BDE-47 alone.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00538', 0)": {
+         "doi": "10.1080/17435390.2018.1458342",
+         "text": "In the present study, we quantitatively evaluated the relative contribution of NPs in their particulate form (NP(particle)) and of dissolved ions released from NPs (NP(ion)) to the combined toxicity of binary mixtures of ZnO NPs and graphene oxide nanoplatelets (GO NPs) to three aquatic organisms of different trophic levels, including an alga species (Scenedesmus obliquus), a cladoceran species (Daphnia magna), and a freshwater fish larva (Danio rerio).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00603', 0)": {
+         "doi": "10.1242/jeb.136853",
+         "text": "Carbon monoxide (CO) is a gaseous neurotransmitter produced from the breakdown of heme via heme oxygenase-1 (HO-1; hypoxia-inducible isoform) and heme oxygenase-2 (HO-2; constitutively expressed isoform).",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC00744', 0)": {
+         "doi": "10.1016/j.saa.2011.02.038",
+         "text": "The observed changes in the biochemical constituents in the brain tissues of D. rerio could be due to the overproduction of ROS.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00758', 0)": {
+         "doi": "10.3390/nano13111783",
+         "text": "The immunofluorescence investigation showed positivity for biomarkers of oxidative stress and sex hormone binding globulin (SHBG), both confirmed by the results of qRT-PCR.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC01532', 0)": {
+         "doi": "10.1289/ehp.9757",
+         "text": "Significant up-regulation (3- to 7-fold) of genes involved in controlling oxidative damage was observed after exposure to THF-C-60 and THF-water.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01823', 0)": {
+         "doi": "10.1089/zeb.2021.0075",
+         "text": "The zebrafish Danio rerio is a teleost model species widely used in developmental genetics, biomedical studies, toxicology, and drug screening.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01825', 0)": {
+         "doi": "10.3109/17435390.2015.1084058",
+         "text": "In this study, a novel semi-static multilayer microcosm was setup to investigate the impacts of nano-TiO2 on PFOS bioaccumulation in fish species [Danio rerio (D. rerio), Ctenopharyngodon idella (C. idella), Hypostomus plecostomus (H. plecostomus)] living in different vertical layers.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02599', 0)": {
+         "doi": "10.1016/j.jphotobiol.2020.112028",
+         "text": "The temperature rises nearly 51 +/- 3 degrees C within 3 min of irradiation NIR laser light resulting in the ablation of MDAMB-231 cancer cells up to concentration of 25 ug mL-1 of AuPd-rGO/PDA nanocomposite.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02843', 0)": {
+         "doi": "10.1038/s41467-019-11762-0",
+         "text": "This is evidenced by behavioral pathology, reactive oxygen species and neuronal dysfunction biomarkers assays, complemented by brain histology and inductively coupled plasma-mass spectroscopy.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02979', 1)": {
+         "doi": "10.1016/j.jhazmat.2021.127749",
+         "text": "These findings confirmed that low concentration of DBP induced oxidative damage and genotoxicity in zebrafish brain, which provided an effective toxicological basis for phthalate pollution.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03434', 0)": {
+         "doi": "10.13075/ijomeh.1896.00669",
+         "text": "Activities of superoxide dismutase (SOD), catalase (CAT), glutathione peroxidase (Gpx) and malondialdehyde (MDA) content were measured in zebrafish embryos after exposure lasting for 96 h.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03937', 4)": {
+         "doi": "10.3389/fvets.2023.1148766",
+         "text": "Zebrafish larvae represent a useful model to study oxidative stress-linked disorders and to test antioxidant molecules, while carnosine was selected based on its well-known multimodal mechanism of action that includes a strong antioxidant activity.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04038', 0)": {
+         "doi": "10.1016/j.aquatox.2022.106157",
+         "text": "Additional analysis with droplet digital PCR revealed that CdSe QD exposure altered the mRNA levels of genes that are associated with dopamine signaling and oxidative stress response.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC04907', 0)": {
+         "doi": "10.1152/ajpregu.1999.276.2.R505",
+         "text": "Body mass, length, oxygen consumption ((M) over dot o(2)), and heart rate (f(H)) were measured in embryos (prior to hatching), larvae (days 10-20), juveniles (days 30-70 in 10-day intervals), and adults (day 100) of the zebrafish Danio rerio.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04907', 2)": {
+         "doi": "10.1152/ajpregu.1999.276.2.R505",
+         "text": "Collectively, these data indicate that the ability to regulate (M) over dot o(2) and f(H) in response to the compounding demands of increased temperature and/or decreased oxygen availability first develops after similar to 20 days in D. rerio and, thereafter, the ability to maintain (M) over dot o(2) in the face of ambient hypoxia progressively builds through to adulthood.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05234', 1)": {
+         "doi": "10.1007/s10646-015-1541-6",
+         "text": "Nevertheless, the oxidative stress could be suppressed by the adding of HA and/or the increase of ionic strength, which can decrease the bioavailability of TiO2 NPs in water.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC05239', 0)": {
+         "doi": "10.1016/j.envint.2020.105611",
+         "text": "The present study investigates the mediated toxicity imposed to the freshwater fish species, zebrafish (Danio rerio) and the prussian carp (Carassius gibelio), and to the terrestrial land snail Cornu aspersum, after their exposure to sublethal concentrations of TiO2-NPs.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC06791', 0)": {
+         "doi": "10.1016/j.aquaculture.2015.08.023",
+         "text": "Also, CAgNCs induced the level of reactive oxygen species (ROS) in concentration and time dependent manner (up to 3 h) suggesting that it may generate oxidative stress leading to bacterial cell death.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC07010', 0)": {
+         "doi": "10.1016/j.ecoenv.2022.114363",
+         "text": "The 40-and 60-nm AgNPs were more toxic than the 20-and 80-nm versions in terms of inflammation and oxidative damage to the swim bladder, as indicated by inhibition of type 2 iodothyroxine deiodinase enzyme activity, mitochondrial injury, and reduced 30 - 50 % adenosine triphosphate content.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC10570', 2)": {
+         "doi": "10.1016/j.envres.2020.109477",
+         "text": "Taken together, nanoencapsulation can improve the antioxidant efficacy of quercetin against AgNPs toxicity and might reduce involvement of the cellular antioxidant system through tuning redox status.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC40425', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.162402",
+         "text": "It has been shown that vegetal species constitute an alternative natural source for the biosynthesis of new nanomate-rials.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC40425', 1)": {
+         "doi": "10.1016/j.scitotenv.2023.162402",
+         "text": "Therefore, despite supporting the potential of PF (from ten plant species) as a raw material source for AgNPs biosynthesis, our study also sheds light on its ecotoxicolog-ical potential, suggesting that more comprehensive assessments of the ecotoxicity of biosynthesized would be per-formed before its application in different sectors.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}

@@ -1,0 +1,159 @@
+{
+   "info": {
+      "extraction method": "llm",
+      "model": "mistral-large:123b-instruct-2407-q2_K",
+      "prompt": "You are a sentence analyzer specialized in nanotoxicology. Your task is to evaluate whether there is evidence of enzymatic activity alteration caused by a nanomaterial in the biological species 'Danio rerio' present in the input sentence. Evidence includes changes in catalase, superoxide dismutase, glutathione-S-transferase, acetylcholinesterase, or other key enzymes. Consider keywords such as 'altered catalase', 'SOD increase', 'enzyme inhibition', or 'enzyme induction' as indications of toxicity. Consider keywords such as 'enzyme activity unchanged', 'no enzymatic effect', or 'normal catalase levels' as indications of non-toxicity. Considering all the information provided, respond only 'yes' or 'no'. Is there any evidence in the input sentence of enzymatic activity alteration in 'Danio rerio' caused by a nanomaterial? If there is no clear evidence of enzymatic alteration, output 'no'. If the sentence does not deal with enzymatic activity in 'Danio rerio' or if you cannot assess the sentence for this endpoint, output 'None'. Output 'yes', 'no' or 'None' between single quote characters (e.g, 'yes' or 'no' or 'None')."
+   },
+   "instances": {
+      "('ATC00041', 0)": {
+         "doi": "10.1016/j.cbpc.2019.04.004",
+         "text": "AgNPs caused cell impairment by increasing LDH activity and cortisol levels, generated oxidative stress by inhibiting SOD and CAT activity and immunosuppression by inhibiting ACH50 and lysozyme activity.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00127', 0)": {
+         "doi": "10.1016/j.jhazmat.2021.125579",
+         "text": "In this study, arsenite accumulation, transformation, subcellular distribution, and enzyme activity were assessed in adult zebrafish (Danio rerio) intestines, heads and muscles, following co-exposure to arsenite and CNMs with different structures (single-walled carbon nanotubes (SWCNTs), multi-walled carbon nanotubes (MWCNTs), fullerene (C60), graphene oxide (GO), and graphene (GN)).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC00234', 0)": {
+         "doi": "10.1016/j.wse.2020.06.007",
+         "text": "Low granule concentration had an inductive effect on antioxidant enzyme activities in D. magna and D. rerio.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00753', 0)": {
+         "doi": "10.1007/s11356-021-12423-w",
+         "text": "Enzymatic biomarkers for D. rerio showed significant increases in the activity of superoxide dismutase, catalase, and lipid peroxidation after sub-lethal exposure to AuNRs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC00913', 0)": {
+         "doi": "10.1016/j.jtemb.2019.02.005",
+         "text": "Moreover, brain oxidative status was determined by measuring thiobarbituric acid-reactive substance levels, glutathione peroxidase, glutathione redutase and glutathione S-transferase activities.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01129', 0)": {
+         "doi": "10.1016/j.scitotenv.2023.166458",
+         "text": "The mixed-type CNTs increased the anti-oxidant capacity of zebrafish embryos by increasing superoxide dismutase activity in comparison to the single-type CNTs.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC01449', 0)": {
+         "doi": "10.1016/j.ecoenv.2019.109760",
+         "text": "Their toxicity was evaluated using apical (mortality, development and hatching), biochemical [cholinesterase (ChE), glutathione-S-transferase (GST), and catalase (CAT) activities] and behavioral (locomotor activity) endpoints.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC01851', 0)": {
+         "doi": "10.1016/j.fsi.2019.01.042",
+         "text": "It plays an important role in antioxidative stress, selenoenzymes regulation and immunomodulation.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02018', 1)": {
+         "doi": "10.1039/c6en00436a",
+         "text": "Uncoated TiO2 NPs produced hydroxyl radicals (OH center dot), delayed hatch, induced lipid peroxidation, increased catalase activity and TG levels, and upregulated glutathione peroxidase 1a gene expression 1.59 fold in the presence of UV light.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02111', 3)": {
+         "doi": "10.1007/s10695-021-00982-1",
+         "text": "The result of Wnt10b RNA interference showed that Wnt10b signaling played a key role in regulating the gene expression of SOD, CAT, and GSH-PX.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02410', 0)": {
+         "doi": "10.5530/pres.15.4.083",
+         "text": "ZrO2 affects cells by causing oxidative stress and decreasing the antioxidants SOD, CAT, GPx, GSH, and Vitamin C.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02470', 0)": {
+         "doi": "10.3390/metabo12121263",
+         "text": "The metabolism of glutamate, glutamine, glutathione (GSH), taurine, trimethylamine (TMA), and its N-oxide (TMAO) is also significantly altered.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC02535', 0)": {
+         "doi": "10.1016/j.ecoenv.2022.113458",
+         "text": "Simultaneously, the activity and transcription of antioxidant enzymes (T-SOD, CuZn-SOD, Mn-SOD, CAT, GPx and GST) as well as antioxidant GSH contents were extensively inhibited by TAN and n-TiO2 via Nrf2-Keap1 signaling.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02683', 0)": {
+         "doi": "10.1016/j.lfs.2018.03.010",
+         "text": "In addition, the PTZ induced biochemical changes such as acetylcholinesterase activity, lipid peroxidation, and reduced glutathione levels were assessed in the brain of zebrafish.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC02979', 0)": {
+         "doi": "10.1016/j.jhazmat.2021.127749",
+         "text": "The results showed that DBP significantly stimulated SOD and CAT activities, increasing MDA and 8-OHdG contents.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03021', 0)": {
+         "doi": "10.1016/j.taap.2023.116569",
+         "text": "Zebrafish were exposed to sublethal concentrations of each NP and a mixture for 28 days followed by a 28 -day recovery period (without NP exposure) and measurements made on hepatic levels of antioxidant enzymes (CAT, SOD, and GPx), MDA levels, expression of the genes for the Hsp70 and Hsp90, and MT, blood biochemical parameters (total protein, globulin, albumin, AST, ALT, ALP, and LDH), and genotoxicity in erythrocytes (via measurement of micronuclei (MN) and nuclear (NA) abnormalities).",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03038', 0)": {
+         "doi": "10.3390/molecules29112414",
+         "text": "Additionally, CuNPs triggered oxidative stress, evidenced by disruption in superoxide dismutase (SOD), catalase (CAT), and glutathione peroxidase (GPx) activities, along with elevated malondialdehyde (MDA) levels.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03434', 0)": {
+         "doi": "10.13075/ijomeh.1896.00669",
+         "text": "Activities of superoxide dismutase (SOD), catalase (CAT), glutathione peroxidase (Gpx) and malondialdehyde (MDA) content were measured in zebrafish embryos after exposure lasting for 96 h.",
+         "extracted val": "yes",
+         "correct": "n"
+      },
+      "('ATC03824', 0)": {
+         "doi": "10.2131/jts.44.737",
+         "text": "Only exposure to NiCl2 changed antioxidative responses, enzymatic antioxidant activities, and metallothionein gene expression.",
+         "extracted val": "None",
+         "correct": "y"
+      },
+      "('ATC04138', 0)": {
+         "doi": "10.3389/fmicb.2022.1048216",
+         "text": "AU the treatments induced catalase (CAT) and superoxide dismutase (SOD) activities and increased glutathione (GSH) content in the livers and upregutated the expression of immune related genes.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC04362', 0)": {
+         "doi": "10.1016/j.aquatox.2015.07.003",
+         "text": "Severe apoptosis of cells in the head, heart and tail region with inhibition of catalase confirms ROS induced acute toxicity with increasing concentration.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC04531', 0)": {
+         "doi": "10.1016/j.scitotenv.2020.144268",
+         "text": "The antioxidant enzyme activity such as superoxide dismutase (SOD), catalase (CAT), glutathione-S-transferase (GST), glutathione reductase (GR) and lipid peroxidation (LPO), showed a significant change (P < 0.05) indicating that oxidative stress was induced by nano-Pd.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC05575', 0)": {
+         "doi": "10.1016/j.envpol.2021.118169",
+         "text": "This observation was accordance with the significant inhibition of the activities of superoxide dismutase and catalase enzymes detected in their combined treatment.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC08956', 0)": {
+         "doi": "10.3390/insects13080676",
+         "text": "Acetylcholinesterase (AChE) enzyme showed different activity patterns, where it significantly increased in columbamine and beta-sitosterol, and decreased in (AC), palmatine, and jatrorrhizine treatments, whereas glutathione S-transferase (GST) enzyme was significantly increased when AC methanolic extract/isolated compounds were applied, compared to the control.",
+         "extracted val": "yes",
+         "correct": "y"
+      },
+      "('ATC10570', 0)": {
+         "doi": "10.1016/j.envres.2020.109477",
+         "text": "To this end, the transcription of prime genes regulating hepatic Keap1-Nrf2 pathway as well as downstream antioxidant enzymes were monitored prior to and after oxidative stress by AgNPs.",
+         "extracted val": "None",
+         "correct": "y"
+      }
+   }
+}
